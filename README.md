@@ -2,4 +2,4 @@
 
 个人小屋
 
-https://justforuse.github.io
+http://justforuse.github.io/
