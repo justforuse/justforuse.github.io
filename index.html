@@ -5,68 +5,19 @@
 	<title></title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="jquery-2.1.4.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<style>
-		body{
-			font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
-		}
-		.jumbotron{
-			margin:30px 20px;
-			text-align:center;
-			background-color: #deecdf;
-		}
-		h2{
-			text-align:center;
-		}
-		aside{
-			position: fixed;
-			top:100px;
-			right:20px;
-		}
-		#avatar{
-			width:120px;
-			height:auto;
-			margin-bottom:20px;
-		}
-		.info-skill-container{
-			display: flex;
-			padding:0 200px 0 250px;
-		}
-		#info{
-			flex:1;
-		}
-		#skill{
-			flex:1;
-		}
-		.share{
-			display: flex;
-			justify-content: space-around;
-			margin:0 200px;
-		}
-		.share img{
-			margin:0 auto;
-			border-radius: 50%;
-			border:2px solid #E4E7E8;
-		}
-		.share a{
-			
-		}
-		.icon{
-			width:90px;
-			text-align:center;
-		}
-	</style>
+
 </head>
 <body>
-
 	<div class="jumbotron">
 		<img id="avatar" src="img/avatar.jpg" alt="" class="img-circle">
 		<p>I'm Allen, Welcome to my homepage..</p>
 	</div>
 	<div class="container info-skill-container">
 		<div id="info">
-			<h3>个人信息</h3>
+			<h3>个人信息 <span class="icon-double-angle-down"></span></h3>
 			<ul class="list-unstyled">
 				<li>
 					<p>
@@ -96,13 +47,20 @@
 					</p>
 					
 				</li>
+				<li>
+					<p>
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span>allenforuse@gmail.com</span>
+					</p>
+					
+				</li>
 			</ul>
 		</div>
 		<div id="skill" class="pull-right">
-			<h3>掌握技能</h3>
+			<h3>掌握技能 <span class="icon-double-angle-down"></span></h3>
 			<ul class="list-unstyled">
 				<li>
-					<p><b>语言</b>  HTML/CSS/Javascript</p>
+					<p><b>语言</b>  HTML/CSS/Javascript/C</p>
 				</li>
 				<li>
 					<p><b>框架</b>  jQuery/Bootstrap/Angular</p>
@@ -110,32 +68,40 @@
 				<li>
 					<p><b>语言</b>  HTML/CSS/Javascript</p>
 				</li>
+				<li>
+					<p><b>课程</b>  数据库系统/计算机网络/数据结构/操作系统/设计模式</p>
+				</li>
+				<li>
+					<p><b>英语水平</b>  通过英语六级，具备听说读写的能力</p>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="container-fluid share" >
 		<div class="icon" id="csdn">
-			<a href="http://blog.csdn.net/u014291497"><img class="img-responsive img-circle" src="img/csdn.png" alt="CSDN" title="CSDN"></a>
+			<a href="http://blog.csdn.net/u014291497" target="_blank"><img class="img-responsive img-circle" src="img/csdn.png" alt="CSDN" title="CSDN"></a>
 		</div>
 
 		<div class="icon" id="github">
-			<a href="https://github.com/justforuse"><img class="img-responsive img-circle" src="img/github.png" alt="Github" title="Github"></a>
+			<a href="https://github.com/justforuse" target="_blank"><img class="img-responsive img-circle" src="img/github.png" alt="Github" title="Github"></a>
 		</div>
 		<div class="icon" id="csdn">
-			<a href="http://pan.baidu.com/share/home?uk=304752841#category/type=0"><img class="img-responsive img-circle" src="img/baidupan.png" alt="百度盘" title="百度云"></a>
+			<a href="http://pan.baidu.com/share/home?uk=304752841#category/type=0" target="_blank"><img class="img-responsive img-circle" src="img/baidupan.png" alt="百度盘" title="百度云"></a>
 		</div>
 	</div>
-	<ul class="list-unstyled">
-		<li>
-			<a href="http://pan.baidu.com/share/home?uk=304752841#category/type=0">百度云地址</a>
-		</li>
-		<li>
-			<a href="http://blog.csdn.net/u014291497">CSDN地址</a>
-		</li>
-		
-	</ul>
-	<!-- <aside>
-		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=293 height=364 src="http://music.163.com/outchain/player?type=0&id=328742773&auto=0&height=430"></iframe>
-	</aside> -->
+	<button id="music" title="网易云音乐">
+		<span class="icon-music icon-2x"></span>
+	</button>
+	<aside>
+		<iframe id="music-frame" frameborder="no" border="0" marginwidth="0" marginheight="0" width=293 height=364 src="http://music.163.com/outchain/player?type=0&id=328742773&auto=0&height=430"></iframe>
+	</aside>
+	<footer>
+		justforuse.github.io Written by Allen
+	</footer>
+	<script>
+		$("#music").click(function(){
+			$("#music-frame").toggle(300);
+		})
+	</script>
 </body>
 </html>
