@@ -9,6 +9,9 @@ body{
 h2{
 	text-align:center;
 }
+h3{
+	font-family: 'nunito', 'gotham rounded', 'nunito';
+}
 aside{
 	position: fixed;
 	top:210px;
