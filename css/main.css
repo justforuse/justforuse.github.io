@@ -7,14 +7,14 @@ body{
 	background-color: #deecdf;
 }
 h2{
-	text-align:center;
+	font-family: '方正舒体';
 }
 h3{
 	font-family: 'nunito', 'gotham rounded', 'nunito';
 }
 aside{
 	position: fixed;
-	top:210px;
+	bottom:65px;
 	right:20px;
 }
 #avatar{
@@ -68,4 +68,8 @@ aside{
 }
 footer{
 	text-align: center;
+}
+footer p{
+	display: inline-block;
+	border-top:1px solid #D4D4D4;
 }
