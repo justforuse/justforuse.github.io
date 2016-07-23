@@ -14,7 +14,7 @@ h3{
 }
 aside{
 	position: fixed;
-	bottom:65px;
+	bottom:160px;
 	right:20px;
 }
 #avatar{
@@ -65,6 +65,23 @@ aside{
 }
 #music-frame{
 	display:none;
+}
+#hint{
+	position: fixed;
+    bottom: 68px;
+    right: 10px;
+    text-align: center;
+}
+#hint div{
+	border-bottom: 10px solid #000;
+    display: inline-block;
+    border-right: 7px solid #fff;
+    border-left: 7px solid #fff;
+}
+#hint svg{
+	width:86px;
+	height: 40px;
+	
 }
 footer{
 	text-align: center;

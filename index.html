@@ -18,78 +18,105 @@
 	</div>
 	<div class="container info-skill-container">
 		<div id="info">
-			<h2>个人信息 <span class="icon-double-angle-down"></span></h2>
+			<h2>
+				个人信息
+				<span class="icon-double-angle-down"></span>
+			</h2>
 			<ul class="list-unstyled">
 				<li>
 					<p>
 						<span class="glyphicon glyphicon-map-marker"></span>
 						<span>中国 北京</span>
 					</p>
-					
+
 				</li>
 				<li>
 					<p>
 						<span class="glyphicon glyphicon-calendar"></span>
 						<span>1995年1月23日</span>
 					</p>
-					
+
 				</li>
 				<li>
 					<p>
 						<span class="glyphicon glyphicon-education"></span>
 						<span>南开大学2012级本科</span>
 					</p>
-					
+
 				</li>
 				<li>
 					<p>
 						<span class="glyphicon glyphicon-user"></span>
-						<span><a href="http://www.justforuse.cn/wordpress" target="_blank">www.justforuse.cn/wordpress</a></span>
+						<span>
+							<a href="http://www.justforuse.cn/wordpress" target="_blank">www.justforuse.cn/wordpress</a>
+						</span>
 					</p>
-					
+
 				</li>
 				<li>
 					<p>
 						<span class="glyphicon glyphicon-envelope"></span>
 						<span>allenforuse@gmail.com</span>
 					</p>
-					
+
 				</li>
 			</ul>
 		</div>
 		<div id="skill" class="pull-right">
-			<h2>掌握技能 <span class="icon-double-angle-down"></span></h2>
+			<h2>
+				掌握技能
+				<span class="icon-double-angle-down"></span>
+			</h2>
 			<ul class="list-unstyled">
 				<li>
-					<p><b>语言</b>  HTML/CSS/Javascript/C</p>
+					<p> <b>语言</b>
+						HTML/CSS/Javascript/C
+					</p>
 				</li>
 				<li>
-					<p><b>框架</b>  jQuery/Bootstrap/AngularJS</p>
+					<p> <b>框架</b>
+						jQuery/Bootstrap/AngularJS
+					</p>
 				</li>
 				<li>
-					<p><b>课程</b>  数据库系统/计算机网络/数据结构/操作系统/设计模式...</p>
+					<p>
+						<b>课程</b>
+						数据库系统/计算机网络/数据结构/操作系统/设计模式...
+					</p>
 				</li>
 				<li>
-					<p><b>英语水平</b>  通过英语六级，具备听说读写的能力</p>
+					<p>
+						<b>英语水平</b>
+						通过英语六级，具备听说读写的能力
+					</p>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="container-fluid share" >
 		<div class="icon" id="csdn">
-			<a href="http://blog.csdn.net/u014291497" target="_blank"><img class="img-responsive img-circle" src="img/csdn.png" alt="CSDN" title="CSDN"></a>
+			<a href="http://blog.csdn.net/u014291497" target="_blank">
+				<img class="img-responsive img-circle" src="img/csdn.png" alt="CSDN" title="CSDN"></a>
 		</div>
 
 		<div class="icon" id="github">
-			<a href="https://github.com/justforuse" target="_blank"><img class="img-responsive img-circle" src="img/github.png" alt="Github" title="Github"></a>
+			<a href="https://github.com/justforuse" target="_blank">
+				<img class="img-responsive img-circle" src="img/github.png" alt="Github" title="Github"></a>
 		</div>
 		<div class="icon" id="csdn">
-			<a href="http://pan.baidu.com/share/home?uk=304752841#category/type=0" target="_blank"><img class="img-responsive img-circle" src="img/baidupan.png" alt="百度盘" title="百度云"></a>
+			<a href="http://pan.baidu.com/share/home?uk=304752841#category/type=0" target="_blank">
+				<img class="img-responsive img-circle" src="img/baidupan.png" alt="百度盘" title="百度云"></a>
 		</div>
 	</div>
 	<button id="music" title="网易云音乐">
 		<span class="icon-music icon-2x"></span>
 	</button>
+	<div id="hint">
+		<svg>
+			<polygon points="43,0 33,10 0,10 0,50 86,50 86,10 53,10" stroke="#d3d3d3" fill="#eee"></polygon>
+			<text x="15" y="30" font-size="0.9em">点一下吧</text>
+		</svg>
+	</div>
 	<aside>
 		<iframe id="music-frame" frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=428268245&auto=0&height=430"></iframe>
 	</aside>
@@ -97,8 +124,10 @@
 		<p>justforuse.github.io Written by Allen</p>
 	</footer>
 	<script>
-		$("#music").click(function(){
+		$("#music").on("click", function(){
 			$("#music-frame").toggle(300);
+		}).on("mouseover", function(){
+			$("#hint").fadeOut(500);
 		})
 	</script>
 </body>
