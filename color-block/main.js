@@ -31,28 +31,28 @@ $(function() {
 			var y = +posArr[1];
 
 			if (undefined !== arr[x - 1]) {
-				if(undefined !== arr[x - 1][y]){
+				if (undefined !== arr[x - 1][y]) {
 					arr[x - 1][y] = !arr[x - 1][y];
 				}
-				
+
 			}
 			if (undefined !== arr[x + 1]) {
-				if(undefined !== arr[x + 1][y]){
+				if (undefined !== arr[x + 1][y]) {
 					arr[x + 1][y] = !arr[x + 1][y];
 				}
-				
+
 			}
 			if (undefined !== arr[x]) {
-				if(undefined !== arr[x][y-1]){
-					arr[x][y-1] = !arr[x][y-1];
+				if (undefined !== arr[x][y - 1]) {
+					arr[x][y - 1] = !arr[x][y - 1];
 				}
-				
+
 			}
 			if (undefined !== arr[x]) {
-				if(undefined !== arr[x][y+1]){
-					arr[x][y+1] = !arr[x][y+1];
+				if (undefined !== arr[x][y + 1]) {
+					arr[x][y + 1] = !arr[x][y + 1];
 				}
-				
+
 			}
 			arr[x][y] = !arr[x][y];
 			draw(arr);
@@ -69,9 +69,9 @@ $(function() {
 			alert("you done it!!");
 
 			var newArr = new Array();
-			for(var k =0;k<arr.length +1;k++){
-				newArr[k] =new Array();
-				for(var h =0;h<arr.length +1;h++){
+			for (var k = 0; k < arr.length + 1; k++) {
+				newArr[k] = new Array();
+				for (var h = 0; h < arr.length + 1; h++) {
 					newArr[k][h] = false;
 				}
 			}
@@ -98,5 +98,21 @@ $(function() {
 
 	draw(arr);
 
+	$("button").on("click", function() {
+		console.log($("input").val())
+		if ($("input").val() > 10 || $("input").val() < 1 || "" == $("input").val()) {
+			return false;
+		}
+		console.log("change");
+		var newArr = new Array();
+		for (var k = 0; k < $("input").val(); k++) {
+			newArr[k] = new Array();
+			for (var h = 0; h < $("input").val(); h++) {
+				newArr[k][h] = false;
+			}
+		}
+		arr = newArr;
 
+		draw(arr);
+	})
 })
