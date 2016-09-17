@@ -1,8 +1,8 @@
 $(function() {
 	var arr = [
 		[false]
-	]
-
+	];
+	var arrLength;
 	function draw(arr) {
 		$(".container").empty();
 		for (var i = 0; i < arr.length; i++) {
@@ -24,8 +24,6 @@ $(function() {
 		}
 
 		$(".box").on("click", function() {
-			console.log($(this).attr("value"));
-			console.log($(this).attr("position").split(","));
 			var posArr = $(this).attr("position").split(",");
 			var x = +posArr[0];
 			var y = +posArr[1];
@@ -76,34 +74,21 @@ $(function() {
 				}
 			}
 			arr = newArr;
-
-			// var length = arr.length;
-			// for(var k =0;k<length;k++){
-			// 	for(var h =0;h<length;h++){
-			// 		arr[k][h] = !arr[k][h];
-			// 	}
-			// }
-
-			// for(var k =0;k<arr.length;k++){
-			// 	arr[k][arr.length] = false;
-			// }
-			// arr[arr.length] = [];
-			// for(var h =0; h<arr.length;h++){
-			// 	arr[arr.length-1][h] = false;
-			// }
+			arrLength = arr.length;
 			draw(arr);
 		}
 		test();
+		arrLength = arr.length;
 	}
+
+
 
 	draw(arr);
 
-	$("button").on("click", function() {
-		console.log($("input").val())
+	$(".confirm").on("click", function() {
 		if ($("input").val() > 10 || $("input").val() < 1 || "" == $("input").val()) {
 			return false;
 		}
-		console.log("change");
 		var newArr = new Array();
 		for (var k = 0; k < $("input").val(); k++) {
 			newArr[k] = new Array();
@@ -112,6 +97,20 @@ $(function() {
 			}
 		}
 		arr = newArr;
+		draw(arr);
+	})
+
+	$(".retry").on("click", function() {
+		console.log(arrLength);
+		console.log(arr);
+		var reTryArr = [];
+		for (var k = 0; k < arrLength; k++) {
+			reTryArr[k] = [];
+			for (var h = 0; h < arrLength; h++) {
+				reTryArr[k][h] = false;
+			}
+		}
+		arr = reTryArr;
 
 		draw(arr);
 	})
