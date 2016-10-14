@@ -10,7 +10,6 @@
 		width: 600px;
 		height: 400px;
 		background-color: #007bb6;
-		font-family: "Helvetica Neue";
 		font-size: 36px;
 		color: #fff;
 	}
@@ -40,7 +39,7 @@
 	</style>
 	<script>
 	$(function() {
-		myPrint(["hello", "allen"], 100)
+		myPrint(["hello", "allen", "and", "world"], 100)
 
 		/*
 			arr:字符串数组
@@ -55,6 +54,7 @@
 				// 延时4个字符的时间
 				if (i == str.length + 4) {
 					add = false;
+					// 如果是最后一个字符串则终止循环函数
 					if (index + 1 >= arr.length) {
 						clearInterval(mySetInterval);
 					}
