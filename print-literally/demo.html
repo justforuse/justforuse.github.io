@@ -40,32 +40,41 @@
 	</style>
 	<script>
 	$(function() {
-		var str = "worked";
-		var i = 0;
-		var add = true;
-		setInterval(function() {
-			// 延时4个字符的时间
-			if (i == str.length + 4) {
-				add = false;
-			} else if (i == -2) {
-				add = true;
-				str = "another"
-			}
-			setTimeout(function() {
-				if (add) {
-					i++;
-					$(".text").html(str.substring(0, i));
+		myPrint(["hello", "allen"], 100)
 
-				} else {
-
-					$(".text").html(str.substring(0, i - 1));
-					i--;
+		/*
+			arr:字符串数组
+			speed:打字速度,毫秒为单位
+		*/
+		function myPrint(arr, speed) {
+			var index = 0;
+			var str = arr[index];
+			var i = 0;
+			var add = true;
+			var mySetInterval = setInterval(function() {
+				// 延时4个字符的时间
+				if (i == str.length + 4) {
+					add = false;
+					if (index + 1 >= arr.length) {
+						clearInterval(mySetInterval);
+					}
+				} else if (i == -2) {
+					// 删除后延时2个字符的时间
+					add = true;
+					str = arr[++index];
 				}
-			})
+				setTimeout(function() {
+					if (add) {
+						i++;
+						$(".text").html(str.substring(0, i));
+					} else {
+						$(".text").html(str.substring(0, i - 1));
+						i--;
+					}
+				})
 
-		}, 200)
-
-		
+			}, speed)
+		}
 
 	})
 	</script>
