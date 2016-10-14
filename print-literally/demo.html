@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../jquery.js"></script>
+	<style>
+	.text-container {
+		width: 600px;
+		height: 400px;
+		background-color: #007bb6;
+		font-family: "Helvetica Neue";
+		font-size: 36px;
+		color: #fff;
+	}
+	
+	.cursor {
+		opacity: 1;
+		margin-left: -25px;
+		-webkit-animation: blink 0.6s infinite;
+		animation: blink 0.8s infinite;
+	}
+	
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	.text-static {
+		font-weight: bold;
+	}
+	</style>
+	<script>
+	$(function() {
+		var str = "worked";
+		var i = 0;
+		var add = true;
+		setInterval(function() {
+			// 延时4个字符的时间
+			if (i == str.length + 4) {
+				add = false;
+			} else if (i == -2) {
+				add = true;
+				str = "another"
+			}
+			setTimeout(function() {
+				if (add) {
+					i++;
+					$(".text").html(str.substring(0, i));
+
+				} else {
+
+					$(".text").html(str.substring(0, i - 1));
+					i--;
+				}
+			})
+
+		}, 200)
+
+		
+
+	})
+	</script>
+</head>
+
+<body>
+	<div class="text-container">
+		<span class="text-static">I just want to say</span>
+		<span class="text"></span>
+		<span class="cursor">|</span>
+	</div>
+</body>
+
+</html>
