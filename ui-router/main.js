@@ -28,7 +28,7 @@ angular.module("myApp", ["ui.router"])
 			})
 		$urlRouterProvider.otherwise('/start');
 	})
-	.constant("usersUrl", "https://justforuse.github.io/ui-router/users.json")
+	.constant("usersUrl", "http://justforuse.github.io/ui-router/users.json")
 	.controller("mainCtrl", function($scope, $state){
 		$scope.$on("$stateChangeStart", function(evt, toState, toParams, fromState, fromParams){
 			
