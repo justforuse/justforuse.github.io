@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../d3.v3.js"></script>
+    <style>
+        .container {
+            height: 80%;
+            width: 80%;
+        }
+        
+        svg {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+    <script>
+        var width = 400,
+            height = 400;
+        var data = [10, 20, 50, 30, 80];
+        // sort函数隐式执行降序排列，而且数据从顶部开始顺时针展示，传入null可以阻止排序
+        var pie = d3.layout.pie().sort(null);
+        var color = d3.scale.category10();
+        var svg = d3.select(".container").append("svg")
+        .attr("preserveAspectRatio", "xMidYMid meet")
+            .attr("viewBox", "0 0 400 400")
+        var outerRadius = width / 2;
+        var innerRadius = width / 4;
+        var arc = d3.svg.arc()
+            .innerRadius(innerRadius)
+            .outerRadius(outerRadius);
+
+        var arc2 = d3.svg.arc()
+            .innerRadius(innerRadius - 10)
+            .outerRadius(outerRadius + 20)
+        var arcs = svg.selectAll("g")
+            .data(pie(data))
+            .enter()
+            .append("g")
+            // 将g移至中间
+            .attr("transform", "translate(" + (outerRadius) + "," + (outerRadius) + ")")
+            //为每一块元素添加鼠标事件
+            .on("mouseover", function (d) {
+
+                d3.select(this).select("path").transition().attr("d", function (d) {
+                    console.log(d);
+                    return arc2(d);
+                })
+            })
+            .on("mouseout", function (d) {
+                d3.select(this).select("path").transition().attr("d", function (d) {
+                    return arc(d);
+                })
+            })
+        arcs.append("path")
+            .attr("fill", function (d, i) {
+                return color(i);
+            })
+            .attr("d", arc)
+        //add data value  
+        arcs.append("text")
+            .attr("transform", function (d) {
+                //get the centroid of every arc, include x and y, 质心
+                return "translate(" + arc.centroid(d) + ")";
+            })
+            .attr("text-anchor", "middle")
+            .text(function (d) {
+                // what's the difference between d.value and d.data?
+                return d.data;
+            })
+    </script>
+</body>
+
+</html>
