@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="../d3.v3.js"></script>
+    <title>使用D3js在线生成树形图</title>
+    <meta name="description" content="使用D3js在线生成树形图" />
+    <meta name="keywords" content="d3js,生成, 树形图, json文件" />
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <!--[if !IE]><script>alert("hello");</script><![endif]-->
     <style>
         .node {
@@ -37,9 +39,12 @@
 </head>
 
 <body>
+    <h2>上传指定格式的json文件(包含name和children属性)，点击生成按钮</h2>
+    <h3>点击节点可显示/隐藏子节点；可拖动，滚动鼠标滚轮可放缩</h3>
+    <hr>
     <form action='#' onsubmit="return false;">
         <input type='file' id='fileinput'>
-        <input type='button' id='btnLoad' value='Generate' onclick='loadFile();'>
+        <input type='button' id='btnLoad' value='生成' onclick='loadFile();'>
     </form>
     <div id="body"></div>
     <script type='text/javascript'>
