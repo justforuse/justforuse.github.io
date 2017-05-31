@@ -1,0 +1,9 @@
+{
+  "name": "justforuse.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "angular-translate": "^2.15.1"
+  }
+}
