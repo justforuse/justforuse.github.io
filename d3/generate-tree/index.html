@@ -32,21 +32,39 @@
             stroke-width: 1.5px;
         }
         
-        body {
-            overflow: hidden;
-        }
     </style>
 </head>
 
 <body>
     <h2>上传指定格式的json文件(包含name和children属性)，点击生成按钮</h2>
-    <h3>点击节点可显示/隐藏子节点；可拖动，滚动鼠标滚轮可放缩</h3>
+    <h3>点击节点可显示/隐藏子节点；可拖动，滚动鼠标滚轮可放缩  <a href="https://github.com/justforuse/justforuse.github.io/tree/master/d3/generate-tree">Github</a></h3>
     <hr>
     <form action='#' onsubmit="return false;">
         <input type='file' id='fileinput'>
         <input type='button' id='btnLoad' value='生成' onclick='loadFile();'>
     </form>
     <div id="body"></div>
+    <a href="http://justforuse.github.io/d3/generate-tree/index.html#disqus_thread">Second article</a>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        
+        var disqus_config = function () {
+        this.page.url = "http://justforuse.github.io/d3/generate-tree/index.html";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "generate-tree"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://allengithubpage.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <script type='text/javascript'>
         var margin = {
             top: 20,
@@ -283,6 +301,7 @@
                 + " scale(" + d3.event.scale + ")");
         }
     </script>
+    <script id="dsq-count-scr" src="//allengithubpage.disqus.com/count.js" async></script>
 </body>
 
 </html>
