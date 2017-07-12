@@ -6,23 +6,24 @@
 	<meta name="baidu-site-verification" content="OHah4P7mY9" />
 	<title>justforuse个人小屋</title>
 	<link rel="icon" href="img/icon.png" type="image/x-icon">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="jquery-2.1.4.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="angular.js"></script>
-	<script src="angular-translate.min.js"></script>
-	<script src="javascript/main.js"></script>
+	<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+	<!--<link rel="stylesheet" href="css/main.css">-->
+	<!--<script src="jquery-2.1.4.min.js"></script>-->
+	<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+	<!--<script src="angular.js"></script>
+	<script src="angular-translate.min.js"></script>-->
+	<script src="./bundle/index.js"></script>
+	<!--<script src="javascript/main.js"></script>-->
 
 </head>
 
 <body ng-controller="ctrl">
 	<div class="container">
 		<div  class="pull-right">
-			<a ng-click="changeLanguage('en')">En</a>
+			<a href="" ng-click="changeLanguage('en')">En</a>
 			<span>/</span>
-			<a ng-click="changeLanguage('zh-CN')">中</a>
+			<a href="" ng-click="changeLanguage('zh-CN')">中</a>
 		</div>
 	</div>
 
@@ -134,7 +135,7 @@
 		</div>
 	</div>
 	<button id="music" title="网易云音乐">
-		<span class="icon-music icon-2x"></span>
+		<span class="glyphicon glyphicon-music"></span>
 	</button>
 	<div id="hint">
 		<svg>
@@ -150,11 +151,7 @@
 		<p>justforuse.github.io Written by Allen</p>
 	</footer>
 	<script>
-		$("#music").on("click", function () {
-			$("#music-frame").toggle(300);
-		}).on("mouseover", function () {
-			$("#hint").fadeOut(500);
-		})
+		
 	</script>
 </body>
 
