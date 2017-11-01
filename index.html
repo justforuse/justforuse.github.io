@@ -1,25 +1,37 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="en-US" ng-app="app">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="baidu-site-verification" content="OHah4P7mY9" />
 	<title>justforuse个人小屋</title>
 	<link rel="icon" href="img/icon.png" type="image/x-icon">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="jquery-2.1.4.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="javascript/main.js"></script>
+	<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+	<!--<link rel="stylesheet" href="css/main.css">-->
+	<!--<script src="jquery-2.1.4.min.js"></script>-->
+	<!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+	<!--<script src="angular.js"></script>
+	<script src="angular-translate.min.js"></script>-->
+	<script src="./bundle/index.js"></script>
+	<!--<script src="javascript/main.js"></script>-->
 
 </head>
 
-<body>
+<body ng-controller="ctrl">
+	<div class="container">
+		<div  class="pull-right">
+			<a href="" ng-click="changeLanguage('en')">En</a>
+			<span>/</span>
+			<a href="" ng-click="changeLanguage('zh-CN')">中</a>
+		</div>
+	</div>
+
 	<div class="jumbotron">
 		<img id="avatar" src="img/avatar.jpg" alt="" class="img-circle">
-		<h2>I'm Allen, Welcome to my homepage...</h2>
-		<h3 align="center">You are the <a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3205343&c=9616342" alt="AmazingCounters.com"></a>guests!!</h3>
+		<h2 translate="app.welcome-slogan"></h2>
+		<!--<h3 align="center">You are the <a href="http://www.amazingcounters.com"><img border="0" src="http://cc.amazingcounters.com/counter.php?i=3205343&c=9616342" alt="AmazingCounters.com"></a>guests!!</h3>-->
+		<h3 translate="app.guest-count"></h3>
 	</div>
 	<div class="container info-skill-container">
 		<div class="row">
@@ -27,14 +39,14 @@
 
 			<div id="info" class="col-md-6">
 				<h2>
-					Profile
+					<span translate="app.profile"></span>
 					<span class="icon-double-angle-down"></span>
 				</h2>
 				<ul class="list-unstyled">
 					<li>
 						<p>
 							<span class="glyphicon glyphicon-map-marker"></span>
-							<span>Beijing China</span>
+							<span translate="app.address"></span>
 						</p>
 
 					</li>
@@ -48,7 +60,7 @@
 					<li>
 						<p>
 							<span class="glyphicon glyphicon-education"></span>
-							<span>Nankai University & 2012 bachelor</span>
+							<span translate="app.university"></span>
 						</p>
 
 					</li>
@@ -72,26 +84,32 @@
 			</div>
 			<div id="skill" class="col-md-6">
 				<h2>
-					Skills
+					<span translate="app.skill"></span>
 					<span class="icon-double-angle-down"></span>
 				</h2>
 				<ul class="list-unstyled">
 					<li>
-						<p> <b>Language: </b> HTML/CSS/Javascript/C
+						<p> 
+							<b translate="app.language"></b> 
+							HTML/CSS/Javascript/C
 						</p>
 					</li>
 					<li>
-						<p> <b>Framework: </b> jQuery/Bootstrap/AngularJS
+						<p> 
+							<b translate="app.framework"></b> 
+							jQuery/Bootstrap/AngularJS
 						</p>
 					</li>
 					<li>
 						<p>
-							<b>Lessons: </b> Database system/Computer network/Data structure/Operating system...
+							<b translate="app.lesson"></b> 
+							<span translate="app.lesson-content"></span>
 						</p>
 					</li>
 					<li>
 						<p>
-							<b>English Level: </b> CET-6, Listening & Speaking & Reading & Writing
+							<b translate="app.english"></b> 
+							<span translate="app.english-content"></span>
 						</p>
 					</li>
 				</ul>
@@ -102,22 +120,22 @@
 		<div class="icon col-md-4" id="csdn">
 			<a href="http://blog.csdn.net/u014291497" target="_blank">
 				<img class="img-responsive img-circle" src="img/csdn.png" alt="CSDN" title="CSDN"></a>
-			<p>CSDN, my blogs will be punished on it</p>
+			<p translate="app.csdn"></p>
 		</div>
 
 		<div class="icon col-md-4" id="github">
 			<a href="https://github.com/justforuse" target="_blank">
 				<img class="img-responsive img-circle" src="img/github.png" alt="Github" title="Github"></a>
-			<p>Github, code will be push on there</p>
+			<p translate="app.github"></p>
 		</div>
 		<div class="icon col-md-4" id="csdn">
 			<a href="http://stackoverflow.com/users/5760654/allen?tab=profile" target="_blank">
 				<img class="img-responsive img-circle" src="img/so.png" alt="StackOverflow" title="StackOverflow"></a>
-			<p>StackOverflow, some questions and answers</p>
+			<p translate="app.stackoverflow"></p>
 		</div>
 	</div>
 	<button id="music" title="网易云音乐">
-		<span class="icon-music icon-2x"></span>
+		<span class="glyphicon glyphicon-music"></span>
 	</button>
 	<div id="hint">
 		<svg>
@@ -133,11 +151,7 @@
 		<p>justforuse.github.io Written by Allen</p>
 	</footer>
 	<script>
-		$("#music").on("click", function () {
-			$("#music-frame").toggle(300);
-		}).on("mouseover", function () {
-			$("#hint").fadeOut(500);
-		})
+		
 	</script>
 	<!-- Hotjar Tracking Code for justforuse.github.io -->
 	<script>

@@ -1,0 +1,16 @@
+{
+  "name": "justforuse.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "angular-translate": "^2.15.1",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.4",
+    "expose-loader": "^0.7.3",
+    "jquery": "^2.1.4",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.6.1"
+  }
+}
