@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 博客</title>
+    <link>https://justforuse.github.io/blog/post/</link>
+    <description>Recent content in Posts on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jun 2018 17:00:20 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Another</title>
+      <link>https://justforuse.github.io/blog/2018/06/another/</link>
+      <pubDate>Sun, 24 Jun 2018 17:00:20 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/06/another/</guid>
+      <description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis ab eum molestiae omnis perferendis in nulla quos nesciunt! Provident veniam eveniet eligendi praesentium qui aliquam iste et, impedit odit, excepturi accusamus minima perferendis laborum quia, deleniti nihil inventore. Asperiores, fugit quas. Vel, voluptate aspernatur? Recusandae necessitatibus inventore in voluptatum minus reprehenderit natus eveniet deserunt quod, ex iste, ea laboriosam dolorum hic qui! Molestiae, maxime voluptates unde accusamus voluptatum voluptate, et quos cupiditate mollitia facilis repellendus odio animi, amet excepturi?</description>
+    </item>
+    
+    <item>
+      <title>使用ng-animate为网页增加动画效果</title>
+      <link>https://justforuse.github.io/blog/2018/06/test-slug/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:06 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/06/test-slug/</guid>
+      <description>AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。
+典型的应用就是视图切换和元素添加与移除。
+这里以ui-view 和 ng-repeat指令作为展示。
+首先需要引入我们需要的js文件
+&amp;lt;script src=&amp;quot;../angular.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;../angular-ui-router.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script src=&amp;quot;../angular-animate.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;  再引入我们需要的模块：ui.router和ngAnimate。
+angular.module(&amp;quot;app&amp;quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然后我们可以正常编写我们的应用，我们这里做的额外工作只是编写css文件。
+只编写样式就可以了？实际上，$animate服务本身支持几个内置的指令，比如ng-repeat, ng-show, ng-view等。而它的本质只是为其在视图变化期间添加了额外的CSS样式。
+对于添加元素事件会添加ng-enter和ng-enter-active样式类，对于移除元素会添加ng-leave和ng-leave-active样式。其中前者样式相当于初始化元素样式，后者则对应实际的动画样式。
+举个例子：
+&amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;Nihao&amp;lt;/h1&amp;gt; &amp;lt;/div&amp;gt;  archives.cssarchives.css1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+li{ transition: all 5.3s ease-in-out; } li.ng-enter{ opacity: 0; transform:translateY(100%); } li.ng-enter.ng-enter-active{ opacity: 1; transform:translateY(0); } li.</description>
+    </item>
+    
+  </channel>
+</rss>
