@@ -31,65 +31,19 @@
 
     
     <meta name="description" content="AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。
+
 典型的应用就是视图切换和元素添加与移除。
+
 这里以ui-view 和 ng-repeat指令作为展示。
-首先需要引入我们需要的js文件
-&lt;script src=&quot;../angular.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-ui-router.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-animate.js&quot;&gt;&lt;/script&gt;  再引入我们需要的模块：ui.router和ngAnimate。
-angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然后我们可以正常编写我们的应用，我们这里做的额外工作只是编写css文件。
-只编写样式就可以了？实际上，$animate服务本身支持几个内置的指令，比如ng-repeat, ng-show, ng-view等。而它的本质只是为其在视图变化期间添加了额外的CSS样式。
-对于添加元素事件会添加ng-enter和ng-enter-active样式类，对于移除元素会添加ng-leave和ng-leave-active样式。其中前者样式相当于初始化元素样式，后者则对应实际的动画样式。
-举个例子：
-&lt;div&gt; &lt;h1&gt;Nihao&lt;/h1&gt; &lt;/div&gt;  archives.cssarchives.css1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-li{ transition: all 5.3s ease-in-out; } li.ng-enter{ opacity: 0; transform:translateY(100%); } li.ng-enter.ng-enter-active{ opacity: 1; transform:translateY(0); } li.">
+
+首先需要引入我们需要的js文件">
     <meta property="og:description" content="AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。
+
 典型的应用就是视图切换和元素添加与移除。
+
 这里以ui-view 和 ng-repeat指令作为展示。
-首先需要引入我们需要的js文件
-&lt;script src=&quot;../angular.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-ui-router.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-animate.js&quot;&gt;&lt;/script&gt;  再引入我们需要的模块：ui.router和ngAnimate。
-angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然后我们可以正常编写我们的应用，我们这里做的额外工作只是编写css文件。
-只编写样式就可以了？实际上，$animate服务本身支持几个内置的指令，比如ng-repeat, ng-show, ng-view等。而它的本质只是为其在视图变化期间添加了额外的CSS样式。
-对于添加元素事件会添加ng-enter和ng-enter-active样式类，对于移除元素会添加ng-leave和ng-leave-active样式。其中前者样式相当于初始化元素样式，后者则对应实际的动画样式。
-举个例子：
-&lt;div&gt; &lt;h1&gt;Nihao&lt;/h1&gt; &lt;/div&gt;  archives.cssarchives.css1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-li{ transition: all 5.3s ease-in-out; } li.ng-enter{ opacity: 0; transform:translateY(100%); } li.ng-enter.ng-enter-active{ opacity: 1; transform:translateY(0); } li.">
+
+首先需要引入我们需要的js文件">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="使用ng-animate为网页增加动画效果">
     <meta property="og:url" content="/2018/06/test-slug/">
@@ -97,35 +51,12 @@ angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
     <meta name="twitter:description" content="AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。
+
 典型的应用就是视图切换和元素添加与移除。
+
 这里以ui-view 和 ng-repeat指令作为展示。
-首先需要引入我们需要的js文件
-&lt;script src=&quot;../angular.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-ui-router.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-animate.js&quot;&gt;&lt;/script&gt;  再引入我们需要的模块：ui.router和ngAnimate。
-angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然后我们可以正常编写我们的应用，我们这里做的额外工作只是编写css文件。
-只编写样式就可以了？实际上，$animate服务本身支持几个内置的指令，比如ng-repeat, ng-show, ng-view等。而它的本质只是为其在视图变化期间添加了额外的CSS样式。
-对于添加元素事件会添加ng-enter和ng-enter-active样式类，对于移除元素会添加ng-leave和ng-leave-active样式。其中前者样式相当于初始化元素样式，后者则对应实际的动画样式。
-举个例子：
-&lt;div&gt; &lt;h1&gt;Nihao&lt;/h1&gt; &lt;/div&gt;  archives.cssarchives.css1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-li{ transition: all 5.3s ease-in-out; } li.ng-enter{ opacity: 0; transform:translateY(100%); } li.ng-enter.ng-enter-active{ opacity: 1; transform:translateY(0); } li.">
+
+首先需要引入我们需要的js文件">
     
     
 
@@ -148,7 +79,7 @@ angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
     
     
-    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-pqve1tnfwv8ebxxxyts4xfwwntlqmwxhf45eki0llyogn19e4akl9yqmtjmm.min.css" />
+    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-yzqujjhgy52urn3eh17okhmrcpuhzrbortjfsivvfblbeoewtkvcci0t2sfx.min.css" />
     
     
 
@@ -324,9 +255,9 @@ angular.module(&quot;app&quot;, [&#39;ui.router&#39;, &#39;ngAnimate&#39;])  然
 
 <p>典型的应用就是视图切换和元素添加与移除。</p>
 
-<p>这里以ui-view 和 ng-repeat指令作为展示。</p>
+<p>这里以ui-view 和 ng-repeat指令作为展示。
 
-<p>首先需要引入我们需要的js文件</p>
+首先需要引入我们需要的js文件</p>
 
 <pre><code class="language-js">&lt;script src=&quot;../angular.js&quot;&gt;&lt;/script&gt;
 &lt;script src=&quot;../angular-ui-router.js&quot;&gt;&lt;/script&gt;
@@ -446,7 +377,6 @@ li.ng-leave.ng-leave-active{
 
 <p>以上。
 掌握这些技巧我们就可以为应用添加简单实用的网页动画效果。</p>
-
               
             </div>
           </div>
@@ -461,17 +391,17 @@ li.ng-leave.ng-leave-active{
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/06/another/" data-tooltip="Another">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2015/06/welcome-to-tranquilpeak-0.4.3-beta/" data-tooltip="Welcome to Tranquilpeak 0.4.3-BETA">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/06/another/" data-tooltip="Another">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -529,17 +459,17 @@ li.ng-leave.ng-leave-active{
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/06/another/" data-tooltip="Another">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2015/06/welcome-to-tranquilpeak-0.4.3-beta/" data-tooltip="Welcome to Tranquilpeak 0.4.3-BETA">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--disabled">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/06/another/" data-tooltip="Another">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -642,7 +572,7 @@ li.ng-leave.ng-leave-active{
                   Jun 6, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis ab eum molestiae omnis perferendis in nulla quos nesciunt! Provident veniam eveniet eligendi praesentium qui aliquam iste et, impedit odit, excepturi accusamus minima perferendis laborum quia, deleniti nihil inventore. Asperiores, fugit quas. Vel, voluptate aspernatur? Recusandae necessitatibus inventore in voluptatum minus reprehenderit natus eveniet deserunt quod, ex iste, ea laboriosam dolorum hic qui! Molestiae, maxime voluptates unde accusamus voluptatum voluptate, et quos cupiditate mollitia facilis repellendus odio animi, amet excepturi?</div>
+              <div class="media-content hide-xs font-merryweather"><p></p></div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -659,36 +589,49 @@ li.ng-leave.ng-leave-active{
                   Jun 6, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。
-典型的应用就是视图切换和元素添加与移除。
-这里以ui-view 和 ng-repeat指令作为展示。
-首先需要引入我们需要的js文件
-&lt;script src=&quot;../angular.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-ui-router.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;../angular-animate.js&quot;&gt;&lt;/script&gt;  再引入我们需要的模块：ui.router和ngAnimate。
-angular.module(&quot;app&quot;, ['ui.router', 'ngAnimate'])  然后我们可以正常编写我们的应用，我们这里做的额外工作只是编写css文件。
-只编写样式就可以了？实际上，$animate服务本身支持几个内置的指令，比如ng-repeat, ng-show, ng-view等。而它的本质只是为其在视图变化期间添加了额外的CSS样式。
-对于添加元素事件会添加ng-enter和ng-enter-active样式类，对于移除元素会添加ng-leave和ng-leave-active样式。其中前者样式相当于初始化元素样式，后者则对应实际的动画样式。
-举个例子：
-&lt;div&gt; &lt;h1&gt;Nihao&lt;/h1&gt; &lt;/div&gt;  archives.cssarchives.css1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-li{ transition: all 5.3s ease-in-out; } li.ng-enter{ opacity: 0; transform:translateY(100%); } li.ng-enter.ng-enter-active{ opacity: 1; transform:translateY(0); } li.</div>
+              <div class="media-content hide-xs font-merryweather"><p>AngularJS 中提供了ngAnimate模块，可以为网页提供动画效果。</p>
+
+<p>典型的应用就是视图切换和元素添加与移除。</p>
+
+<p>这里以ui-view 和 ng-repeat指令作为展示。
+
+首先需要引入我们需要的js文件</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/2015/06/welcome-to-tranquilpeak-0.4.3-beta/">
+                <h3 class="media-heading">Welcome to Tranquilpeak 0.4.3-BETA</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2015
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/2015/05/elements-showcase/">
+                <h3 class="media-heading">Elements showcase</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2015
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.
+</p></div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -701,7 +644,7 @@ angular.module(&quot;app&quot;, ['ui.router', 'ngAnimate'])  然后我们可以�
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         2 posts found
+         4 posts found
       </p>
     </div>
   </div>
@@ -721,7 +664,7 @@ angular.module(&quot;app&quot;, ['ui.router', 'ngAnimate'])  然后我们可以�
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
 
 
-<script src="https://justforuse.github.io/blog/js/script-jiao1hovxcwnhl5jhaduxtowpeszygqlsqicrj9pqpranoke9d61rtfbtyla.min.js"></script>
+<script src="https://justforuse.github.io/blog/js/script-j868dpyioqupuyk8xh6lgwlhb8lb3mxgdswn250lpqhzkpdleypcag8zd404.min.js"></script>
 
 
 

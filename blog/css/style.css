@@ -197,6 +197,9 @@ pre.code-highlight > code {
   margin: 0;
   line-height: inherit; }
 
+.post-header-cover {
+  background-attachment: fixed; }
+
 #about {
   display: none;
   position: fixed;
