@@ -597,6 +597,8 @@
       // Detect if the user is scrolling
       $(window).scroll(function() {
         didScroll = true;
+        // console.log($(window)[0].scrollTop())
+        $('#cover').css('background-position-y', (-1 * (parseInt($(window)[0].scrollY) / 20)) + 'px');
       });
 
       // Check if the user scrolled every 250 milliseconds
@@ -634,6 +636,7 @@
 
   $(document).ready(function() {
     var header = new Header();
+    $('#cover').css('background-position-y', (-1 * (parseInt($(window)[0].scrollY) / 20)) + 'px');
     header.run();
   });
 })(jQuery);
