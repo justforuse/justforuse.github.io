@@ -9,19 +9,16 @@ module.exports = {
         path: path.resolve(__dirname, 'bundle')
     },
     module: {
-        loaders: [
+        // For webpack2 use rules -> loaders, use -> loader
+        rules: [
             {
                 test: /.jpe?g$|.gif$|.png$|.svg$|.woff$|.woff2$|.ttf$|.eot$/,
-                loader: "url-loader"
+                use: "url-loader"
             },
             {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader'//添加对样式表的处理
-            },
-            {
-                test: require.resolve('jquery'),
-                loader: 'expose-loader?jQuery'
-            },
+                use: 'style-loader!css-loader'//添加对样式表的处理
+            }
         ]
     },
     plugins: [
@@ -29,11 +26,6 @@ module.exports = {
             compress: {
                 warnings: false
             }
-        }),
-        new webpack.ProvidePlugin({
-            jQuery: 'jquery',
-            $: 'jquery',
-            jquery: 'jquery'
         })
     ]
 

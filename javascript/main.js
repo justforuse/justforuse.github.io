@@ -1,13 +1,4 @@
-console.log("%c随便一些东西", "font-size:2em");
-var jQuery = require("jquery");
-require('!style-loader!css-loader!bootstrap/dist/css/bootstrap.css');
-require('bootstrap');
-require("!style-loader!css-loader!animate.css/animate.css");
 require("!style-loader!css-loader!../css/main.css");
-
-//wowjs
-window.WOW = require("wowjs").WOW;
-new WOW().init();
 
 var angular = require("angular");
 var translationsEN = {
