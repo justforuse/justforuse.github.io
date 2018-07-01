@@ -24,6 +24,8 @@ script:
     - hugo
     - echo 'Hugo build done!'
     - ls
+    - cd public
+    - ls
 
 deploy:
   provider: pages
