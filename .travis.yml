@@ -24,15 +24,17 @@ script:
     - hugo -d blog
     - echo 'Hugo build done!'
 after_success:
+    # github-token: $GITHUB_TOKEN
     # Set your identification.
     - git config --global user.email "allenforuse@gmail.com"
     - git config --global user.name "justforuse"
-    - 
     # Clone some repository you want into "repo" subfolder.
-    - git clone https://justforuse:$GITHUB_TOKEN@github.com/justforuse.github.io.git container
+    # https://<token>@github.com/owner/repo.git
+    - git clone https://$GITHUB_TOKEN@github.com/justforuse/justforuse.github.io.git container
     - rm -rf container/blog
     - cp -r blog container 
     - cd container
+    - ls
     - git add .
     - git commit -m 'Travis upate blog'
     - git push -u origin master
