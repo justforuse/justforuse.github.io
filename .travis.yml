@@ -14,7 +14,7 @@ install:
     # - rm -rf public 2> /dev/null
     - uname -a
     - wget https://github.com/gohugoio/hugo/releases/download/v0.42.2/hugo_0.42.2_Linux-64bit.deb
-    - sudo dpkg -i hugo_0.30.2
+    - sudo dpkg -i hugo_0.42.2
     - hugo version
     - rm -rf public
 
