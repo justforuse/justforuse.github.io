@@ -43,8 +43,6 @@ angular.module('app', ['ui.router', 'ngAnimate'])
 </div>
 ```
 
-<!-- {{< codeblock "archives.css" "css" "http://underscorejs.org/#compact" "archives.css" >}} -->
-<!-- {{< /codeblock >}} -->
 ```css
 li{
 transition: all 5.3s ease-in-out;
