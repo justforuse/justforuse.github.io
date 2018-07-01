@@ -1,0 +1,129 @@
+// Highlight.js custom theme
+// Follow guidelines
+// 1. Uncomment the block just below - remove `/*` and `*/`
+// 2. Fill `background`, `color`, `border-right-color` properties
+// with properties of `.hljs` CSS class of your theme
+// 3. Put your theme where it's indicated just below
+// 4. Remove `.hljs {...}` rules
+// 5. Remove `` of all CSS class name. E.g : `.comment` becomes `.comment`
+// 6. Comment line 61 (`'themes/tranquilpeak',`) of `source/_css/tranquilpeak.scss` file
+// 7. Run `grunt buildProd` to build the theme and see the result
+/*
+// Default code block
+pre > code {
+    background: ;
+    color: ;
+}
+
+// Default inline code
+code {
+    background-color: ;
+}
+
+// Tabbed code block tab
+// If your theme is dark then use a lighter background
+// to see clearly which tab is active
+.codeblock--tabbed figcaption .tab.active {
+    background: ;
+    color: ;
+}
+*/
+// highlight code block
+figure.highlight,
+.codeblock {
+    background: #23241f;
+    // color: ;
+
+    figcaption {
+        background: #23241f;
+        // color: ;
+    }
+    .gutter {
+        background: #23241f;
+        // border-right-color: ;
+        .line {
+            // color: ;
+        }
+    }
+    // PUT YOUR THEME HERE
+
+}
+
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #23241f;
+}
+
+.hljs,
+.tag,
+.subst {
+    color: #f8f8f2;
+}
+
+.strong,
+.emphasis {
+    color: #a8a8a2;
+}
+
+.bullet,
+.quote,
+.number,
+.regexp,
+.literal,
+.link {
+    color: #ae81ff;
+}
+
+.code,
+.title,
+.section,
+.selector-class {
+    color: #a6e22e;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.keyword,
+.selector-tag,
+.name,
+.attr {
+    color: #f92672;
+}
+
+.symbol,
+.attribute {
+    color: #66d9ef;
+}
+
+.params,
+.class .title {
+    color: #f8f8f2;
+}
+
+.string,
+.type,
+.built_in,
+.builtin-name,
+.selector-id,
+.selector-attr,
+.selector-pseudo,
+.addition,
+.variable,
+.template-variable {
+    color: #e6db74;
+}
+
+.comment,
+.deletion,
+.meta {
+    color: #75715e;
+}
