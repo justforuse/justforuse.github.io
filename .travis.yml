@@ -1,9 +1,9 @@
 # https://docs.travis-ci.com/user/deployment/pages/
 # https://docs.travis-ci.com/user/languages/python/
-# language: python
+language: python
 
-# python:
-#     - "3.6"
+python:
+    - "3.6"
 
 install:
     # install latest release version
@@ -23,6 +23,7 @@ install:
 script:
     - hugo
     - echo 'Hugo build done!'
+    - ls
 
 deploy:
   provider: pages
