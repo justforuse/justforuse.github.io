@@ -6,12 +6,6 @@ python:
     - "3.6"
 
 install:
-    # install latest release version
-    #- wget $(wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}')
-    # - wget -qO- https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p}}' | xargs wget
-    # - sudo dpkg -i hugo*.deb
-    # - pip install Pygments
-    # - rm -rf public 2> /dev/null
     - uname -a
     - wget https://github.com/gohugoio/hugo/releases/download/v0.42.2/hugo_0.42.2_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
@@ -24,12 +18,8 @@ script:
     - hugo -d blog
     - echo 'Hugo build done!'
 after_success:
-    # github-token: $GITHUB_TOKEN
-    # Set your identification.
     - git config --global user.email "allenforuse@gmail.com"
     - git config --global user.name "justforuse"
-    # Clone some repository you want into "repo" subfolder.
-    # https://<token>@github.com/owner/repo.git
     - git clone https://$GITHUB_TOKEN@github.com/justforuse/justforuse.github.io.git container
     - rm -rf container/blog
     - cp -r blog container 
@@ -38,28 +28,3 @@ after_success:
     - git add .
     - git commit -m 'Travis upate blog'
     - git push -u origin master
-    # - # Now, perform your custom actions. Custom repository is cloned int "repo" subfolder of PWD.
-    # - 
-    # - # After your actions are done, you might want to commit and push your changes.
-    # - cd repo
-    # - git commit -m "Actions done."
-    # - git push
-    #     - git clone https://github.com/justforuse/justforuse.github.io.git container
-    #     - rm -rf container/blog
-    #     - cp -r blog container 
-    #     - cd container
-    #     - git add .
-    #     - git commit -m 'Travis upate blog'
-    #     - git push -u origin master
-# deploy:
-#   provider: pages
-#   skip-cleanup: true
-#   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-#   email: $GITHUB_EMAIL
-#   name: $GITHUB_USERNAME
-#   verbose: true
-#   keep-history: true
-#   local-dir: public
-#   target_branch: blog  # branch contains blog content
-#   on:
-#     branch: code  # branch contains Hugo generator code

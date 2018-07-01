@@ -1,10 +1,18 @@
 ---
 title: "使用ng-animate为网页增加动画效果"
-slug: 'test-slug'
+slug: 'angularjs-animate'
 date: 2018-06-24T15:50:06+08:00
 draft: false
 author: 'allen'
-disqusIdentifier: 123
+categories:
+- Front-End
+tags:
+- angularjs
+- animate
+keywords:
+- angularjs
+- animate
+disqusIdentifier: angularjs-animate
 ---
 
 AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。
@@ -37,13 +45,7 @@ angular.module('app', ['ui.router', 'ngAnimate'])
 
 举个例子：
 
-```
-<div>
-  <h1>Nihao</h1>
-</div>
-```
-
-```css
+{{< codeblock "style.css" "css" >}}
 li{
 transition: all 5.3s ease-in-out;
 }
@@ -64,8 +66,7 @@ li.ng-leave.ng-leave-active{
 opacity: 0;
 transform:translateY(100%);
 }
-
-```
+{{< /codeblock >}}
 对应的效果就是：
 ![这里写图片描述](/images/201806/1.gif)
 
