@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 博客</title>
+    <link>https://justforuse.github.io/blog/tags/hugo/</link>
+    <description>Recent content in Hugo on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jul 2018 23:20:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Travis-CI自动发布Hugo到GitHub上</title>
+      <link>https://justforuse.github.io/blog/2018/07/travisci-deploy-hugo/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/07/travisci-deploy-hugo/</guid>
+      <description>&lt;p&gt;每次增加新文章时，还需手动更新到github上，重复劳动可以交由工具完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/&#34;&gt;Travis CI&lt;/a&gt;就是一个帮助我们完成自动构建的工具
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

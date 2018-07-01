@@ -6,71 +6,44 @@
     <description>Recent content in Tags on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 15:50:06 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Disqus</title>
-      <link>https://justforuse.github.io/blog/tags/disqus/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <title>Angularjs</title>
+      <link>https://justforuse.github.io/blog/tags/angularjs/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:06 +0800</pubDate>
       
-      <guid>https://justforuse.github.io/blog/tags/disqus/</guid>
+      <guid>https://justforuse.github.io/blog/tags/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Google Analytics</title>
-      <link>https://justforuse.github.io/blog/tags/google-analytics/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <title>Animate</title>
+      <link>https://justforuse.github.io/blog/tags/animate/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:06 +0800</pubDate>
       
-      <guid>https://justforuse.github.io/blog/tags/google-analytics/</guid>
+      <guid>https://justforuse.github.io/blog/tags/animate/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gravatar</title>
-      <link>https://justforuse.github.io/blog/tags/gravatar/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <title>Hugo</title>
+      <link>https://justforuse.github.io/blog/tags/hugo/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
       
-      <guid>https://justforuse.github.io/blog/tags/gravatar/</guid>
+      <guid>https://justforuse.github.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hexo Theme</title>
-      <link>https://justforuse.github.io/blog/tags/hexo-theme/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      <title>Travis Ci</title>
+      <link>https://justforuse.github.io/blog/tags/travis-ci/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
       
-      <guid>https://justforuse.github.io/blog/tags/hexo-theme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html Elements</title>
-      <link>https://justforuse.github.io/blog/tags/html-elements/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://justforuse.github.io/blog/tags/html-elements/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Markdown</title>
-      <link>https://justforuse.github.io/blog/tags/markdown/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://justforuse.github.io/blog/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Responsive</title>
-      <link>https://justforuse.github.io/blog/tags/responsive/</link>
-      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://justforuse.github.io/blog/tags/responsive/</guid>
+      <guid>https://justforuse.github.io/blog/tags/travis-ci/</guid>
       <description></description>
     </item>
     
