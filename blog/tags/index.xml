@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 博客</title>
+    <link>https://justforuse.github.io/blog/tags/</link>
+    <description>Recent content in Tags on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Disqus</title>
+      <link>https://justforuse.github.io/blog/tags/disqus/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/disqus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Analytics</title>
+      <link>https://justforuse.github.io/blog/tags/google-analytics/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/google-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gravatar</title>
+      <link>https://justforuse.github.io/blog/tags/gravatar/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/gravatar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo Theme</title>
+      <link>https://justforuse.github.io/blog/tags/hexo-theme/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/hexo-theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html Elements</title>
+      <link>https://justforuse.github.io/blog/tags/html-elements/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/html-elements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://justforuse.github.io/blog/tags/markdown/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Responsive</title>
+      <link>https://justforuse.github.io/blog/tags/responsive/</link>
+      <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/tags/responsive/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
