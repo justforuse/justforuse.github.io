@@ -17,6 +17,8 @@ install:
     - sudo dpkg -i hugo*.deb
     - hugo version
     - rm -rf public
+    - ls
+    - pwd
 
 script:
     - hugo
