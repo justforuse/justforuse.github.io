@@ -16,24 +16,29 @@ install:
     - wget https://github.com/gohugoio/hugo/releases/download/v0.42.2/hugo_0.42.2_Linux-64bit.deb
     - sudo dpkg -i hugo*.deb
     - hugo version
-    - rm -rf public
+    - rm -rf blog
     - ls
     - pwd
 
 script:
-    - hugo
+    - hugo -d blog
     - echo 'Hugo build done!'
-    - cd public
-    - ls
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  email: $GITHUB_EMAIL
-  name: $GITHUB_USERNAME
-  verbose: true
-  keep-history: true
-  local-dir: public
-  target_branch: blog  # branch contains blog content
-  on:
-    branch: code  # branch contains Hugo generator code
+    - git clone https://github.com/justforuse/justforuse.github.io.git container
+    - rm -rf container/blog
+    - cp -r blog container 
+    - cd container
+    - git add .
+    - git commit -m 'Travis upate blog'
+    - git push -u origin master
+# deploy:
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+#   email: $GITHUB_EMAIL
+#   name: $GITHUB_USERNAME
+#   verbose: true
+#   keep-history: true
+#   local-dir: public
+#   target_branch: blog  # branch contains blog content
+#   on:
+#     branch: code  # branch contains Hugo generator code
