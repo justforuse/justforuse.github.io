@@ -23,10 +23,8 @@ install:
 script:
     - hugo
     - echo 'Hugo build done!'
-    - ls
     - cd public
     - ls
-
 deploy:
   provider: pages
   skip-cleanup: true
@@ -36,6 +34,6 @@ deploy:
   verbose: true
   keep-history: true
   local-dir: public
-  target_branch: testci/blog  # branch contains blog content
+  target_branch: blog  # branch contains blog content
   on:
     branch: code  # branch contains Hugo generator code
