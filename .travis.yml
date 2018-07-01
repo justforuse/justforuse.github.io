@@ -23,13 +23,32 @@ install:
 script:
     - hugo -d blog
     - echo 'Hugo build done!'
-    - git clone https://github.com/justforuse/justforuse.github.io.git container
+after_success:
+    # Set your identification.
+    - git config --global user.email "allenforuse@gmail.com"
+    - git config --global user.name "justforuse"
+    - 
+    # Clone some repository you want into "repo" subfolder.
+    - git clone https://justforuse:${GITHUB_TOKEN}@github.com/justforuse.github.io.git container
     - rm -rf container/blog
     - cp -r blog container 
     - cd container
     - git add .
     - git commit -m 'Travis upate blog'
     - git push -u origin master
+    # - # Now, perform your custom actions. Custom repository is cloned int "repo" subfolder of PWD.
+    # - 
+    # - # After your actions are done, you might want to commit and push your changes.
+    # - cd repo
+    # - git commit -m "Actions done."
+    # - git push
+    #     - git clone https://github.com/justforuse/justforuse.github.io.git container
+    #     - rm -rf container/blog
+    #     - cp -r blog container 
+    #     - cd container
+    #     - git add .
+    #     - git commit -m 'Travis upate blog'
+    #     - git push -u origin master
 # deploy:
 #   provider: pages
 #   skip-cleanup: true
