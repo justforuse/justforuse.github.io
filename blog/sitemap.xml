@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/2018/07/custom-tag-template/</loc>
+    <lastmod>2018-07-04T00:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/2018/07/travisci-deploy-hugo/</loc>
     <lastmod>2018-07-01T23:20:46+08:00</lastmod>
   </url>
@@ -53,7 +58,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/post/</loc>
-    <lastmod>2018-07-01T23:20:46+08:00</lastmod>
+    <lastmod>2018-07-04T00:07:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,7 +76,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/</loc>
-    <lastmod>2018-07-01T23:20:46+08:00</lastmod>
+    <lastmod>2018-07-04T00:07:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
