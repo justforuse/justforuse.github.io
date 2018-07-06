@@ -6,6 +6,7 @@
     background-size:   cover;
     top:               0;
     left:              0;
+    background-color: rgb(3, 6, 13);
     // position the cover below the whole blog
     z-index:           map-get($z-indexes, l-cover);
 }
