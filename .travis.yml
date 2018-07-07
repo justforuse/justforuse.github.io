@@ -15,6 +15,9 @@ install:
     - pwd
 
 script:
+    - git submodule init
+    - git submodule update
+    - ls myTheme/hugo-tranquilpeak-theme/
     - hugo -d blog --themesDir myTheme
     - echo 'Hugo build done!'
 after_success:
