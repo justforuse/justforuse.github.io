@@ -1,3 +1,3 @@
-[submodule "myTheme/hugo-tranquilpeak-theme"]
-	path = myTheme/hugo-tranquilpeak-theme
+[submodule "themes/hugo-tranquilpeak-theme"]
+	path = themes/hugo-tranquilpeak-theme
 	url = https://github.com/justforuse/hugo-tranquilpeak-theme.git
