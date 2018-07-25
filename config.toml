@@ -18,7 +18,7 @@ defaultContentLanguage = "zh-cn"
 title = "博客"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "alleny"
-# googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-122356809-1"
 paginate = 7
 canonifyurls = true
 

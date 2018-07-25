@@ -30,7 +30,10 @@ disqusIdentifier: 1530634067
 ### Gist代码片段 内置
 {{< gist justforuse a5b99e7b2ec94f84a521eac5cceecd49 >}}
 ### Twitter 内置
-{{< tweet 969062062839287808 >}}
+本地启动无法加载具体HTML代码，上传到服务器端就可以了，
+```go
+< tweet 969062062839287808 >
+```
 <table class="is-centered is-striped is-bordered is-narrow">
   <tr>
     <th rowspan="2">值班人员</th>
