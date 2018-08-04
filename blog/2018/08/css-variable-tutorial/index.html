@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -18,25 +22,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Animate</title>
+    <title>Css Variable使用入门</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="css">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://justforuse.github.io/blog/tags/animate/index.xml">
-    
 
     
-    <meta name="description" content="Hugo tranquilpeak theme demo">
-    <meta property="og:description" content="Hugo tranquilpeak theme demo">
+    <meta name="description" content="CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。
+
+css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的$my-color: red;类似
+">
+    <meta property="og:description" content="CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。
+
+css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的$my-color: red;类似
+">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Animate">
-    <meta property="og:url" content="/tags/animate/">
+    <meta property="og:title" content="Css Variable使用入门">
+    <meta property="og:url" content="/2018/08/css-variable-tutorial/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
+    <meta name="twitter:description" content="CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。
+
+css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的$my-color: red;类似
+">
     
     
 
@@ -84,7 +95,7 @@ if (!doNotTrack) {
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://justforuse.github.io/blog/">博客</a>
@@ -104,7 +115,7 @@ if (!doNotTrack) {
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -213,44 +224,26 @@ if (!doNotTrack) {
 </nav>
 
       
-        
 
-      
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        
-          <section class="postShorten-group main-content-wrap">
-            
-            
-              
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
   
-    
-      
-        
-      
-    
+    <h1 class="post-title" itemprop="headline">
+      Css Variable使用入门
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/06/angularjs-animate/">
-          使用ng-animate为网页增加动画效果
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-06-24T15:50:06&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-08-05T00:02:17&#43;08:00">
         
-  六月 24, 2018
+  八月 5, 2018
 
       </time>
     
@@ -269,29 +262,130 @@ if (!doNotTrack) {
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。</p>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。</p>
 
-<p>典型的应用就是视图切换和元素添加与移除。</p>
+<p>css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的<code>$my-color: red;</code>类似
+</p>
 
-<p>这里以 ui-view 和 ng-repeat 指令作为展示。</p>
+<p>使用方法：</p>
 
-<p></p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/06/angularjs-animate/" class="postShorten-excerpt_link link">阅读全文</a>
+<pre><code class="language-css">:root {
+  --my-color: red;
+}
+
+.container {
+  /* --my-color: blue; */
+  color: var(--my-color);
+}
+
+.child {
+  color: var(--my-color);
+}
+</code></pre>
+
+<p>在顶级自定义了变量，变量名前一定要有两个-，否则不生效；然后使用var()方式来获取变量值。</p>
+
+<p>变量可以被覆盖，如果在低层级重新赋值则会覆盖样式。</p>
+
+<p>还可以设置默认值，比如<code>var(--invalid-color, red)</code>，如果变量不存在，则会使用第二个参数</p>
+
+<p>还可以通过js获取和设置css varible的值</p>
+
+<pre><code class="language-js">const child = document.querySelector('.child')
+
+console.log(getComputedStyle(child).getPropertyValue('--my-color'))
+
+child.style.setProperty('--my-color', 'purple')
+</code></pre>
+
+<p>支持性方面，IE依旧全挂
+<img src="https://s1.ax1x.com/2018/08/05/PDVv7V.png" alt="PDVv7V.png" /></p>
+
+<p>代码：
+<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/u7hrovac/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe></p>
+
+<p>参考链接：<a href="https://www.sitepoint.com/practical-guide-css-variables-custom-properties/">https://www.sitepoint.com/practical-guide-css-variables-custom-properties/</a></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/css/">css</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/supports-tutorial/" data-tooltip="@supports使用方法">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-      </p>
-    </div>
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-  
-</article>
+
 
             
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
             
-
-          </section>
-        
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Allen Yuan. All Rights Reserved
@@ -299,6 +393,66 @@ if (!doNotTrack) {
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/supports-tutorial/" data-tooltip="@supports使用方法">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -511,6 +665,32 @@ $(document).ready(function() {
 });
 </script>
 
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/08\/css-variable-tutorial\/';
+          
+            this.page.identifier = '1533398537';
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'alleny';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
 
 
 
