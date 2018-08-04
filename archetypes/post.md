@@ -1,16 +1,14 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-slug: "{{ replace .TranslationBaseName "-" " " | title }}"
+slug: "{{ lower .TranslationBaseName | title }}"
 date: {{ .Date }}
 author: allen
 categories:
-- category
-- subcategory
+- Front-End
 tags:
-- tag1
-- tag2
+- js
 keywords:
-- tech
+- js
 disqusIdentifier: {{ now.Unix }}
 #thumbnailImage: //example.com/image.jpg
 ---
