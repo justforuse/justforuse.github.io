@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Aug 2018 00:02:17 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Aug 2018 23:35:15 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>color-adjust的简单用法</title>
+      <link>https://justforuse.github.io/blog/2018/08/color-adjust/</link>
+      <pubDate>Sun, 19 Aug 2018 23:35:15 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/08/color-adjust/</guid>
+      <description>&lt;p&gt;一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Css Variable使用入门</title>

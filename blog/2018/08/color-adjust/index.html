@@ -22,25 +22,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Git Submodule使用介绍</title>
+    <title>color-adjust的简单用法</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="submodule">
+    <meta name="keywords" content="print">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <meta name="description" content="参考链接： https://laozhu.me/post/git-submodule-tutorial/
+    <meta name="description" content="一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：
+
 ">
-    <meta property="og:description" content="参考链接： https://laozhu.me/post/git-submodule-tutorial/
+    <meta property="og:description" content="一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：
+
 ">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Git Submodule使用介绍">
-    <meta property="og:url" content="/2018/07/git-submodule/">
+    <meta property="og:title" content="color-adjust的简单用法">
+    <meta property="og:url" content="/2018/08/color-adjust/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="参考链接： https://laozhu.me/post/git-submodule-tutorial/
+    <meta name="twitter:description" content="一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：
+
 ">
     
     
@@ -229,15 +232,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Git Submodule使用介绍
+      color-adjust的简单用法
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-07-10T00:37:33&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-08-19T23:35:15&#43;08:00">
         
-  七月 10, 2018
+  八月 19, 2018
 
       </time>
     
@@ -250,7 +253,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/git">git</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/categories/front-end">Front-End</a>
     
   
 
@@ -260,8 +263,16 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>参考链接： <a href="https://laozhu.me/post/git-submodule-tutorial/">https://laozhu.me/post/git-submodule-tutorial/</a>
-</p>
+              <p>一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：</p>
+
+<p></p>
+
+<pre><code class="language-css">color-adjust: exact;
+-webkit-print-color-adjust: exact;
+</code></pre>
+
+<p>示例（在代码地址 <kbd>Ctrl</kbd>+<kbd>P</kbd>查看效果）：
+<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/jtr25hL0/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe></p>
               
             </div>
           </div>
@@ -273,9 +284,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/git/">git</a>
-
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/submodule/">submodule</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/css/">css</a>
 
                   </div>
                 
@@ -288,7 +297,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/07/custom-tag-template/" data-tooltip="自定义元素模板">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/css-variable-tutorial/" data-tooltip="Css Variable使用入门">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -296,7 +305,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/supports-tutorial/" data-tooltip="@supports使用方法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -356,7 +365,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/07/custom-tag-template/" data-tooltip="自定义元素模板">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/css-variable-tutorial/" data-tooltip="Css Variable使用入门">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -364,7 +373,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/supports-tutorial/" data-tooltip="@supports使用方法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -644,9 +653,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/07\/git-submodule\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/08\/color-adjust\/';
           
-            this.page.identifier = '1531154253';
+            this.page.identifier = '1534692915';
           
         };
         (function() {
