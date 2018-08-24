@@ -14,3 +14,5 @@ disqusIdentifier: {{ now.Unix }}
 ---
 
 <!--more-->
+
+{{< reward >}}

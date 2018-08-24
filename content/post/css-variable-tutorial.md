@@ -56,3 +56,5 @@ child.style.setProperty('--my-color', 'purple')
 {{< jsfiddle u7hrovac>}}
 
 参考链接：https://www.sitepoint.com/practical-guide-css-variables-custom-properties/
+
+{{< reward >}}

@@ -58,3 +58,5 @@ after_success:
 这样每次更新code分支代码，travis会自动检测并执行上述脚本，发布编译后结果到master分支的blog文件夹下
 
 Github地址： https://github.com/justforuse/justforuse.github.io
+
+{{< reward >}}

@@ -22,3 +22,5 @@ color-adjust: exact;
 
 示例（在代码地址 <kbd>Ctrl</kbd>+<kbd>P</kbd>查看效果）：
 {{< jsfiddle jtr25hL0 >}}
+
+{{< reward >}}

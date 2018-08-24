@@ -47,3 +47,5 @@ disqusIdentifier: 1530634067
     <td>王平</td>
   </tr>
 </table>
+
+{{< reward >}}
