@@ -17,7 +17,10 @@ install:
 script:
     - git submodule init
     - git submodule update
+    - git submodule foreach --recursive git pull origin master
     - ls themes/hugo-tranquilpeak-theme/
+    - ls themes/hugo-tranquilpeak-theme/static/css
+    - ls themes/hugo-tranquilpeak-theme/static/js
     - hugo -d blog
     - echo 'Hugo build done!'
 after_success:
