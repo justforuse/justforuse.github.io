@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Aug 2018 22:23:14 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Sep 2018 17:26:35 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chrome69更新介绍</title>
+      <link>https://justforuse.github.io/blog/2018/09/new-in-chrome69/</link>
+      <pubDate>Sat, 08 Sep 2018 17:26:35 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/09/new-in-chrome69/</guid>
+      <description>&lt;p&gt;Chrome已经发布10周年了！🎉🎉&lt;/p&gt;
+
+&lt;p&gt;Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>CSS伪类placeholder-shown</title>
