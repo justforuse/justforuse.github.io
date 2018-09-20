@@ -6,10 +6,20 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Sep 2018 17:26:35 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Sep 2018 22:15:56 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>制作自己的字体图标库</title>
+      <link>https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/</link>
+      <pubDate>Thu, 20 Sep 2018 22:15:56 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/</guid>
+      <description>&lt;p&gt;你可能使用过或听说过各种字体图标库，比如fontawesome, glyphicon等，想过制作一个属于自己的字体图标库吗？今天就试着做一个。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Chrome69更新介绍</title>

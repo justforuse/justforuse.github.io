@@ -1,9 +1,5 @@
 
 
-  
-    
-  
-
 
   
 
@@ -22,29 +18,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Chrome69更新介绍</title>
+    <title>Front End</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="chrome69, browser">
+    <meta name="keywords" content="">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://justforuse.github.io/blog/categories/front-end/index.xml">
+    
 
     
-    <meta name="description" content="Chrome已经发布10周年了！🎉🎉
-
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
-    <meta property="og:description" content="Chrome已经发布10周年了！🎉🎉
-
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
+    <meta name="description" content="Hugo tranquilpeak theme demo">
+    <meta property="og:description" content="Hugo tranquilpeak theme demo">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Chrome69更新介绍">
-    <meta property="og:url" content="/2018/09/new-in-chrome69/">
+    <meta property="og:title" content="Front End">
+    <meta property="og:url" content="/categories/front-end/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="Chrome已经发布10周年了！🎉🎉
-
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
+    <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
     
     
 
@@ -92,7 +84,7 @@ if (!doNotTrack) {
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="4">
+      <header id="header" data-behavior="1">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://justforuse.github.io/blog/">博客</a>
@@ -112,7 +104,7 @@ if (!doNotTrack) {
   
 </header>
 
-      <nav id="sidebar" data-behavior="4">
+      <nav id="sidebar" data-behavior="1">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -221,26 +213,44 @@ if (!doNotTrack) {
 </nav>
 
       
+        
 
-      <div id="main" data-behavior="4"
+      
+      <div id="main" data-behavior="1"
         class="
                hasCoverMetaIn
                ">
-        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
-          
-          
-            <div class="post-header main-content-wrap text-left">
+        
+          <section class="postShorten-group main-content-wrap">
+            
+            
+              
   
-    <h1 class="post-title" itemprop="headline">
-      Chrome69更新介绍
-    </h1>
+    
+      
+        
+      
+    
   
+
+
   
+
+<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="postShorten-wrap">
+    
+    <div class="postShorten-header">
+      <h1 class="postShorten-title" itemprop="headline">
+        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/06/angularjs-animate/">
+          使用ng-animate为网页增加动画效果
+        </a>
+      </h1>
+      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-09-08T17:26:35&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-06-24T15:50:06&#43;08:00">
         
-  九月 8, 2018
+  六月 24, 2018
 
       </time>
     
@@ -259,162 +269,46 @@ if (!doNotTrack) {
 
   </div>
 
-</div>
-          
-          <div class="post-content markdown" itemprop="articleBody">
-            <div class="main-content-wrap">
-              <p>Chrome已经发布10周年了！🎉🎉</p>
-
-<p>Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design</p>
-
-<p>更新文档：<a href="https://developers.google.com/web/updates/2018/09/nic69">https://developers.google.com/web/updates/2018/09/nic69</a>
-
-视频：
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/WF2IjH35w8o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
-
-<p>个人觉得实用的简短介绍下：</p>
-
-<p>1 CSS Sroll Snap</p>
-
-<p>这个属性帮助我们在滚动的时候使元素完整的显示在视口，意味在滚动完成后，浏览器会自动校正滚动位置，使内部元素完整的显示在设置的位置：</p>
-
-<p>水平方向和竖直方向都支持</p>
-
-<p>示例</p>
-
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/2Lfdpez1/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
-
-<p><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/j6r23dxo/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
-2 Array flat，flatMap方法</p>
-
-<p>flat这个方法就是将数组内部元素展开，默认展开一层，可以设置展开层数，<code>Infinity</code>可以完全展开</p>
-
-<pre><code class="language-js">// Flatten one level:
-const array = [1, [2, [3]]];
-array.flat();
-// → [1, 2, [3]]
-
-// Flatten recursively until the array contains no more nested arrays:
-array.flat(Infinity);
-// → [1, 2, 3]
-</code></pre>
-
-<p>flatMap与map方法类似，如果方法的返回值是数组，那么会自动对返回值调用flat方法，默认层级1级</p>
-
-<p>3 toggleAttribute方法, CSS背景支持<code>conic-gradient</code>(锥形渐变)</p>
-
-<p><code>toggleAttribute</code>用于翻转DOM元素属性，比如<code>disbled</code>、<code>readonly</code></p>
-
-<p><code>conic-gradient</code>可以设置圆锥形渐变</p>
-
-<p>示例地址：</p>
-
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/m90sygch/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
-
-<div class="text-center" id="reward">
-  <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
-  <button class="btn btn--danger" id="reward-btn">打赏</button>
-  <div id="reward-pop">
-    <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
-    <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
-    <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
-    <div node-type="reward-code" class="reward-code">
-      <figure>
-        <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
-        <figcaption>微信</figcaption>
-      </figure>
-      <figure>
-        <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
-        <figcaption>支付宝</figcaption>
-      </figure>
     </div>
-    <div class="reward-txt">扫码打赏，建议金额1-10元</div>
-    <p class="power-cy">
-      <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
-    </p>
-  </div>
-</div>
-              
-            </div>
-          </div>
-          <div id="post-footer" class="post-footer main-content-wrap">
-            
-              
-                
-                
-                  <div class="post-footer-tags">
-                    <span class="text-color-light text-small">标签</span><br/>
-                    
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/chrome/">Chrome</a>
+    <div class="postShorten-excerpt" itemprop="articleBody">
+      <p>AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。</p>
 
-                  </div>
-                
-              
+<p>典型的应用就是视图切换和元素添加与移除。</p>
+
+<p>这里以 ui-view 和 ng-repeat 指令作为展示。</p>
+
+<p></p>
+      <p>
+        <a href="https://justforuse.github.io/blog/2018/06/angularjs-animate/" class="postShorten-excerpt_link link">阅读全文</a>
+        
+      </p>
+    </div>
+  </div>
+  
+</article>
+
             
             
-  <div class="post-actions-wrap">
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/placeholder-shown/" data-tooltip="CSS伪类placeholder-shown">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/" data-tooltip="制作自己的字体图标库">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
+  <div class="pagination-bar">
+    <ul class="pagination">
       
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
+        
+          <li class="pagination-prev">
+            <a class="btn btn--default btn--small" href="https://justforuse.github.io/blog/categories/front-end/">
+              <i class="fa fa-angle-left text-base icon-mr"></i>
+              <span>上一页</span>
+            </a>
+          </li>
+        
         
       
-      
-        <li class="post-action">
-          <a class="post-action-btn btn btn--default" href="#disqus_thread">
-            <i class="fa fa-comment-o"></i>
-          </a>
-        </li>
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
+      <li class="pagination-number">第 2 页 共 2 页</li>
     </ul>
   </div>
 
 
-            
-              
-                <div id="disqus_thread">
-  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-              
-            
-          </div>
-        </article>
+          </section>
+        
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Allen Yuan. All Rights Reserved
@@ -422,66 +316,6 @@ array.flat(Infinity);
 </footer>
 
       </div>
-      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
-        
-  <div class="post-actions-wrap">
-      <nav >
-        <ul class="post-actions post-action-nav">
-          
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/placeholder-shown/" data-tooltip="CSS伪类placeholder-shown">
-              
-                  <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
-                </a>
-            </li>
-            <li class="post-action">
-              
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/" data-tooltip="制作自己的字体图标库">
-              
-                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
-                  <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-          
-        </ul>
-      </nav>
-    <ul class="post-actions post-action-share" >
-      
-        <li class="post-action hide-lg hide-md hide-sm">
-          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
-            <i class="fa fa-share-alt"></i>
-          </a>
-        </li>
-        
-      
-      
-        <li class="post-action">
-          <a class="post-action-btn btn btn--default" href="#disqus_thread">
-            <i class="fa fa-comment-o"></i>
-          </a>
-        </li>
-      
-      <li class="post-action">
-        
-          <a class="post-action-btn btn btn--default" href="#">
-        
-          <i class="fa fa-list"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-
-      </div>
-      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
-  <i id="btn-close-shareoptions" class="fa fa-close"></i>
-  <ul class="share-options">
-    
-  </ul>
-</div>
-<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -776,32 +610,6 @@ $(document).ready(function() {
 });
 </script>
 
-
-  
-    
-      <script>
-        var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/09\/new-in-chrome69\/';
-          
-            this.page.identifier = '1536398795';
-          
-        };
-        (function() {
-          
-          
-          if (window.location.hostname == "localhost") {
-            return;
-          }
-          var d = document, s = d.createElement('script');
-          var disqus_shortname = 'alleny';
-          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-      </script>
-    
-  
 
 
 
