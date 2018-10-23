@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Oct 2018 19:45:20 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Oct 2018 21:03:26 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>检测文本是否应用了text-ellipsis省略样式</title>
+      <link>https://justforuse.github.io/blog/2018/10/detect-text-ellipsis/</link>
+      <pubDate>Tue, 23 Oct 2018 21:03:26 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/2018/10/detect-text-ellipsis/</guid>
+      <description>&lt;p&gt;css提供了可以省略过长文字的样式：&lt;code&gt;text-ellipsis: hidden&lt;/code&gt;，那么如何检测文本是否被省略呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>初始化React Native开发环境</title>
