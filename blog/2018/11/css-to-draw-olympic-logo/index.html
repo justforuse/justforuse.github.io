@@ -22,29 +22,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Chrome69更新介绍</title>
+    <title>使用CSS绘制奥运五环标志</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="chrome69, browser">
+    <meta name="keywords" content="olympic-logo, css">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <meta name="description" content="Chrome已经发布10周年了！🎉🎉
+    <meta name="description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
 
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
-    <meta property="og:description" content="Chrome已经发布10周年了！🎉🎉
+">
+    <meta property="og:description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
 
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
+">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Chrome69更新介绍">
-    <meta property="og:url" content="/2018/09/new-in-chrome69/">
+    <meta property="og:title" content="使用CSS绘制奥运五环标志">
+    <meta property="og:url" content="/2018/11/css-to-draw-olympic-logo/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="Chrome已经发布10周年了！🎉🎉
+    <meta name="twitter:description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
 
-Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design">
+">
     
     
 
@@ -232,15 +232,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Chrome69更新介绍
+      使用CSS绘制奥运五环标志
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-09-08T17:26:35&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-11-01T22:56:26&#43;08:00">
         
-  九月 8, 2018
+  十一月 1, 2018
 
       </time>
     
@@ -263,57 +263,48 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Chrome已经发布10周年了！🎉🎉</p>
+              <p>一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？</p>
 
-<p>Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design</p>
+<p></p>
 
-<p>更新文档：<a href="https://developers.google.com/web/updates/2018/09/nic69">https://developers.google.com/web/updates/2018/09/nic69</a>
+<p>第一反应是使用<code>border-radius: 50%</code>再加上<code>z-index</code>设置层叠关系不久可以了吗？</p>
 
-视频：
+<p>然而，怎么可能会说这么常见的问题呢？</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/WF2IjH35w8o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
+<p>稍加思考，原来他的层级不是叠加，而是有重叠的部分：</p>
 
-<p>个人觉得实用的简短介绍下：</p>
+<p><img src="https://s1.ax1x.com/2018/11/01/ifLjMV.jpg" alt="ifLjMV.jpg" /></p>
 
-<p>1 CSS Sroll Snap</p>
+<p>所以单纯使用<code>z-index</code>并不能达到效果。</p>
 
-<p>这个属性帮助我们在滚动的时候使元素完整的显示在视口，意味在滚动完成后，浏览器会自动校正滚动位置，使内部元素完整的显示在设置的位置：</p>
+<p>想到之前看到的一篇文章，如何实现元素穿插的效果：
+<a href="https://css-tricks.com/1-element-css-rainbow-gradient-infinity/">https://css-tricks.com/1-element-css-rainbow-gradient-infinity/</a></p>
 
-<p>水平方向和竖直方向都支持</p>
+<p>其中的一个demo:</p>
 
-<p>示例</p>
 
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/2Lfdpez1/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
 
-<p><iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/j6r23dxo/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
-2 Array flat，flatMap方法</p>
 
-<p>flat这个方法就是将数组内部元素展开，默认展开一层，可以设置展开层数，<code>Infinity</code>可以完全展开</p>
 
-<pre><code class="language-js">// Flatten one level:
-const array = [1, [2, [3]]];
-array.flat();
-// → [1, 2, [3]]
 
-// Flatten recursively until the array contains no more nested arrays:
-array.flat(Infinity);
-// → [1, 2, 3]
-</code></pre>
 
-<p>flatMap与map方法类似，如果方法的返回值是数组，那么会自动对返回值调用flat方法，默认层级1级</p>
 
-<p>3 toggleAttribute方法, CSS背景支持<code>conic-gradient</code>(锥形渐变)</p>
 
-<p><code>toggleAttribute</code>用于翻转DOM元素属性，比如<code>disbled</code>、<code>readonly</code></p>
 
-<p><code>conic-gradient</code>可以设置圆锥形渐变</p>
 
-<p>示例地址：</p>
+  <p data-height="265" data-theme-id="dark" data-slug-hash="MGqgyM" data-default-tab="result" data-user="thebabydino" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/thebabydino/pen/MGqgyM/"></a> by  (<a href="https://codepen.io/thebabydino">@thebabydino</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/m90sygch/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
+
+
+<p>此处实现元素穿插效果的方式为添加<code>transform:rotate</code>样式。</p>
+
+<p>以此为基础，为每个圆环添加<code>transform: rotateY( -1deg | 1deg)</code>就可以写出五环效果：</p>
+
+<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/35muv9ar/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
 
 <div class="text-center" id="reward">
   <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -349,7 +340,7 @@ array.flat(Infinity);
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/chrome/">Chrome</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/css/">css</a>
 
                   </div>
                 
@@ -362,7 +353,7 @@ array.flat(Infinity);
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/placeholder-shown/" data-tooltip="CSS伪类placeholder-shown">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/10/detect-text-ellipsis/" data-tooltip="检测文本是否应用了text-ellipsis省略样式">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -370,7 +361,7 @@ array.flat(Infinity);
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/" data-tooltip="制作自己的字体图标库">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -430,7 +421,7 @@ array.flat(Infinity);
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/placeholder-shown/" data-tooltip="CSS伪类placeholder-shown">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/10/detect-text-ellipsis/" data-tooltip="检测文本是否应用了text-ellipsis省略样式">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -438,7 +429,7 @@ array.flat(Infinity);
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/personal-font-icon-tutorial/" data-tooltip="制作自己的字体图标库">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -775,9 +766,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/09\/new-in-chrome69\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/11\/css-to-draw-olympic-logo\/';
           
-            this.page.identifier = '1536398795';
+            this.page.identifier = '1541084186';
           
         };
         (function() {
