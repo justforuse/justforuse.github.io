@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -18,25 +22,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>博客</title>
+    <title>ES提案可选链和管道语法</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="optional-chaining, pipeline">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://justforuse.github.io/blog/index.xml">
-    
 
     
-    <meta name="description" content="Hugo tranquilpeak theme demo">
-    <meta property="og:description" content="Hugo tranquilpeak theme demo">
+    <meta name="description" content="两种处于提案状态的新语法：可选链(?.)和管道(|&gt;)语法
+">
+    <meta property="og:description" content="两种处于提案状态的新语法：可选链(?.)和管道(|&gt;)语法
+">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="博客">
-    <meta property="og:url" content="/">
+    <meta property="og:title" content="ES提案可选链和管道语法">
+    <meta property="og:url" content="/2018/11/es-optional-chaining-and-pipeline/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
+    <meta name="twitter:description" content="两种处于提案状态的新语法：可选链(?.)和管道(|&gt;)语法
+">
     
     
 
@@ -84,7 +89,7 @@ if (!doNotTrack) {
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://justforuse.github.io/blog/">博客</a>
@@ -104,7 +109,7 @@ if (!doNotTrack) {
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -214,40 +219,25 @@ if (!doNotTrack) {
 
       
 
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        <section class="postShorten-group main-content-wrap">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
           
-            
+            <div class="post-header main-content-wrap text-left">
   
-    
-      
-        
-      
-    
+    <h1 class="post-title" itemprop="headline">
+      ES提案可选链和管道语法
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/08/color-adjust/">
-          color-adjust的简单用法
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-08-19T23:35:15&#43;08:00">
+      <time itemprop="datePublished" datetime="2018-11-26T22:50:40&#43;08:00">
         
-  八月 19, 2018
+  十一月 26, 2018
 
       </time>
     
@@ -266,396 +256,173 @@ if (!doNotTrack) {
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：</p>
-
-<p></p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/08/color-adjust/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
+</div>
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/08/css-variable-tutorial/">
-          Css Variable使用入门
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-08-05T00:02:17&#43;08:00">
-        
-  八月 5, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。</p>
-
-<p>css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的<code>$my-color: red;</code>类似
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>两种处于提案状态的新语法：可选链(?.)和管道(|&gt;)语法
 </p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/08/css-variable-tutorial/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
 
-          
+<p><strong>1.可选链</strong></p>
+
+<p>我们会遇到以下场景，要拿到一个层级比较深的对象的属性值，又要考虑到值的存在问题，所以我们的代码可能是这样：</p>
+
+<pre><code class="language-js">if(a &amp;&amp; a.b &amp;&amp; a.b.c){
+  // balabala
+}
+</code></pre>
+
+<p>这样代码虽然严谨，但是看着不舒服。</p>
+
+<p>使用可选链后：</p>
+
+<pre><code class="language-js">if(a?.b?.c) {
+  // balabala
+}
+</code></pre>
+
+<p>他会层层判断当前层的值是否存在，不存在则直接返回👍</p>
+
+<p>如果想在项目中使用此语法，需要babel7转译，插件选择<code>@babel/plugin-proposal-optional-chaining</code></p>
+
+<p><strong>2.管道运算符</strong></p>
+
+<p>有时也会遇到这个场景，一个参数，不断经过函数处理，结果又被当作参数传给下个函数，代码可能是这样的：</p>
+
+<pre><code class="language-js">const result = foo(bar(baz('hello world')))
+</code></pre>
+
+<p>管道给人的感觉就是一条流水线，从上到下，参数输入，结果输出，所以语法也很简洁：👍</p>
+
+<pre><code class="language-js">const result = 'hello world' |&gt; baz |&gt; bar |&gt;foo
+</code></pre>
+
+<p>想在项目中使用同样需要babel7，并使用<code>@babel/plugin-proposal-pipeline-operator</code>插件，</p>
+
+<pre><code class="language-js">&quot;plugin&quot;: [
+  [
+    &quot;@babel/plugin-proposal-pipeline-operator&quot;,
+    {
+      &quot;proposal&quot;: &quot;minimal&quot;
+    }
+  ]
+]
+</code></pre>
+
+<p>注意，在配置<code>.babelrc</code>时需要制定<code>proposal</code>参数，目前只支持<code>minimal</code>，可关注<a href="https://babeljs.io/docs/en/babel-plugin-proposal-pipeline-operator">https://babeljs.io/docs/en/babel-plugin-proposal-pipeline-operator</a> 查看最新进展</p>
+
+<p>如果函数还需要别的参数，那么可以这么写：</p>
+
+<pre><code class="language-js">const result = 'hello world' |&gt; baz |&gt; (str =&gt; baz(str, 'other args')) |&gt; foo
+</code></pre>
+
+<p>但是如此就看着不简洁了，所以有个备选方案：使用<code>#</code>代表上个结果值，即：</p>
+
+<pre><code class="language-js">const result = 'hello world' |&gt; baz |&gt; baz(#, 'other args')) |&gt; foo
+</code></pre>
+
+<p>注意此种方式还未获得babel支持😥。</p>
+
+<div class="text-center" id="reward">
+  <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
+  <button class="btn btn--danger" id="reward-btn">打赏</button>
+  <div id="reward-pop">
+    <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
+    <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
+    <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
+    <div node-type="reward-code" class="reward-code">
+      <figure>
+        <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
+        <figcaption>微信</figcaption>
+      </figure>
+      <figure>
+        <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
+        <figcaption>支付宝</figcaption>
+      </figure>
+    </div>
+    <div class="reward-txt">扫码打赏，建议金额1-10元</div>
+    <p class="power-cy">
+      <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
+    </p>
+  </div>
+</div>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
             
-  
-    
-      
-        
-      
-    
-  
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/js/">js</a>
 
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/08/supports-tutorial/">
-          @supports使用方法
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-08-04T23:11:02&#43;08:00">
-        
-  八月 4, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
-
-基本使用方式：</p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/08/supports-tutorial/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
+                  </div>
+                
+              
             
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/07/git-submodule/">
-          Git Submodule使用介绍
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-07-10T00:37:33&#43;08:00">
-        
-  七月 10, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/git">git</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>参考链接： <a href="https://laozhu.me/post/git-submodule-tutorial/">https://laozhu.me/post/git-submodule-tutorial/</a>
-</p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/07/git-submodule/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
             
-  
-    
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/11/css-to-draw-olympic-logo/" data-tooltip="使用CSS绘制奥运五环标志">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
       
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
       
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/07/custom-tag-template/">
-          自定义元素模板
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
         </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-07-04T00:07:47&#43;08:00">
-        
-  七月 4, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
-
-<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd></p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/07/custom-tag-template/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/07/travisci-deploy-hugo/">
-          使用Travis-CI自动发布Hugo到GitHub上
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-07-01T23:20:46&#43;08:00">
-        
-  七月 1, 2018
-
-      </time>
-    
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>每次增加新文章时，还需手动更新到github上，重复劳动可以交由工具完成。</p>
-
-<p><a href="https://travis-ci.org/">Travis CI</a>就是一个帮助我们完成自动构建的工具
-</p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/07/travisci-deploy-hugo/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/2018/06/angularjs-animate/">
-          使用ng-animate为网页增加动画效果
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-06-24T15:50:06&#43;08:00">
-        
-  六月 24, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。</p>
-
-<p>典型的应用就是视图切换和元素添加与移除。</p>
-
-<p>这里以 ui-view 和 ng-repeat 指令作为展示。</p>
-
-<p></p>
-      <p>
-        <a href="https://justforuse.github.io/blog/2018/06/angularjs-animate/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-          
-  <div class="pagination-bar">
-    <ul class="pagination">
-      
-        
-          <li class="pagination-prev">
-            <a class="btn btn--default btn--small" href="https://justforuse.github.io/blog/">
-              <i class="fa fa-angle-left text-base icon-mr"></i>
-              <span>上一页</span>
-            </a>
-          </li>
-        
-        
-      
-      <li class="pagination-number">第 2 页 共 2 页</li>
+      </li>
     </ul>
   </div>
 
 
-        </section>
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Allen Yuan. All Rights Reserved
@@ -663,6 +430,66 @@ if (!doNotTrack) {
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/11/css-to-draw-olympic-logo/" data-tooltip="使用CSS绘制奥运五环标志">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -952,8 +779,35 @@ $(document).ready(function() {
 </script>
 
 
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/11\/es-optional-chaining-and-pipeline\/';
+          
+            this.page.identifier = '1543243840';
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'alleny';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
 
 
     
   </body>
 </html>
+
