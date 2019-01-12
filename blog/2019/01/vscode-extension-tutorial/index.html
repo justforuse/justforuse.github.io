@@ -22,48 +22,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
-    <title>CSS伪类placeholder-shown</title>
+    <title>新手如何开发一个VSCode插件</title>
     <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="placeholder-shown">
+    <meta name="keywords" content="vscode extension">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <meta name="description" content="CSS伪类:placeholder-shown在input或textarea元素显示placeholder文本时生效。
+    <meta name="description" content="VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。
 
-使用方法：
-
-input:placeholder-shown {
-  border: 1px solid red;
-}
-
+大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。
 
 ">
-    <meta property="og:description" content="CSS伪类:placeholder-shown在input或textarea元素显示placeholder文本时生效。
+    <meta property="og:description" content="VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。
 
-使用方法：
-
-input:placeholder-shown {
-  border: 1px solid red;
-}
-
+大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。
 
 ">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="CSS伪类placeholder-shown">
-    <meta property="og:url" content="/2018/08/placeholder-shown/">
+    <meta property="og:title" content="新手如何开发一个VSCode插件">
+    <meta property="og:url" content="/2019/01/vscode-extension-tutorial/">
     <meta property="og:site_name" content="博客">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="CSS伪类:placeholder-shown在input或textarea元素显示placeholder文本时生效。
+    <meta name="twitter:description" content="VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。
 
-使用方法：
-
-input:placeholder-shown {
-  border: 1px solid red;
-}
-
+大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。
 
 ">
     
@@ -253,15 +238,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      CSS伪类placeholder-shown
+      新手如何开发一个VSCode插件
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-08-22T22:23:14&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-01-12T17:09:17&#43;08:00">
         
-  八月 22, 2018
+  一月 12, 2019
 
       </time>
     
@@ -284,19 +269,79 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>CSS伪类<code>:placeholder-shown</code>在<code>input</code>或<code>textarea</code>元素显示placeholder文本时生效。</p>
+              <p>VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。</p>
 
-<p>使用方法：</p>
-
-<pre><code class="language-css">input:placeholder-shown {
-  border: 1px solid red;
-}
-</code></pre>
+<p>大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。</p>
 
 <p></p>
 
-<p>示例
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/3sn09gat/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe></p>
+<p>我最近遇到的问题是，如何快速更改变量命名风格，比如Php代码的下划线风格要改成驼峰式命名，我并没有找到相应的插件，为了避免大量重复的工作，试着自己做了一款插件： <a href="https://marketplace.visualstudio.com/items?itemName=allen.VarStyle">Var Style</a></p>
+
+<p>它的使用效果是这样的：
+<img src="https://raw.githubusercontent.com/YiNanKai/vscode-var-style/master/demo.gif" alt="" /></p>
+
+<p>🎉🎉看着还行是吧。。</p>
+
+<p>开发插件官网给的方式是使用yeoman的一个生成器：</p>
+
+<pre><code>npm install -g yo generator-code
+</code></pre>
+
+<p>具体使用方式可以参考官网：<a href="https://code.visualstudio.com/api/get-started/your-first-extension">https://code.visualstudio.com/api/get-started/your-first-extension</a></p>
+
+<p>不过不得不说官网API倒是详细，但是想使用某些功能还真的无从下手。想用什么还得去查一下</p>
+
+<p>这次主要参考了这两个链接：</p>
+
+<p><a href="https://github.com/Microsoft/vscode/issues/32058">https://github.com/Microsoft/vscode/issues/32058</a></p>
+
+<p><a href="https://medium.com/@kevinpmcc/how-i-made-my-first-vs-code-extension-8e6a20dcad9d">https://medium.com/@kevinpmcc/how-i-made-my-first-vs-code-extension-8e6a20dcad9d</a></p>
+
+<p>核心代码其实就是这段：</p>
+
+<pre><code class="language-js">// 注册命令
+let disposable1 = vscode.commands.registerCommand(
+    'extension.camelStyle',
+    function() {
+      // 编辑器对象
+      const editor = vscode.window.activeTextEditor
+      // 获取所有选中文本
+      const allSelections = editor.selections
+
+      editor.edit(editBuilder =&gt; {
+        // 遍历并替换文本
+        allSelections.forEach(selection =&gt; {
+          const text = editor.document.getText(selection)
+          editBuilder.replace(selection, toCamelCase(text))
+        })
+      })
+    }
+  )
+
+</code></pre>
+
+<p>VSCode 还支持插件的调试，按下F5就会打开一个用于调试的编辑器，可以执行已经注册的命令了。</p>
+
+<p>测试完毕正常后，就可以发布到应用市场了。</p>
+
+<p>首先需要打包我们的插件</p>
+
+<p>全局安装vsce</p>
+
+<pre><code>npm i -g vsce
+</code></pre>
+
+<p>然后在目录执行<code>vsce package</code>打包，可能会提示缺少某些字段，按照提示填写就好了，主要是package.json的某些字段</p>
+
+<p>可以按照官网的方式来发布，或者直接登陆<a href="https://marketplace.visualstudio.com/VSCode">https://marketplace.visualstudio.com/VSCode</a> 注册账号，然后发布</p>
+
+<p>发布成功后就会显示当前用户发布的插件列表了</p>
+
+<p>比如我的： <a href="https://marketplace.visualstudio.com/items?itemName=allen.VarStyle">https://marketplace.visualstudio.com/items?itemName=allen.VarStyle</a></p>
+
+<p>欢迎下载使用，给出建议😬</p>
+
+<p>代码地址： <a href="https://github.com/YiNanKai/vscode-var-style">https://github.com/YiNanKai/vscode-var-style</a></p>
 
 <div class="text-center" id="reward">
   <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -332,7 +377,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/css/">css</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/vscode/">vscode</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/tags/extension/">extension</a>
 
                   </div>
                 
@@ -345,7 +392,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/color-adjust/" data-tooltip="color-adjust的简单用法">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/12/supreme-image/" data-tooltip="制作Supreme风格图片">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -353,7 +400,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/new-in-chrome69/" data-tooltip="Chrome69更新介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -413,7 +460,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/08/color-adjust/" data-tooltip="color-adjust的简单用法">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/12/supreme-image/" data-tooltip="制作Supreme风格图片">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -421,7 +468,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/2018/09/new-in-chrome69/" data-tooltip="Chrome69更新介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -761,9 +808,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2018\/08\/placeholder-shown\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/2019\/01\/vscode-extension-tutorial\/';
           
-            this.page.identifier = '1534947794';
+            this.page.identifier = '1547284157';
           
         };
         (function() {
