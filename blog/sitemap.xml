@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/2019/03/webpack-compile-scss/</loc>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/2019/01/vscode-extension-tutorial/</loc>
     <lastmod>2019-01-12T17:09:17+08:00</lastmod>
   </url>
@@ -130,18 +135,18 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/categories/front-end/</loc>
-    <lastmod>2019-01-12T17:09:17+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/tags/git/</loc>
-    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/categories/git/</loc>
+    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/tags/git/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -160,13 +165,19 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/post/</loc>
-    <lastmod>2019-01-12T17:09:17+08:00</lastmod>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/tags/react-native/</loc>
     <lastmod>2018-10-21T19:45:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/tags/scss/</loc>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -201,8 +212,14 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/tags/webpack/</loc>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/</loc>
-    <lastmod>2019-01-12T17:09:17+08:00</lastmod>
+    <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
