@@ -1,5 +1,5 @@
 ---
-title: "Hugo Universal"
+title: "Hugo with i18n"
 slug: "Hugo-Universal"
 date: 2019-04-14T16:37:43+08:00
 author: allen

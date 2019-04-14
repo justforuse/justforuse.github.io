@@ -1,5 +1,5 @@
 ---
-title: "Hugo Universal"
+title: "Hugo增加多语言支持"
 slug: "Hugo-Universal"
 date: 2019-04-14T16:37:56+08:00
 author: allen
