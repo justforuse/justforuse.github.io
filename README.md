@@ -1,0 +1,17 @@
+### Static blog website
+
+#### Dev
+
+- Add post
+```
+hugo new --kind post en-us/post/my-article.md
+hugo new --kind post zh-cn/post/my-article.md
+```
+
+- Run
+```
+hugo server -D
+```
+
+- Publish
+Use [Travis CI](https://travis-ci.org/) to deployment automatically 

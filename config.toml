@@ -15,12 +15,21 @@
 baseURL = "https://justforuse.github.io/blog"
 languageCode = "en-us"
 defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = true
 title = "博客"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "alleny"
 googleAnalytics = "UA-122356809-1"
 paginate = 7
 canonifyurls = true
+enableEmoji = true
+
+[languages]
+  [languages.en-us]
+    title = "Blog"
+    contentDir = "content/en-us"
+  [languages.zh-cn]
+    contentDir = "content/zh-cn"
 
 [permalinks]
   post = "/:year/:month/:slug/"
@@ -32,7 +41,7 @@ canonifyurls = true
 
 [author]
   name = "Allen Yuan"
-  bio = "一枚程序员"
+  bio = "Keep going"
   job = "Web developer"
   location = "China"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
