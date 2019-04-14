@@ -636,15 +636,9 @@ transform:translateY(100%);
                   Apr 4, 2019
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather">作为网站生成工具，Hugo也支持国际化。 国际化即支持多种语言，对于现在的网站，只需要添加不同语言下的文本展示即可。
-所以需要做如下配置(config.toml文件中)：
-Hugo 设置默认语言
-languageCode = &quot;en-us&quot; defaultContentLanguage = &quot;zh-cn&quot; defaultContentLanguageInSubdir = true  添加不同语言文件路径：
-[languages] [languages.en-us] title = &quot;Blog&quot; contentDir = &quot;content/en-us&quot; [languages.zh-cn] contentDir = &quot;content/zh-cn&quot;  新建文档的命令也变了(使用&ndash;kind制定文档模板)：
-hugo new --kind post en-us/post/my-article.md hugo new --kind post zh-cn/post/my-article.md  最后生成的文件结构：
-+---content | +---en-us | | \---post | | hugo-universal.md | | | \---zh-cn | \---post | hugo-universal.md  Hugo template 添加基础的国际化配置后我们可能需要在不同的语言下展示不同的内容，比如现在使用的reward组件，做如下修改：
-使用.Site.Language.Lang获取当前页面语言。
-{{ if (eq .Site.Language.Lang &quot;zh-cn&quot;) }} &lt;div class=&quot;text-center&quot; id=&quot;reward&quot;&gt; // .</div>
+              <div class="media-content hide-xs font-merryweather"><p>作为网站生成工具，Hugo也支持国际化。</p>
+
+<p></p></div>
             </div>
             <div style="clear:both;"></div>
             <hr>
