@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Blog</title>
+    <link>https://justforuse.github.io/blog/en-us/tags/hugo/</link>
+    <description>Recent content in Hugo on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2019 16:37:43 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/en-us/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo Universal</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/hugo-universal/</link>
+      <pubDate>Sun, 14 Apr 2019 16:37:43 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/hugo-universal/</guid>
+      <description>&lt;p&gt;As a site generator, hugo also support i18n.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
