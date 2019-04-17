@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/tags/js/</link>
+    <description>Recent content in Js on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Apr 2019 16:37:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo增加多语言支持</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/</link>
+      <pubDate>Sun, 14 Apr 2019 16:37:56 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/</guid>
+      <description>&lt;p&gt;作为网站生成工具，Hugo也支持国际化。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ES提案可选链和管道语法</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/</link>
+      <pubDate>Mon, 26 Nov 2018 22:50:40 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/</guid>
+      <description>&lt;p&gt;两种处于提案状态的新语法：可选链(?.)和管道(|&amp;gt;)语法
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>检测文本是否应用了text-ellipsis省略样式</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/</link>
+      <pubDate>Tue, 23 Oct 2018 21:03:26 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/</guid>
+      <description>&lt;p&gt;css提供了可以省略过长文字的样式：&lt;code&gt;text-ellipsis: hidden&lt;/code&gt;，那么如何检测文本是否被省略呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
