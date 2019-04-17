@@ -1,65 +1,78 @@
-
-
-  
-    
-  
-
-
-  
-
-
-
-
-  
-
-
-  
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-BETA">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Allen Yuan">
+<meta name="keywords" content="css">
+<meta name="description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
+
+基本使用方式：">
+
+
+<meta property="og:description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
+
+基本使用方式：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="@supports使用方法">
+<meta name="twitter:title" content="@supports使用方法">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
+
+基本使用方式：">
+<meta name="twitter:description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
+
+基本使用方式：">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2018-08-04T23:11:02">
+  
+  
+    <meta property="article:modified_time" content="2018-08-04T23:11:02">
+  
+  
+  
+    
+      <meta property="article:section" content="Front-End">
+    
+  
+  
+    
+      <meta property="article:tag" content="css">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+
+
     <title>@supports使用方法</title>
-    <meta name="author" content="Allen Yuan">
-    <meta name="keywords" content="css">
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <meta name="description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
 
-基本使用方式：">
-    <meta property="og:description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
-
-基本使用方式：">
-    <meta property="og:type" content="blog">
-    <meta property="og:title" content="@supports使用方法">
-    <meta property="og:url" content="/zh-cn/2018/08/supports-tutorial/">
-    <meta property="og:site_name" content="博客">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="博客">
-    <meta name="twitter:description" content="@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
-
-基本使用方式：">
-    
-    
-
-    
-    
-
-    
-      <meta property="og:image" content="//www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
-    
-
-    
-    
-    
-
-    
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -115,7 +128,7 @@ if (!doNotTrack) {
     
     
       
-        <img class="header-picture" src="//www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
       
     
     </a>
@@ -127,7 +140,7 @@ if (!doNotTrack) {
     
       <div class="sidebar-profile">
         <a href="https://justforuse.github.io/blog/#about">
-          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
         </a>
         <h4 class="sidebar-profile-name">Allen Yuan</h4>
         
@@ -364,8 +377,8 @@ if (!doNotTrack) {
                 
               
             
-            
-  <div class="post-actions-wrap">
+            <div class="post-actions-wrap">
+  
       <nav >
         <ul class="post-actions post-action-nav">
           
@@ -412,8 +425,8 @@ if (!doNotTrack) {
         </a>
       </li>
     </ul>
-  </div>
-
+  
+</div>
 
             
               
@@ -432,8 +445,8 @@ if (!doNotTrack) {
 
       </div>
       <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
-        
-  <div class="post-actions-wrap">
+        <div class="post-actions-wrap">
+  
       <nav >
         <ul class="post-actions post-action-nav">
           
@@ -480,8 +493,8 @@ if (!doNotTrack) {
         </a>
       </li>
     </ul>
-  </div>
-
+  
+</div>
 
       </div>
       <div id="share-options-bar" class="share-options-bar" data-behavior="4">
@@ -499,7 +512,7 @@ if (!doNotTrack) {
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="//www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
     
     <h4 id="about-card-name">Allen Yuan</h4>
     
@@ -763,6 +776,20 @@ if (!doNotTrack) {
 <script src="https://justforuse.github.io/blog/js/script-ra6duuxzxc7fiavykx4fpc10gsxiwvsuyqnshudabjatbsmtzlvu3tzci1mg.min.js"></script>
 
 
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
 
 <script>
 $(document).ready(function() {
@@ -802,6 +829,7 @@ $(document).ready(function() {
       </script>
     
   
+
 
 
 
