@@ -26,6 +26,7 @@ section {
 }
 .blog {
   /* background-color: lime; */
+  background: #4c4c4caa;
 }
 .about {
   /* background-color: skyblue; */
@@ -45,7 +46,7 @@ h4 {
 }
 h4:hover {
   background-color: #f39c12;
-  box-shadow: 0 0 10px 3px #985103;
+  box-shadow: 0 0 7px 3px #ffd3a3;
 }
 
 nav {
