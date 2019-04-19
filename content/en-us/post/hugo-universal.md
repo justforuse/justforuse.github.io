@@ -23,6 +23,8 @@ Universal means multilingual, for now, we can just add different text display un
 
 Here is what I do(in config.toml)
 
+{{< gad-in-article >}}
+
 ### Hugo
 
 Set default language and set `defaultContentLanguageInSubdir` to `true`
@@ -60,6 +62,7 @@ The file tree looks like this:
 |       \---post
 |               hugo-universal.md
 ```
+{{< gad-in-article >}}
 
 ### Hugo template
 We can display different content under different language. For example, the `reward` shortcodes:
