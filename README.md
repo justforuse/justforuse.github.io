@@ -21,3 +21,16 @@ hugo server -D
 
 - Publish
 Use [Travis CI](https://travis-ci.org/) to deployment automatically 
+
+- Useful code
+```
+table of content
+<!-- toc -->
+
+code block
+{{< codeblock "style.css" "css" >}}
+a {
+  color: red
+}
+{{< /codeblock >}}
+```

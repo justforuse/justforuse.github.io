@@ -86,4 +86,21 @@ module.exports = {
 }
 
 {{< /codeblock >}}
+
+如果你想删除编译后的文件中的`main.js`, 可以使用这个包：[webpack-fix-style-only-entries](https://github.com/fqborges/webpack-fix-style-only-entries)
+
+示例代码：
+
+```
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries")
+...
+
+  plugins: [
+    new FixStyleOnlyEntriesPlugin(),
+    ...
+  ],
+...
+```
+
+
 {{< reward >}}
