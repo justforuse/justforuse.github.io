@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on Blog</title>
+    <link>https://justforuse.github.io/blog/en-us/tags/css/</link>
+    <description>Recent content in Css on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Dec 2018 16:05:41 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/en-us/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>制作Supreme风格图片</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/12/supreme-image/</link>
+      <pubDate>Sat, 08 Dec 2018 16:05:41 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/12/supreme-image/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最近被本山大叔鬼畜洗脑了😂：&lt;a href=&#34;https://www.bilibili.com/video/av19390801?from=search&amp;amp;seid=2488280777914879673&#34;&gt;https://www.bilibili.com/video/av19390801?from=search&amp;amp;seid=2488280777914879673&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;supreme风格图片也是土潮土潮的，所以就来做一个sp风格图片生成器吧~&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用CSS绘制奥运五环标志</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/11/css-to-draw-olympic-logo/</link>
+      <pubDate>Thu, 01 Nov 2018 22:56:26 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/11/css-to-draw-olympic-logo/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>检测文本是否应用了text-ellipsis省略样式</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</link>
+      <pubDate>Tue, 23 Oct 2018 21:03:26 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;css提供了可以省略过长文字的样式：&lt;code&gt;text-ellipsis: hidden&lt;/code&gt;，那么如何检测文本是否被省略呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS伪类placeholder-shown</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/placeholder-shown/</link>
+      <pubDate>Wed, 22 Aug 2018 22:23:14 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/placeholder-shown/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;CSS伪类&lt;code&gt;:placeholder-shown&lt;/code&gt;在&lt;code&gt;input&lt;/code&gt;或&lt;code&gt;textarea&lt;/code&gt;元素显示placeholder文本时生效。&lt;/p&gt;
+
+&lt;p&gt;使用方法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;input:placeholder-shown {
+  border: 1px solid red;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>color-adjust的简单用法</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/color-adjust/</link>
+      <pubDate>Sun, 19 Aug 2018 23:35:15 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/color-adjust/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Css Variable使用入门</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/css-variable-tutorial/</link>
+      <pubDate>Sun, 05 Aug 2018 00:02:17 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/css-variable-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。&lt;/p&gt;
+
+&lt;p&gt;css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的&lt;code&gt;$my-color: red;&lt;/code&gt;类似
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>@supports使用方法</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/supports-tutorial/</link>
+      <pubDate>Sat, 04 Aug 2018 23:11:02 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/supports-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
