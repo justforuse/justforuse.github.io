@@ -8,6 +8,12 @@ hugo new --kind post en-us/post/my-article.md
 hugo new --kind post zh-cn/post/my-article.md
 ```
 
+- Get the latest submodule
+```
+git pull --recurse-submodules
+git submodule update --remote --recursive
+```
+
 - Run
 ```
 hugo server -D
