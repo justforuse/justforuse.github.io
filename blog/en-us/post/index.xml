@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2019 16:37:43 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 13:46:42 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Add Google Adsense to your website</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</guid>
+      <description>&lt;p&gt;Want to add Google Adsense to your website? I&amp;rsquo;ll tell you how I add it to my website.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo with i18n</title>
