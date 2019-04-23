@@ -144,13 +144,6 @@
       <guid>https://justforuse.github.io/blog/zh-cn/2018/08/placeholder-shown/</guid>
       <description>&lt;p&gt;CSS伪类&lt;code&gt;:placeholder-shown&lt;/code&gt;在&lt;code&gt;input&lt;/code&gt;或&lt;code&gt;textarea&lt;/code&gt;元素显示placeholder文本时生效。&lt;/p&gt;
 
-&lt;p&gt;使用方法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;input:placeholder-shown {
-  border: 1px solid red;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -184,8 +177,7 @@
       
       <guid>https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/</guid>
       <description>&lt;p&gt;@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
-
-基本使用方式：&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -205,8 +197,7 @@
       
       <guid>https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/</guid>
       <description>&lt;p&gt;插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
-
-&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;A&lt;/kbd&gt;&lt;/p&gt;</description>
+&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -68,8 +68,9 @@
   &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;两种处于提案状态的新语法：可选链(?.)和管道(|&amp;gt;)语法
-&lt;/p&gt;</description>
+&lt;p&gt;两种处于提案状态的新语法：可选链(?.)和管道(|&amp;gt;)语法&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -157,13 +158,6 @@
 
 &lt;p&gt;CSS伪类&lt;code&gt;:placeholder-shown&lt;/code&gt;在&lt;code&gt;input&lt;/code&gt;或&lt;code&gt;textarea&lt;/code&gt;元素显示placeholder文本时生效。&lt;/p&gt;
 
-&lt;p&gt;使用方法：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;input:placeholder-shown {
-  border: 1px solid red;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
@@ -194,8 +188,9 @@
 
 &lt;p&gt;CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。&lt;/p&gt;
 
-&lt;p&gt;css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的&lt;code&gt;$my-color: red;&lt;/code&gt;类似
-&lt;/p&gt;</description>
+&lt;p&gt;css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的&lt;code&gt;$my-color: red;&lt;/code&gt;类似&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -208,8 +203,9 @@
   &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p&gt;@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
-&lt;/p&gt;</description>
+&lt;p&gt;@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
