@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/</loc>
+    <lastmod>2019-04-23T23:49:37+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</loc>
     <lastmod>2019-04-20T13:46:42+08:00</lastmod>
     <xhtml:link
@@ -336,7 +351,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/</loc>
-    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:37+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -431,7 +446,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/front-end/</loc>
-    <lastmod>2019-03-08T22:05:22+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:37+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -533,7 +548,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/js/</loc>
-    <lastmod>2018-11-26T22:50:41+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:37+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -549,7 +564,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/post/</loc>
-    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:37+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
