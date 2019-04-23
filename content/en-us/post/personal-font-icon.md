@@ -21,6 +21,7 @@ disqusIdentifier: 1537452957
 你可能使用过或听说过各种字体图标库，比如fontawesome, glyphicon等，想过制作一个属于自己的字体图标库吗？今天就试着做一个。
 <!--more-->
 
+{{< gad-in-article >}}
 
 首先是我们会用到的网站：[IcoMoon](https://icomoon.io/app/#/select)  它是一个可以在线生成图标库的网站。
 

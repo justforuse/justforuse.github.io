@@ -20,7 +20,10 @@ disqusIdentifier: 1533398538
 CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。
 
 css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的`$my-color: red;`类似
+
 <!--more-->
+
+{{< gad-in-article >}}
 
 使用方法：
 ```css

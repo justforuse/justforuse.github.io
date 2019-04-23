@@ -24,6 +24,8 @@ VSCode大部分人应该都用过？除了界面简洁、启动速度快，另�
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 我最近遇到的问题是，如何快速更改变量命名风格，比如Php代码的下划线风格要改成驼峰式命名，我并没有找到相应的插件，为了避免大量重复的工作，试着自己做了一款插件： [Var Style](https://marketplace.visualstudio.com/items?itemName=allen.VarStyle)
 
 它的使用效果是这样的：
@@ -74,6 +76,8 @@ let disposable1 = vscode.commands.registerCommand(
 VSCode 还支持插件的调试，按下F5就会打开一个用于调试的编辑器，可以执行已经注册的命令了。
 
 测试完毕正常后，就可以发布到应用市场了。
+
+{{< gad-in-article >}}
 
 首先需要打包我们的插件
 

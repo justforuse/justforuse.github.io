@@ -16,6 +16,8 @@ disqusIdentifier: 1543243840
 两种处于提案状态的新语法：可选链(?.)和管道(|>)语法
 <!--more-->
 
+{{< gad-in-article >}}
+
 **1.可选链**
 
 我们会遇到以下场景，要拿到一个层级比较深的对象的属性值，又要考虑到值的存在问题，所以我们的代码可能是这样：
@@ -38,6 +40,7 @@ if(a?.b?.c) {
 
 如果想在项目中使用此语法，需要babel7转译，插件选择`@babel/plugin-proposal-optional-chaining`
 
+{{< gad-in-article >}}
 
 **2.管道运算符**
 

@@ -23,6 +23,8 @@ AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 首先需要引入我们需要的 js 文件
 
 ```js

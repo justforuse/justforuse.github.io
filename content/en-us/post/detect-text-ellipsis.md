@@ -22,6 +22,8 @@ css提供了可以省略过长文字的样式：`text-ellipsis: hidden`，那么
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 如果有一个伪类，类似`:placeholder-shown`，比如：`:ellipsis-shown`，但是很现实并没有这个伪类，所以要想检测就必须使用js了。
 
 所以只要比对文本实际长度和显示长度是否一致就可以知道是否被省略了，DOM提供了两个属性分别对应了两个长度：`scrollWidth`和`offsetWidth`。

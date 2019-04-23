@@ -18,6 +18,8 @@ disqusIdentifier: 1541084186
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 第一反应是使用`border-radius: 50%`再加上`z-index`设置层叠关系不久可以了吗？
 
 然而，怎么可能会说这么常见的问题呢？

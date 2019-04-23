@@ -23,6 +23,8 @@ disqusIdentifier: 1530458446
 [Travis CI](https://travis-ci.org/)就是一个帮助我们完成自动构建的工具
 <!--more-->
 
+{{< gad-in-article >}}
+
 我想做的不仅是将编译后的`public`文件夹发布到Github Pages上，这样会覆盖掉很多其他文件，所以我只是想将它发布到`blog`文件夹下，所以我的`.travis.yml`长这样：
 
 {{< codeblock ".travis.yml" "yml" >}}

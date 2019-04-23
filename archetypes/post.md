@@ -17,4 +17,6 @@ disqusIdentifier: {{ now.Unix }}
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 {{< reward >}}

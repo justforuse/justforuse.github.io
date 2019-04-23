@@ -20,6 +20,9 @@ disqusIdentifier: 1534692916
 一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：
 
 <!--more-->
+
+{{< gad-in-article >}}
+
 ```css
 color-adjust: exact;
 -webkit-print-color-adjust: exact;

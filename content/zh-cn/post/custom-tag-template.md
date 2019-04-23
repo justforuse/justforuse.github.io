@@ -16,6 +16,9 @@ disqusIdentifier: 1530634067
 ---
 插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
 <!--more-->
+
+{{< gad-in-article >}}
+
 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd>
 ### Stackblitz 新增
 {{< stackblitz angular-isnzrd >}}

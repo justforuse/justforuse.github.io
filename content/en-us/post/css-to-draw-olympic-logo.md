@@ -32,6 +32,8 @@ disqusIdentifier: 1541084187
 
 所以单纯使用`z-index`并不能达到效果。
 
+{{< gad-in-article >}}
+
 想到之前看到的一篇文章，如何实现元素穿插的效果：
 https://css-tricks.com/1-element-css-rainbow-gradient-infinity/
 

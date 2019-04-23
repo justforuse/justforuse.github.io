@@ -20,6 +20,8 @@ supreme风格图片也是土潮土潮的，所以就来做一个sp风格图片�
 
 <!--more-->
 
+{{< gad-in-article >}}
+
 sp风格图片需要使用些CSS filter属性，https://developer.mozilla.org/en-US/docs/Web/CSS/filter 这里使用grayscale 和blur属性，即灰度和模糊度。
 
 还需要制作supreme图片，使用PhotoShop，不要用PS😄

@@ -15,6 +15,8 @@ disqusIdentifier: 1540122320
 安装流程按照https://facebook.github.io/react-native/docs/getting-started 来就可以，期间遇到了几个问题，并记下解决方法。
 <!--more-->
 
+{{< gad-in-article >}}
+
 1.安装时没有sdk和HAXM选项
 ![iBLmx1.png](https://s1.ax1x.com/2018/10/21/iBLmx1.png)
 参考链接： https://www.cnblogs.com/xiadewang/p/7820377.html

@@ -14,13 +14,14 @@ disqusIdentifier: 1534947794
 ---
 CSS伪类`:placeholder-shown`在`input`或`textarea`元素显示placeholder文本时生效。
 
+<!--more-->
+
 使用方法：
 ```css
 input:placeholder-shown {
   border: 1px solid red;
 }
 ```
-<!--more-->
 
 示例
 {{< jsfiddle 3sn09gat >}}

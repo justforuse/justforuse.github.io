@@ -27,6 +27,8 @@ Chrome69版本也是做了很大的更新，最直观的就是整体风格全面
 视频：
 {{< youtube WF2IjH35w8o >}}
 
+{{< gad-in-article >}}
+
 个人觉得实用的简短介绍下：
 
 1 CSS Sroll Snap

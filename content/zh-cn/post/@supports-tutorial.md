@@ -15,6 +15,9 @@ disqusIdentifier: 1533395462
 
 @supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.
 <!--more-->
+
+{{< gad-in-article >}}
+
 基本使用方式：
 ```css
 @supports (display: grid) {
