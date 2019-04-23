@@ -6,7 +6,7 @@
     <description>Recent content in Extension on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jan 2019 17:09:17 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Jan 2019 17:09:18 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/tags/extension/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>新手如何开发一个VSCode插件</title>
       <link>https://justforuse.github.io/blog/en-us/2019/01/vscode-extension-tutorial/</link>
-      <pubDate>Sat, 12 Jan 2019 17:09:17 +0800</pubDate>
+      <pubDate>Sat, 12 Jan 2019 17:09:18 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/en-us/2019/01/vscode-extension-tutorial/</guid>
       <description>&lt;div class=&#34;alert danger &#34;&gt;

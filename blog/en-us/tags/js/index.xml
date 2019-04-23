@@ -6,7 +6,7 @@
     <description>Recent content in Js on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Nov 2018 22:50:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 22:50:41 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>ES提案可选链和管道语法</title>
       <link>https://justforuse.github.io/blog/en-us/2018/11/es-optional-chaining-and-pipeline/</link>
-      <pubDate>Mon, 26 Nov 2018 22:50:40 +0800</pubDate>
+      <pubDate>Mon, 26 Nov 2018 22:50:41 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/en-us/2018/11/es-optional-chaining-and-pipeline/</guid>
       <description>&lt;div class=&#34;alert danger &#34;&gt;
@@ -28,7 +28,7 @@
     <item>
       <title>检测文本是否应用了text-ellipsis省略样式</title>
       <link>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</link>
-      <pubDate>Tue, 23 Oct 2018 21:03:26 +0800</pubDate>
+      <pubDate>Tue, 23 Oct 2018 21:03:27 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</guid>
       <description>&lt;div class=&#34;alert danger &#34;&gt;
