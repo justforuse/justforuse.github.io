@@ -7,54 +7,42 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="webpack">
-<meta name="description" content="
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
+<meta name="keywords" content="webpack, scss, sass, compile">
+<meta name="description" content="Nowdays, the frameworks supply a whole configs to compile our project.
 
+If you just want to compile .scss file, gulp may help us to do that. But I faced that it can not recognize ~ grammar, so I turn to webpack.
 
-现在框架都提供了一套完整的编译配置，比如Vue;
-
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 ">
 
 
-<meta property="og:description" content="
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
+<meta property="og:description" content="Nowdays, the frameworks supply a whole configs to compile our project.
 
+If you just want to compile .scss file, gulp may help us to do that. But I faced that it can not recognize ~ grammar, so I turn to webpack.
 
-现在框架都提供了一套完整的编译配置，比如Vue;
-
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Webpack配置编译SCSS">
-<meta name="twitter:title" content="Webpack配置编译SCSS">
+<meta property="og:title" content="Compile SCSS with Webpack">
+<meta name="twitter:title" content="Compile SCSS with Webpack">
 <meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/">
 <meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
+<meta property="og:description" content="Nowdays, the frameworks supply a whole configs to compile our project.
 
+If you just want to compile .scss file, gulp may help us to do that. But I faced that it can not recognize ~ grammar, so I turn to webpack.
 
-现在框架都提供了一套完整的编译配置，比如Vue;
-
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 ">
-<meta name="twitter:description" content="
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
+<meta name="twitter:description" content="Nowdays, the frameworks supply a whole configs to compile our project.
 
+If you just want to compile .scss file, gulp may help us to do that. But I faced that it can not recognize ~ grammar, so I turn to webpack.
 
-现在框架都提供了一套完整的编译配置，比如Vue;
-
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 ">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-03-08T22:05:21">
+    <meta property="article:published_time" content="2019-03-08T22:05:22">
   
   
-    <meta property="article:modified_time" content="2019-03-08T22:05:21">
+    <meta property="article:modified_time" content="2019-03-08T22:05:22">
   
   
   
@@ -79,6 +67,9 @@
 
 
 
+  <meta property="og:image" content="https://justforuse.github.io/blog/images/2019/3/webpack-compile-scss.png">
+  <meta property="twitter:image" content="https://justforuse.github.io/blog/images/2019/3/webpack-compile-scss.png">
+
 
 
 
@@ -87,7 +78,7 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Webpack配置编译SCSS</title>
+    <title>Compile SCSS with Webpack</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
@@ -297,13 +288,13 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Webpack配置编译SCSS
+      Compile SCSS with Webpack
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-03-08T22:05:21&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-03-08T22:05:22&#43;08:00">
         
   March 8, 2019
 
@@ -328,14 +319,30 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <div class="alert danger ">
-  <p>This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.</p>
-</div>
+              <p>Nowdays, the frameworks supply a whole configs to compile our project.</p>
 
-<p>现在框架都提供了一套完整的编译配置，比如Vue;</p>
+<p>If you just want to compile <code>.scss</code> file, <code>gulp</code> may help us to do that. But I faced that it can not recognize <code>~</code> grammar, so I turn to webpack.</p>
 
-<p>有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
-</p>
+<p></p>
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
 
 <p>
   
@@ -358,7 +365,7 @@ if (!doNotTrack) {
     <tbody>
       <tr>
         <td class="gutter">
-          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre>
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre>
         </td>
         <td class="code">
           <pre class="code-highlight language-js"><code class="js">const MiniCssExtractPlugin = require(&#34;mini-css-extract-plugin&#34;);
@@ -401,7 +408,6 @@ module.exports = {
   ],
   optimization: {
     minimizer: [
-      // 有时候webpack会默认优化z-index值，设置默认不优化
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
           safe: true
@@ -459,9 +465,9 @@ module.exports = {
   </table>
 </figure></p>
 
-<p>如果你想删除编译后的文件中的<code>main.js</code>, 可以使用这个包：<a href="https://github.com/fqborges/webpack-fix-style-only-entries">webpack-fix-style-only-entries</a></p>
+<p>You may want to delete the <code>main.js</code> in output path, you can try this package:<a href="https://github.com/fqborges/webpack-fix-style-only-entries">webpack-fix-style-only-entries</a></p>
 
-<p>示例代码：</p>
+<p>Demo：</p>
 
 <pre><code>const FixStyleOnlyEntriesPlugin = require(&quot;webpack-fix-style-only-entries&quot;)
 ...
@@ -734,21 +740,18 @@ module.exports = {
             
             <div class="media-body">
               <a class="link-unstyled" href="https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/">
-                <h3 class="media-heading">Webpack配置编译SCSS</h3>
+                <h3 class="media-heading">Compile SCSS with Webpack</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
                   Mar 3, 2019
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"><div class="alert danger ">
-  <p>This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.</p>
-</div>
+              <div class="media-content hide-xs font-merryweather"><p>Nowdays, the frameworks supply a whole configs to compile our project.</p>
 
-<p>现在框架都提供了一套完整的编译配置，比如Vue;</p>
+<p>If you just want to compile <code>.scss</code> file, <code>gulp</code> may help us to do that. But I faced that it can not recognize <code>~</code> grammar, so I turn to webpack.</p>
 
-<p>有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
-</p></div>
+<p></p></div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -980,7 +983,7 @@ $(document).ready(function() {
         var disqus_config = function () {
           this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/03\/webpack-compile-scss\/';
           
-            this.page.identifier = '1552053921';
+            this.page.identifier = '1552053922';
           
         };
         (function() {
