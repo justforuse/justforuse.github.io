@@ -21,6 +21,8 @@ disqusIdentifier: 1555231076
 
 所以需要做如下配置(config.toml文件中)：
 
+{{< gad-in-article >}}
+
 ### Hugo
 
 设置默认语言
@@ -58,6 +60,8 @@ hugo new --kind post zh-cn/post/my-article.md
 |       \---post
 |               hugo-universal.md
 ```
+
+{{< gad-in-article >}}
 
 ### Hugo template
 添加基础的国际化配置后我们可能需要在不同的语言下展示不同的内容，比如现在使用的`reward`组件，做如下修改：

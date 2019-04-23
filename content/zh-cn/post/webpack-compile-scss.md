@@ -10,13 +10,19 @@ tags:
 - scss
 keywords:
 - webpack
+- scss
+- sass
+- compile
 disqusIdentifier: 1552053921
-#thumbnailImage: //example.com/image.jpg
+thumbnailImagePosition: left
+thumbnailImage: /blog/images/2019/3/webpack-compile-scss.png
 ---
 现在框架都提供了一套完整的编译配置，比如Vue;
 
 有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 <!--more-->
+
+{{< gad-in-article >}}
 
 {{< codeblock "webpack.config.js" "js">}}
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -86,6 +92,8 @@ module.exports = {
 }
 
 {{< /codeblock >}}
+
+<hr>
 
 如果你想删除编译后的文件中的`main.js`, 可以使用这个包：[webpack-fix-style-only-entries](https://github.com/fqborges/webpack-fix-style-only-entries)
 

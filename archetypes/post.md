@@ -10,7 +10,9 @@ tags:
 keywords:
 - js
 disqusIdentifier: {{ now.Unix }}
-#thumbnailImage: //example.com/image.jpg
+# draft: true
+# thumbnailImagePosition: left
+# thumbnailImage: /blog/images/2019
 ---
 
 <!--more-->

@@ -1,7 +1,7 @@
 ---
-title: "Webpack配置编译SCSS"
+title: "Compile SCSS with Webpack"
 slug: "Webpack-Compile-Scss"
-date: 2019-03-08T22:05:21+08:00
+date: 2019-03-08T22:05:22+08:00
 author: allen
 categories:
 - Front-End
@@ -10,18 +10,21 @@ tags:
 - scss
 keywords:
 - webpack
-disqusIdentifier: 1552053921
-#thumbnailImage: //example.com/image.jpg
+- scss
+- sass
+- compile
+disqusIdentifier: 1552053922
+thumbnailImagePosition: left
+thumbnailImage: /blog/images/2019/3/webpack-compile-scss.png
 ---
 
-{{< alert danger >}}
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
-{{< /alert >}}
+Nowdays, the frameworks supply a whole configs to compile our project.
 
-现在框架都提供了一套完整的编译配置，比如Vue;
+If you just want to compile `.scss` file, `gulp` may help us to do that. But I faced that it can not recognize `~` grammar, so I turn to webpack.
 
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
 <!--more-->
+
+{{< gad-in-article >}}
 
 {{< codeblock "webpack.config.js" "js">}}
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -64,7 +67,6 @@ module.exports = {
   ],
   optimization: {
     minimizer: [
-      // 有时候webpack会默认优化z-index值，设置默认不优化
       new OptimizeCSSAssetsPlugin({
         cssProcessorOptions: {
           safe: true
@@ -92,9 +94,9 @@ module.exports = {
 
 {{< /codeblock >}}
 
-如果你想删除编译后的文件中的`main.js`, 可以使用这个包：[webpack-fix-style-only-entries](https://github.com/fqborges/webpack-fix-style-only-entries)
+You may want to delete the `main.js` in output path, you can try this package:[webpack-fix-style-only-entries](https://github.com/fqborges/webpack-fix-style-only-entries)
 
-示例代码：
+Demo：
 
 ```
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries")
