@@ -1,7 +1,7 @@
 ---
 title: "新手如何开发一个VSCode插件"
 slug: "Vscode-Extension-Tutorial"
-date: 2019-01-12T17:09:17+08:00
+date: 2019-01-12T17:09:18+08:00
 author: allen
 categories:
 - Front-End
@@ -10,7 +10,7 @@ tags:
 - extension
 keywords:
 - vscode extension
-disqusIdentifier: 1547284157
+disqusIdentifier: 1547284158
 #thumbnailImage: //example.com/image.jpg
 ---
 

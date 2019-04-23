@@ -1,7 +1,7 @@
 ---
 title: "@supports使用方法"
 slug: "@supports-tutorial"
-date: 2018-08-04T23:11:02+08:00
+date: 2018-08-04T23:11:03+08:00
 author: allen
 categories:
 - Front-End
@@ -9,7 +9,7 @@ tags:
 - css
 keywords:
 - css
-disqusIdentifier: 1533395462
+disqusIdentifier: 1533395463
 #thumbnailImage: //example.com/image.jpg
 ---
 

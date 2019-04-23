@@ -1,7 +1,7 @@
 ---
 title: "自定义元素模板"
 slug: "custom-tag-template"
-date: 2018-07-04T00:07:47+08:00
+date: 2018-07-04T00:07:48+08:00
 author: allen
 # categories:
 # - category
@@ -11,7 +11,7 @@ author: allen
 # - tag2
 # keywords:
 # - tech
-disqusIdentifier: 1530634067
+disqusIdentifier: 1530634068
 #thumbnailImage: //example.com/image.jpg
 ---
 

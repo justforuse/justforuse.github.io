@@ -12,7 +12,7 @@ tags:
 keywords:
 - angularjs
 - animate
-disqusIdentifier: angularjs-animate
+disqusIdentifier: 1529826606
 ---
 
 AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。

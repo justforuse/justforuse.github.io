@@ -1,8 +1,8 @@
 ---
 title: "使用ng-animate为网页增加动画效果"
 slug: 'angularjs-animate'
-date: 2018-06-24T15:50:06+08:00
-draft: false
+date: 2018-06-24T15:50:07+08:00
+
 author: 'allen'
 categories:
 - Front-End
@@ -12,7 +12,7 @@ tags:
 keywords:
 - angularjs
 - animate
-disqusIdentifier: angularjs-animate
+disqusIdentifier: 1529826607
 ---
 
 {{< alert danger >}}

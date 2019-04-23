@@ -1,7 +1,7 @@
 ---
 title: "Css Variable使用入门"
 slug: "css-variable-tutorial"
-date: 2018-08-05T00:02:17+08:00
+date: 2018-08-05T00:02:18+08:00
 author: allen
 categories:
 - Front-End
@@ -9,7 +9,7 @@ tags:
 - css
 keywords:
 - css
-disqusIdentifier: 1533398537
+disqusIdentifier: 1533398538
 #thumbnailImage: //example.com/image.jpg
 ---
 

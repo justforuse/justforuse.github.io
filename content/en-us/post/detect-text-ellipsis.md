@@ -1,7 +1,7 @@
 ---
 title: "检测文本是否应用了text-ellipsis省略样式"
 slug: "Detect-Text-Ellipsis"
-date: 2018-10-23T21:03:26+08:00
+date: 2018-10-23T21:03:27+08:00
 author: allen
 categories:
 - Front-End
@@ -10,7 +10,7 @@ tags:
 - css
 keywords:
 - text-ellipsis
-disqusIdentifier: 1540299806
+disqusIdentifier: 1540299807
 #thumbnailImage: //example.com/image.jpg
 ---
 

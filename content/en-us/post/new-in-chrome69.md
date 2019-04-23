@@ -1,7 +1,7 @@
 ---
 title: "Chrome69更新介绍"
 slug: "new-in-chrome69"
-date: 2018-09-08T17:26:35+08:00
+date: 2018-09-08T17:26:36+08:00
 author: allen
 categories:
 - Front-End
@@ -10,7 +10,7 @@ tags:
 keywords:
 - chrome69
 - browser
-disqusIdentifier: 1536398795
+disqusIdentifier: 1536398796
 #thumbnailImage: //example.com/image.jpg
 ---
 

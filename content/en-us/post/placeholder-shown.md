@@ -1,7 +1,7 @@
 ---
 title: "CSS伪类placeholder-shown"
 slug: "placeholder-shown"
-date: 2018-08-22T22:23:14+08:00
+date: 2018-08-22T22:23:15+08:00
 author: allen
 categories:
 - Front-End
@@ -9,7 +9,7 @@ tags:
 - css
 keywords:
 - placeholder-shown
-disqusIdentifier: 1534947794
+disqusIdentifier: 1534947795
 #thumbnailImage: //example.com/image.jpg
 ---
 

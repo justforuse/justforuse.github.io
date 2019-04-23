@@ -10,7 +10,7 @@ tags:
 keywords:
 - travis
 - hugo
-disqusIdentifier: travisci-deploy-hugo
+disqusIdentifier: 1530458446
 #thumbnailImage: //example.com/image.jpg
 ---
 

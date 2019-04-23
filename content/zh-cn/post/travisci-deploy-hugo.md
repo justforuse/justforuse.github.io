@@ -1,7 +1,7 @@
 ---
 title: "使用Travis-CI自动发布Hugo到GitHub上"
 slug: "travisci-deploy-hugo"
-date: 2018-07-01T23:20:46+08:00
+date: 2018-07-01T23:20:45+08:00
 categories:
 - Front-End
 tags:
@@ -10,7 +10,7 @@ tags:
 keywords:
 - travis
 - hugo
-disqusIdentifier: travisci-deploy-hugo
+disqusIdentifier: 1530458445
 #thumbnailImage: //example.com/image.jpg
 ---
 

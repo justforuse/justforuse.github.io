@@ -1,7 +1,7 @@
 ---
 title: "初始化React Native开发环境"
 slug: "Set-Up-React-Native"
-date: 2018-10-21T19:45:20+08:00
+date: 2018-10-21T19:45:21+08:00
 author: allen
 categories:
 - Front-End
@@ -9,7 +9,7 @@ tags:
 - react-native
 keywords:
 - react-native
-disqusIdentifier: 1540122320
+disqusIdentifier: 1540122321
 #thumbnailImage: //example.com/image.jpg
 ---
 
