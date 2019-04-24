@@ -4,11 +4,13 @@ slug: "Lantern-Invite-Code"
 date: 2019-04-23T23:49:37+08:00
 author: allen
 categories:
-- Front-End
+- Tools
 tags:
-- js
+- vpn
 keywords:
-- js
+- lantern
+- vpn
+- invite code
 disqusIdentifier: 1556034577
 # draft: true
 # thumbnailImagePosition: left

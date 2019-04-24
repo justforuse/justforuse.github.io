@@ -1,14 +1,16 @@
 ---
-title: "Lantern Invite Code"
+title: "Lantern邀请码"
 slug: "Lantern-Invite-Code"
 date: 2019-04-23T23:49:39+08:00
 author: allen
 categories:
-- Front-End
+- Tools
 tags:
-- js
+- vpn
 keywords:
-- js
+- lantern
+- vpn
+- invite code
 disqusIdentifier: 1556034579
 # draft: true
 # thumbnailImagePosition: left
