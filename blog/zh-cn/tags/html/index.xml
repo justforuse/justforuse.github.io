@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/tags/html/</link>
+    <description>Recent content in Html on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 23:01:47 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为网站添加水印图片</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/04/add-watermark-to-website/</link>
+      <pubDate>Wed, 24 Apr 2019 23:01:47 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/04/add-watermark-to-website/</guid>
+      <description>&lt;p&gt;有时为了避免网站信息随意被别人使用，可以在网站整体背景添加水印，当然这主要是针对截图类的信息，如何快速为网站添加水印呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/categories/tools/</link>
+    <description>Recent content in Tools on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Apr 2019 23:49:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lantern邀请码</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/</link>
+      <pubDate>Tue, 23 Apr 2019 23:49:39 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/</guid>
+      <description>&lt;p&gt;输入我的邀请码 GD3BDG 来获得三个月的蓝灯专业版！立即下载 &lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;https://github.com/getlantern/forum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;谢谢各位捧场。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
