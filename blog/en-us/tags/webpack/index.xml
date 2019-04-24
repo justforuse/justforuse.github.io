@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webpack on Blog</title>
+    <link>https://justforuse.github.io/blog/en-us/tags/webpack/</link>
+    <description>Recent content in Webpack on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 08 Mar 2019 22:05:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/en-us/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compile SCSS with Webpack</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/</link>
+      <pubDate>Fri, 08 Mar 2019 22:05:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/</guid>
+      <description>&lt;p&gt;Nowdays, the frameworks supply a whole configs to compile our project.&lt;/p&gt;
+
+&lt;p&gt;If you just want to compile &lt;code&gt;.scss&lt;/code&gt; file, &lt;code&gt;gulp&lt;/code&gt; may help us to do that. But I faced that it can not recognize &lt;code&gt;~&lt;/code&gt; grammar, so I turn to webpack.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

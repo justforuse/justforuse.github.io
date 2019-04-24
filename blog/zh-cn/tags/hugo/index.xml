@@ -6,15 +6,28 @@
     <description>Recent content in Hugo on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jul 2018 23:20:46 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 13:46:44 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>将Google Adsense添加到网站中</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/04/add-google-adsense-to-website/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:44 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/04/add-google-adsense-to-website/</guid>
+      <description>&lt;!-- toc --&gt;
+
+&lt;p&gt;一般情况下，网站是要挂上广告的，如果没有广告商主动来投，那我们也可以尝试介入其他广告联盟。&lt;/p&gt;
+
+&lt;p&gt;Google Adsense就是一个不错的选择，这几天折腾了下终于把Google Adsense接入到这个网站中了，下面说一下步骤和遇到的问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>使用Travis-CI自动发布Hugo到GitHub上</title>
       <link>https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/</link>
-      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
+      <pubDate>Sun, 01 Jul 2018 23:20:45 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/</guid>
       <description>&lt;p&gt;每次增加新文章时，还需手动更新到github上，重复劳动可以交由工具完成。&lt;/p&gt;

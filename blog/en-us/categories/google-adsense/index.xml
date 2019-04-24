@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google Adsense on Blog</title>
+    <link>https://justforuse.github.io/blog/en-us/categories/google-adsense/</link>
+    <description>Recent content in Google Adsense on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Apr 2019 13:46:42 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/en-us/categories/google-adsense/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Add Google Adsense to your website</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</guid>
+      <description>&lt;p&gt;Want to add Google Adsense to your website? I&amp;rsquo;ll tell you how I add it to my website.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

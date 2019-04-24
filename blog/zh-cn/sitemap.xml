@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/</loc>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/04/add-google-adsense-to-website/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/04/add-google-adsense-to-website/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/</loc>
     <lastmod>2019-04-14T16:37:56+08:00</lastmod>
     <xhtml:link
@@ -20,98 +50,288 @@
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/</loc>
     <lastmod>2019-03-08T22:05:21+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/</loc>
     <lastmod>2019-01-12T17:09:17+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/01/vscode-extension-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/12/supreme-image/</loc>
     <lastmod>2018-12-08T16:05:41+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/12/supreme-image/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/12/supreme-image/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/</loc>
     <lastmod>2018-11-26T22:50:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/11/es-optional-chaining-and-pipeline/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/</loc>
     <lastmod>2018-11-01T22:56:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/11/css-to-draw-olympic-logo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/</loc>
     <lastmod>2018-10-23T21:03:26+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/10/set-up-react-native/</loc>
     <lastmod>2018-10-21T19:45:20+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/10/set-up-react-native/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/10/set-up-react-native/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/09/personal-font-icon-tutorial/</loc>
     <lastmod>2018-09-20T22:15:56+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/09/personal-font-icon-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/09/personal-font-icon-tutorial/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/09/new-in-chrome69/</loc>
     <lastmod>2018-09-08T17:26:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/09/new-in-chrome69/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/09/new-in-chrome69/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/08/placeholder-shown/</loc>
     <lastmod>2018-08-22T22:23:14+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/08/placeholder-shown/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/08/placeholder-shown/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/08/color-adjust/</loc>
     <lastmod>2018-08-19T23:35:15+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/08/color-adjust/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/08/color-adjust/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/08/css-variable-tutorial/</loc>
     <lastmod>2018-08-05T00:02:17+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/08/css-variable-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/08/css-variable-tutorial/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/</loc>
     <lastmod>2018-08-04T23:11:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/08/supports-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/08/supports-tutorial/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/07/git-submodule/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/07/git-submodule/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/07/git-submodule/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/</loc>
     <lastmod>2018-07-04T00:07:47+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/07/custom-tag-template/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/</loc>
-    <lastmod>2018-07-01T23:20:46+08:00</lastmod>
+    <lastmod>2018-07-01T23:20:45+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/07/travisci-deploy-hugo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2018/06/angularjs-animate/</loc>
     <lastmod>2018-06-24T15:50:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2018/06/angularjs-animate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2018/06/angularjs-animate/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/angularjs/</loc>
     <lastmod>2018-06-24T15:50:06+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/angularjs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/angularjs/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/animate/</loc>
     <lastmod>2018-06-24T15:50:06+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/animate/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/animate/"
+                />
   </url>
   
   <url>
@@ -148,47 +368,149 @@
     <loc>https://justforuse.github.io/blog/zh-cn/tags/chrome/</loc>
     <lastmod>2018-09-08T17:26:35+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/chrome/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/chrome/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/css/</loc>
     <lastmod>2018-12-08T16:05:41+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/css/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/css/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/extension/</loc>
     <lastmod>2019-01-12T17:09:17+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/extension/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/font/</loc>
     <lastmod>2018-09-20T22:15:56+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/font/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/font/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-04-14T16:37:56+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/front-end/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/front-end/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/git/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/git/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/git/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/git/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/hugo/</loc>
-    <lastmod>2018-07-01T23:20:46+08:00</lastmod>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -204,13 +526,23 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-04-14T16:37:56+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/js/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/js/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-04-14T16:37:56+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -228,24 +560,64 @@
     <loc>https://justforuse.github.io/blog/zh-cn/tags/react-native/</loc>
     <lastmod>2018-10-21T19:45:20+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/react-native/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/react-native/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/scss/</loc>
     <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/scss/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/scss/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/submodule/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/submodule/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/submodule/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/svg/</loc>
     <lastmod>2018-09-20T22:15:56+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/svg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/svg/"
+                />
   </url>
   
   <url>
@@ -266,25 +638,55 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/travis-ci/</loc>
-    <lastmod>2018-07-01T23:20:46+08:00</lastmod>
+    <lastmod>2018-07-01T23:20:45+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/travis-ci/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/travis-ci/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/vscode/</loc>
     <lastmod>2019-01-12T17:09:17+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/vscode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/vscode/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/webpack/</loc>
     <lastmod>2019-03-08T22:05:21+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/webpack/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/webpack/"
+                />
   </url>
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-04-14T16:37:56+08:00</lastmod>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

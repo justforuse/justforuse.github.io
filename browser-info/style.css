@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.top {
+  background-color: #3c7fc6;
+  padding: 1px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.main {
+  background-color: #3c40c6;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  background-color: #0e2056;
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+}
+
+input {
+  width: 300px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.result {
+  text-decoration: underline;
+}
+button {
+  background-color: white;
+  padding: 10px;
+}

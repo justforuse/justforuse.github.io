@@ -6,10 +6,33 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2019 16:37:43 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Apr 2019 23:49:37 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lantern Invite Code</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/</link>
+      <pubDate>Tue, 23 Apr 2019 23:49:37 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/</guid>
+      <description>&lt;p&gt;输入我的邀请码 GD3BDG 来获得三个月的蓝灯专业版！立即下载 &lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;https://github.com/getlantern/forum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;谢谢各位捧场。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Add Google Adsense to your website</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</guid>
+      <description>&lt;p&gt;Want to add Google Adsense to your website? I&amp;rsquo;ll tell you how I add it to my website.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo with i18n</title>
@@ -18,6 +41,267 @@
       
       <guid>https://justforuse.github.io/blog/en-us/2019/04/hugo-universal/</guid>
       <description>&lt;p&gt;As a site generator, hugo also support i18n.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Compile SCSS with Webpack</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/</link>
+      <pubDate>Fri, 08 Mar 2019 22:05:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/03/webpack-compile-scss/</guid>
+      <description>&lt;p&gt;Nowdays, the frameworks supply a whole configs to compile our project.&lt;/p&gt;
+
+&lt;p&gt;If you just want to compile &lt;code&gt;.scss&lt;/code&gt; file, &lt;code&gt;gulp&lt;/code&gt; may help us to do that. But I faced that it can not recognize &lt;code&gt;~&lt;/code&gt; grammar, so I turn to webpack.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新手如何开发一个VSCode插件</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/01/vscode-extension-tutorial/</link>
+      <pubDate>Sat, 12 Jan 2019 17:09:18 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/01/vscode-extension-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。&lt;/p&gt;
+
+&lt;p&gt;大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>制作Supreme风格图片</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/12/supreme-image/</link>
+      <pubDate>Sat, 08 Dec 2018 16:05:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/12/supreme-image/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;最近被本山大叔鬼畜洗脑了😂：&lt;a href=&#34;https://www.bilibili.com/video/av19390801?from=search&amp;amp;seid=2488280777914879673&#34;&gt;https://www.bilibili.com/video/av19390801?from=search&amp;amp;seid=2488280777914879673&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;supreme风格图片也是土潮土潮的，所以就来做一个sp风格图片生成器吧~&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ES提案可选链和管道语法</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/11/es-optional-chaining-and-pipeline/</link>
+      <pubDate>Mon, 26 Nov 2018 22:50:41 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/11/es-optional-chaining-and-pipeline/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;两种处于提案状态的新语法：可选链(?.)和管道(|&amp;gt;)语法&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用CSS绘制奥运五环标志</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/11/css-to-draw-olympic-logo/</link>
+      <pubDate>Thu, 01 Nov 2018 22:56:27 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/11/css-to-draw-olympic-logo/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>检测文本是否应用了text-ellipsis省略样式</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</link>
+      <pubDate>Tue, 23 Oct 2018 21:03:27 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/10/detect-text-ellipsis/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;css提供了可以省略过长文字的样式：&lt;code&gt;text-ellipsis: hidden&lt;/code&gt;，那么如何检测文本是否被省略呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>初始化React Native开发环境</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/10/set-up-react-native/</link>
+      <pubDate>Sun, 21 Oct 2018 19:45:21 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/10/set-up-react-native/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装流程按照&lt;a href=&#34;https://facebook.github.io/react-native/docs/getting-started&#34;&gt;https://facebook.github.io/react-native/docs/getting-started&lt;/a&gt; 来就可以，期间遇到了几个问题，并记下解决方法。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>制作自己的字体图标库</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/09/personal-font-icon-tutorial/</link>
+      <pubDate>Thu, 20 Sep 2018 22:15:57 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/09/personal-font-icon-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;你可能使用过或听说过各种字体图标库，比如fontawesome, glyphicon等，想过制作一个属于自己的字体图标库吗？今天就试着做一个。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Chrome69更新介绍</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/09/new-in-chrome69/</link>
+      <pubDate>Sat, 08 Sep 2018 17:26:36 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/09/new-in-chrome69/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Chrome已经发布10周年了！🎉🎉&lt;/p&gt;
+
+&lt;p&gt;Chrome69版本也是做了很大的更新，最直观的就是整体风格全面拥抱Material Design&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSS伪类placeholder-shown</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/placeholder-shown/</link>
+      <pubDate>Wed, 22 Aug 2018 22:23:15 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/placeholder-shown/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;CSS伪类&lt;code&gt;:placeholder-shown&lt;/code&gt;在&lt;code&gt;input&lt;/code&gt;或&lt;code&gt;textarea&lt;/code&gt;元素显示placeholder文本时生效。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>color-adjust的简单用法</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/color-adjust/</link>
+      <pubDate>Sun, 19 Aug 2018 23:35:16 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/color-adjust/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一个用户打印时的css属性，一般情况下设置背景色的时候打印时会被忽略，如果想打印的时候也将背景色打印出来就可以使用这个属性，用法：&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Css Variable使用入门</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/css-variable-tutorial/</link>
+      <pubDate>Sun, 05 Aug 2018 00:02:18 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/css-variable-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;CSS变得更像一个编程语言了，除了此次的css variables，还有很多提案，感兴趣可以去查一下。&lt;/p&gt;
+
+&lt;p&gt;css variables让我们可以在CSS中使用变量了，使用和SCSS语法中的&lt;code&gt;$my-color: red;&lt;/code&gt;类似&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>@supports使用方法</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/08/supports-tutorial/</link>
+      <pubDate>Sat, 04 Aug 2018 23:11:03 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/08/supports-tutorial/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;@supports是CSS3新引入的规则之一，主要用于检测当前浏览器是否支持某个CSS属性并加载具体样式.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git Submodule使用介绍</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/07/git-submodule/</link>
+      <pubDate>Tue, 10 Jul 2018 00:37:34 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/07/git-submodule/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;参考链接： &lt;a href=&#34;https://laozhu.me/post/git-submodule-tutorial/&#34;&gt;https://laozhu.me/post/git-submodule-tutorial/&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自定义元素模板</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/07/custom-tag-template/</link>
+      <pubDate>Wed, 04 Jul 2018 00:07:48 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/07/custom-tag-template/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Travis-CI自动发布Hugo到GitHub上</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/07/travisci-deploy-hugo/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/07/travisci-deploy-hugo/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;每次增加新文章时，还需手动更新到github上，重复劳动可以交由工具完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/&#34;&gt;Travis CI&lt;/a&gt;就是一个帮助我们完成自动构建的工具
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用ng-animate为网页增加动画效果</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/06/angularjs-animate/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:07 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/06/angularjs-animate/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;AngularJS 中提供了 ngAnimate 模块，可以为网页提供动画效果。&lt;/p&gt;
+
+&lt;p&gt;典型的应用就是视图切换和元素添加与移除。&lt;/p&gt;
+
+&lt;p&gt;这里以 ui-view 和 ng-repeat 指令作为展示。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

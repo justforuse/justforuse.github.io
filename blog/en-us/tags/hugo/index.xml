@@ -6,10 +6,21 @@
     <description>Recent content in Hugo on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2019 16:37:43 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 13:46:42 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Add Google Adsense to your website</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/04/add-google-adsense-to-website/</guid>
+      <description>&lt;p&gt;Want to add Google Adsense to your website? I&amp;rsquo;ll tell you how I add it to my website.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo with i18n</title>
@@ -20,6 +31,22 @@
       <description>&lt;p&gt;As a site generator, hugo also support i18n.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Travis-CI自动发布Hugo到GitHub上</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/07/travisci-deploy-hugo/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/07/travisci-deploy-hugo/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;每次增加新文章时，还需手动更新到github上，重复劳动可以交由工具完成。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://travis-ci.org/&#34;&gt;Travis CI&lt;/a&gt;就是一个帮助我们完成自动构建的工具
+&lt;/p&gt;</description>
     </item>
     
   </channel>

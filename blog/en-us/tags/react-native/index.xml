@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React Native on Blog</title>
+    <link>https://justforuse.github.io/blog/en-us/tags/react-native/</link>
+    <description>Recent content in React Native on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 21 Oct 2018 19:45:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/en-us/tags/react-native/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>初始化React Native开发环境</title>
+      <link>https://justforuse.github.io/blog/en-us/2018/10/set-up-react-native/</link>
+      <pubDate>Sun, 21 Oct 2018 19:45:21 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2018/10/set-up-react-native/</guid>
+      <description>&lt;div class=&#34;alert danger &#34;&gt;
+  &lt;p&gt;This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;安装流程按照&lt;a href=&#34;https://facebook.github.io/react-native/docs/getting-started&#34;&gt;https://facebook.github.io/react-native/docs/getting-started&lt;/a&gt; 来就可以，期间遇到了几个问题，并记下解决方法。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

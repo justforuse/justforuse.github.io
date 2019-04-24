@@ -6,17 +6,161 @@
     <description>Recent content in Tags on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Apr 2019 16:37:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 Jun 2018 15:50:07 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Angularjs</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/angularjs/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:07 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/angularjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Animate</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/animate/</link>
+      <pubDate>Sun, 24 Jun 2018 15:50:07 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/animate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/chrome/</link>
+      <pubDate>Sat, 08 Sep 2018 17:26:36 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/css/</link>
+      <pubDate>Sat, 08 Dec 2018 16:05:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Extension</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/extension/</link>
+      <pubDate>Sat, 12 Jan 2019 17:09:18 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/extension/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Font</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/font/</link>
+      <pubDate>Thu, 20 Sep 2018 22:15:57 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/font/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/git/</link>
+      <pubDate>Tue, 10 Jul 2018 00:37:34 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Adsense</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/google-adsense/</link>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/google-adsense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://justforuse.github.io/blog/en-us/tags/hugo/</link>
-      <pubDate>Sun, 14 Apr 2019 16:37:43 +0800</pubDate>
+      <pubDate>Sat, 20 Apr 2019 13:46:42 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/en-us/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Js</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/js/</link>
+      <pubDate>Tue, 23 Apr 2019 23:49:37 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React Native</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/react-native/</link>
+      <pubDate>Sun, 21 Oct 2018 19:45:21 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/react-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scss</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/scss/</link>
+      <pubDate>Fri, 08 Mar 2019 22:05:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/scss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Submodule</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/submodule/</link>
+      <pubDate>Tue, 10 Jul 2018 00:37:34 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/submodule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svg</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/svg/</link>
+      <pubDate>Thu, 20 Sep 2018 22:15:57 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/svg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travis Ci</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/travis-ci/</link>
+      <pubDate>Sun, 01 Jul 2018 23:20:46 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/travis-ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vscode</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/vscode/</link>
+      <pubDate>Sat, 12 Jan 2019 17:09:18 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webpack</title>
+      <link>https://justforuse.github.io/blog/en-us/tags/webpack/</link>
+      <pubDate>Fri, 08 Mar 2019 22:05:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/tags/webpack/</guid>
       <description></description>
     </item>
     
