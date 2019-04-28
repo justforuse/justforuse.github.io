@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/04/add-watermark-to-website/</loc>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/04/add-watermark-to-website/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/04/add-watermark-to-website/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/</loc>
     <lastmod>2019-04-23T23:49:39+08:00</lastmod>
     <xhtml:link
@@ -382,7 +397,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/css/</loc>
-    <lastmod>2018-12-08T16:05:41+08:00</lastmod>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -430,7 +445,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -441,22 +456,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/categories/front-end/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/tags/git/</loc>
-    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/tags/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/tags/git/"
                 />
   </url>
   
@@ -477,18 +476,18 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/tags/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/git/</loc>
+    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/tags/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/tags/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/tags/git/"
                 />
   </url>
   
@@ -505,6 +504,38 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/html/</loc>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/html/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/html/"
                 />
   </url>
   
@@ -526,7 +557,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <lastmod>2019-04-14T16:37:56+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -542,7 +573,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -637,6 +668,22 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/tools/</loc>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/tools/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/tools/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/travis-ci/</loc>
     <lastmod>2018-07-01T23:20:45+08:00</lastmod>
     <priority>0</priority>
@@ -653,6 +700,22 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/vpn/</loc>
+    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/vpn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/vpn/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/vscode/</loc>
     <lastmod>2019-01-12T17:09:17+08:00</lastmod>
     <priority>0</priority>
@@ -665,6 +728,22 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/tags/vscode/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/watermark/</loc>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/watermark/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/watermark/"
                 />
   </url>
   
@@ -686,7 +765,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-04-23T23:49:39+08:00</lastmod>
+    <lastmod>2019-04-24T23:01:47+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
