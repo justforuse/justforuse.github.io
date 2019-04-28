@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Apr 2019 23:01:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Apr 2019 22:48:49 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSDN博客统计平台</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/04/csdn-crawler/</link>
+      <pubDate>Sun, 28 Apr 2019 22:48:49 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/04/csdn-crawler/</guid>
+      <description>&lt;p&gt;CSDN自带的后台管理平台功能相对单一，比如统计阅读量排行就没有，所以可以自己试着做一下。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>为网站添加水印图片</title>
