@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <title>Document</title>
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui@2.6.3/lib/theme-chalk/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui@2.6.3/lib/index.js"></script>
+</head>
+
+<body>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- CSDN Crawler Ad -->
+  <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-1281402863208945"
+        data-ad-slot="9129359023"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <h1 align="center">CSDN 博客统计</h1>
+  <div id="app">
+    <el-form ref="formRef" :model="form" :rules="rules" :inline="true" size="small">
+      <el-form-item label="用户ID" prop="userId">
+        <el-input v-model="form.userId" placeholder="必填" clearable></el-input>
+      </el-form-item>
+      <el-form-item label="总页数" prop="endPageNum">
+        <el-input v-model="form.pageNum" placeholder="每页20调，默认10页"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" @click="handleSearch" :loading="isLoading">查询</el-button>
+      </el-form-item>
+    </el-form>
+    <p>查询到{{ total }}条数据</p>
+    <el-table :data="tableData" style="width: 100%" v-loading="isLoading" max-height="400">
+      <el-table-column prop="title" label="标题"></el-table-column>
+      <el-table-column prop="count" label="阅读量" width="180" sortable></el-table-column>
+    </el-table>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        isLoading: false,
+        form: {
+          userId: '',
+          pageNum: ''
+        },
+        rules: {
+          userId: [
+            {
+              required: true,
+              message: '请输入用户ID',
+              trigger: ['blur', 'change']
+            }
+          ]
+        },
+        total: 0,
+        tableData: []
+      },
+      methods: {
+        handleSearch() {
+          this.$refs.formRef.validate(isValid => {
+            if (isValid) {
+              this.isLoading = true
+              fetch(`http://www.codog.com.cn:5000/info?userId=${this.form.userId}&pageNum=${this.form.pageNum}`)
+                .then(res => res.json())
+                .then(data => {
+                  this.total = data.total
+                  this.tableData = data.data
+                })
+                .finally(() => {
+                  this.isLoading = false
+                })
+            }
+          })
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
