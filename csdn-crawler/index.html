@@ -28,6 +28,7 @@
   </div>
   
   <h1 align="center">CSDN 博客统计</h1>
+  <p id="hinter" style="text-align:center; color: red; display: none">此页面不支持HTTPS协议，改为HTTP访问</p>
   <div id="app">
     <el-form ref="formRef" :model="form" :rules="rules" :inline="true" size="small">
       <el-form-item label="用户ID" prop="userId">
@@ -47,6 +48,9 @@
     </el-table>
   </div>
   <script>
+    if(window.location.protocol === 'http:') {
+      document.querySelector('#hinter').style.display = 'block'
+    }
     new Vue({
       el: '#app',
       data: {
@@ -77,6 +81,9 @@
                 .then(data => {
                   this.total = data.total
                   this.tableData = data.data
+                })
+                .catch(() => {
+                  this.$message.error('Failed')
                 })
                 .finally(() => {
                   this.isLoading = false
