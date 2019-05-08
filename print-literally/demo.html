@@ -5,6 +5,16 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122356809-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-122356809-1');
+	</script>
+
 	<style>
 	.text-container {
 		width: 600px;
@@ -13,14 +23,14 @@
 		font-size: 36px;
 		color: #fff;
 	}
-	
+
 	.cursor {
 		opacity: 1;
 		/* margin-left: -25px; */
 		-webkit-animation: blink 0.6s infinite;
 		animation: blink 0.8s infinite;
 	}
-	
+
 	@keyframes blink {
 		0% {
 			opacity: 1;
@@ -32,7 +42,7 @@
 			opacity: 1;
 		}
 	}
-	
+
 	.text-static {
 		font-weight: bold;
 	}
