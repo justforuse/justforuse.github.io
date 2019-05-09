@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/</loc>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/05/manage-nodejs-app-with-pm2/</loc>
     <lastmod>2019-05-04T00:24:22+08:00</lastmod>
     <xhtml:link
@@ -385,6 +390,12 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/browser/</loc>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -465,7 +476,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-05-04T00:24:22+08:00</lastmod>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -476,22 +487,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/categories/front-end/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
-    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
   </url>
   
@@ -512,18 +507,18 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
+    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/categories/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
   </url>
   
@@ -540,6 +535,22 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
                 />
   </url>
   
@@ -577,7 +588,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-04-28T22:48:49+08:00</lastmod>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -605,7 +616,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-05-04T00:24:22+08:00</lastmod>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -797,7 +808,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-05-04T00:24:22+08:00</lastmod>
+    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

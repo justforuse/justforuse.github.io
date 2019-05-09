@@ -7,20 +7,56 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="">
-<meta name="description" content="Blogs about program technology">
+<meta name="keywords" content="browser info, browser detail">
+<meta name="description" content="检测浏览器的网站有很多，常用的比如：https://www.whatsmybrowser.org/
+
+如果想检查自定义属性的值就比较麻烦了
+
+">
 
 
-<meta property="og:description" content="Blogs about program technology">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Posts">
-<meta name="twitter:title" content="Posts">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/post/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/post/">
+<meta property="og:description" content="检测浏览器的网站有很多，常用的比如：https://www.whatsmybrowser.org/
+
+如果想检查自定义属性的值就比较麻烦了
+
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="获取浏览器Window对象的相关属性值">
+<meta name="twitter:title" content="获取浏览器Window对象的相关属性值">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="Blogs about program technology">
-<meta name="twitter:description" content="Blogs about program technology">
+<meta property="og:description" content="检测浏览器的网站有很多，常用的比如：https://www.whatsmybrowser.org/
+
+如果想检查自定义属性的值就比较麻烦了
+
+">
+<meta name="twitter:description" content="检测浏览器的网站有很多，常用的比如：https://www.whatsmybrowser.org/
+
+如果想检查自定义属性的值就比较麻烦了
+
+">
 <meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-05-08T23:02:39">
+  
+  
+    <meta property="article:modified_time" content="2019-05-08T23:02:39">
+  
+  
+  
+    
+      <meta property="article:section" content="Front-End">
+    
+  
+  
+    
+      <meta property="article:tag" content="js">
+    
+      <meta property="article:tag" content="browser">
+    
+  
 
 
 <meta name="twitter:card" content="summary">
@@ -39,16 +75,14 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Posts</title>
+    <title>获取浏览器Window对象的相关属性值</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://justforuse.github.io/blog/zh-cn/post/index.xml">
-    
 
     
 
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/post/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -101,7 +135,7 @@ if (!doNotTrack) {
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://justforuse.github.io/blog/zh-cn/">博客</a>
@@ -121,7 +155,7 @@ if (!doNotTrack) {
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -241,36 +275,25 @@ if (!doNotTrack) {
 
       
 
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        <section class="postShorten-group main-content-wrap">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
           
           
-            
+            <div class="post-header main-content-wrap text-left">
   
-    
+    <h1 class="post-title" itemprop="headline">
+      获取浏览器Window对象的相关属性值
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
-          Webpack配置编译SCSS
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-03-08T22:05:21&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-05-08T23:02:39&#43;08:00">
         
-  三月 8, 2019
+  五月 8, 2019
 
       </time>
     
@@ -289,431 +312,162 @@ if (!doNotTrack) {
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>现在框架都提供了一套完整的编译配置，比如Vue;</p>
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>检测浏览器的网站有很多，常用的比如：<a href="https://www.whatsmybrowser.org/">https://www.whatsmybrowser.org/</a></p>
 
-<p>有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
-</p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-    <a href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="https://justforuse.github.io/blog/images/2019/3/webpack-compile-scss.png"/>
+<p>如果想检查自定义属性的值就比较麻烦了</p>
+
+<p></p>
+
+<p>所以，编写了一个检测window相关属性的网页：<a href="http://justforuse.github.io/browser-info/">http://justforuse.github.io/browser-info/</a></p>
+
+<p>功能相对单一，但还算实用。</p>
+
+<p>截图：
+<img src="https://justforuse.github.io/blog/images/2019/5/browser-info.png" alt="demo" /></p>
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
+
+<p>对于嵌套属性使用数组的<code>reduce</code>方法：</p>
+
+<pre><code class="language-js">const currentProp = document.querySelector('input').value
+const commandStr = `window.${currentProp}`
+const propArr = currentProp.split('.')
+const res = propArr.reduce((prop, index) =&gt; {
+  return prop[index]
+}, window)
+document.querySelector('.result').textContent = res
+</code></pre>
+
+
+  <div class="text-center" id="reward">
+    <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
+    <button class="btn btn--danger" id="reward-btn">打赏</button>
+    <div id="reward-pop">
+      <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
+      <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
+      <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
+      <div node-type="reward-code" class="reward-code">
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
+          <figcaption>微信</figcaption>
+        </figure>
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
+          <figcaption>支付宝</figcaption>
+        </figure>
       </div>
-    </a>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/">
-          新手如何开发一个VSCode插件
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2019-01-12T17:09:17&#43;08:00">
-        
-  一月 12, 2019
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。</p>
-
-<p>大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。</p>
-
-<p></p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/" class="postShorten-excerpt_link link">阅读全文</a>
-        
+      <div class="reward-txt">扫码打赏，建议金额1-10元</div>
+      <p class="power-cy">
+        <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
       </p>
     </div>
   </div>
-  
-</article>
-
-          
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
             
-  
-    
-      
-        
-      
-    
-  
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/browser/">browser</a>
 
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2018/12/supreme-image/">
-          制作Supreme风格图片
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-12-08T16:05:41&#43;08:00">
-        
-  十二月 8, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>最近被本山大叔鬼畜洗脑了😂：<a href="https://www.bilibili.com/video/av19390801?from=search&amp;seid=2488280777914879673">https://www.bilibili.com/video/av19390801?from=search&amp;seid=2488280777914879673</a></p>
-
-<p>supreme风格图片也是土潮土潮的，所以就来做一个sp风格图片生成器吧~</p>
-
-<p></p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2018/12/supreme-image/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
+                  </div>
+                
+              
             
+            <div class="post-actions-wrap">
   
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/">
-          ES提案可选链和管道语法
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-11-26T22:50:40&#43;08:00">
-        
-  十一月 26, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>两种处于提案状态的新语法：可选链(?.)和管道(|&gt;)语法
-</p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
+      <nav >
+        <ul class="post-actions post-action-nav">
           
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
-          使用CSS绘制奥运五环标志
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-11-01T22:56:26&#43;08:00">
-        
-  十一月 1, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？</p>
-
-<p></p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/manage-nodejs-app-with-pm2/" data-tooltip="使用PM2管理Nodejs应用">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
           
-            
-  
-    
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
       
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/">
-          检测文本是否应用了text-ellipsis省略样式
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-10-23T21:03:26&#43;08:00">
-        
-  十月 23, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>css提供了可以省略过长文字的样式：<code>text-ellipsis: hidden</code>，那么如何检测文本是否被省略呢？</p>
-
-<p></p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-            
-  
-    
-      
-        
-      
-    
-  
-
-
-  
-
-<article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2018/10/set-up-react-native/">
-          初始化React Native开发环境
-        </a>
-      </h1>
-      
-  <div class="postShorten-meta post-meta">
-    
-      <time itemprop="datePublished" datetime="2018-10-21T19:45:20&#43;08:00">
-        
-  十月 21, 2018
-
-      </time>
-    
-    
-      <span>作者: allen</span>
-    
-    
-    
-  
-  
-    <span>发布在</span>
-    
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
-    
-  
-
-  </div>
-
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      
-        <p>安装流程按照<a href="https://facebook.github.io/react-native/docs/getting-started">https://facebook.github.io/react-native/docs/getting-started</a> 来就可以，期间遇到了几个问题，并记下解决方法。
-</p>
-      
-      <p>
-        <a href="https://justforuse.github.io/blog/zh-cn/2018/10/set-up-react-native/" class="postShorten-excerpt_link link">阅读全文</a>
-        
-      </p>
-    </div>
-  </div>
-  
-</article>
-
-          
-          
-  <div class="pagination-bar">
-    <ul class="pagination">
-      
-        
-          <li class="pagination-prev">
-            <a class="btn btn--default btn--small" href="https://justforuse.github.io/blog/zh-cn/post/">
-              <i class="fa fa-angle-left text-base icon-mr"></i>
-              <span>下一页</span>
-            </a>
-          </li>
-        
-        
-          <li class="pagination-next">
-            <a class="btn btn--default btn--small" href="https://justforuse.github.io/blog/zh-cn/post/page/3/">
-              <span>上一页</span>
-              <i class="fa fa-angle-right text-base icon-ml"></i>
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
+              <i class="fa fa-twitter"></i>
             </a>
           </li>
         
       
-      <li class="pagination-number">第 2 页 共 4 页</li>
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
     </ul>
-  </div>
+  
+</div>
 
-
-        </section>
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2019 Allen Yuan. All Rights Reserved
@@ -721,6 +475,78 @@ if (!doNotTrack) {
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/manage-nodejs-app-with-pm2/" data-tooltip="使用PM2管理Nodejs应用">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F05%2Fbrowser-info-page%2F">
+          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -1031,6 +857,32 @@ $(document).ready(function() {
 });
 </script>
 
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/05\/browser-info-page\/';
+          
+            this.page.identifier = '1557327759';
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'alleny';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
 
 
 
