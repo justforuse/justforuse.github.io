@@ -60,7 +60,9 @@ if(CSS.supports('display', 'grid')){
 {{< jsfiddle p1hjayrx >}}
 
 当然，这个支持性IE下全跪
-![PDVuyn.png](https://s1.ax1x.com/2018/08/04/PDVuyn.png)
+<!-- ![PDVuyn.png](https://s1.ax1x.com/2018/08/04/PDVuyn.png) -->
+{{< embed-caniuse css-featurequeries >}}
+
 
 个人觉得这其中有个很矛盾的地方，就是这个属性基本只有在“高级”浏览器下才会是生效，但“高级”浏览器的支持范围又支持大部分的CSS属性，所以觉得把他当做一个“低级”浏览器检测器倒是个不错的选择
 
