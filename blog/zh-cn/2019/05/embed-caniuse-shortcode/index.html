@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="olympic-logo, css">
-<meta name="description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
+<meta name="keywords" content="js, caniuse, embed">
+<meta name="description" content="偶然间发现了一个可以嵌入caniuse.com信息的网站：https://caniuse.bitsofco.de/ 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。
 
 ">
 
 
-<meta property="og:description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
+<meta property="og:description" content="偶然间发现了一个可以嵌入caniuse.com信息的网站：https://caniuse.bitsofco.de/ 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用CSS绘制奥运五环标志">
-<meta name="twitter:title" content="使用CSS绘制奥运五环标志">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
+<meta property="og:title" content="嵌入Caniuse信息的Shortcode">
+<meta name="twitter:title" content="嵌入Caniuse信息的Shortcode">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
+<meta property="og:description" content="偶然间发现了一个可以嵌入caniuse.com信息的网站：https://caniuse.bitsofco.de/ 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。
 
 ">
-<meta name="twitter:description" content="一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？
+<meta name="twitter:description" content="偶然间发现了一个可以嵌入caniuse.com信息的网站：https://caniuse.bitsofco.de/ 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2018-11-01T22:56:26">
+    <meta property="article:published_time" content="2019-05-11T22:31:22">
   
   
-    <meta property="article:modified_time" content="2018-11-01T22:56:26">
+    <meta property="article:modified_time" content="2019-05-11T22:31:22">
   
   
   
@@ -44,7 +44,9 @@
   
   
     
-      <meta property="article:tag" content="css">
+      <meta property="article:tag" content="js">
+    
+      <meta property="article:tag" content="shortcode">
     
   
 
@@ -65,14 +67,14 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>使用CSS绘制奥运五环标志</title>
+    <title>嵌入Caniuse信息的Shortcode</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
 
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -275,15 +277,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      使用CSS绘制奥运五环标志
+      嵌入Caniuse信息的Shortcode
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-11-01T22:56:26&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-05-11T22:31:22&#43;08:00">
         
-  十一月 1, 2018
+  五月 11, 2019
 
       </time>
     
@@ -306,9 +308,28 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>一个偶然的对话，谈到知道如何使用CSS绘制奥运五环吗？</p>
+              <p>偶然间发现了一个可以嵌入caniuse.com信息的网站：<a href="https://caniuse.bitsofco.de/">https://caniuse.bitsofco.de/</a> 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。</p>
 
 <p></p>
+
+<p>Shortcode代码：</p>
+
+<pre><code class="language-html">&lt;p
+  class=&quot;ciu_embed&quot;
+  data-feature=&quot;{{ .Get 0 }}&quot;
+  data-periods=&quot;future_1,current,past_1,past_2&quot;
+  data-accessible-colours=&quot;false&quot;
+&gt;
+  &lt;a href=&quot;http://caniuse.com/#feat={{ .Get 0 }}&quot;&gt;
+    Can I Use {{ .Get 0 }}?
+  &lt;/a&gt;
+  Data on support for the {{ .Get 0 }} feature across the major browsers
+  from caniuse.com.
+&lt;/p&gt;
+
+</code></pre>
+
+<p>使用<code>{{ .Get 0 }}</code>来获取具体属性字段。</p>
 
 <script
   async
@@ -329,44 +350,29 @@ if (!doNotTrack) {
 </script>
 
 
-<p>第一反应是使用<code>border-radius: 50%</code>再加上<code>z-index</code>设置层叠关系不久可以了吗？</p>
+<p>如何使用？</p>
 
-<p>然而，怎么可能会说这么常见的问题呢？</p>
+<p>在<code>.md</code>文件中添加<code>{{&lt; embed-caniuse PARAM &gt;}}</code> 就可以了。</p>
 
-<p>稍加思考，原来他的层级不是叠加，而是有重叠的部分：</p>
+<p><code>PARAM</code>具体应该使用哪个字符串，上述网站提供了查询方式。</p>
 
-<p><img src="https://s1.ax1x.com/2018/11/01/ifLjMV.jpg" alt="ifLjMV.jpg" /></p>
+<p>第二种方式就是点击caniuse网站左边<code>#</code>号，url上<code>feat</code>对应的字段就是了。</p>
 
-<p>所以单纯使用<code>z-index</code>并不能达到效果。</p>
+<p>举例：显示CSS Flex相关兼容性(flexbox)：</p>
 
-<p>想到之前看到的一篇文章，如何实现元素穿插的效果：
-<a href="https://css-tricks.com/1-element-css-rainbow-gradient-infinity/">https://css-tricks.com/1-element-css-rainbow-gradient-infinity/</a></p>
+<p
+  class="ciu_embed"
+  data-feature="flexbox"
+  data-periods="future_1,current,past_1,past_2"
+  data-accessible-colours="false"
+>
+  <a href="http://caniuse.com/#feat=flexbox"
+    >Can I Use flexbox?</a
+  >
+  Data on support for the flexbox feature across the major browsers
+  from caniuse.com.
+</p>
 
-<p>其中的一个demo:</p>
-
-
-
-
-
-
-
-
-
-
-
-  <p data-height="265" data-theme-id="dark" data-slug-hash="MGqgyM" data-default-tab="result" data-user="thebabydino" data-embed-version="2" data-pen-title="" data-preview="true"
-  class="codepen">
-    See the Pen <a href="https://codepen.io/thebabydino/pen/MGqgyM/"></a> by  (<a href="https://codepen.io/thebabydino">@thebabydino</a>) on <a href="https://codepen.io">CodePen</a>.
-  </p>
-  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-<p>此处实现元素穿插效果的方式为添加<code>transform:rotate</code>样式。</p>
-
-<p>以此为基础，为每个圆环添加<code>transform: rotateY( -1deg | 1deg)</code>就可以写出五环效果：</p>
-
-<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/35muv9ar/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
 
 
   <div class="text-center" id="reward">
@@ -403,7 +409,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/shortcode/">shortcode</a>
 
                   </div>
                 
@@ -416,7 +424,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/" data-tooltip="ES提案可选链和管道语法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -424,7 +432,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/" data-tooltip="检测文本是否应用了text-ellipsis省略样式">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/" data-tooltip="开发自定义Vue组件——Functional Button">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -442,7 +450,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -490,7 +498,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/11/es-optional-chaining-and-pipeline/" data-tooltip="ES提案可选链和管道语法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -498,7 +506,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/10/detect-text-ellipsis/" data-tooltip="检测文本是否应用了text-ellipsis省略样式">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/" data-tooltip="开发自定义Vue组件——Functional Button">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -516,7 +524,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2018/11/css-to-draw-olympic-logo/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -546,7 +554,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2018%2F11%2Fcss-to-draw-olympic-logo%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F05%2Fembed-caniuse-shortcode%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -866,9 +874,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2018\/11\/css-to-draw-olympic-logo\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/05\/embed-caniuse-shortcode\/';
           
-            this.page.identifier = '1541084186';
+            this.page.identifier = '1557585082';
           
         };
         (function() {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcode on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/tags/shortcode/</link>
+    <description>Recent content in Shortcode on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 May 2019 22:31:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/shortcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>嵌入Caniuse信息的Shortcode</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/</link>
+      <pubDate>Sat, 11 May 2019 22:31:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/</guid>
+      <description>&lt;p&gt;偶然间发现了一个可以嵌入caniuse.com信息的网站：&lt;a href=&#34;https://caniuse.bitsofco.de/&#34;&gt;https://caniuse.bitsofco.de/&lt;/a&gt; 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

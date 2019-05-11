@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 May 2019 21:39:35 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 May 2019 22:31:22 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>嵌入Caniuse信息的Shortcode</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/</link>
+      <pubDate>Sat, 11 May 2019 22:31:22 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/</guid>
+      <description>&lt;p&gt;偶然间发现了一个可以嵌入caniuse.com信息的网站：&lt;a href=&#34;https://caniuse.bitsofco.de/&#34;&gt;https://caniuse.bitsofco.de/&lt;/a&gt; 而且支持响应式布局，caniuse算是比较高频的网站了，所以想着做一个shortcode来集成它。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>开发自定义Vue组件——Functional Button</title>
