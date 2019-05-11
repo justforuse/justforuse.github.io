@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 May 2019 23:02:39 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 May 2019 21:39:35 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>开发自定义Vue组件——Functional Button</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/</link>
+      <pubDate>Sat, 11 May 2019 21:39:35 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/</guid>
+      <description>&lt;p&gt;业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>获取浏览器Window对象的相关属性值</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/</loc>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/</loc>
     <lastmod>2019-05-08T23:02:39+08:00</lastmod>
   </url>
@@ -476,7 +481,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -588,7 +593,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -616,7 +621,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -775,6 +780,12 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/vue/</loc>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/watermark/</loc>
     <lastmod>2019-04-24T23:01:47+08:00</lastmod>
     <priority>0</priority>
@@ -808,7 +819,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-05-08T23:02:39+08:00</lastmod>
+    <lastmod>2019-05-11T21:39:35+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

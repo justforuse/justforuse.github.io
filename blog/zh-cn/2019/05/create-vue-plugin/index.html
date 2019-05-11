@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Allen Yuan">
+<meta name="keywords" content="create vue plugin, js">
+<meta name="description" content="业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？
+
+">
+
+
+<meta property="og:description" content="业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？
+
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开发自定义Vue组件——Functional Button">
+<meta name="twitter:title" content="开发自定义Vue组件——Functional Button">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？
+
+">
+<meta name="twitter:description" content="业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？
+
+">
+<meta property="og:locale" content="zh-cn">
+
+  
+    <meta property="article:published_time" content="2019-05-11T21:39:35">
+  
+  
+    <meta property="article:modified_time" content="2019-05-11T21:39:35">
+  
+  
+  
+    
+      <meta property="article:section" content="Front-End">
+    
+  
+  
+    
+      <meta property="article:tag" content="js">
+    
+      <meta property="article:tag" content="vue">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+
+
+    <title>开发自定义Vue组件——Functional Button</title>
+
+    <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-cq3ht1ivfqw7ri8uzvesltgysgceop9fnzjitwfl8xdel4gxvd9xiznkxhbd.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://justforuse.github.io/blog/css/mystyle.css" swapPaginator="true">
+      
+    
+
+    
+      
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-122356809-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d5c2fda4efd2970e4d5b060c3e62f4ae";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1281402863208945",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://justforuse.github.io/blog/zh-cn/">博客</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://justforuse.github.io/blog/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://justforuse.github.io/blog/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">Allen Yuan</h4>
+        
+          <h5 class="sidebar-profile-bio">Keep going</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/justforuse" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/5760654/allen" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      <li class="sidebar-button">
+        
+          <a id="en-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/en-us">
+            <i class="sidebar-button-icon fa fa-lg fa-language"></i>
+            <span class="sidebar-button-desc">English</span>
+          </a>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      开发自定义Vue组件——Functional Button
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-05-11T21:39:35&#43;08:00">
+        
+  五月 11, 2019
+
+      </time>
+    
+    
+      <span>作者: allen</span>
+    
+    
+    
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？</p>
+
+<p></p>
+
+<p>比如我打算做一个Functional-Button这个组件库，顾名思义，就是把给按钮赋予多种功能，并组合成组件库，其中Button使用了ElementUI的样式。</p>
+
+<p>项目地址：<a href="https://github.com/justforuse/functional-button">https://github.com/justforuse/functional-button</a></p>
+
+<p>示例地址：<a href="https://codesandbox.io/s/24jx3zz2ny">https://codesandbox.io/s/24jx3zz2ny</a></p>
+
+<p>目前只添加了2个功能按钮：DeferBtn，ContinuousBtn；一个是延时执行方法按钮，一个是鼠标按住持续执行方法的按钮。感觉有时候还是挺有用的。</p>
+
+<p>如果你有什么常见的功能按钮的建议，欢迎提issue或PR。</p>
+
+<p>接下来，具体步骤是什么？</p>
+
+<p>首先，建议找一个现成的脚手架作为组件库的其实模板，比如我使用了的脚手架：<a href="https://github.com/justforuse/vue-share-components">https://github.com/justforuse/vue-share-components</a> 从别的项目fork出来，并修改一些配置，如果感兴趣，可以把它作为你的项目的起始模板。</p>
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
+
+<p>新建组件库项目：</p>
+
+<pre><code>vue init justforuse/vue-share-components plugin-name
+</code></pre>
+
+<p>开发：</p>
+
+<pre><code>npm run dev
+</code></pre>
+
+<p>注意修改<code>src/index.js</code>中的相关组件引用。</p>
+
+<p>并链接到全局，作为本地测试用：</p>
+
+<pre><code>npm link
+
+cd YOUR_TEST_PROJECT
+
+npm link plugin-name
+</code></pre>
+
+<p>接下来就是发布到npm上了，这需要登陆你的NPM账号，以及设置包版本</p>
+
+<pre><code>npm publish
+</code></pre>
+
+<p>发布成功就可以像其他组件库一样，使用自己的组件库了。</p>
+
+
+  <div class="text-center" id="reward">
+    <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
+    <button class="btn btn--danger" id="reward-btn">打赏</button>
+    <div id="reward-pop">
+      <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
+      <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
+      <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
+      <div node-type="reward-code" class="reward-code">
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
+          <figcaption>微信</figcaption>
+        </figure>
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
+          <figcaption>支付宝</figcaption>
+        </figure>
+      </div>
+      <div class="reward-txt">扫码打赏，建议金额1-10元</div>
+      <p class="power-cy">
+        <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
+      </p>
+    </div>
+  </div>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/vue/">vue</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/" data-tooltip="获取浏览器Window对象的相关属性值">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Allen Yuan. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/" data-tooltip="获取浏览器Window对象的相关属性值">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F05%2Fcreate-vue-plugin%2F">
+          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+    
+    <h4 id="about-card-name">Allen Yuan</h4>
+    
+      <div id="about-card-bio">Keep going</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Web developer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="搜索" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center"></div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/05/create-vue-plugin/">
+                <h3 class="media-heading">开发自定义Vue组件——Functional Button</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>业务开发过程中遇到的常见的组件，我们可以把它们抽离出来作为单独的组件库，那么要如何做呢？</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/05/browser-info-page/">
+                <h3 class="media-heading">获取浏览器Window对象的相关属性值</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>检测浏览器的网站有很多，常用的比如：<a href="https://www.whatsmybrowser.org/">https://www.whatsmybrowser.org/</a></p>
+
+<p>如果想检查自定义属性的值就比较麻烦了</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/05/manage-nodejs-app-with-pm2/">
+                <h3 class="media-heading">使用PM2管理Nodejs应用</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  May 5, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>除了在本地开发一个nodejs应用，有的时候我们更希望把它发不到服务器端，供更多的人来使用它。</p>
+
+<p>这时，你可能会遇到这个问题：如何保持服务运行并退出终端呢？</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/04/csdn-crawler/">
+                <h3 class="media-heading">CSDN博客统计平台</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>CSDN自带的后台管理平台功能相对单一，比如统计阅读量排行就没有，所以可以自己试着做一下。</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/04/add-watermark-to-website/">
+                <h3 class="media-heading">为网站添加水印图片</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>有时为了避免网站信息随意被别人使用，可以在网站整体背景添加水印，当然这主要是针对截图类的信息，如何快速为网站添加水印呢？</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/04/lantern-invite-code/">
+                <h3 class="media-heading">Lantern邀请码</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>输入我的邀请码 GD3BDG 来获得三个月的蓝灯专业版！立即下载 <a href="https://github.com/getlantern/forum">https://github.com/getlantern/forum</a></p>
+
+<p>谢谢各位捧场。</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/04/add-google-adsense-to-website/">
+                <h3 class="media-heading">将Google Adsense添加到网站中</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><!-- toc -->
+
+<p>一般情况下，网站是要挂上广告的，如果没有广告商主动来投，那我们也可以尝试介入其他广告联盟。</p>
+
+<p>Google Adsense就是一个不错的选择，这几天折腾了下终于把Google Adsense接入到这个网站中了，下面说一下步骤和遇到的问题。</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/">
+                <h3 class="media-heading">Hugo增加多语言支持</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>作为网站生成工具，Hugo也支持国际化。</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
+                <h3 class="media-heading">Webpack配置编译SCSS</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>现在框架都提供了一套完整的编译配置，比如Vue;</p>
+
+<p>有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/">
+                <h3 class="media-heading">新手如何开发一个VSCode插件</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2019
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>VSCode大部分人应该都用过？除了界面简洁、启动速度快，另一个亮点可能是它拥有丰富的插件供公户选择。更加提升了他的实用性。</p>
+
+<p>大多数情况都可以在应用市场找到你需要的插件，特殊情况可能需要靠自己的力量。</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero=""
+         data-message-one=""
+         data-message-other="">
+         25 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://s1.ax1x.com/2018/06/28/Pikoid.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
+
+
+<script src="https://justforuse.github.io/blog/js/script-yiw2jjepxoehif3pmb0v87ejz64pxza5z1n3wz3pvssige2dwaxguf6zszww.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/05\/create-vue-plugin\/';
+          
+            this.page.identifier = '1557581975';
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'alleny';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
