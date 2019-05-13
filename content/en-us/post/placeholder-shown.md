@@ -9,28 +9,31 @@ tags:
 - css
 keywords:
 - placeholder-shown
+- :placeholder-shown
 disqusIdentifier: 1534947795
 #thumbnailImage: //example.com/image.jpg
 ---
 
-{{< alert danger >}}
-  This article was not translated to English, It will be done in few days. It would be nice if you can help me to translate.
-{{< /alert >}}
-
-CSS伪类`:placeholder-shown`在`input`或`textarea`元素显示placeholder文本时生效。
+The `:placeholder-shown` CSS pseudo-class represents any `<input>` or `<textarea>` element that is currently displaying placeholder text.
 
 <!--more-->
 
+You can also use it with `text-overflow: ellipse`
+
 {{< gad-in-article >}}
 
-使用方法：
+Usage:
 ```css
 input:placeholder-shown {
   border: 1px solid red;
+  text-overflow: ellipsis;
 }
 ```
 
-示例
+Demo:
 {{< jsfiddle 3sn09gat >}}
 
+Browser support: 
+
+{{< embed-caniuse css-placeholder-shown >}}
 {{< reward >}}

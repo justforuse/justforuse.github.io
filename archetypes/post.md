@@ -19,4 +19,5 @@ disqusIdentifier: {{ now.Unix }}
 
 {{< gad-in-article >}}
 
+<!-- {{< embed-caniuse css-placeholder-shown >}} -->
 {{< reward >}}
