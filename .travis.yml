@@ -21,7 +21,7 @@ script:
     - ls themes/hugo-tranquilpeak-theme/
     - ls themes/hugo-tranquilpeak-theme/static/css
     - ls themes/hugo-tranquilpeak-theme/static/js
-    - hugo -d blog
+    - ./build.sh
     - echo 'Hugo build done!'
 after_success:
     - git config --global user.email "allenforuse@gmail.com"
