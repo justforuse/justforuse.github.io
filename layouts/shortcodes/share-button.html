@@ -1,0 +1,20 @@
+<button class="btn btn-default btn-share">Share</button>
+<script>
+  document.querySelector('.btn-share').addEventListener('click', () => {
+    console.log(1)
+    if (navigator.share) {
+    navigator.share({
+      title: 'My awesome post!',
+      text: 'This post may or may not contain the answer to the universe',
+      url: window.location.href
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+    .catch(err => {
+      console.log(`Couldn't share because of`, err.message);
+    });
+  } else {
+    alert('web share not supported');
+  }
+  })
+</script>
