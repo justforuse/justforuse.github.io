@@ -10,7 +10,9 @@ tags:
 keywords:
 - lantern
 - vpn
-- invite code
+- invitation code
+- referral code
+- 邀请码
 disqusIdentifier: 1556034579
 # draft: true
 # thumbnailImagePosition: left

@@ -32,5 +32,5 @@ after_success:
     - cd container
     - ls
     - git add .
-    - git commit -m 'Travis upate blog'
+    - "git commit -m ':construction_worker: Travis update blog'"
     - git push -u origin master
