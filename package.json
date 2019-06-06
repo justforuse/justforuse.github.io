@@ -9,7 +9,7 @@
   "devDependencies": {
     "angular-translate": "^2.15.1",
     "animate.css": "^3.5.2",
-    "css-loader": "^0.28.4",
+    "css-loader": "^2.1.1",
     "expose-loader": "^0.7.3",
     "style-loader": "^0.18.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
