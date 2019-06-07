@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/</loc>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/</loc>
     <lastmod>2019-05-11T22:31:22+08:00</lastmod>
   </url>
@@ -486,7 +501,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-05-11T22:31:22+08:00</lastmod>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -619,6 +634,22 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/npm/</loc>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/npm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/npm/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/pm2/</loc>
     <lastmod>2019-05-04T00:24:22+08:00</lastmod>
     <priority>0</priority>
@@ -626,7 +657,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-05-11T22:31:22+08:00</lastmod>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -829,8 +860,24 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/yarn/</loc>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/yarn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/yarn/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-05-11T22:31:22+08:00</lastmod>
+    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

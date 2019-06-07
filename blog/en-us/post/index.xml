@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2019 00:24:20 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 12:03:50 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Check why a package is installed</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/</link>
+      <pubDate>Fri, 07 Jun 2019 12:03:50 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/</guid>
+      <description>&lt;p&gt;In general, there are lots of packages in &lt;code&gt;node_modules&lt;/code&gt;, but only few is wrote to &lt;code&gt;package.json&lt;/code&gt; file. Cause these dependencies required other dependencies.&lt;/p&gt;
+
+&lt;p&gt;It is necessary to make clear these dependencies&amp;rsquo; relation when you want to upgrade package version.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Manage Nodejs App With Pm2</title>
@@ -37,9 +50,11 @@
       <pubDate>Tue, 23 Apr 2019 23:49:37 +0800</pubDate>
       
       <guid>https://justforuse.github.io/blog/en-us/2019/04/lantern-invite-code/</guid>
-      <description>&lt;p&gt;输入我的邀请码 GD3BDG 来获得三个月的蓝灯专业版！立即下载 &lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;https://github.com/getlantern/forum&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Use my code GD3BDG and get 3 months free when you sign up!&lt;/p&gt;
 
-&lt;p&gt;谢谢各位捧场。
+&lt;p&gt;Download lantern: &lt;a href=&#34;https://github.com/getlantern/forum&#34;&gt;https://github.com/getlantern/forum&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thank you all guys.
 &lt;/p&gt;</description>
     </item>
     
