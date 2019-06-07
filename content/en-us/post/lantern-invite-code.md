@@ -10,16 +10,18 @@ tags:
 keywords:
 - lantern
 - vpn
-- invite code
+- invitation code
 disqusIdentifier: 1556034577
 # draft: true
 # thumbnailImagePosition: left
 # thumbnailImage: /blog/images/2019
 ---
 
-输入我的邀请码 GD3BDG 来获得三个月的蓝灯专业版！立即下载 https://github.com/getlantern/forum
+Use my code GD3BDG and get 3 months free when you sign up!
 
-谢谢各位捧场。
+Download lantern: https://github.com/getlantern/forum
+
+Thank you all guys.
 <!--more-->
 
 {{< gad-in-article >}}
