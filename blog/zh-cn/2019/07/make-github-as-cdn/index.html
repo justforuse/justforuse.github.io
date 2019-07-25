@@ -7,42 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="why package installed, npm, yarn">
-<meta name="description" content="通常情况下node_modules会有大量依赖包，但实际的package.json只会有必要的依赖包，唯一的原因就是这些必要的依赖包引用了更多的依赖包。
-
-在升级包版本的时候，梳理它们之间的依赖关系是有用的。
+<meta name="keywords" content="js, github, cdn, image, file">
+<meta name="description" content="很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力
 
 ">
 
 
-<meta property="og:description" content="通常情况下node_modules会有大量依赖包，但实际的package.json只会有必要的依赖包，唯一的原因就是这些必要的依赖包引用了更多的依赖包。
-
-在升级包版本的时候，梳理它们之间的依赖关系是有用的。
+<meta property="og:description" content="很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何查看依赖包为什么被安装">
-<meta name="twitter:title" content="如何查看依赖包为什么被安装">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/">
+<meta property="og:title" content="借用Github搭建自己的CDN服务">
+<meta name="twitter:title" content="借用Github搭建自己的CDN服务">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="通常情况下node_modules会有大量依赖包，但实际的package.json只会有必要的依赖包，唯一的原因就是这些必要的依赖包引用了更多的依赖包。
-
-在升级包版本的时候，梳理它们之间的依赖关系是有用的。
+<meta property="og:description" content="很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力
 
 ">
-<meta name="twitter:description" content="通常情况下node_modules会有大量依赖包，但实际的package.json只会有必要的依赖包，唯一的原因就是这些必要的依赖包引用了更多的依赖包。
-
-在升级包版本的时候，梳理它们之间的依赖关系是有用的。
+<meta name="twitter:description" content="很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-06-07T12:03:52">
+    <meta property="article:published_time" content="2019-07-25T22:52:02">
   
   
-    <meta property="article:modified_time" content="2019-06-07T12:03:52">
+    <meta property="article:modified_time" content="2019-07-25T22:52:02">
   
   
   
@@ -52,9 +44,9 @@
   
   
     
-      <meta property="article:tag" content="npm">
+      <meta property="article:tag" content="js">
     
-      <meta property="article:tag" content="yarn">
+      <meta property="article:tag" content="nodejs">
     
   
 
@@ -75,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>如何查看依赖包为什么被安装</title>
+    <title>借用Github搭建自己的CDN服务</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -284,15 +276,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      如何查看依赖包为什么被安装
+      借用Github搭建自己的CDN服务
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-06-07T12:03:52&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-07-25T22:52:02&#43;08:00">
         
-  六月 7, 2019
+  七月 25, 2019
 
       </time>
     
@@ -315,17 +307,53 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>通常情况下<code>node_modules</code>会有大量依赖包，但实际的<code>package.json</code>只会有必要的依赖包，唯一的原因就是这些必要的依赖包引用了更多的依赖包。</p>
-
-<p>在升级包版本的时候，梳理它们之间的依赖关系是有用的。</p>
+              <p>很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力</p>
 
 <p></p>
 
-<p>如果你使用的<code>yarn</code>来安装依赖包，它提供了<code>why</code>命令来查看包依赖关系，使用方式为<code>yarn why [package]</code>。</p>
+<p>如果只是想把图片传到Github上，可以在仓库issue下上传图片：
+相关操作：
+<img src="https://user-images.githubusercontent.com/499192/57450172-1a955f80-725e-11e9-9fed-267179bdab15.gif" alt="github issue" /></p>
 
-<p>输出示例：</p>
+<p>我们要做的不只是图片，包括各类型的文件。</p>
 
-<p><img src="https://justforuse.github.io/blog/images/2019/6/yarn-why.png" alt="yarn-why" /></p>
+<p>Github提供了API接口，<a href="https://github.com/pksunkara/octonode">octonode</a>是一个封装好的API库，我们可以快速搭建我们的服务。</p>
+
+<p>其它使用到的库：express, express-fileupload, uuid。</p>
+
+<p>这个服务功能比较简单，代码：</p>
+
+<pre><code class="language-js">const github = require('octonode');
+// 生成的github Token
+const client = github.client('xxxxxxxxxxxxxxxxxxxxxx');
+// 仓库名称，比如file-cdn
+const ghrepo = client.repo('justforuse/file-cdn');
+const express = require('express')
+const fileUpload = require('express-fileupload')
+const path = require('path')
+const uuidv1 = require('uuid/v1');
+const app = express()
+const port = 3000
+app.use(fileUpload())
+app.use(express.static(__dirname + '/public'));
+app.get('/', (req, res) =&gt; {
+  res.sendFile(path.join(__dirname+'/index.html'))
+})
+app.post('/upload', (req, res) =&gt; {
+  const file = req.files['user-file']
+  const fileArr = file.name.split('.')
+  const fileType = fileArr[fileArr.length -1]
+  const md5Name = `${uuidv1()}.${fileType}`
+  ghrepo.createContents(md5Name, 'Upload new file', file.data, function (err, status, body, headers) {
+    res.send({
+      // 上传后的文件url
+      url: `https://raw.githubusercontent.com/justforuse/file-cdn/master/${md5Name}`
+    })
+  })
+})
+
+app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}!`))
+</code></pre>
 
 <script
   async
@@ -346,14 +374,43 @@ if (!doNotTrack) {
 </script>
 
 
-<p>npm目前没有提供类似的命令，不过可以通过<code>npm-why</code>包来查看，使用方式<code>npx npm-why [package]</code></p>
+<p>还要有可视化的上传界面，这里使用ElementUI搭建：</p>
 
-<p>输出示例：</p>
+<pre><code class="language-html">&lt;body&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;el-upload :on-success=&quot;handleSuccess&quot; :show-file-list=&quot;false&quot; class=&quot;upload-demo&quot; drag action=&quot;/upload&quot; name=&quot;user-file&quot;&gt;
+      &lt;i class=&quot;el-icon-upload&quot;&gt;&lt;/i&gt;
+      &lt;div class=&quot;el-upload__text&quot;&gt;将文件拖到此处，或&lt;em&gt;点击上传&lt;/em&gt;&lt;/div&gt;
+    &lt;/el-upload&gt;
+    &lt;ul&gt;
+      &lt;li v-for=&quot;(item, i) in fileList&quot; :key=&quot;i&quot;&gt;
+        {{ item.url }}
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+  
+  &lt;script&gt;
+    new Vue({
+      el: '#app',
+      data: {
+        fileList: []
+      },
+      methods: {
+        handleSuccess (res) {
+          console.log(res)
+          this.fileList.push(res)
+        },
+      }
+    })
+  &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
 
-<p><img src="https://justforuse.github.io/blog/images/2019/6/npm-why.png" alt="npm-why" /></p>
+<p>因为这个CDN服务只是我们个人使用的，所以演示地址就不放了😀，效果：</p>
 
-<p>通过上述两种方法，我们就可以查看包的依赖关系了。</p>
+<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/3669f040-aeef-11e9-98a7-9f9584c17b51.gif" alt="" /></p>
 
+<p>有时候会觉得这样做是否与Github初衷相悖，但其实根本还是在于度的问题，而且作为CDN服务速度并不一定比其他正规的服务好。
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -367,7 +424,6 @@ if (!doNotTrack) {
   from caniuse.com.
 </p>
  -->
-
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -392,6 +448,8 @@ if (!doNotTrack) {
       </p>
     </div>
   </div>
+
+</p>
               
             </div>
           </div>
@@ -403,9 +461,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/npm/">npm</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/yarn/">yarn</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/nodejs/">nodejs</a>
 
                   </div>
                 
@@ -418,7 +476,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/" data-tooltip="借用Github搭建自己的CDN服务">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -426,7 +484,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/" data-tooltip="嵌入Caniuse信息的Shortcode">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/" data-tooltip="如何查看依赖包为什么被安装">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -444,7 +502,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -492,7 +550,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/" data-tooltip="借用Github搭建自己的CDN服务">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -500,7 +558,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/05/embed-caniuse-shortcode/" data-tooltip="嵌入Caniuse信息的Shortcode">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/" data-tooltip="如何查看依赖包为什么被安装">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -518,7 +576,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -548,7 +606,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F06%2Fwhy-this-package-is-installed%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F07%2Fmake-github-as-cdn%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -639,9 +697,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/06\/why-this-package-is-installed\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/07\/make-github-as-cdn\/';
           
-            this.page.identifier = '1559880232';
+            this.page.identifier = '1564066322';
           
         };
         (function() {

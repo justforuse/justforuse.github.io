@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jun 2019 12:03:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2019 22:52:02 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>借用Github搭建自己的CDN服务</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/</link>
+      <pubDate>Thu, 25 Jul 2019 22:52:02 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/</guid>
+      <description>&lt;p&gt;很多时候我们都希望把一些资源保存到远程服务器上，之前用过的图床就是一个免费的图片CDN服务。GitHub作为一个开源的代码管理平台，其实也具有这样的能力&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>如何查看依赖包为什么被安装</title>

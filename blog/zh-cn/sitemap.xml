@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/</loc>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/06/why-this-package-is-installed/</loc>
     <lastmod>2019-06-07T12:03:52+08:00</lastmod>
     <xhtml:link
@@ -501,7 +506,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -613,7 +618,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-05-11T22:31:22+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -629,7 +634,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/nodejs/</loc>
-    <lastmod>2019-05-04T00:24:22+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -657,7 +662,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -877,7 +882,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-06-07T12:03:52+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
