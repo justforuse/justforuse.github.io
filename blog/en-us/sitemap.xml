@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/</loc>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/</loc>
     <lastmod>2019-06-07T12:03:50+08:00</lastmod>
     <xhtml:link
@@ -396,7 +411,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/</loc>
-    <lastmod>2019-06-07T12:03:50+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -491,7 +506,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/front-end/</loc>
-    <lastmod>2019-06-07T12:03:50+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -502,22 +517,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://justforuse.github.io/blog/en-us/categories/front-end/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/en-us/categories/git/</loc>
-    <lastmod>2018-07-10T00:37:34+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/git/"
                 />
   </url>
   
@@ -538,18 +537,18 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/en-us/categories/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/en-us/categories/git/</loc>
+    <lastmod>2018-07-10T00:37:34+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/categories/git/"
                 />
   </url>
   
@@ -570,6 +569,22 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/categories/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/html/</loc>
     <lastmod>2019-04-24T23:01:45+08:00</lastmod>
     <priority>0</priority>
@@ -583,12 +598,6 @@
                 hreflang="en-us"
                 href="https://justforuse.github.io/blog/en-us/tags/html/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/en-us/categories/hugo/</loc>
-    <lastmod>2019-04-14T16:37:43+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -608,8 +617,14 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/categories/hugo/</loc>
+    <lastmod>2019-04-14T16:37:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/js/</loc>
-    <lastmod>2019-05-04T00:24:20+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -620,6 +635,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://justforuse.github.io/blog/en-us/tags/js/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/en-us/tags/nodejs/</loc>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/nodejs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/nodejs/"
                 />
   </url>
   
@@ -641,7 +672,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/post/</loc>
-    <lastmod>2019-06-07T12:03:50+08:00</lastmod>
+    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

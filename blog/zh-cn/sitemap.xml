@@ -5,6 +5,16 @@
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/</loc>
     <lastmod>2019-07-25T22:52:02+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/"
+                />
   </url>
   
   <url>
@@ -636,6 +646,16 @@
     <loc>https://justforuse.github.io/blog/zh-cn/tags/nodejs/</loc>
     <lastmod>2019-07-25T22:52:02+08:00</lastmod>
     <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/nodejs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/nodejs/"
+                />
   </url>
   
   <url>
