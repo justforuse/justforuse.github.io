@@ -7,30 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, github, cdn, image, file">
-<meta name="description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta name="keywords" content="js, react, svg">
+<meta name="description" content="应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？
+
 ">
 
 
-<meta property="og:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta property="og:description" content="应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？
+
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Build CDN server with github">
-<meta name="twitter:title" content="Build CDN server with github">
-<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
-<meta property="og:site_name" content="Blog">
-<meta property="og:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta property="og:title" content="React如何引入SVG文件">
+<meta name="twitter:title" content="React如何引入SVG文件">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？
+
 ">
-<meta name="twitter:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta name="twitter:description" content="应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？
+
 ">
-<meta property="og:locale" content="en-us">
+<meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-07-25T22:52:04">
+    <meta property="article:published_time" content="2019-07-27T23:57:51">
   
   
-    <meta property="article:modified_time" content="2019-07-25T22:52:04">
+    <meta property="article:modified_time" content="2019-07-27T23:57:51">
   
   
   
@@ -42,7 +46,7 @@
     
       <meta property="article:tag" content="js">
     
-      <meta property="article:tag" content="nodejs">
+      <meta property="article:tag" content="react">
     
   
 
@@ -63,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Build CDN server with github</title>
+    <title>React如何引入SVG文件</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -125,7 +129,7 @@ if (!doNotTrack) {
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://justforuse.github.io/blog/en-us/">Blog</a>
+    <a class="header-title-link" href="https://justforuse.github.io/blog/zh-cn/">博客</a>
   </div>
   
     
@@ -135,7 +139,7 @@ if (!doNotTrack) {
     
     
       
-        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="Author&#39;s picture" />
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
       
     
     </a>
@@ -147,7 +151,7 @@ if (!doNotTrack) {
     
       <div class="sidebar-profile">
         <a href="https://justforuse.github.io/blog/#about">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
         </a>
         <h4 class="sidebar-profile-name">Allen Yuan</h4>
         
@@ -159,51 +163,51 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
-      <span class="sidebar-button-desc">Home</span>
+      <span class="sidebar-button-desc">首页</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/categories">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
-      <span class="sidebar-button-desc">Categories</span>
+      <span class="sidebar-button-desc">分类</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/tags">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
-      <span class="sidebar-button-desc">Tags</span>
+      <span class="sidebar-button-desc">标签</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/archives">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/archives">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
-      <span class="sidebar-button-desc">Archives</span>
+      <span class="sidebar-button-desc">归档</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/#about">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/#about">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
-      <span class="sidebar-button-desc">About</span>
+      <span class="sidebar-button-desc">关于</span>
     </a>
   </li>
 
@@ -237,7 +241,7 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/index.xml">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -250,9 +254,9 @@ if (!doNotTrack) {
     <ul class="sidebar-buttons">
       <li class="sidebar-button">
         
-          <a id="cn-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/zh-cn">
+          <a id="en-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/en-us">
             <i class="sidebar-button-icon fa fa-lg fa-language"></i>
-            <span class="sidebar-button-desc">中文版</span>
+            <span class="sidebar-button-desc">English</span>
           </a>
         
       </li>
@@ -272,28 +276,28 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Build CDN server with github
+      React如何引入SVG文件
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-25T22:52:04&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-07-27T23:57:51&#43;08:00">
         
-  July 25, 2019
+  七月 27, 2019
 
       </time>
     
     
-      <span>Author: allen</span>
+      <span>作者: allen</span>
     
     
     
   
   
-    <span>in</span>
+    <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/en-us/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
     
   
 
@@ -303,53 +307,22 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
-</p>
+              <p>应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？</p>
 
-<p>If you just want to upload image, you can use github issue to achieve it.</p>
+<p></p>
 
-<p>Like:
-<img src="https://user-images.githubusercontent.com/499192/57450172-1a955f80-725e-11e9-9fed-267179bdab15.gif" alt="github issue" /></p>
+<p>文档地址：<a href="https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files">https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files</a></p>
 
-<p>But we want to upload any type of file, not just image.</p>
+<p>方法1：</p>
 
-<p>Github has lots of open api, and <a href="https://github.com/pksunkara/octonode">octonode</a> is a library for it, we can build our service with it quickly.</p>
-
-<p>Other libraries: express, express-fileupload, uuid.</p>
-
-<p>server code:</p>
-
-<pre><code class="language-js">const github = require('octonode');
-// github Token
-const client = github.client('xxxxxxxxxxxxxxxxxxxxxx');
-// repo name, such as file-cdn
-const ghrepo = client.repo('justforuse/file-cdn');
-const express = require('express')
-const fileUpload = require('express-fileupload')
-const path = require('path')
-const uuidv1 = require('uuid/v1');
-const app = express()
-const port = 3000
-app.use(fileUpload())
-app.use(express.static(__dirname + '/public'));
-app.get('/', (req, res) =&gt; {
-  res.sendFile(path.join(__dirname+'/index.html'))
-})
-app.post('/upload', (req, res) =&gt; {
-  const file = req.files['user-file']
-  const fileArr = file.name.split('.')
-  const fileType = fileArr[fileArr.length -1]
-  const md5Name = `${uuidv1()}.${fileType}`
-  ghrepo.createContents(md5Name, 'Upload new file', file.data, function (err, status, body, headers) {
-    res.send({
-      // file cdn url
-      url: `https://raw.githubusercontent.com/justforuse/file-cdn/master/${md5Name}`
-    })
-  })
-})
-
-app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}!`))
+<pre><code class="language-jsx">// svg png等类型图片
+import logo from './logo.svg';
+//...
+&lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
+//...
 </code></pre>
+
+<p>这种写法会由webpack转为url方式引入。</p>
 
 <script
   async
@@ -370,44 +343,26 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
 </script>
 
 
-<p>We want a web page for that, and build it with ElementUI</p>
+<p>方法2：</p>
 
-<p>Page code:</p>
+<div class="alert warning ">
+  <p>注意：这个方法在react-scripts@2.0.0及react@16.3.0之后才被支持.</p>
+</div>
 
-<pre><code class="language-html">&lt;body&gt;
-  &lt;div id=&quot;app&quot;&gt;
-    &lt;el-upload :on-success=&quot;handleSuccess&quot; :show-file-list=&quot;false&quot; class=&quot;upload-demo&quot; drag action=&quot;/upload&quot; name=&quot;user-file&quot;&gt;
-      &lt;i class=&quot;el-icon-upload&quot;&gt;&lt;/i&gt;
-      &lt;div class=&quot;el-upload__text&quot;&gt;Drop file，or&lt;em&gt;click to upload&lt;/em&gt;&lt;/div&gt;
-    &lt;/el-upload&gt;
-    &lt;ul&gt;
-      &lt;li v-for=&quot;(item, i) in fileList&quot; :key=&quot;i&quot;&gt;
-        {{ item.url }}
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  
-  &lt;script&gt;
-    new Vue({
-      el: '#app',
-      data: {
-        fileList: []
-      },
-      methods: {
-        handleSuccess (res) {
-          this.fileList.push(res)
-        },
-      }
-    })
-  &lt;/script&gt;
-&lt;/body&gt;
+<p>这种方式仅对SVG图片生效，将svg看作组件导入：</p>
+
+<pre><code class="language-jsx">// ...
+import { ReactComponent as Logo } from './logo.svg'
+// ...
+&lt;Logo /&gt;
 </code></pre>
 
-<p>Cause this cdn serice is private, so I just put a demo here:</p>
+<p>这种方式最终将svg代码渲染到dom上</p>
 
-<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/3669f040-aeef-11e9-98a7-9f9584c17b51.gif" alt="" /></p>
+<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/0fd00c40-b100-11e9-98a7-9f9584c17b51.png" alt="" /></p>
 
-<p>Maybe you think it is not good to use github as cdn, but I think github is free to anyone, and it is not banned from github, and as a cdn service, github is not the best.
+<p>想要更组件化的SVG使用方式？参考这篇文章：<a href="https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed">https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed</a></p>
+
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -422,10 +377,30 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
 </p>
  -->
 
-  <hr>
-  <p class="text-center">👇 Please leave your comment if you like this.👇</p>
 
-</p>
+  <div class="text-center" id="reward">
+    <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
+    <button class="btn btn--danger" id="reward-btn">打赏</button>
+    <div id="reward-pop">
+      <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
+      <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
+      <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
+      <div node-type="reward-code" class="reward-code">
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
+          <figcaption>微信</figcaption>
+        </figure>
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
+          <figcaption>支付宝</figcaption>
+        </figure>
+      </div>
+      <div class="reward-txt">扫码打赏，建议金额1-10元</div>
+      <p class="power-cy">
+        <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
+      </p>
+    </div>
+  </div>
               
             </div>
           </div>
@@ -435,11 +410,11 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
                 
                 
                   <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/js/">js</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/nodejs/">nodejs</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/react/">react</a>
 
                   </div>
                 
@@ -452,17 +427,17 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/" data-tooltip="Check why a package is installed">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/" data-tooltip="借用Github搭建自己的CDN服务">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -478,7 +453,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -526,17 +501,17 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/" data-tooltip="Check why a package is installed">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/make-github-as-cdn/" data-tooltip="借用Github搭建自己的CDN服务">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -552,7 +527,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -582,8 +557,8 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F07%2Fmake-github-as-cdn%2F">
-          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F07%2Fhow-to-use-svg-in-react%2F">
+          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
     
@@ -598,7 +573,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
     
     <h4 id="about-card-name">Allen Yuan</h4>
     
@@ -673,9 +648,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/07\/make-github-as-cdn\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/07\/how-to-use-svg-in-react\/';
           
-            this.page.identifier = '1564066324';
+            this.page.identifier = '1564243072';
           
         };
         (function() {

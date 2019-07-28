@@ -7,30 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, github, cdn, image, file">
-<meta name="description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta name="keywords" content="js, react, svg">
+<meta name="description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+
 ">
 
 
-<meta property="og:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Build CDN server with github">
-<meta name="twitter:title" content="Build CDN server with github">
-<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+<meta property="og:title" content="How to Use Svg in React">
+<meta name="twitter:title" content="How to Use Svg in React">
+<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+
 ">
-<meta name="twitter:description" content="CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
+<meta name="twitter:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+
 ">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-07-25T22:52:04">
+    <meta property="article:published_time" content="2019-07-27T23:57:49">
   
   
-    <meta property="article:modified_time" content="2019-07-25T22:52:04">
+    <meta property="article:modified_time" content="2019-07-27T23:57:49">
   
   
   
@@ -42,7 +46,7 @@
     
       <meta property="article:tag" content="js">
     
-      <meta property="article:tag" content="nodejs">
+      <meta property="article:tag" content="react">
     
   
 
@@ -63,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Build CDN server with github</title>
+    <title>How to Use Svg in React</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -272,15 +276,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Build CDN server with github
+      How to Use Svg in React
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-25T22:52:04&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-07-27T23:57:49&#43;08:00">
         
-  July 25, 2019
+  July 27, 2019
 
       </time>
     
@@ -303,53 +307,22 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>CDN is useful in work or life, but many cdn service is not free. So, let&rsquo;s build a cdn server with github.
-</p>
+              <p>It&rsquo;s common to add image to your application, so how to use it in React?</p>
 
-<p>If you just want to upload image, you can use github issue to achieve it.</p>
+<p></p>
 
-<p>Like:
-<img src="https://user-images.githubusercontent.com/499192/57450172-1a955f80-725e-11e9-9fed-267179bdab15.gif" alt="github issue" /></p>
+<p>Official docs: <a href="https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files">https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files</a></p>
 
-<p>But we want to upload any type of file, not just image.</p>
+<p>Method one:</p>
 
-<p>Github has lots of open api, and <a href="https://github.com/pksunkara/octonode">octonode</a> is a library for it, we can build our service with it quickly.</p>
-
-<p>Other libraries: express, express-fileupload, uuid.</p>
-
-<p>server code:</p>
-
-<pre><code class="language-js">const github = require('octonode');
-// github Token
-const client = github.client('xxxxxxxxxxxxxxxxxxxxxx');
-// repo name, such as file-cdn
-const ghrepo = client.repo('justforuse/file-cdn');
-const express = require('express')
-const fileUpload = require('express-fileupload')
-const path = require('path')
-const uuidv1 = require('uuid/v1');
-const app = express()
-const port = 3000
-app.use(fileUpload())
-app.use(express.static(__dirname + '/public'));
-app.get('/', (req, res) =&gt; {
-  res.sendFile(path.join(__dirname+'/index.html'))
-})
-app.post('/upload', (req, res) =&gt; {
-  const file = req.files['user-file']
-  const fileArr = file.name.split('.')
-  const fileType = fileArr[fileArr.length -1]
-  const md5Name = `${uuidv1()}.${fileType}`
-  ghrepo.createContents(md5Name, 'Upload new file', file.data, function (err, status, body, headers) {
-    res.send({
-      // file cdn url
-      url: `https://raw.githubusercontent.com/justforuse/file-cdn/master/${md5Name}`
-    })
-  })
-})
-
-app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}!`))
+<pre><code class="language-jsx">// svg png and other types of image
+import logo from './logo.svg';
+//...
+&lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
+//...
 </code></pre>
+
+<p>Webpack will convert it to image url automatically.</p>
 
 <script
   async
@@ -370,44 +343,26 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
 </script>
 
 
-<p>We want a web page for that, and build it with ElementUI</p>
+<p>Method two:</p>
 
-<p>Page code:</p>
+<div class="alert warning ">
+  <p>Note: this feature is available with react-scripts@2.0.0 and higher, and react@16.3.0 and higher.</p>
+</div>
 
-<pre><code class="language-html">&lt;body&gt;
-  &lt;div id=&quot;app&quot;&gt;
-    &lt;el-upload :on-success=&quot;handleSuccess&quot; :show-file-list=&quot;false&quot; class=&quot;upload-demo&quot; drag action=&quot;/upload&quot; name=&quot;user-file&quot;&gt;
-      &lt;i class=&quot;el-icon-upload&quot;&gt;&lt;/i&gt;
-      &lt;div class=&quot;el-upload__text&quot;&gt;Drop file，or&lt;em&gt;click to upload&lt;/em&gt;&lt;/div&gt;
-    &lt;/el-upload&gt;
-    &lt;ul&gt;
-      &lt;li v-for=&quot;(item, i) in fileList&quot; :key=&quot;i&quot;&gt;
-        {{ item.url }}
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  
-  &lt;script&gt;
-    new Vue({
-      el: '#app',
-      data: {
-        fileList: []
-      },
-      methods: {
-        handleSuccess (res) {
-          this.fileList.push(res)
-        },
-      }
-    })
-  &lt;/script&gt;
-&lt;/body&gt;
+<p>And it only works for svg, it consider svg as a component:</p>
+
+<pre><code class="language-jsx">// ...
+import { ReactComponent as Logo } from './logo.svg'
+// ...
+&lt;Logo /&gt;
 </code></pre>
 
-<p>Cause this cdn serice is private, so I just put a demo here:</p>
+<p>It will render svg code to DOM finally.</p>
 
-<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/3669f040-aeef-11e9-98a7-9f9584c17b51.gif" alt="" /></p>
+<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/0fd00c40-b100-11e9-98a7-9f9584c17b51.png" alt="" /></p>
 
-<p>Maybe you think it is not good to use github as cdn, but I think github is free to anyone, and it is not banned from github, and as a cdn service, github is not the best.
+<p>Want more component methods to use SVG? check this blog: <a href="https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed">https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed</a></p>
+
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -422,10 +377,9 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
 </p>
  -->
 
+
   <hr>
   <p class="text-center">👇 Please leave your comment if you like this.👇</p>
-
-</p>
               
             </div>
           </div>
@@ -439,7 +393,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
                     
   <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/js/">js</a>
 
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/nodejs/">nodejs</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/react/">react</a>
 
                   </div>
                 
@@ -452,7 +406,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -460,7 +414,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/" data-tooltip="Check why a package is installed">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -478,7 +432,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -526,7 +480,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -534,7 +488,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/06/why-this-package-is-installed/" data-tooltip="Check why a package is installed">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -552,7 +506,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -582,7 +536,7 @@ app.listen(port, () =&gt; console.log(`Github CDN app listening on port: ${port}
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F07%2Fmake-github-as-cdn%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F07%2Fhow-to-use-svg-in-react%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
@@ -673,9 +627,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/07\/make-github-as-cdn\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/07\/how-to-use-svg-in-react\/';
           
-            this.page.identifier = '1564066324';
+            this.page.identifier = '1564243069';
           
         };
         (function() {

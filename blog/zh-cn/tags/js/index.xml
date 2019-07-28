@@ -6,10 +6,21 @@
     <description>Recent content in Js on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jul 2019 22:52:02 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jul 2019 23:57:51 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React如何引入SVG文件</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/</link>
+      <pubDate>Sat, 27 Jul 2019 23:57:51 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/</guid>
+      <description>&lt;p&gt;应用中添加图片是很常见的需求，React应用中应该如何添加图片呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>借用Github搭建自己的CDN服务</title>

@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/</loc>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/</loc>
     <lastmod>2019-07-25T22:52:04+08:00</lastmod>
     <xhtml:link
@@ -411,7 +426,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/</loc>
-    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -506,7 +521,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/front-end/</loc>
-    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -624,7 +639,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/js/</loc>
-    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -672,7 +687,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/post/</loc>
-    <lastmod>2019-07-25T22:52:04+08:00</lastmod>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -683,6 +698,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://justforuse.github.io/blog/en-us/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/en-us/tags/react/</loc>
+    <lastmod>2019-07-27T23:57:49+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/react/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/react/"
                 />
   </url>
   
