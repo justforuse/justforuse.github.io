@@ -551,22 +551,6 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/en-us/tags/git/</loc>
-    <lastmod>2018-07-10T00:37:34+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/tags/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/tags/git/"
-                />
-  </url>
-  
-  <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/git/</loc>
     <lastmod>2018-07-10T00:37:34+08:00</lastmod>
     <priority>0</priority>
@@ -583,18 +567,18 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/en-us/tags/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/en-us/tags/git/</loc>
+    <lastmod>2018-07-10T00:37:34+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/tags/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/tags/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/tags/git/"
                 />
   </url>
   
@@ -615,6 +599,22 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/tags/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:42+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/html/</loc>
     <lastmod>2019-04-24T23:01:45+08:00</lastmod>
     <priority>0</priority>
@@ -631,6 +631,12 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/categories/hugo/</loc>
+    <lastmod>2019-04-14T16:37:43+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/hugo/</loc>
     <lastmod>2019-04-20T13:46:42+08:00</lastmod>
     <priority>0</priority>
@@ -644,12 +650,6 @@
                 hreflang="en-us"
                 href="https://justforuse.github.io/blog/en-us/tags/hugo/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/en-us/categories/hugo/</loc>
-    <lastmod>2019-04-14T16:37:43+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
