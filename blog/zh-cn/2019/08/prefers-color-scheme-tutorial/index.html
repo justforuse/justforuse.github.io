@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, react, svg">
-<meta name="description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta name="keywords" content="js, prefers-color-scheme, dark mode">
+<meta name="description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
 
 ">
 
 
-<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta property="og:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to Use Svg in React">
-<meta name="twitter:title" content="How to Use Svg in React">
-<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
-<meta property="og:site_name" content="Blog">
-<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta property="og:title" content="prefers-color-scheme介绍">
+<meta name="twitter:title" content="prefers-color-scheme介绍">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
 
 ">
-<meta name="twitter:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta name="twitter:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
 
 ">
-<meta property="og:locale" content="en-us">
+<meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-07-27T23:57:49">
+    <meta property="article:published_time" content="2019-08-04T10:41:53">
   
   
-    <meta property="article:modified_time" content="2019-07-27T23:57:49">
+    <meta property="article:modified_time" content="2019-08-04T10:41:53">
   
   
   
@@ -44,9 +44,7 @@
   
   
     
-      <meta property="article:tag" content="js">
-    
-      <meta property="article:tag" content="react">
+      <meta property="article:tag" content="css">
     
   
 
@@ -67,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>How to Use Svg in React</title>
+    <title>prefers-color-scheme介绍</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -129,7 +127,7 @@ if (!doNotTrack) {
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://justforuse.github.io/blog/en-us/">Blog</a>
+    <a class="header-title-link" href="https://justforuse.github.io/blog/zh-cn/">博客</a>
   </div>
   
     
@@ -139,7 +137,7 @@ if (!doNotTrack) {
     
     
       
-        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="Author&#39;s picture" />
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
       
     
     </a>
@@ -151,7 +149,7 @@ if (!doNotTrack) {
     
       <div class="sidebar-profile">
         <a href="https://justforuse.github.io/blog/#about">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
         </a>
         <h4 class="sidebar-profile-name">Allen Yuan</h4>
         
@@ -163,51 +161,51 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
-      <span class="sidebar-button-desc">Home</span>
+      <span class="sidebar-button-desc">首页</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/categories">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
-      <span class="sidebar-button-desc">Categories</span>
+      <span class="sidebar-button-desc">分类</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/tags">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
-      <span class="sidebar-button-desc">Tags</span>
+      <span class="sidebar-button-desc">标签</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/archives">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/archives">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
-      <span class="sidebar-button-desc">Archives</span>
+      <span class="sidebar-button-desc">归档</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/#about">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/#about">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
-      <span class="sidebar-button-desc">About</span>
+      <span class="sidebar-button-desc">关于</span>
     </a>
   </li>
 
@@ -241,7 +239,7 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/index.xml">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -254,9 +252,9 @@ if (!doNotTrack) {
     <ul class="sidebar-buttons">
       <li class="sidebar-button">
         
-          <a id="cn-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/zh-cn">
+          <a id="en-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/en-us">
             <i class="sidebar-button-icon fa fa-lg fa-language"></i>
-            <span class="sidebar-button-desc">中文版</span>
+            <span class="sidebar-button-desc">English</span>
           </a>
         
       </li>
@@ -276,28 +274,28 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      How to Use Svg in React
+      prefers-color-scheme介绍
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-27T23:57:49&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-08-04T10:41:53&#43;08:00">
         
-  July 27, 2019
+  八月 4, 2019
 
       </time>
     
     
-      <span>Author: allen</span>
+      <span>作者: allen</span>
     
     
     
   
   
-    <span>in</span>
+    <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/en-us/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
     
   
 
@@ -307,22 +305,13 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>It&rsquo;s common to add image to your application, so how to use it in React?</p>
+              <p>暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。</p>
 
 <p></p>
 
-<p>Official docs: <a href="https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files">https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files</a></p>
+<p>准确来说，并不是chrome增加了暗色模式，而是在系统切换为暗色模式时，chrome增加对相应模式的响应；从浏览器外观来说，Chrome Store提供了很多种主题供用户选择。</p>
 
-<p>Method one:</p>
-
-<pre><code class="language-jsx">// svg png and other types of image
-import logo from './logo.svg';
-//...
-&lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
-//...
-</code></pre>
-
-<p>Webpack will convert it to image url automatically.</p>
+<p>关于Chrome76的更新介绍：<a href="https://developers.google.com/web/updates/2019/07/nic76">https://developers.google.com/web/updates/2019/07/nic76</a></p>
 
 <script
   async
@@ -343,26 +332,39 @@ import logo from './logo.svg';
 </script>
 
 
-<p>Method two:</p>
+<p>系统如何开启暗色模式呢？</p>
 
-<div class="alert warning ">
-  <p>Note: this feature is available with react-scripts@2.0.0 and higher, and react@16.3.0 and higher.</p>
-</div>
+<p>以Windows为例：</p>
 
-<p>And it only works for svg, it consider svg as a component:</p>
+<p><img src="https://user-images.githubusercontent.com/11868477/62418847-d7545c80-b6a5-11e9-945e-55999308a807.png" alt="image" /></p>
 
-<pre><code class="language-jsx">// ...
-import { ReactComponent as Logo } from './logo.svg'
-// ...
-&lt;Logo /&gt;
+<p>浏览器借助媒介查询语法来检测当前系统的主题，语法：</p>
+
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
+  ...
+}
 </code></pre>
 
-<p>It will render svg code to DOM finally.</p>
+<p><code>prefer-color-scheme</code>支持三个值：<code>dark</code>,<code>light</code>,<code>no-preference</code>。</p>
 
-<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/0fd00c40-b100-11e9-98a7-9f9584c17b51.png" alt="" /></p>
+<p>示例：</p>
 
-<p>Want more component methods to use SVG? check this blog: <a href="https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed">https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed</a></p>
+<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/rLa5fqsh/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
 
+<p>视频教程：</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/kVKuH5H7nuA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>这是个非常棒的特性，比起手动切换应用主题色，我们可以根据用户喜好自动切换，成本更低，体验上会更好。</p>
+
+<p>更多参考：
+<a href="https://web.dev/prefers-color-scheme">https://web.dev/prefers-color-scheme</a></p>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme">https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme</a>
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -377,9 +379,31 @@ import { ReactComponent as Logo } from './logo.svg'
 </p>
  -->
 
+  <div class="text-center" id="reward">
+    <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
+    <button class="btn btn--danger" id="reward-btn">打赏</button>
+    <div id="reward-pop">
+      <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
+      <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
+      <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
+      <div node-type="reward-code" class="reward-code">
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
+          <figcaption>微信</figcaption>
+        </figure>
+        <figure>
+          <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
+          <figcaption>支付宝</figcaption>
+        </figure>
+      </div>
+      <div class="reward-txt">扫码打赏，建议金额1-10元</div>
+      <p class="power-cy">
+        <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
+      </p>
+    </div>
+  </div>
 
-  <hr>
-  <p class="text-center">👇 Please leave your comment if you like this.👇</p>
+</p>
               
             </div>
           </div>
@@ -389,11 +413,9 @@ import { ReactComponent as Logo } from './logo.svg'
                 
                 
                   <div class="post-footer-tags">
-                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/js/">js</a>
-
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/react/">react</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
 
                   </div>
                 
@@ -406,17 +428,17 @@ import { ReactComponent as Logo } from './logo.svg'
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/" data-tooltip="React如何引入SVG文件">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -432,7 +454,7 @@ import { ReactComponent as Logo } from './logo.svg'
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -480,17 +502,17 @@ import { ReactComponent as Logo } from './logo.svg'
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/" data-tooltip="React如何引入SVG文件">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -506,7 +528,7 @@ import { ReactComponent as Logo } from './logo.svg'
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -536,8 +558,8 @@ import { ReactComponent as Logo } from './logo.svg'
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F07%2Fhow-to-use-svg-in-react%2F">
-          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F08%2Fprefers-color-scheme-tutorial%2F">
+          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
     
@@ -552,7 +574,7 @@ import { ReactComponent as Logo } from './logo.svg'
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
     
     <h4 id="about-card-name">Allen Yuan</h4>
     
@@ -627,9 +649,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/07\/how-to-use-svg-in-react\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/08\/prefers-color-scheme-tutorial\/';
           
-            this.page.identifier = '1564243069';
+            this.page.identifier = '1564886513';
           
         };
         (function() {

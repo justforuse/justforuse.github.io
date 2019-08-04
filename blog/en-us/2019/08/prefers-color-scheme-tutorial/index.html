@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, react, svg">
-<meta name="description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta name="keywords" content="js, prefers-color-scheme, dark mode">
+<meta name="description" content="Dark mode? Many apps supports this feature, now Chrome supports it too from version 76.
 
 ">
 
 
-<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta property="og:description" content="Dark mode? Many apps supports this feature, now Chrome supports it too from version 76.
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="How to Use Svg in React">
-<meta name="twitter:title" content="How to Use Svg in React">
-<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+<meta property="og:title" content="Prefers-Color-Scheme tutorial">
+<meta name="twitter:title" content="Prefers-Color-Scheme tutorial">
+<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta property="og:description" content="Dark mode? Many apps supports this feature, now Chrome supports it too from version 76.
 
 ">
-<meta name="twitter:description" content="It&rsquo;s common to add image to your application, so how to use it in React?
+<meta name="twitter:description" content="Dark mode? Many apps supports this feature, now Chrome supports it too from version 76.
 
 ">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-07-27T23:57:49">
+    <meta property="article:published_time" content="2019-08-04T10:41:51">
   
   
-    <meta property="article:modified_time" content="2019-07-27T23:57:49">
+    <meta property="article:modified_time" content="2019-08-04T10:41:51">
   
   
   
@@ -44,9 +44,7 @@
   
   
     
-      <meta property="article:tag" content="js">
-    
-      <meta property="article:tag" content="react">
+      <meta property="article:tag" content="css">
     
   
 
@@ -67,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>How to Use Svg in React</title>
+    <title>Prefers-Color-Scheme tutorial</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -276,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      How to Use Svg in React
+      Prefers-Color-Scheme tutorial
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-07-27T23:57:49&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-08-04T10:41:51&#43;08:00">
         
-  July 27, 2019
+  August 4, 2019
 
       </time>
     
@@ -307,22 +305,13 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>It&rsquo;s common to add image to your application, so how to use it in React?</p>
+              <p>Dark mode? Many apps supports this feature, now Chrome supports it too from version 76.</p>
 
 <p></p>
 
-<p>Official docs: <a href="https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files">https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files</a></p>
+<p>Actually, not Chrome add dark mode. it just be responsive to your system.</p>
 
-<p>Method one:</p>
-
-<pre><code class="language-jsx">// svg png and other types of image
-import logo from './logo.svg';
-//...
-&lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
-//...
-</code></pre>
-
-<p>Webpack will convert it to image url automatically.</p>
+<p>Introduction to Chrome76: <a href="https://developers.google.com/web/updates/2019/07/nic76">https://developers.google.com/web/updates/2019/07/nic76</a></p>
 
 <script
   async
@@ -343,25 +332,28 @@ import logo from './logo.svg';
 </script>
 
 
-<p>Method two:</p>
+<p>Broswer use media query to detect current mode of system:</p>
 
-<div class="alert warning ">
-  <p>Note: this feature is available with react-scripts@2.0.0 and higher, and react@16.3.0 and higher.</p>
-</div>
-
-<p>And it only works for svg, it consider svg as a component:</p>
-
-<pre><code class="language-jsx">// ...
-import { ReactComponent as Logo } from './logo.svg'
-// ...
-&lt;Logo /&gt;
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
+  ...
+}
 </code></pre>
 
-<p>It will render svg code to DOM finally.</p>
+<p><code>prefer-color-scheme</code>supports: <code>dark</code>,<code>light</code>,<code>no-preference</code>。</p>
 
-<p><img src="https://raw.githubusercontent.com/justforuse/file-cdn/master/0fd00c40-b100-11e9-98a7-9f9584c17b51.png" alt="" /></p>
+<p>Demo:</p>
 
-<p>Want more component methods to use SVG? check this blog: <a href="https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed">https://blog.lftechnology.com/using-svg-icons-components-in-react-44fbe8e5f91?gi=b5829e4400ed</a></p>
+<iframe scrolling="no" width="100%" height="300" src="//jsfiddle.net/rLa5fqsh/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Video tutorial:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/kVKuH5H7nuA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>It is a cool stuff, give users better experience.</p>
 
 <!-- <p
   class="ciu_embed"
@@ -391,9 +383,7 @@ import { ReactComponent as Logo } from './logo.svg'
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/js/">js</a>
-
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/react/">react</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/css/">css</a>
 
                   </div>
                 
@@ -406,7 +396,7 @@ import { ReactComponent as Logo } from './logo.svg'
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -414,7 +404,7 @@ import { ReactComponent as Logo } from './logo.svg'
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -432,7 +422,7 @@ import { ReactComponent as Logo } from './logo.svg'
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -480,7 +470,7 @@ import { ReactComponent as Logo } from './logo.svg'
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -488,7 +478,7 @@ import { ReactComponent as Logo } from './logo.svg'
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/make-github-as-cdn/" data-tooltip="Build CDN server with github">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/" data-tooltip="How to Use Svg in React">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -506,7 +496,7 @@ import { ReactComponent as Logo } from './logo.svg'
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/07/how-to-use-svg-in-react/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -536,7 +526,7 @@ import { ReactComponent as Logo } from './logo.svg'
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F07%2Fhow-to-use-svg-in-react%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F08%2Fprefers-color-scheme-tutorial%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
@@ -627,9 +617,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/07\/how-to-use-svg-in-react\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/08\/prefers-color-scheme-tutorial\/';
           
-            this.page.identifier = '1564243069';
+            this.page.identifier = '1564886511';
           
         };
         (function() {

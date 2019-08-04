@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Jul 2019 23:57:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 04 Aug 2019 10:41:53 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>prefers-color-scheme介绍</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/</link>
+      <pubDate>Sun, 04 Aug 2019 10:41:53 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/</guid>
+      <description>&lt;p&gt;暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>React如何引入SVG文件</title>
