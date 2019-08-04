@@ -45,9 +45,9 @@ disqusIdentifier: 1564886513
 
 示例：
 
-{{< jsfiddle rLa5fqsh >}}
+{{< codepen pen="voebow" user="justforuse" theme="dark">}}
 
-视频教程：
+视频教程(youtube)：
 
 {{< youtube kVKuH5H7nuA >}}
 

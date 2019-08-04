@@ -39,9 +39,9 @@ Broswer use media query to detect current mode of system:
 
 Demo:
 
-{{< jsfiddle rLa5fqsh >}}
+{{< codepen pen="voebow" user="justforuse" theme="dark">}}
 
-Video tutorial:
+Youtube Video tutorial:
 
 {{< youtube kVKuH5H7nuA >}}
 
