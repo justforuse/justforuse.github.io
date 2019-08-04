@@ -47,5 +47,9 @@ Youtube Video tutorial:
 
 It is a cool stuff, give users better experience.
 
+But compatibility is bad, cause it is a new feature.
+
+{{< embed-caniuse prefers-color-scheme >}}
+
 <!-- {{< embed-caniuse css-placeholder-shown >}} -->
 {{< reward >}}

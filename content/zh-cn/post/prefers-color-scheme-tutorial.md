@@ -53,6 +53,10 @@ disqusIdentifier: 1564886513
 
 这是个非常棒的特性，比起手动切换应用主题色，我们可以根据用户喜好自动切换，成本更低，体验上会更好。
 
+因为是比较新的特性，目前来说，兼容性很差：
+
+{{< embed-caniuse prefers-color-scheme >}}
+
 更多参考：
 https://web.dev/prefers-color-scheme
 
