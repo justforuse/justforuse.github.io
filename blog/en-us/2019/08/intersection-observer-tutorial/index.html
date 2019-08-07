@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, prefers-color-scheme, dark mode">
-<meta name="description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
+<meta name="keywords" content="IntersectionObserver">
+<meta name="description" content="IntersectionObserver? What is this?
 
 ">
 
 
-<meta property="og:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
+<meta property="og:description" content="IntersectionObserver? What is this?
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="prefers-color-scheme介绍">
-<meta name="twitter:title" content="prefers-color-scheme介绍">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
-<meta property="og:site_name" content="博客">
-<meta property="og:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
+<meta property="og:title" content="Intersection Observer Tutorial">
+<meta name="twitter:title" content="Intersection Observer Tutorial">
+<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="IntersectionObserver? What is this?
 
 ">
-<meta name="twitter:description" content="暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。
+<meta name="twitter:description" content="IntersectionObserver? What is this?
 
 ">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-08-04T10:41:53">
+    <meta property="article:published_time" content="2019-08-07T23:40:42">
   
   
-    <meta property="article:modified_time" content="2019-08-04T10:41:53">
+    <meta property="article:modified_time" content="2019-08-07T23:40:42">
   
   
   
@@ -44,7 +44,7 @@
   
   
     
-      <meta property="article:tag" content="css">
+      <meta property="article:tag" content="js">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>prefers-color-scheme介绍</title>
+    <title>Intersection Observer Tutorial</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -127,7 +127,7 @@ if (!doNotTrack) {
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://justforuse.github.io/blog/zh-cn/">博客</a>
+    <a class="header-title-link" href="https://justforuse.github.io/blog/en-us/">Blog</a>
   </div>
   
     
@@ -137,7 +137,7 @@ if (!doNotTrack) {
     
     
       
-        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="作者的图片" />
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="Author&#39;s picture" />
       
     
     </a>
@@ -149,7 +149,7 @@ if (!doNotTrack) {
     
       <div class="sidebar-profile">
         <a href="https://justforuse.github.io/blog/#about">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
         </a>
         <h4 class="sidebar-profile-name">Allen Yuan</h4>
         
@@ -161,51 +161,51 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
-      <span class="sidebar-button-desc">首页</span>
+      <span class="sidebar-button-desc">Home</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/categories">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
-      <span class="sidebar-button-desc">分类</span>
+      <span class="sidebar-button-desc">Categories</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/tags">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
-      <span class="sidebar-button-desc">标签</span>
+      <span class="sidebar-button-desc">Tags</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/archives">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/archives">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
-      <span class="sidebar-button-desc">归档</span>
+      <span class="sidebar-button-desc">Archives</span>
     </a>
   </li>
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/#about">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/#about">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
-      <span class="sidebar-button-desc">关于</span>
+      <span class="sidebar-button-desc">About</span>
     </a>
   </li>
 
@@ -239,7 +239,7 @@ if (!doNotTrack) {
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/zh-cn/index.xml">
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -252,9 +252,9 @@ if (!doNotTrack) {
     <ul class="sidebar-buttons">
       <li class="sidebar-button">
         
-          <a id="en-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/en-us">
+          <a id="cn-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/zh-cn">
             <i class="sidebar-button-icon fa fa-lg fa-language"></i>
-            <span class="sidebar-button-desc">English</span>
+            <span class="sidebar-button-desc">中文版</span>
           </a>
         
       </li>
@@ -274,28 +274,28 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      prefers-color-scheme介绍
+      Intersection Observer Tutorial
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-08-04T10:41:53&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-08-07T23:40:42&#43;08:00">
         
-  八月 4, 2019
+  August 7, 2019
 
       </time>
     
     
-      <span>作者: allen</span>
+      <span>Author: allen</span>
     
     
     
   
   
-    <span>发布在</span>
+    <span>in</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/en-us/categories/front-end">Front-End</a>
     
   
 
@@ -305,13 +305,15 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>暗色模式？很多APP都具备这个功能，Chrome从76版本也开始增加对暗色模式的支持。</p>
+              <p>IntersectionObserver? What is this?</p>
 
 <p></p>
 
-<p>准确来说，并不是chrome增加了暗色模式，而是在系统切换为暗色模式时，chrome增加对相应模式的响应；从浏览器外观来说，Chrome Store提供了很多种主题供用户选择。</p>
+<p>Imagine these situations: scroll bottom to load new data, image lazy load, emphasize new content when appears on the viewport.</p>
 
-<p>关于Chrome76的更新介绍：<a href="https://developers.google.com/web/updates/2019/07/nic76">https://developers.google.com/web/updates/2019/07/nic76</a></p>
+<p>These situations are similar, they all detect whether some specific is shown on the viewport.</p>
+
+<p>We already know that we can use <code>getBoundingClientRect()</code> or other methods to get element&rsquo;s current position, but with <code>IntersectionObserver</code>, we can do it more elegantly.</p>
 
 <script
   async
@@ -332,22 +334,30 @@ if (!doNotTrack) {
 </script>
 
 
-<p>系统如何开启暗色模式呢？</p>
+<p>Usage:</p>
 
-<p>以Windows为例：</p>
+<p>Apparently, we need elements to be detected.</p>
 
-<p><img src="https://user-images.githubusercontent.com/11868477/62418847-d7545c80-b6a5-11e9-945e-55999308a807.png" alt="image" /></p>
+<p>What I do is when element appears on the viewport, add a animation to it.</p>
 
-<p>浏览器借助媒介查询语法来检测当前系统的主题，语法：</p>
-
-<pre><code class="language-css">@media (prefers-color-scheme: dark) {
-  ...
+<pre><code class="language-js">const sections = document.querySelectorAll('span')
+const options = {
+  // thresholds: [1]
 }
+const observer = new IntersectionObserver(entries =&gt; {
+  entries.forEach(entry =&gt; {
+    if (entry.intersectionRatio &gt; 0) {
+      entry.target.style.animation = 'anim .4s forwards'
+    } else {
+      entry.target.style.animation = 'none'
+    }
+  })
+}, options)
+
+sections.forEach(section =&gt; observer.observe(section))
 </code></pre>
 
-<p><code>prefer-color-scheme</code>支持三个值：<code>dark</code>,<code>light</code>,<code>no-preference</code>。</p>
-
-<p>示例：</p>
+<p>Online demo:</p>
 
 
 
@@ -359,83 +369,42 @@ if (!doNotTrack) {
 
 
 
-  <p data-height="265" data-theme-id="dark" data-slug-hash="voebow" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  <p data-height="265" data-theme-id="dark" data-slug-hash="QeQRRR" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
   class="codepen">
-    See the Pen <a href="https://codepen.io/justforuse/pen/voebow/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+    See the Pen <a href="https://codepen.io/justforuse/pen/QeQRRR/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
   </p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 
 
-<p>视频教程(youtube)：</p>
-
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/kVKuH5H7nuA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-
-<p>这是个非常棒的特性，比起手动切换应用主题色，我们可以根据用户喜好自动切换，成本更低，体验上会更好。</p>
-
-<p>因为是比较新的特性，目前来说，兼容性很差：</p>
+<p>Compatibility is not bad except IE</p>
 
 <p
   class="ciu_embed"
-  data-feature="prefers-color-scheme"
+  data-feature="intersectionobserver"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=prefers-color-scheme"
-    >Can I Use prefers-color-scheme?</a
+  <a href="http://caniuse.com/#feat=intersectionobserver"
+    >Can I Use intersectionobserver?</a
   >
-  Data on support for the prefers-color-scheme feature across the major browsers
+  Data on support for the intersectionobserver feature across the major browsers
   from caniuse.com.
 </p>
 
 
-<p>更多参考：
-<a href="https://web.dev/prefers-color-scheme">https://web.dev/prefers-color-scheme</a></p>
+<p>Docs:
+<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API">https://developer.mozilla.org/zh-CN/docs/Web/API/Intersection_Observer_API</a></p>
 
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme">https://developer.mozilla.org/zh-CN/docs/Web/CSS/@media/prefers-color-scheme</a>
-<!-- <p
-  class="ciu_embed"
-  data-feature="css-placeholder-shown"
-  data-periods="future_1,current,past_1,past_2"
-  data-accessible-colours="false"
->
-  <a href="http://caniuse.com/#feat=css-placeholder-shown"
-    >Can I Use css-placeholder-shown?</a
-  >
-  Data on support for the css-placeholder-shown feature across the major browsers
-  from caniuse.com.
-</p>
- -->
 
-  <div class="text-center" id="reward">
-    <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
-    <button class="btn btn--danger" id="reward-btn">打赏</button>
-    <div id="reward-pop">
-      <div node-type="close-btn" id="reward-close-btn" class="fa fa-close"></div>
-      <img class="avatar" src="https://s1.ax1x.com/2018/06/30/PFL2Se.jpg">
-      <div class="reward-title">赏点银子给楼主凑凑买咖啡喝吧</div>
-      <div node-type="reward-code" class="reward-code">
-        <figure>
-          <img src="https://s1.ax1x.com/2018/08/24/P7g78A.png" alt="">
-          <figcaption>微信</figcaption>
-        </figure>
-        <figure>
-          <img src="https://s1.ax1x.com/2018/08/24/P7gTCd.png" alt="">
-          <figcaption>支付宝</figcaption>
-        </figure>
-      </div>
-      <div class="reward-txt">扫码打赏，建议金额1-10元</div>
-      <p class="power-cy">
-        <a href="http://changyan.kuaizhan.com" style="text-decoration:none;color:#d1d1d1;" target="_blank">Copied From 畅言</a>
-      </p>
-    </div>
-  </div>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/_5Bu3JY-ZHc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
 
-</p>
+
+
+  <hr>
+  <p class="text-center">👇 Please leave your comment if you like this.👇</p>
               
             </div>
           </div>
@@ -445,9 +414,9 @@ if (!doNotTrack) {
                 
                 
                   <div class="post-footer-tags">
-                    <span class="text-color-light text-small">标签</span><br/>
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/js/">js</a>
 
                   </div>
                 
@@ -460,17 +429,17 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/08/intersection-observer-tutorial/" data-tooltip="IntersectionObserver简介">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/" data-tooltip="React如何引入SVG文件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -486,7 +455,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -534,17 +503,17 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/08/intersection-observer-tutorial/" data-tooltip="IntersectionObserver简介">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
-                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
                 </a>
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/07/how-to-use-svg-in-react/" data-tooltip="React如何引入SVG文件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/prefers-color-scheme-tutorial/" data-tooltip="Prefers-Color-Scheme tutorial">
               
-                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
                 </a>
             </li>
@@ -560,7 +529,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -590,8 +559,8 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F08%2Fprefers-color-scheme-tutorial%2F">
-          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F08%2Fintersection-observer-tutorial%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
     
@@ -606,7 +575,7 @@ if (!doNotTrack) {
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="作者的图片" />
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
     
     <h4 id="about-card-name">Allen Yuan</h4>
     
@@ -681,9 +650,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/08\/prefers-color-scheme-tutorial\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/08\/intersection-observer-tutorial\/';
           
-            this.page.identifier = '1564886513';
+            this.page.identifier = '1565192442';
           
         };
         (function() {
