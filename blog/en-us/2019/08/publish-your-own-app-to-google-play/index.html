@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
+<meta name="author" content="Allen Yuan">
+<meta name="keywords" content="android app, google play">
+<meta name="description" content="Want to publish your own app to Google Play for more people to use? Here is a guide for you.
+
+">
+
+
+<meta property="og:description" content="Want to publish your own app to Google Play for more people to use? Here is a guide for you.
+
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ho to publish your own app to Google Play">
+<meta name="twitter:title" content="Ho to publish your own app to Google Play">
+<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/">
+<meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Want to publish your own app to Google Play for more people to use? Here is a guide for you.
+
+">
+<meta name="twitter:description" content="Want to publish your own app to Google Play for more people to use? Here is a guide for you.
+
+">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2019-08-11T16:29:43">
+  
+  
+    <meta property="article:modified_time" content="2019-08-11T16:29:43">
+  
+  
+  
+    
+      <meta property="article:section" content="Front-End">
+    
+  
+  
+    
+      <meta property="article:tag" content="android">
+    
+      <meta property="article:tag" content="google play">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
+
+
+    <title>Ho to publish your own app to Google Play</title>
+
+    <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
+    
+
+    
+    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-rlztkwlapdcxvgx6l2cvldz30jhlegkis7lnqyezfbv95zk2riqkjyxourzn.min.css" />
+    
+    
+      
+        <link rel="stylesheet"  href="https://justforuse.github.io/blog/css/mystyle.css" swapPaginator="true">
+      
+    
+
+    
+      
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-122356809-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?d5c2fda4efd2970e4d5b060c3e62f4ae";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1281402863208945",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://justforuse.github.io/blog/en-us/">Blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://justforuse.github.io/blog/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://justforuse.github.io/blog/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Allen Yuan</h4>
+        
+          <h5 class="sidebar-profile-bio">Keep going</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/justforuse" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/5760654/allen" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://justforuse.github.io/blog/en-us/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      <li class="sidebar-button">
+        
+          <a id="cn-version2" class="sidebar-button-link" href="https://justforuse.github.io/blog/zh-cn">
+            <i class="sidebar-button-icon fa fa-lg fa-language"></i>
+            <span class="sidebar-button-desc">中文版</span>
+          </a>
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Ho to publish your own app to Google Play
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2019-08-11T16:29:43&#43;08:00">
+        
+  August 11, 2019
+
+      </time>
+    
+    
+      <span>Author: allen</span>
+    
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://justforuse.github.io/blog/en-us/categories/front-end">Front-End</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Want to publish your own app to Google Play for more people to use? Here is a guide for you.</p>
+
+<p></p>
+
+<h3 id="preparation">Preparation:</h3>
+
+<ul>
+<li>Google account</li>
+<li>Credit card(need $25 when sign up account)</li>
+</ul>
+
+<h3 id="sign-up-google-play-account">Sign up Google Play account:</h3>
+
+<p><a href="https://play.google.com/apps/publish/signup">link</a></p>
+
+<p>There are four steps, just follow the tips.</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/62831692-3d1c8780-bc56-11e9-9590-8c489e0d6019.png" alt="image" /></p>
+
+<p>When finished sign up, it will redirect to Google Play Console page:</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/62831734-794fe800-bc56-11e9-9558-eed1a3c4421c.png" alt="image" /></p>
+
+<h3 id="create-application">Create Application</h3>
+
+<p>Click the create button, select language and fill app&rsquo;s name(Your app&rsquo;s name should match the language)</p>
+
+<p>Then, it will redirect to application dashboard page:
+<img src="https://user-images.githubusercontent.com/11868477/62831775-bfa54700-bc56-11e9-9667-b1687ef5dc8e.png" alt="image" /></p>
+
+<p>Just follow tips to fill all fields, notice these checkbox, you should fill all fields of it.</p>
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
+
+<h3 id="bundle-application">Bundle application</h3>
+
+<div class="alert warning ">
+  <p>Your application&rsquo;s package name should not be <code>com.example</code>, it is banned from Google Play.</p>
+</div>
+
+<p>In application version page, we can upload our bundled file
+You should upload <code>.aab</code> file, not <code>.apk</code> file.</p>
+
+<p>I will show you how to bundle <code>.aab</code> file in Android Studio:</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/62831883-6e965280-bc58-11e9-9375-38e93e5b3767.png" alt="image" /></p>
+
+<p>Choose Android App Bundle
+<img src="https://user-images.githubusercontent.com/11868477/62832229-c3889780-bc5d-11e9-88ec-232e1fd3e868.png" alt="image" /></p>
+
+<p>Select key:
+<img src="https://user-images.githubusercontent.com/11868477/62832239-ddc27580-bc5d-11e9-9d22-545fb60bb1c6.png" alt="image" /></p>
+
+<p>Create key, password can be same to avoid confused:
+<img src="https://user-images.githubusercontent.com/11868477/62832257-16fae580-bc5e-11e9-9c24-a94bc58cf0c7.png" alt="image" /></p>
+
+<p>Choose release：
+<img src="https://user-images.githubusercontent.com/11868477/62832275-401b7600-bc5e-11e9-964d-4f7a5d5f08f5.png" alt="image" /></p>
+
+<p>Click finish, and <code>.aab</code> file will be generated:
+<img src="https://user-images.githubusercontent.com/11868477/62832285-63462580-bc5e-11e9-9cf9-e6bea939832c.png" alt="image" /></p>
+
+<p>Upload your <code>.aab</code> file:
+<img src="https://user-images.githubusercontent.com/11868477/62831833-81f4ee00-bc57-11e9-9efb-509c803aa874.png" alt="image" /></p>
+
+<p>And fulfill the information, and publish it:</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/62832329-fb440f00-bc5e-11e9-8c41-e4131a742dba.png" alt="image" /></p>
+
+<p>For now, we succeed to publish an app to Google Play！🎉🎉🎉</p>
+
+<p>Referrer: <a href="https://themanifest.com/app-development/how-publish-app-google-play-step-step-guide">https://themanifest.com/app-development/how-publish-app-google-play-step-step-guide</a></p>
+
+<!-- <p
+  class="ciu_embed"
+  data-feature="css-placeholder-shown"
+  data-periods="future_1,current,past_1,past_2"
+  data-accessible-colours="false"
+>
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
+  >
+  Data on support for the css-placeholder-shown feature across the major browsers
+  from caniuse.com.
+</p>
+ -->
+
+<!-- 
+
+
+
+
+
+
+
+
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="PKdOpB" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/justforuse/pen/PKdOpB/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+ -->
+
+
+  <hr>
+  <p class="text-center">👇 Please leave your comment if you like this.👇</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/android/">android</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/google-play/">google play</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/" data-tooltip="Intersection Observer Tutorial">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2019 Allen Yuan. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/intersection-observer-tutorial/" data-tooltip="Intersection Observer Tutorial">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F08%2Fpublish-your-own-app-to-google-play%2F">
+          <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Allen Yuan</h4>
+    
+      <div id="about-card-bio">Keep going</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Web developer
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+    
+  
+    
+    <div id="cover" style="background-image:url('https://s1.ax1x.com/2018/06/28/Pikoid.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
+
+
+<script src="https://justforuse.github.io/blog/js/script-ivqnzw17cnibj6hjkolvmwr6edhybicdhv8uktg4ie49v67azel4glttjqwr.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/08\/publish-your-own-app-to-google-play\/';
+          
+            this.page.identifier = '1565512183';
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'alleny';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+

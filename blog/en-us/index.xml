@@ -6,10 +6,21 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 23:40:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Aug 2019 16:29:43 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ho to publish your own app to Google Play</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/</link>
+      <pubDate>Sun, 11 Aug 2019 16:29:43 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/08/publish-your-own-app-to-google-play/</guid>
+      <description>&lt;p&gt;Want to publish your own app to Google Play for more people to use? Here is a guide for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Intersection Observer Tutorial</title>
