@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/08/change-android-app-icon/</loc>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/08/change-android-app-icon/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/08/change-android-app-icon/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/08/publish-your-own-app-to-google-play/</loc>
     <lastmod>2019-08-11T16:29:46+08:00</lastmod>
     <xhtml:link
@@ -444,7 +459,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/android/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -592,7 +607,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -672,7 +687,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/google-play/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -774,7 +789,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -876,7 +891,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1010,7 +1025,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-08-11T16:29:46+08:00</lastmod>
+    <lastmod>2019-08-16T23:07:24+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
