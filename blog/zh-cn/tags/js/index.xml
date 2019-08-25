@@ -6,10 +6,20 @@
     <description>Recent content in Js on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 23:40:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2019 18:05:07 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何在左侧显示文本溢出省略号</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/08/how-to-show-text-ellipsis-on-left/</link>
+      <pubDate>Sun, 25 Aug 2019 18:05:07 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/08/how-to-show-text-ellipsis-on-left/</guid>
+      <description>&lt;p&gt;大多数情况下，当文本过长时以省略号作为表示就可以了，但是某些情况下，重要信息在文本末端，如何让省略号显示在左侧，从而显示重要信息呢？
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>IntersectionObserver简介</title>
