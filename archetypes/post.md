@@ -21,4 +21,7 @@ disqusIdentifier: {{ now.Unix }}
 
 <!-- {{< embed-caniuse css-placeholder-shown >}} -->
 <!-- {{< codepen pen="PKdOpB" user="justforuse" theme="dark">}} -->
+<!-- {{< alert warning >}}
+xxx
+{{< /alert >}} -->
 {{< reward >}}
