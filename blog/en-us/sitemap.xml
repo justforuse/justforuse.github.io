@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/</loc>
+    <lastmod>2019-08-27T23:49:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/08/web-share-api-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/2019/08/how-to-show-text-ellipsis-on-left/</loc>
     <lastmod>2019-08-25T18:05:04+08:00</lastmod>
     <xhtml:link
@@ -517,7 +532,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/</loc>
-    <lastmod>2019-08-25T18:05:04+08:00</lastmod>
+    <lastmod>2019-08-27T23:49:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -612,7 +627,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/front-end/</loc>
-    <lastmod>2019-08-25T18:05:04+08:00</lastmod>
+    <lastmod>2019-08-27T23:49:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -746,7 +761,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/js/</loc>
-    <lastmod>2019-08-25T18:05:04+08:00</lastmod>
+    <lastmod>2019-08-27T23:49:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -794,7 +809,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/post/</loc>
-    <lastmod>2019-08-25T18:05:04+08:00</lastmod>
+    <lastmod>2019-08-27T23:49:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

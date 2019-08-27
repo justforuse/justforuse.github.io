@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2019 18:05:04 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 23:49:49 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/en-us/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Web Share API Tutorial</title>
+      <link>https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/</link>
+      <pubDate>Tue, 27 Aug 2019 23:49:49 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/</guid>
+      <description>&lt;p&gt;Now, broswer can share items as APP, using Web Share API
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to Show Text Ellipsis on Left</title>

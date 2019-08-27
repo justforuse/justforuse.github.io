@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Aug 2019 18:05:07 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 23:49:51 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Web Share API使用教程</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/08/web-share-api-tutorial/</link>
+      <pubDate>Tue, 27 Aug 2019 23:49:51 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/08/web-share-api-tutorial/</guid>
+      <description>&lt;p&gt;浏览器也可以像原生APP一样，调用分享功能。Web Share API!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>如何在左侧显示文本溢出省略号</title>
