@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Aug 2019 23:49:51 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 22:40:13 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浏览器增加图片懒加载的原生支持</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/09/html-image-lazy-loading/</link>
+      <pubDate>Thu, 26 Sep 2019 22:40:13 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/09/html-image-lazy-loading/</guid>
+      <description>&lt;p&gt;图片的懒加载一直都是网页性能优化的重要一环，减少不必要的图片请求，可以有效提升网页加载速度，现在，Chrome浏览器增加了这项功能的原生支持。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Web Share API使用教程</title>
