@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/</loc>
+    <lastmod>2019-09-29T23:41:49+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/"
+                />
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/</loc>
     <lastmod>2019-09-26T22:40:11+08:00</lastmod>
     <xhtml:link
@@ -547,7 +562,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/</loc>
-    <lastmod>2019-09-26T22:40:11+08:00</lastmod>
+    <lastmod>2019-09-29T23:41:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -594,7 +609,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/tags/css/</loc>
-    <lastmod>2019-08-04T10:41:51+08:00</lastmod>
+    <lastmod>2019-09-29T23:41:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -642,7 +657,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/categories/front-end/</loc>
-    <lastmod>2019-09-26T22:40:11+08:00</lastmod>
+    <lastmod>2019-09-29T23:41:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -824,7 +839,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/en-us/post/</loc>
-    <lastmod>2019-09-26T22:40:11+08:00</lastmod>
+    <lastmod>2019-09-29T23:41:49+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

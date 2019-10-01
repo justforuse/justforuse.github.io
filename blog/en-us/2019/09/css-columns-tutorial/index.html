@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="image-lazy-loading">
-<meta name="description" content="Lazy loading is always a important part of web page optimization. Now, Chrome has support this feature.
+<meta name="keywords" content="css columns">
+<meta name="description" content="Generally, when we said layout, it means element&rsquo;s layout, but we may need change the layout of paragraphs, CSS Columns can help us.
 
 ">
 
 
-<meta property="og:description" content="Lazy loading is always a important part of web page optimization. Now, Chrome has support this feature.
+<meta property="og:description" content="Generally, when we said layout, it means element&rsquo;s layout, but we may need change the layout of paragraphs, CSS Columns can help us.
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Native lazy-loading for the web">
-<meta name="twitter:title" content="Native lazy-loading for the web">
-<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/">
+<meta property="og:title" content="CSS Columns Tutorial">
+<meta name="twitter:title" content="CSS Columns Tutorial">
+<meta property="og:url" content="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="Lazy loading is always a important part of web page optimization. Now, Chrome has support this feature.
+<meta property="og:description" content="Generally, when we said layout, it means element&rsquo;s layout, but we may need change the layout of paragraphs, CSS Columns can help us.
 
 ">
-<meta name="twitter:description" content="Lazy loading is always a important part of web page optimization. Now, Chrome has support this feature.
+<meta name="twitter:description" content="Generally, when we said layout, it means element&rsquo;s layout, but we may need change the layout of paragraphs, CSS Columns can help us.
 
 ">
 <meta property="og:locale" content="en-us">
 
   
-    <meta property="article:published_time" content="2019-09-26T22:40:11">
+    <meta property="article:published_time" content="2019-09-29T23:41:49">
   
   
-    <meta property="article:modified_time" content="2019-09-26T22:40:11">
+    <meta property="article:modified_time" content="2019-09-29T23:41:49">
   
   
   
@@ -44,7 +44,7 @@
   
   
     
-      <meta property="article:tag" content="html">
+      <meta property="article:tag" content="css">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Native lazy-loading for the web</title>
+    <title>CSS Columns Tutorial</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Native lazy-loading for the web
+      CSS Columns Tutorial
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-09-26T22:40:11&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-09-29T23:41:49&#43;08:00">
         
-  September 26, 2019
+  September 29, 2019
 
       </time>
     
@@ -305,11 +305,21 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>Lazy loading is always a important part of web page optimization. Now, Chrome has support this feature.</p>
+              <p>Generally, when we said layout, it means element&rsquo;s layout, but we may need change the layout of paragraphs, CSS Columns can help us.</p>
 
 <p></p>
 
-<p>Its pretty simple to use this feature, juat add <code>loading=&quot;lazy&quot;</code> to <code>img</code> tag, and browser will lazy load image automatically.</p>
+<p>Newspaper:
+<img src="https://user-images.githubusercontent.com/11868477/65834997-8a20ef80-e2d0-11e9-8629-0e3da07ddf2f.png" alt="image" /></p>
+
+<p>Related attributes:
+<code>columns</code>: column count or column width，such as<code>columns: 2, columns: 200px, columns: 2 auto...</code>.</p>
+
+<p><code>column-rule</code>: divider line style，like <code>border</code> attribute, 1px black line：<code>1px solid black</code>.</p>
+
+<p><code>column-gap</code>: gap width between columns。</p>
+
+<p><code>column-span</code>: makes it possible for an element to span across all columns when its value is set to all, like header in paragraph.</p>
 
 <script
   async
@@ -330,7 +340,7 @@ if (!doNotTrack) {
 </script>
 
 
-<p>Online demo:
+<p>Full demo:</p>
 
 
 
@@ -341,34 +351,32 @@ if (!doNotTrack) {
 
 
 
-  <p data-height="265" data-theme-id="dark" data-slug-hash="oNvOzmY" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="VwZOBME" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
   class="codepen">
-    See the Pen <a href="https://codepen.io/justforuse/pen/oNvOzmY/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+    See the Pen <a href="https://codepen.io/justforuse/pen/VwZOBME/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
   </p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-</p>
 
-<p>Open developer tools, you can when you scroll down, the image will be loaded.</p>
 
-<p>Besides, you can also add this to <code>iframe</code> tag, it will lazy load iframe page.</p>
+<p>Compatibility：</p>
 
-<p>Reference: <a href="https://web.dev/native-lazy-loading">https://web.dev/native-lazy-loading</a></p>
+<p><img src="https://user-images.githubusercontent.com/11868477/65894911-26381d00-e3dd-11e9-962c-eadc10e11de4.png" alt="image" /></p>
 
-<p>Compatibility:
 <p
   class="ciu_embed"
-  data-feature="loading-lazy-attr"
+  data-feature="mdn-css_properties_columns"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=loading-lazy-attr"
-    >Can I Use loading-lazy-attr?</a
+  <a href="http://caniuse.com/#feat=mdn-css_properties_columns"
+    >Can I Use mdn-css_properties_columns?</a
   >
-  Data on support for the loading-lazy-attr feature across the major browsers
+  Data on support for the mdn-css_properties_columns feature across the major browsers
   from caniuse.com.
 </p>
-</p>
+
 
 <!-- <p
   class="ciu_embed"
@@ -420,7 +428,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/html/">html</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/en-us/tags/css/">css</a>
 
                   </div>
                 
@@ -433,7 +441,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/" data-tooltip="CSS Columns Tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -441,7 +449,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/" data-tooltip="Web Share API Tutorial">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/" data-tooltip="Native lazy-loading for the web">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -459,7 +467,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -507,7 +515,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/" data-tooltip="CSS Columns Tutorial">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -515,7 +523,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/08/web-share-api-tutorial/" data-tooltip="Web Share API Tutorial">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/" data-tooltip="Native lazy-loading for the web">
               
                   <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
                   <i class="fa fa-angle-right"></i>
@@ -533,7 +541,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/09/html-image-lazy-loading/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/en-us/2019/09/css-columns-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -563,7 +571,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F09%2Fhtml-image-lazy-loading%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fen-us%2F2019%2F09%2Fcss-columns-tutorial%2F">
           <i class="fa fa-twitter"></i><span>Share on Twitter</span>
         </a>
       </li>
@@ -654,9 +662,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/09\/html-image-lazy-loading\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/en-us\/2019\/09\/css-columns-tutorial\/';
           
-            this.page.identifier = '1569508811';
+            this.page.identifier = '1569771709';
           
         };
         (function() {

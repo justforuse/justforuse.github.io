@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2019 22:40:13 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2019 23:41:51 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS Columns使用教程</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/</link>
+      <pubDate>Sun, 29 Sep 2019 23:41:51 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/</guid>
+      <description>&lt;p&gt;页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>浏览器增加图片懒加载的原生支持</title>
