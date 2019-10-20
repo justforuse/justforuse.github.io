@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/</loc>
+    <lastmod>2019-10-20T21:24:26+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/</loc>
+    <lastmod>2019-10-13T23:33:25+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/</loc>
     <lastmod>2019-09-29T23:41:51+08:00</lastmod>
     <xhtml:link
@@ -619,7 +629,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/css/</loc>
-    <lastmod>2019-09-29T23:41:51+08:00</lastmod>
+    <lastmod>2019-10-13T23:33:25+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -667,7 +677,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-09-29T23:41:51+08:00</lastmod>
+    <lastmod>2019-10-20T21:24:26+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -849,7 +859,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-09-29T23:41:51+08:00</lastmod>
+    <lastmod>2019-10-20T21:24:26+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1085,7 +1095,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-09-29T23:41:51+08:00</lastmod>
+    <lastmod>2019-10-20T21:24:26+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1097,6 +1107,12 @@
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2019-10-20T21:24:26+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

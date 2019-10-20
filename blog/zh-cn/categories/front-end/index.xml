@@ -6,10 +6,32 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Sep 2019 23:41:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 20 Oct 2019 21:24:26 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>排序算法——插入排序</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/</link>
+      <pubDate>Sun, 20 Oct 2019 21:24:26 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/</guid>
+      <description>&lt;p&gt;有必要重新整理一下排序算法，重新理解一下吧&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一些常见的CSS布局示例</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/</link>
+      <pubDate>Sun, 13 Oct 2019 23:33:25 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/</guid>
+      <description>&lt;p&gt;记录一些常见或者较特殊的CSS布局实现方式&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>CSS Columns使用教程</title>

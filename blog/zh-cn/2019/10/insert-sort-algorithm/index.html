@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="css columns">
-<meta name="description" content="页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。
+<meta name="keywords" content="插入排序, 算法">
+<meta name="description" content="有必要重新整理一下排序算法，重新理解一下吧
 
 ">
 
 
-<meta property="og:description" content="页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。
+<meta property="og:description" content="有必要重新整理一下排序算法，重新理解一下吧
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS Columns使用教程">
-<meta name="twitter:title" content="CSS Columns使用教程">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/">
+<meta property="og:title" content="排序算法——插入排序">
+<meta name="twitter:title" content="排序算法——插入排序">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。
+<meta property="og:description" content="有必要重新整理一下排序算法，重新理解一下吧
 
 ">
-<meta name="twitter:description" content="页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。
+<meta name="twitter:description" content="有必要重新整理一下排序算法，重新理解一下吧
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-09-29T23:41:51">
+    <meta property="article:published_time" content="2019-10-20T21:24:26">
   
   
-    <meta property="article:modified_time" content="2019-09-29T23:41:51">
+    <meta property="article:modified_time" content="2019-10-20T21:24:26">
   
   
   
@@ -44,7 +44,7 @@
   
   
     
-      <meta property="article:tag" content="css">
+      <meta property="article:tag" content="算法">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>CSS Columns使用教程</title>
+    <title>排序算法——插入排序</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      CSS Columns使用教程
+      排序算法——插入排序
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-09-29T23:41:51&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-10-20T21:24:26&#43;08:00">
         
-  九月 29, 2019
+  十月 20, 2019
 
       </time>
     
@@ -305,21 +305,21 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>页面布局通常来说指的是元素间或者说模块间的布局，但某些场景下我们需要考虑文字的布局？过长的文本段落不适合阅读，因为它意味着我们的眼球需要转动更长的距离；报纸的排版就可以解决这个问题，在CSS中也有对应的属性——columns。</p>
+              <p>有必要重新整理一下排序算法，重新理解一下吧</p>
 
 <p></p>
 
-<p>报纸排版示例：
-<img src="https://user-images.githubusercontent.com/11868477/65834997-8a20ef80-e2d0-11e9-8629-0e3da07ddf2f.png" alt="image" /></p>
+<blockquote>
+<p>原博主Youtube首页 <a href="https://www.youtube.com/user/mikeysambol/">https://www.youtube.com/user/mikeysambol/</a></p>
+</blockquote>
 
-<p>相关属性：
-<code>columns</code>: 设置列宽度或者列个数，比如<code>columns: 2, columns: 200px, columns: 2 auto...</code>。</p>
+<p>插入排序的方式可以想象成整理扑克牌的方式，想象下，当你手里有一副牌时，每次都会从右边拿出一张然后挨个和前面的比对，找到位置后就放进去，插入排序的就是这样做的。</p>
 
-<p><code>column-rule</code>: 设置分割线样式，默认无，类似<code>border</code>属性,我们可以设置一条1px的黑线：<code>1px solid black</code>。</p>
+<p>动图示例：</p>
 
-<p><code>column-gap</code>: 设置列之间的间隔宽度。</p>
+<p><img src="https://user-images.githubusercontent.com/11868477/67160194-c5b75280-f380-11e9-9bce-8e22f4b032ab.gif" alt="GIF" /></p>
 
-<p><code>column-span</code>: 设置某列横跨所有列，比如在文章中插入醒目的大标题。</p>
+<p>看这图我们会发现，这种算法会频繁的交换元素的位置：</p>
 
 <script
   async
@@ -340,43 +340,37 @@ if (!doNotTrack) {
 </script>
 
 
-<p>完整示例：</p>
+<p>js代码:</p>
 
+<pre><code class="language-js">function insertSort(arr) {
+  for (let i = 0; i &lt; arr.length; i++) {
+    let j = i
+    while (j &gt; 0) {
+      if (arr[j] &lt; arr[j - 1]) {
+        let temp = arr[j]
+        arr[j] = arr[j - 1]
+        arr[j - 1] = temp
+      }
+      j--
+    }
+  }
+  return arr
+}
+</code></pre>
 
-
-
-
-
-
-
-
-
-
-  <p data-height="265" data-theme-id="dark" data-slug-hash="VwZOBME" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
-  class="codepen">
-    See the Pen <a href="https://codepen.io/justforuse/pen/VwZOBME/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
-  </p>
-  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-<p>兼容性：</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/65894911-26381d00-e3dd-11e9-962c-eadc10e11de4.png" alt="image" /></p>
-
-<p
+<!-- <p
   class="ciu_embed"
-  data-feature="mdn-css_properties_columns"
+  data-feature="css-placeholder-shown"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=mdn-css_properties_columns"
-    >Can I Use mdn-css_properties_columns?</a
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
   >
-  Data on support for the mdn-css_properties_columns feature across the major browsers
+  Data on support for the css-placeholder-shown feature across the major browsers
   from caniuse.com.
 </p>
-
+ -->
 
 <!-- 
 
@@ -435,7 +429,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/%E7%AE%97%E6%B3%95/">算法</a>
 
                   </div>
                 
@@ -448,7 +442,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/" data-tooltip="一些常见的CSS布局示例">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -456,7 +450,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/09/html-image-lazy-loading/" data-tooltip="浏览器增加图片懒加载的原生支持">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/" data-tooltip="一些常见的CSS布局示例">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -474,7 +468,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -522,7 +516,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/" data-tooltip="一些常见的CSS布局示例">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -530,7 +524,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/09/html-image-lazy-loading/" data-tooltip="浏览器增加图片懒加载的原生支持">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/common-css-layout-demo/" data-tooltip="一些常见的CSS布局示例">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -548,7 +542,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/09/css-columns-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/10/insert-sort-algorithm/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -578,7 +572,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F09%2Fcss-columns-tutorial%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F10%2Finsert-sort-algorithm%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -669,9 +663,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/09\/css-columns-tutorial\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/10\/insert-sort-algorithm\/';
           
-            this.page.identifier = '1569771711';
+            this.page.identifier = '1571577866';
           
         };
         (function() {
