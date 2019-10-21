@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Oct 2019 21:24:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 23:19:24 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>排序算法——选择排序</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/10/selection-sort-algorithm/</link>
+      <pubDate>Mon, 21 Oct 2019 23:19:24 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/10/selection-sort-algorithm/</guid>
+      <description>&lt;p&gt;选择排序的思想是每次都从一个起始位置后面的数组里找到最小的，然后与起始位置的值交换&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>排序算法——插入排序</title>
