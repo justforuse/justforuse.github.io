@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Oct 2019 23:19:24 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 23:22:30 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>排序算法——快速排序</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/10/quick-sort-algorithm/</link>
+      <pubDate>Thu, 31 Oct 2019 23:22:30 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/10/quick-sort-algorithm/</guid>
+      <description>&lt;p&gt;快排是一个递归算法，思想是从数组中选一个参照，剩余数组中小于参照的添加到一个新数组，大于的添加到另一个新数组，然后再对这两个新数组进行上面的步骤。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>排序算法——选择排序</title>
