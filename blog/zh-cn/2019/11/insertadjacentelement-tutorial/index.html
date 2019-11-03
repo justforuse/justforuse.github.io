@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, ios, localStorage, webview">
-<meta name="description" content="使用hybrid方式开发APP时，发现IOS下的bug很多，仿佛回到了IE的时代，也可能是未遵循IOS开发规范造成的，最近遇到过localStorage在页面跳转时偶尔出现不同步的问题。
+<meta name="keywords" content="js, insertAdjacentElement, insertAdjacentText">
+<meta name="description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
 
 ">
 
 
-<meta property="og:description" content="使用hybrid方式开发APP时，发现IOS下的bug很多，仿佛回到了IE的时代，也可能是未遵循IOS开发规范造成的，最近遇到过localStorage在页面跳转时偶尔出现不同步的问题。
+<meta property="og:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IOS下多个webview间localStorage未同步的问题">
-<meta name="twitter:title" content="IOS下多个webview间localStorage未同步的问题">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/">
+<meta property="og:title" content="insertAdjacentElement方法介绍">
+<meta name="twitter:title" content="insertAdjacentElement方法介绍">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="使用hybrid方式开发APP时，发现IOS下的bug很多，仿佛回到了IE的时代，也可能是未遵循IOS开发规范造成的，最近遇到过localStorage在页面跳转时偶尔出现不同步的问题。
+<meta property="og:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
 
 ">
-<meta name="twitter:description" content="使用hybrid方式开发APP时，发现IOS下的bug很多，仿佛回到了IE的时代，也可能是未遵循IOS开发规范造成的，最近遇到过localStorage在页面跳转时偶尔出现不同步的问题。
+<meta name="twitter:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-11-02T23:52:51">
+    <meta property="article:published_time" content="2019-11-03T23:45:17">
   
   
-    <meta property="article:modified_time" content="2019-11-02T23:52:51">
+    <meta property="article:modified_time" content="2019-11-03T23:45:17">
   
   
   
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>IOS下多个webview间localStorage未同步的问题</title>
+    <title>insertAdjacentElement方法介绍</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      IOS下多个webview间localStorage未同步的问题
+      insertAdjacentElement方法介绍
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-11-02T23:52:51&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-11-03T23:45:17&#43;08:00">
         
-  十一月 2, 2019
+  十一月 3, 2019
 
       </time>
     
@@ -305,17 +305,25 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>使用hybrid方式开发APP时，发现IOS下的bug很多，仿佛回到了IE的时代，也可能是未遵循IOS开发规范造成的，最近遇到过localStorage在页面跳转时偶尔出现不同步的问题。</p>
+              <p>一个原生方法，用于将元素插入到指定元素的给定位置。</p>
 
 <p></p>
 
-<p>APP内的网页都是套在webview内部的，某个项目采用了多页开发的方式，页面间的数据传递使用了localStorage方式，当从A页面跳到页面B后，B页面做了些修改然后跳回A页面，A页面取localStorage值的时候<strong>偶尔</strong>出现还是上个值的情况。</p>
+<p>语法：
+<code>element.insertAdjacentElement(position, element);</code></p>
 
-<p>经过一系列的排查。。</p>
+<pre><code>position:
+'beforebegin': 在该元素本身的前面.
+'afterbegin':只在该元素当中, 在该元素第一个子孩子前面.
+'beforeend':只在该元素当中, 在该元素最后一个子孩子后面.
+'afterend': 在该元素本身的后面.
+</code></pre>
 
-<p>开始以为是页面回调函数未生效？ ❌</p>
+<p><img src="https://user-images.githubusercontent.com/11868477/68087930-32f4d880-fe95-11e9-8766-2256c6dca682.png" alt="image" /></p>
 
-<p>B页面值写入未成功？❌</p>
+<p>这个方法可以很快速的在节点的前后或者节点内部首尾，对比insertBefore来说更方便。</p>
+
+<p>和insertBefore一样，插入的节点如果原本出于文档中，那么就会被移动到指定的位置。</p>
 
 <script
   async
@@ -336,31 +344,22 @@ if (!doNotTrack) {
 </script>
 
 
-<p>最后发现A页面回调方法中取到的localStorage值和实际localStorage值不同步，加个setTimeout方法就可以了。。</p>
+<p>如果只是想插入一段文本的话，可以使用类似的方法：insertAdjacentText， 语法都是一样的。</p>
 
-<p>这个问题奇怪在它不是必现的现象，即便加了setTimeout方法我们也不能保证100%正确，需要IOS关于localStorage的详细说明文档。</p>
-
-<p>相关的问题讨论：</p>
-
-<p><a href="https://stackoverflow.com/questions/36332208/two-wkwebviews-share-local-storage-but-only-after-restart">https://stackoverflow.com/questions/36332208/two-wkwebviews-share-local-storage-but-only-after-restart</a></p>
-
-<p><a href="https://www.jianshu.com/p/8570221c608d">https://www.jianshu.com/p/8570221c608d</a></p>
-
-<p>如果有更多信息欢迎评论一起讨论👇</p>
-
-<!-- <p
+<p>兼容性：
+<p
   class="ciu_embed"
-  data-feature="css-placeholder-shown"
+  data-feature="insert-adjacent"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=css-placeholder-shown"
-    >Can I Use css-placeholder-shown?</a
+  <a href="http://caniuse.com/#feat=insert-adjacent"
+    >Can I Use insert-adjacent?</a
   >
-  Data on support for the css-placeholder-shown feature across the major browsers
+  Data on support for the insert-adjacent feature across the major browsers
   from caniuse.com.
 </p>
- -->
+</p>
 
 <!-- 
 
@@ -432,7 +431,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/" data-tooltip="insertAdjacentElement方法介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -440,7 +439,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/quick-sort-algorithm/" data-tooltip="排序算法——快速排序">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/" data-tooltip="IOS下多个webview间localStorage未同步的问题">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -458,7 +457,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -506,7 +505,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/" data-tooltip="insertAdjacentElement方法介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -514,7 +513,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/10/quick-sort-algorithm/" data-tooltip="排序算法——快速排序">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/" data-tooltip="IOS下多个webview间localStorage未同步的问题">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -532,7 +531,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -562,7 +561,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F11%2Fios-localstorage-seems-not-sync%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F11%2Finsertadjacentelement-tutorial%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -653,9 +652,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/11\/ios-localstorage-seems-not-sync\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/11\/insertadjacentelement-tutorial\/';
           
-            this.page.identifier = '1572709971';
+            this.page.identifier = '1572795917';
           
         };
         (function() {
