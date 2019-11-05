@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, insertAdjacentElement, insertAdjacentText">
-<meta name="description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
+<meta name="keywords" content="font, ios, android">
+<meta name="description" content="不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？
 
 ">
 
 
-<meta property="og:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
+<meta property="og:description" content="不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="insertAdjacentElement方法介绍">
-<meta name="twitter:title" content="insertAdjacentElement方法介绍">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
+<meta property="og:title" content="安卓和IOS平台下字体的不同">
+<meta name="twitter:title" content="安卓和IOS平台下字体的不同">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
+<meta property="og:description" content="不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？
 
 ">
-<meta name="twitter:description" content="一个原生方法，用于将元素插入到指定元素的给定位置。
+<meta name="twitter:description" content="不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-11-03T23:45:17">
+    <meta property="article:published_time" content="2019-11-05T22:40:33">
   
   
-    <meta property="article:modified_time" content="2019-11-03T23:45:17">
+    <meta property="article:modified_time" content="2019-11-05T22:40:33">
   
   
   
@@ -44,7 +44,9 @@
   
   
     
-      <meta property="article:tag" content="js">
+      <meta property="article:tag" content="html">
+    
+      <meta property="article:tag" content="css">
     
   
 
@@ -65,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>insertAdjacentElement方法介绍</title>
+    <title>安卓和IOS平台下字体的不同</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +276,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      insertAdjacentElement方法介绍
+      安卓和IOS平台下字体的不同
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-11-03T23:45:17&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-11-05T22:40:33&#43;08:00">
         
-  十一月 3, 2019
+  十一月 5, 2019
 
       </time>
     
@@ -305,25 +307,13 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>一个原生方法，用于将元素插入到指定元素的给定位置。</p>
+              <p>不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？</p>
 
 <p></p>
 
-<p>语法：
-<code>element.insertAdjacentElement(position, element);</code></p>
+<p>不知道是不是既定事实，还是行业规范，IOS平台下的<code>PingFang</code>字体默认是效果最优的字体，但是这个字体在IOS及Windows平台都不支持，通常<code>font-family</code>属性都会指定很多种类型的字体来满足不同平台的要求。</p>
 
-<pre><code>position:
-'beforebegin': 在该元素本身的前面.
-'afterbegin':只在该元素当中, 在该元素第一个子孩子前面.
-'beforeend':只在该元素当中, 在该元素最后一个子孩子后面.
-'afterend': 在该元素本身的后面.
-</code></pre>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/68087930-32f4d880-fe95-11e9-8766-2256c6dca682.png" alt="image" /></p>
-
-<p>这个方法可以很快速的在节点的前后或者节点内部首尾，对比insertBefore来说更方便。</p>
-
-<p>和insertBefore一样，插入的节点如果原本出于文档中，那么就会被移动到指定的位置。</p>
+<p>安卓及Windows存在的问题，对于中粗的字体支持度不够好，中文字体的支持度比较差。</p>
 
 <script
   async
@@ -344,22 +334,45 @@ if (!doNotTrack) {
 </script>
 
 
-<p>如果只是想插入一段文本的话，可以使用类似的方法：insertAdjacentText， 语法都是一样的。</p>
+<p>方便对比，选两个比较常见的<code>font-family</code>写法，展示安卓和IOS平台在不同<code>font-weight</code>值下的显示情况：</p>
 
-<p>兼容性：
-<p
+<p><strong>安卓：</strong>
+<img src="https://user-images.githubusercontent.com/11868477/68218786-d671f480-001f-11ea-9395-f94c680ecbdd.png" alt="image" /></p>
+
+<p><strong>IOS：</strong>
+<img src="https://user-images.githubusercontent.com/11868477/68218838-f1446900-001f-11ea-881f-450462c790f5.png" alt="image" /></p>
+
+<p>可以发现IOS平台下无论是英文还是中午都有很好的展示效果，而安卓平台下由于字体的限制，对于“中粗”的中文字体支持度不够，不能完全实现想要的效果。</p>
+
+<p><strong>通常情况，如果对文字效果没有极高的要求，我们不考虑再另加载字体文件。</strong></p>
+
+<p>作为参考，粘贴几个的中文网站<code>font-family</code>的值：</p>
+
+<ul>
+<li><p>知乎：font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;</p></li>
+
+<li><p>头条：font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Arial,sans-serif;</p></li>
+
+<li><p>微信：font-family: -apple-system,BlinkMacSystemFont,SF UI Text,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial,sans-serif;</p></li>
+</ul>
+
+<blockquote>
+<p>已将本站字体统一改为微信的设置，看着效果是否是好些呢？</p>
+</blockquote>
+
+<!-- <p
   class="ciu_embed"
-  data-feature="insert-adjacent"
+  data-feature="css-placeholder-shown"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=insert-adjacent"
-    >Can I Use insert-adjacent?</a
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
   >
-  Data on support for the insert-adjacent feature across the major browsers
+  Data on support for the css-placeholder-shown feature across the major browsers
   from caniuse.com.
 </p>
-</p>
+ -->
 
 <!-- 
 
@@ -418,7 +431,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/html/">html</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
 
                   </div>
                 
@@ -431,7 +446,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/" data-tooltip="安卓和IOS平台下字体的不同">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -439,7 +454,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/" data-tooltip="IOS下多个webview间localStorage未同步的问题">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/" data-tooltip="insertAdjacentElement方法介绍">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -457,7 +472,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -505,7 +520,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/" data-tooltip="安卓和IOS平台下字体的不同">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -513,7 +528,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/ios-localstorage-seems-not-sync/" data-tooltip="IOS下多个webview间localStorage未同步的问题">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/" data-tooltip="insertAdjacentElement方法介绍">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -531,7 +546,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/insertadjacentelement-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -561,7 +576,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F11%2Finsertadjacentelement-tutorial%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F11%2Ffont-difference-between-ios-and-android%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -652,9 +667,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/11\/insertadjacentelement-tutorial\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/11\/font-difference-between-ios-and-android\/';
           
-            this.page.identifier = '1572795917';
+            this.page.identifier = '1572964833';
           
         };
         (function() {

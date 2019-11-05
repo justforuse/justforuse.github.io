@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2019 23:45:17 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 22:40:33 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>安卓和IOS平台下字体的不同</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/</link>
+      <pubDate>Tue, 05 Nov 2019 22:40:33 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/</guid>
+      <description>&lt;p&gt;不只是安卓和IOS平台，包括Windows在内的其他平台间的系统字体都是不一样的，如何保证在各平台下都尽量显示最优的字体呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>insertAdjacentElement方法介绍</title>
