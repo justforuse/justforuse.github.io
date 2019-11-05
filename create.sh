@@ -11,7 +11,7 @@ if [ "$1" == "" ]; then
   echo "Error: Post name required!"
   exit
 else 
-  hugo new --kind post en-us/post/$1.md
+  hugo new --kind post-en en-us/post/$1.md
   # Get unique disqusIdentifier
   sleep 2
   hugo new --kind post zh-cn/post/$1.md
