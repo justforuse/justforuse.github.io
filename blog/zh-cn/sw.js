@@ -1,8 +1,8 @@
 const cacheName = 'github-blog'
 const staticAssets = [
   './index.html',
-  '../css/style-pjjgx7hrb8vv9pbskfof6viaui7zjvehwpy2o5nyefvuqo2ndj41zgqa0s2l.min.css',
-  '../js/script-j13y8kxuakdr6f9htwrtc8jglq2lwuyofwkjepswsfswklgtbamt4qwawx6w.min.js'
+  '../css/style-zeiwctigkogtvpvj0egasslli0f0ds0fgqxfmddzssy3wjlw6oz5buiywhrb.min.css',
+  '../js/script-jolqrkyg17dxydltbpg3rnxckzpon1cph80fa4u74kx2pv6cgo6wwkgyuqqo.min.js'
 ]
 
 self.addEventListener('install', async e => {
