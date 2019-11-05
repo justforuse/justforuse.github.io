@@ -824,13 +824,15 @@ $(document).ready(function() {
 
     
     <script>
-
-
-
-
-
-
-
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js')
+    .then((registration) => {
+      console.log('Service Worker Registered')
+      registration.update()
+      console.log('Service Worker Updated')
+    })
+}
 </script>
 
     
