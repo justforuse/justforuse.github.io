@@ -7,38 +7,66 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="webpack, scss, sass, compile">
-<meta name="description" content="现在框架都提供了一套完整的编译配置，比如Vue;
+<meta name="keywords" content="pwa, js">
+<meta name="description" content="
+Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。
 
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
+
+可以发现，现在各大应用都不满足存在于手机浏览器中，或者选择开发安卓和IOS端应用，或者选择寄生在微信小程序这一类平台上；
+
+PWA可以帮助我们的web应用安装在用户应用首页，而不仅是一个浏览器书签。
+
+一个实例：为你的Github Pages应用增加PWA支持
+
 ">
 
 
-<meta property="og:description" content="现在框架都提供了一套完整的编译配置，比如Vue;
+<meta property="og:description" content="
+Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。
 
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
+
+可以发现，现在各大应用都不满足存在于手机浏览器中，或者选择开发安卓和IOS端应用，或者选择寄生在微信小程序这一类平台上；
+
+PWA可以帮助我们的web应用安装在用户应用首页，而不仅是一个浏览器书签。
+
+一个实例：为你的Github Pages应用增加PWA支持
+
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Webpack配置编译SCSS">
-<meta name="twitter:title" content="Webpack配置编译SCSS">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
+<meta property="og:title" content="为你的网站增加PWA支持">
+<meta name="twitter:title" content="为你的网站增加PWA支持">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="现在框架都提供了一套完整的编译配置，比如Vue;
+<meta property="og:description" content="
+Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。
 
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
+
+可以发现，现在各大应用都不满足存在于手机浏览器中，或者选择开发安卓和IOS端应用，或者选择寄生在微信小程序这一类平台上；
+
+PWA可以帮助我们的web应用安装在用户应用首页，而不仅是一个浏览器书签。
+
+一个实例：为你的Github Pages应用增加PWA支持
+
 ">
-<meta name="twitter:description" content="现在框架都提供了一套完整的编译配置，比如Vue;
+<meta name="twitter:description" content="
+Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。
 
-有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
+
+可以发现，现在各大应用都不满足存在于手机浏览器中，或者选择开发安卓和IOS端应用，或者选择寄生在微信小程序这一类平台上；
+
+PWA可以帮助我们的web应用安装在用户应用首页，而不仅是一个浏览器书签。
+
+一个实例：为你的Github Pages应用增加PWA支持
+
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-03-08T22:05:21">
+    <meta property="article:published_time" content="2019-11-16T23:07:04">
   
   
-    <meta property="article:modified_time" content="2019-03-08T22:05:21">
+    <meta property="article:modified_time" content="2019-11-16T23:07:04">
   
   
   
@@ -48,9 +76,7 @@
   
   
     
-      <meta property="article:tag" content="webpack">
-    
-      <meta property="article:tag" content="scss">
+      <meta property="article:tag" content="js">
     
   
 
@@ -63,9 +89,6 @@
 
 
 
-  <meta property="og:image" content="https://justforuse.github.io/blog/images/2019/3/webpack-compile-scss.png">
-  <meta property="twitter:image" content="https://justforuse.github.io/blog/images/2019/3/webpack-compile-scss.png">
-
 
 
 
@@ -74,13 +97,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Webpack配置编译SCSS</title>
+    <title>为你的网站增加PWA支持</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -283,15 +306,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Webpack配置编译SCSS
+      为你的网站增加PWA支持
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-03-08T22:05:21&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-11-16T23:07:04&#43;08:00">
         
-  三月 8, 2019
+  十一月 16, 2019
 
       </time>
     
@@ -314,10 +337,27 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>现在框架都提供了一套完整的编译配置，比如Vue;</p>
+              <blockquote>
+<p>Progressive Web App, 简称 PWA，是提升 Web App 的体验的一种新方法，能给用户原生应用的体验。</p>
+</blockquote>
 
-<p>有时只是需要编译scss文件，在使用gulp的方式时遇到了无法识别SCSS的~语法的问题，其实也可以通过一些配置来解决，只是觉得既然webpack是主流，那不妨总结一套专门编译scss的配置
-</p>
+<p>可以发现，现在各大应用都不满足存在于手机浏览器中，或者选择开发安卓和IOS端应用，或者选择寄生在微信小程序这一类平台上；</p>
+
+<p>PWA可以帮助我们的web应用安装在用户应用首页，而不仅是一个浏览器书签。</p>
+
+<p>一个实例：为你的Github Pages应用增加PWA支持</p>
+
+<p></p>
+
+<p>PWA技术借助Service Worker（简称SW）实现，什么是SW，可以理解为浏览器和网络之间的一个中间层，意味着我们可以对请求进行拦截返回自定义结果，也可以缓存网路返回存储本地。添加<code>service-worker.js</code>，我们的PWA应用才真正有了离线能力。</p>
+
+<p>除了SW，还需要增加<code>manifest.json</code>文件，我们应用的配置项就在这里，比如应用标题，应用图标，应用主题色等。。</p>
+
+<p>首先，我们先来完成我们的<code>manifest.json</code>：</p>
+
+<p>在线生成模板：<a href="https://app-manifest.firebaseapp.com/">https://app-manifest.firebaseapp.com/</a></p>
+
+<p>manifest各字段解释参考文档： <a href="https://lavas.baidu.com/pwa/engage-retain-users/add-to-home-screen/introduction">https://lavas.baidu.com/pwa/engage-retain-users/add-to-home-screen/introduction</a></p>
 
 <script
   async
@@ -338,145 +378,203 @@ if (!doNotTrack) {
 </script>
 
 
-<p>
-  
-    
-  
-  
-    
-  
-  
-  
+<p>分享一下我的配置：</p>
 
-
-<figure class="highlight js language-js">
-  <figcaption>
-    
-      <span>webpack.config.js</span>
-    
-  </figcaption>
-  <table>
-    <tbody>
-      <tr>
-        <td class="gutter">
-          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre>
-        </td>
-        <td class="code">
-          <pre class="code-highlight language-js"><code class="js">const MiniCssExtractPlugin = require(&#34;mini-css-extract-plugin&#34;);
-const OptimizeCSSAssetsPlugin = require(&#34;optimize-css-assets-webpack-plugin&#34;);
-const path = require(&#34;path&#34;)
-module.exports = {
-  entry: &#39;./packages/src/main.scss&#39;,
-  output: {
-    path: path.resolve(__dirname, &#39;lib&#39;)
-  },
-  module: {
-    rules: [
-      // Extracts the compiled CSS from the SASS files defined in the entry
-      {
-        test: /\.scss$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            // Interprets CSS
-            loader: &#34;css-loader&#34;,
-            options: {
-              importLoaders: 2
-            }
-          },
-          {
-            loader: &#39;sass-loader&#39; // 将 Sass 编译成 CSS
-          }
-        ]
-      }
-    ],
-  },
-  plugins: [
-    // Where the compiled SASS is saved to
-    new MiniCssExtractPlugin({
-      filename: &#39;index.css&#39;,
-      allChunks: true,
-    })
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;J Blog&quot;,
+  &quot;short_name&quot;: &quot;justforuse's github blog&quot;,
+  &quot;theme_color&quot;: &quot;#010411&quot;,
+  &quot;background_color&quot;: &quot;#0a1b2f&quot;,
+  &quot;display&quot;: &quot;standalone&quot;,
+  &quot;start_url&quot;: &quot;./index.html&quot;,
+  &quot;icons&quot;: [
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-72x72.png&quot;,
+      &quot;sizes&quot;: &quot;72x72&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-96x96.png&quot;,
+      &quot;sizes&quot;: &quot;96x96&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-128x128.png&quot;,
+      &quot;sizes&quot;: &quot;128x128&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-144x144.png&quot;,
+      &quot;sizes&quot;: &quot;144x144&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-152x152.png&quot;,
+      &quot;sizes&quot;: &quot;152x152&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-192x192.png&quot;,
+      &quot;sizes&quot;: &quot;192x192&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-384x384.png&quot;,
+      &quot;sizes&quot;: &quot;384x384&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    },
+    {
+      &quot;src&quot;: &quot;../res/icons/icon-512x512.png&quot;,
+      &quot;sizes&quot;: &quot;512x512&quot;,
+      &quot;type&quot;: &quot;image/png&quot;
+    }
   ],
-  optimization: {
-    minimizer: [
-      // 有时候webpack会默认优化z-index值，设置默认不优化
-      new OptimizeCSSAssetsPlugin({
-        cssProcessorOptions: {
-          safe: true
-        }
-      })
-    ]
-  },
-};</code></pre>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</figure>
-
-  
-    
-  
-  
-    
-  
-  
-  
-
-
-<figure class="highlight json language-json">
-  <figcaption>
-    
-      <span>package.json</span>
-    
-  </figcaption>
-  <table>
-    <tbody>
-      <tr>
-        <td class="gutter">
-          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre>
-        </td>
-        <td class="code">
-          <pre class="code-highlight language-json"><code class="json">{
-  ...
-  &#34;devDependencies&#34;: {
-    &#34;css-loader&#34;: &#34;^2.1.0&#34;,
-    &#34;mini-css-extract-plugin&#34;: &#34;^0.5.0&#34;,
-    &#34;node-sass&#34;: &#34;^4.11.0&#34;,
-    &#34;optimize-css-assets-webpack-plugin&#34;: &#34;^5.0.1&#34;,
-    &#34;sass-loader&#34;: &#34;^7.1.0&#34;,
-    &#34;webpack&#34;: &#34;^4.29.6&#34;,
-    &#34;webpack-cli&#34;: &#34;^3.2.3&#34;,
-    &#34;webpack-dev-server&#34;: &#34;^3.2.1&#34;
-  }
-...
-}</code></pre>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</figure></p>
-
-<hr>
-
-<p>如果你想删除编译后的文件中的<code>main.js</code>, 可以使用这个包：<a href="https://github.com/fqborges/webpack-fix-style-only-entries">webpack-fix-style-only-entries</a></p>
-
-<p>示例代码：</p>
-
-<pre><code>const FixStyleOnlyEntriesPlugin = require(&quot;webpack-fix-style-only-entries&quot;)
-...
-
-  plugins: [
-    new FixStyleOnlyEntriesPlugin(),
-    ...
-  ],
-...
+  &quot;splash_pages&quot;: null
+}
 </code></pre>
 
-<p>
+<p>都是比较随意的配置😂。。</p>
+
+<p>接下来是SW的配置：</p>
+
+<pre><code class="language-js">if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw-v2.js')
+    .then((registration) =&gt; {
+      console.log('Service Worker Registered')
+      registration.update()
+      console.log('Service Worker Updated')
+    })
+}
+</code></pre>
+
+<p>首先是浏览器能力检测，注册SW成功后再执行一遍更新操作。</p>
+
+<p>下面是SW的配置，主要在于SW缓存策略。</p>
+
+<pre><code class="language-js">const expectedCaches = 'github-blog2'
+const staticAssets = [
+  '../css/style-zeiwctigkogtvpvj0egasslli0f0ds0fgqxfmddzssy3wjlw6oz5buiywhrb.min.css',
+  '../js/script-jolqrkyg17dxydltbpg3rnxckzpon1cph80fa4u74kx2pv6cgo6wwkgyuqqo.min.js'
+]
+
+self.addEventListener('install', async e =&gt; {
+  const cache = await caches.open(expectedCaches)
+  await cache.addAll(staticAssets)
+  return self.skipWaiting()
+})
+
+self.addEventListener('activate', e =&gt; {
+  self.clients.claim()
+  e.waitUntil(
+    caches.keys().then(keys =&gt; Promise.all(
+      keys.map(key =&gt; {
+        if (!expectedCaches.includes(key)) {
+          return caches.delete(key);
+        }
+      })
+    )).then(() =&gt; {
+      console.log(`${expectedCaches} now ready to handle fetches!`);
+    })
+  );
+})
+
+self.addEventListener('fetch', async e =&gt; {
+  const req = e.request
+  const url = new URL(req.url)
+  e.respondWith(networkAndCache(req))
+  // if (url.origin === location.origin) {
+  //   e.respondWith(cacheFirst(req))
+  // } else {
+  //   e.respondWith(networkAndCache(req))
+  // }
+})
+
+async function cacheFirst(req) {
+  const cache = await caches.open(expectedCaches)
+  const cached = await cache.match(req)
+  return cached || fetch(req)
+}
+
+async function networkAndCache(req) {
+  const cache = await caches.open(expectedCaches)
+  try {
+    const fresh = await fetch(req)
+    await cache.put(req, fresh.clone())
+    return fresh
+  } catch (e) {
+    const cached = await cache.match(req)
+    return cached
+  }
+}
+</code></pre>
+
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+
+
+<p>缓存策略有很多种，对于博客类文字类网站，我们这里就粗暴的全部缓存下来，如此，只要我们访问过一篇文章，或一个页面，那么下次即使处于断网状态，我们依旧可以正常阅读，而不是一个断网提示，大大提升了用户体验。</p>
+
+<p>感兴趣可以在本站体验PWA技术，如果你正在使用PC浏览，那么可以手机扫码访问我的主页，注意使用手机Chrome浏览器打开才能看到：</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/69481686-4ec51c00-0e4e-11ea-9aae-ff4d887b167e.png" alt="image" /></p>
+
+<p>如果你正在移动端阅读，不妨使用手机Chrome访问此页面。</p>
+
+<p>在右上角菜单内选择添加到主屏幕即可体验！</p>
+
+<!-- <p
+  class="ciu_embed"
+  data-feature="css-placeholder-shown"
+  data-periods="future_1,current,past_1,past_2"
+  data-accessible-colours="false"
+>
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
+  >
+  Data on support for the css-placeholder-shown feature across the major browsers
+  from caniuse.com.
+</p>
+ -->
+
+<!-- 
+
+
+
+
+
+
+
+
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="PKdOpB" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/justforuse/pen/PKdOpB/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+ -->
+
+<!-- <div class="alert warning ">
+  <p>xxx</p>
+</div> -->
+
+
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
     <button class="btn btn--danger" id="reward-btn">打赏</button>
@@ -500,8 +598,6 @@ module.exports = {
       </p>
     </div>
   </div>
-
-</p>
               
             </div>
           </div>
@@ -513,9 +609,7 @@ module.exports = {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/webpack/">webpack</a>
-
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/scss/">scss</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
                   </div>
                 
@@ -528,7 +622,7 @@ module.exports = {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/" data-tooltip="Hugo增加多语言支持">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -536,7 +630,7 @@ module.exports = {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/" data-tooltip="新手如何开发一个VSCode插件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/" data-tooltip="安卓和IOS平台下字体的不同">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -554,7 +648,7 @@ module.exports = {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -602,7 +696,7 @@ module.exports = {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/04/hugo-universal/" data-tooltip="Hugo增加多语言支持">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -610,7 +704,7 @@ module.exports = {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/01/vscode-extension-tutorial/" data-tooltip="新手如何开发一个VSCode插件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/" data-tooltip="安卓和IOS平台下字体的不同">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -628,7 +722,7 @@ module.exports = {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/03/webpack-compile-scss/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -658,7 +752,7 @@ module.exports = {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F03%2Fwebpack-compile-scss%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F11%2Fadd-pwa-support-to-website%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -749,9 +843,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/03\/webpack-compile-scss\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/11\/add-pwa-support-to-website\/';
           
-            this.page.identifier = '1552053921';
+            this.page.identifier = '1573916824';
           
         };
         (function() {

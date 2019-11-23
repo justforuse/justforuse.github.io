@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2019/11/add-pwa-support-to-website/</loc>
+    <lastmod>2019-11-16T23:07:04+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2019/11/font-difference-between-ios-and-android/</loc>
     <lastmod>2019-11-05T22:40:33+08:00</lastmod>
   </url>
@@ -702,7 +707,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2019-11-05T22:40:33+08:00</lastmod>
+    <lastmod>2019-11-16T23:07:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -830,7 +835,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2019-11-03T23:45:17+08:00</lastmod>
+    <lastmod>2019-11-16T23:07:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -884,7 +889,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2019-11-05T22:40:33+08:00</lastmod>
+    <lastmod>2019-11-16T23:07:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1120,7 +1125,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2019-11-05T22:40:33+08:00</lastmod>
+    <lastmod>2019-11-16T23:07:04+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
