@@ -9,6 +9,10 @@ tags:
 - js
 keywords:
 - js
+- Numeric separators
+- matchAll
+- Intl stuff
+- Class fields
 disqusIdentifier: 1577028856
 # draft: true
 # thumbnailImagePosition: left
