@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Dec 2019 23:34:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Dec 2019 23:03:23 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019年Web开发中值得关注的新特性(2/4)</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/</link>
+      <pubDate>Wed, 25 Dec 2019 23:03:23 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/</guid>
+      <description>&lt;p&gt;上期分享了4个2019值得关注的新特性，今天继续分享4个：图片纵横比、Blob reading、图片剪贴版、Sharing&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019年Web开发中值得关注的新特性(1/4)</title>
