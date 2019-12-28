@@ -7,33 +7,45 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="">
-<meta name="description" content="插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
+<meta name="keywords" content="js">
+<meta name="description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+
 ">
 
 
-<meta property="og:description" content="插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
+<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自定义元素模板">
-<meta name="twitter:title" content="自定义元素模板">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/">
+<meta property="og:title" content="2019年Web开发中值得关注的新特性(3/4)">
+<meta name="twitter:title" content="2019年Web开发中值得关注的新特性(3/4)">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
+<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+
 ">
-<meta name="twitter:description" content="插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
+<meta name="twitter:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2018-07-04T00:07:47">
+    <meta property="article:published_time" content="2019-12-28T16:05:15">
   
   
-    <meta property="article:modified_time" content="2018-07-04T00:07:47">
+    <meta property="article:modified_time" content="2019-12-28T16:05:15">
   
   
   
+    
+      <meta property="article:section" content="Front-End">
+    
+  
+  
+    
+      <meta property="article:tag" content="js">
+    
   
 
 
@@ -53,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>自定义元素模板</title>
+    <title>2019年Web开发中值得关注的新特性(3/4)</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -262,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      自定义元素模板
+      2019年Web开发中值得关注的新特性(3/4)
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2018-07-04T00:07:47&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-12-28T16:05:15&#43;08:00">
         
-  七月 4, 2018
+  十二月 28, 2019
 
       </time>
     
@@ -279,14 +291,133 @@ if (!doNotTrack) {
     
     
     
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+    
+  
+
   </div>
 
 </div>
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>插入内置模板示例，大部分是Hugo内置的，还有部分是自己添加或“借鉴”别人的
+              <p>上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。</p>
+
+<p></p>
+
+<h2 id="backdrop-filter">backdrop-filter</h2>
+
+<blockquote>
+<p>backdrop-filter CSS 属性可以让你为一个元素后面区域添加图形效果（如模糊或颜色偏移）。 因为它适用于元素背后的所有元素，为了看到效果，必须使元素或其背景至少部分透明。</p>
+</blockquote>
+
+<p>与filter不同，filter是应用在元素本身上的效果，而backdrop-filter则是相当于为元素增加一个背景。意味着如果此时元素本身已经有一个纯色背景，那么就看不出效果了，通常情况元素都是无背景，或背景透明度不是1。</p>
+
+<p>demo:
+
+
+
+
+
+
+
+
+
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="ZEYJKmR" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/justforuse/pen/ZEYJKmR/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
 </p>
+
+<p>支持度方便自然是比较差的：
+<p
+  class="ciu_embed"
+  data-feature="mdn-css_properties_backdrop-filter"
+  data-periods="future_1,current,past_1,past_2"
+  data-accessible-colours="false"
+>
+  <a href="http://caniuse.com/#feat=mdn-css_properties_backdrop-filter"
+    >Can I Use mdn-css_properties_backdrop-filter?</a
+  >
+  Data on support for the mdn-css_properties_backdrop-filter feature across the major browsers
+  from caniuse.com.
+</p>
+</p>
+
+<h2 id="allsettled">allSettled</h2>
+
+<p>这是属于<code>Promise</code>对象的一个新方法。</p>
+
+<p>想一下ES6中Promise的<code>all</code>方法，<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">MDN文档</a>：</p>
+
+<blockquote>
+<p>Promise.all(iterable) 方法返回一个 Promise 实例，此实例在 iterable 参数内所有的 promise 都“完成（resolved）”或参数中不包含 promise 时回调完成（resolve）；如果参数中  promise 有一个失败（rejected），此实例回调失败（reject），失败原因的是第一个失败 promise 的结果。</p>
+</blockquote>
+
+<p>而allSettled方法则是会等待所有promise状态都改变（无论成功或者失败）时回调完成(resolve)。</p>
+
+<p>二者比较：</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/71541232-a9dbb880-2990-11ea-8a47-9d649930880f.png" alt="image" /></p>
+
+<p>需要注意的时，即便allSettled所有promise都失败，那么依旧会执行resolve方法：</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/71541424-9aaa3a00-2993-11ea-9110-0bdf5dd75bcb.png" alt="image" /></p>
+
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled">allSettled文档参考</a>
+<script
+  async
+  src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+>
+</script>
+<ins
+  class="adsbygoogle"
+  style="display:block; text-align:center;"
+  data-ad-layout="in-article"
+  data-ad-format="fluid"
+  data-ad-client="ca-pub-1281402863208945"
+  data-ad-slot="3600964087"
+>
+</ins>
+<script>
+  ;(adsbygoogle = window.adsbygoogle || []).push({})
+</script>
+</p>
+
+<h2 id="media-keys">media keys</h2>
+
+<p>可以监听外接设备的多媒体控制行为，比如键盘通常会有播放、停止、上一曲、下一曲的按键。</p>
+
+<p>一开始可能会想，用现有的按键事件处理不可以吗？但这仅是当前网页处于聚焦状态才可以，这个API提供了系统层面的控制，类似音乐播放软件可以全局响应播放事件。</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/71541594-83b91700-2996-11ea-812f-56efd2191a87.png" alt="image" /></p>
+
+<p>想体验这个首先要开启浏览器相关设置：<code>chrome://flags/#hardware-media-key-handling</code></p>
+
+<p>其实现在Youtube就已经增加了这项功能，有条件的朋友可以试一下。或者访问<a href="https://googlechrome.github.io/samples/media-session/">https://googlechrome.github.io/samples/media-session/</a> 这个示例地址体验。</p>
+
+<h2 id="background-fetch">background fetch</h2>
+
+<p>第一眼还以为是什么为CSS提供背景获取的功能。。其实翻译应该是后台下载，那为嘛不叫background download呢？🙄</p>
+
+<p>这个功能为移动端网页提供了后台下载的功能，可以给出通知栏提示，这些都需要Service Worker来配合实现。要在PWA应用中才可以。</p>
+
+<p>移动端浏览器下载和PWA下载的对比：</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/eLfgf2ZvFpo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Google关于此功能的介绍：<a href="https://developers.google.com/web/updates/2018/12/background-fetch">https://developers.google.com/web/updates/2018/12/background-fetch</a></p>
 
 <script
   async
@@ -307,21 +438,25 @@ if (!doNotTrack) {
 </script>
 
 
-<p><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>A</kbd></p>
+<h2 id="结束语">结束语</h2>
 
-<h3 id="stackblitz-新增">Stackblitz 新增</h3>
+<p>和上期一样，依旧是两个web端的新特性，两个和系统功能有交互的功能。本期胜出的是<code>background fetch</code>，确实，相比其他，这个功能普及开可以为现有的应用带来很大便利。</p>
 
-<iframe src="https://stackblitz.com/edit/angular-isnzrd?ctl=1&embed=1&view=preview" class="stackblitz" frameorder="0">
-</iframe>
+<!-- <p
+  class="ciu_embed"
+  data-feature="css-placeholder-shown"
+  data-periods="future_1,current,past_1,past_2"
+  data-accessible-colours="false"
+>
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
+  >
+  Data on support for the css-placeholder-shown feature across the major browsers
+  from caniuse.com.
+</p>
+ -->
 
-<h3 id="plnkr-新增">Plnkr 新增</h3>
-
-<iframe src="http://embed.plnkr.co/AK732k/?show=preview&deferRun" class="plnkr" frameorder="0">
-</iframe>
-
-<h3 id="codepen-新增-参考https-github-com-laozhu-hugo-nuo">Codepen 新增（参考<a href="https://github.com/laozhu/hugo-nuo）">https://github.com/laozhu/hugo-nuo）</a></h3>
-
-
+<!-- 
 
 
 
@@ -337,63 +472,17 @@ if (!doNotTrack) {
   </p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
+ -->
 
-
-<h3 id="网易云音乐-新增-参考https-github-com-laozhu-hugo-nuo">网易云音乐 新增（参考<a href="https://github.com/laozhu/hugo-nuo）">https://github.com/laozhu/hugo-nuo）</a></h3>
-
-
-
-
-
-
-
-
-  <iframe
-    class="music163"
-    frameborder="no"
-    border="0"
-    marginwidth="0"
-    marginheight="0"
-    width="330"
-    height="86"
-    src="//music.163.com/outchain/player?type=2&id=28885472&auto=0&height=66">
-  </iframe>
-
-
-
-<h3 id="youtube-内置">Youtube 内置</h3>
-
-
+<!-- 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/ceLlz7dOOvY" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+  <iframe src="//www.youtube.com/embed/eLfgf2ZvFpo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
+ -->
 
-
-<h3 id="gist代码片段-内置">Gist代码片段 内置</h3>
-
-<script src="//gist.github.com/justforuse/a5b99e7b2ec94f84a521eac5cceecd49.js"></script>
-
-<h3 id="twitter-内置">Twitter 内置</h3>
-
-<p>本地启动无法加载具体HTML代码，上传到服务器端就可以了，
-如果想在本地也能请求twitter服务，需配置命令行代理，参考：<a href="https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/">https://zcdll.github.io/2018/01/27/proxy-on-windows-terminal/</a>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">😳 JAMES. HARDEN. 😳<a href="https://twitter.com/hashtag/Rockets?src=hash&amp;ref_src=twsrc%5Etfw">#Rockets</a> <a href="https://t.co/JCphxLzP18">pic.twitter.com/JCphxLzP18</a></p>&mdash; NBA (@NBA) <a href="https://twitter.com/NBA/status/969062062839287808?ref_src=twsrc%5Etfw">March 1, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</p>
-
-<table class="is-centered is-striped is-bordered is-narrow">
-  <tr>
-    <th rowspan="2">值班人员</th>
-    <th>星期一</th>
-    <th>星期二</th>
-    <th>星期三</th>
-  </tr>
-  <tr>
-    <td>李强</td>
-    <td>张明</td>
-    <td>王平</td>
-  </tr>
-</table>
+<!-- <div class="alert warning ">
+  <p>xxx</p>
+</div> -->
 
 
   <div class="text-center" id="reward">
@@ -425,6 +514,16 @@ if (!doNotTrack) {
           <div id="post-footer" class="post-footer main-content-wrap">
             
               
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+
+                  </div>
+                
+              
             
             <div class="post-actions-wrap">
   
@@ -433,7 +532,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/07/git-submodule/" data-tooltip="Git Submodule使用介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -441,7 +540,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/" data-tooltip="使用Travis-CI自动发布Hugo到GitHub上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/" data-tooltip="2019年Web开发中值得关注的新特性(2/4)">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -459,7 +558,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -507,7 +606,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/07/git-submodule/" data-tooltip="Git Submodule使用介绍">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -515,7 +614,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2018/07/travisci-deploy-hugo/" data-tooltip="使用Travis-CI自动发布Hugo到GitHub上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/" data-tooltip="2019年Web开发中值得关注的新特性(2/4)">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -533,7 +632,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2018/07/custom-tag-template/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -563,7 +662,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2018%2F07%2Fcustom-tag-template%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F12%2Fbest-web-features-of-2019-part-three%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -654,9 +753,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2018\/07\/custom-tag-template\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/12\/best-web-features-of-2019-part-three\/';
           
-            this.page.identifier = '1530634067';
+            this.page.identifier = '1577520315';
           
         };
         (function() {
