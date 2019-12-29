@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, backdrop-filter, allSettled, media keys, background fetch">
-<meta name="description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+<meta name="keywords" content="js, Prefers styles, Native lazy loading, Form elements, fromEntries">
+<meta name="description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。
 
 ">
 
 
-<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2019年Web开发中值得关注的新特性(3/4)">
-<meta name="twitter:title" content="2019年Web开发中值得关注的新特性(3/4)">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
+<meta property="og:title" content="2019年Web开发中值得关注的新特性(4/4)">
+<meta name="twitter:title" content="2019年Web开发中值得关注的新特性(4/4)">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+<meta property="og:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。
 
 ">
-<meta name="twitter:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。
+<meta name="twitter:description" content="上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2019-12-28T16:05:15">
+    <meta property="article:published_time" content="2019-12-29T17:44:38">
   
   
-    <meta property="article:modified_time" content="2019-12-28T16:05:15">
+    <meta property="article:modified_time" content="2019-12-29T17:44:38">
   
   
   
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>2019年Web开发中值得关注的新特性(3/4)</title>
+    <title>2019年Web开发中值得关注的新特性(4/4)</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      2019年Web开发中值得关注的新特性(3/4)
+      2019年Web开发中值得关注的新特性(4/4)
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2019-12-28T16:05:15&#43;08:00">
+      <time itemprop="datePublished" datetime="2019-12-29T17:44:38&#43;08:00">
         
-  十二月 28, 2019
+  十二月 29, 2019
 
       </time>
     
@@ -305,73 +305,49 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>上期分享了4个2019值得关注的新特性，今天继续分享4个：backdrop-filter, allSettled, media keys, background fetch。</p>
+              <p>上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。</p>
 
 <p></p>
 
-<h2 id="backdrop-filter">backdrop-filter</h2>
+<h2 id="prefers-styles">Prefers styles</h2>
 
-<blockquote>
-<p>backdrop-filter CSS 属性可以让你为一个元素后面区域添加图形效果（如模糊或颜色偏移）。 因为它适用于元素背后的所有元素，为了看到效果，必须使元素或其背景至少部分透明。</p>
-</blockquote>
+<p>一种媒体查询的方式，检测当前系统主题色，Windows和Mac现在都支持了暗色模式，那么就可以使用这个属性来查询。</p>
 
-<p>与filter不同，filter是应用在元素本身上的效果，而backdrop-filter则是相当于为元素增加一个背景。意味着如果此时元素本身已经有一个纯色背景，那么就看不出效果了，通常情况元素都是无背景，或背景透明度不是1。</p>
+<pre><code class="language-css">@media (prefers-color-scheme: dark) {
+  ...
+}
+</code></pre>
 
-<p>demo:
+<p>使用方式可以参考之前写过的：<a href="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">prefers-color-scheme介绍</a></p>
 
+<p>还可以在js中匹配规则：</p>
 
+<pre><code class="language-js">if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+  // 当前系统主题为暗色
+}
+</code></pre>
 
+<p><img src="https://user-images.githubusercontent.com/11868477/71555714-2b534980-2a6a-11ea-94d5-608dfbc7d647.png" alt="image" /></p>
 
+<p>Mac系统还支持减弱动画效果的设置，我们也可以添加媒体查询：</p>
 
+<pre><code class="language-css">@media (prefers-reduced-motion: reduce) {
+  .animation {
+    animation: none;
+  }
+}
+</code></pre>
 
+<h2 id="native-lazy-loading">Native lazy loading</h2>
 
+<p>个人认为很实用的一个属性，图片懒加载一直都是网页优化的重要一环。</p>
 
+<p>语法：<code>&lt;img loading='lazy' src='...' width='400' height='400' alt=''&gt;</code></p>
 
+<p>之前也写过关于这方面的：<a href="https://justforuse.github.io/blog/zh-cn/2019/09/html-image-lazy-loading/">浏览器增加图片懒加载的原生支持</a></p>
 
-  <p data-height="265" data-theme-id="dark" data-slug-hash="ZEYJKmR" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
-  class="codepen">
-    See the Pen <a href="https://codepen.io/justforuse/pen/ZEYJKmR/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
-  </p>
-  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p>实现图片懒加载的方式还有很多，有相关jQuery插件和js库，也有<a href="https://justforuse.github.io/blog/zh-cn/2019/08/intersection-observer-tutorial/">IntersectionObserver</a>，都可以做到。</p>
 
-</p>
-
-<p>支持度方便自然是比较差的：
-<p
-  class="ciu_embed"
-  data-feature="mdn-css_properties_backdrop-filter"
-  data-periods="future_1,current,past_1,past_2"
-  data-accessible-colours="false"
->
-  <a href="http://caniuse.com/#feat=mdn-css_properties_backdrop-filter"
-    >Can I Use mdn-css_properties_backdrop-filter?</a
-  >
-  Data on support for the mdn-css_properties_backdrop-filter feature across the major browsers
-  from caniuse.com.
-</p>
-</p>
-
-<h2 id="allsettled">allSettled</h2>
-
-<p>这是属于<code>Promise</code>对象的一个新方法。</p>
-
-<p>想一下ES6中Promise的<code>all</code>方法，<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/all">MDN文档</a>：</p>
-
-<blockquote>
-<p>Promise.all(iterable) 方法返回一个 Promise 实例，此实例在 iterable 参数内所有的 promise 都“完成（resolved）”或参数中不包含 promise 时回调完成（resolve）；如果参数中  promise 有一个失败（rejected），此实例回调失败（reject），失败原因的是第一个失败 promise 的结果。</p>
-</blockquote>
-
-<p>而allSettled方法则是会等待所有promise状态都改变（无论成功或者失败）时回调完成(resolve)。</p>
-
-<p>二者比较：</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/71541232-a9dbb880-2990-11ea-8a47-9d649930880f.png" alt="image" /></p>
-
-<p>需要注意的时，即便allSettled所有promise都失败，那么依旧会执行resolve方法：</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/71541424-9aaa3a00-2993-11ea-9110-0bdf5dd75bcb.png" alt="image" /></p>
-
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled">allSettled文档参考</a>
 <script
   async
   src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
@@ -389,35 +365,29 @@ if (!doNotTrack) {
 <script>
   ;(adsbygoogle = window.adsbygoogle || []).push({})
 </script>
-</p>
-
-<h2 id="media-keys">media keys</h2>
-
-<p>可以监听外接设备的多媒体控制行为，比如键盘通常会有播放、停止、上一曲、下一曲的按键。</p>
-
-<p>一开始可能会想，用现有的按键事件处理不可以吗？但这仅是当前网页处于聚焦状态才可以，这个API提供了系统层面的控制，类似音乐播放软件可以全局响应播放事件。</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/71541594-83b91700-2996-11ea-812f-56efd2191a87.png" alt="image" /></p>
-
-<p>想体验这个首先要开启浏览器相关设置：<code>chrome://flags/#hardware-media-key-handling</code></p>
-
-<p>其实现在Youtube就已经增加了这项功能，有条件的朋友可以试一下。或者访问<a href="https://googlechrome.github.io/samples/media-session/">https://googlechrome.github.io/samples/media-session/</a> 这个示例地址体验。</p>
-
-<h2 id="background-fetch">background fetch</h2>
-
-<p>第一眼还以为是什么为CSS提供背景获取的功能。。其实翻译应该是后台下载，那为嘛不叫background download呢？🙄</p>
-
-<p>这个功能为移动端网页提供了后台下载的功能，可以给出通知栏提示，这些都需要Service Worker来配合实现。要在PWA应用中才可以。</p>
-
-<p>移动端浏览器下载和PWA下载的对比：</p>
 
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/eLfgf2ZvFpo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<h2 id="form-elements">Form elements</h2>
 
+<p>有了Web Components，我们可以使用原生JS来实现自定义组件，但某些场景下，我们需要自定义表单组件，意味着表单可以自动获取元素的值。</p>
 
-<p>Google关于此功能的介绍：<a href="https://developers.google.com/web/updates/2018/12/background-fetch">https://developers.google.com/web/updates/2018/12/background-fetch</a></p>
+<p>有两种方式：</p>
+
+<p>第一种：可以监听表单的<code>formData</code>事件，这是在表单提交前的一个方法，在这个方法中，可以添加我们自定义组件的值。</p>
+
+<p>第二种：Form elements, 就是使我们的自定义组件可以像其他表单组件一样设置表单的值。</p>
+
+<p>示例链接： <a href="https://codesandbox.io/s/form-element-demo-mkkdb">https://codesandbox.io/s/form-element-demo-mkkdb</a></p>
+
+<p>更多细节可以参考：<a href="https://web.dev/more-capable-form-controls/">https://web.dev/more-capable-form-controls/</a></p>
+
+<h2 id="fromentries">fromEntries</h2>
+
+<p><code>Object</code>的一个属性，之前ES6中有提到过，不知道为什么在这个时间点提出，可能是入规范了吧。。</p>
+
+<p><code>fromEntries</code>和<code>entries</code>算是两个相对的方法，前者可以把数组转成对象，后者则是把对象转正数组。</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/71557471-b12ebf00-2a81-11ea-9053-7b9100c33dad.png" alt="image" /></p>
 
 <script
   async
@@ -440,7 +410,30 @@ if (!doNotTrack) {
 
 <h2 id="结束语">结束语</h2>
 
-<p>和上期一样，依旧是两个web端的新特性，两个和系统功能有交互的功能。本期胜出的是<code>background fetch</code>，确实，相比其他，这个功能普及开可以为现有的应用带来很大便利。</p>
+<p>本期胜出的是<code>Native lazy loading</code>，也最终进入到了决赛中，另一个是上半区的<code>Sharing</code>。经过一番比较后，最终由<code>Native lazy loading</code>获得2019年度最佳特性称号。从应用场景来说确实占了很大优势，而且从浏览器层面提供了图片懒加载的解决方案，避免应用还要再额外引入资源来达到目的，有理有据，令人信服。</p>
+
+<p>到这里一共介绍了16个新特性，你记住了几个呢？有的可能已经投入使用了，有的还需要更多的支持。</p>
+
+<p>最后，再来简单回顾下吧，并用粗体标出本人认为值得关注的特性：</p>
+
+<ul>
+<li>Numeric separators</li>
+<li>matchAll</li>
+<li><strong>Intl stuff</strong></li>
+<li><strong>Class fields</strong></li>
+<li>图片纵横比</li>
+<li>Blob reading</li>
+<li>图片剪贴版</li>
+<li><strong>Sharing</strong></li>
+<li><strong>backdrop-filter</strong></li>
+<li><strong>allSettled</strong></li>
+<li>media keys</li>
+<li>background fetch</li>
+<li><strong>Prefers styles</strong></li>
+<li><strong>Native lazy loading</strong></li>
+<li>Form elements</li>
+<li>fromEntries</li>
+</ul>
 
 <!-- <p
   class="ciu_embed"
@@ -472,12 +465,6 @@ if (!doNotTrack) {
   </p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
- -->
-
-<!-- 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="//www.youtube.com/embed/eLfgf2ZvFpo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
  -->
 
 <!-- <div class="alert warning ">
@@ -532,7 +519,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/" data-tooltip="2019年Web开发中值得关注的新特性(4/4)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -540,7 +527,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/" data-tooltip="2019年Web开发中值得关注的新特性(2/4)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/" data-tooltip="2019年Web开发中值得关注的新特性(3/4)">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -558,7 +545,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -606,7 +593,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/" data-tooltip="2019年Web开发中值得关注的新特性(4/4)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -614,7 +601,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-two/" data-tooltip="2019年Web开发中值得关注的新特性(2/4)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/" data-tooltip="2019年Web开发中值得关注的新特性(3/4)">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -632,7 +619,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-three/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -662,7 +649,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F12%2Fbest-web-features-of-2019-part-three%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2019%2F12%2Fbest-web-features-of-2019-part-four%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -753,9 +740,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/12\/best-web-features-of-2019-part-three\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2019\/12\/best-web-features-of-2019-part-four\/';
           
-            this.page.identifier = '1577520315';
+            this.page.identifier = '1577612678';
           
         };
         (function() {

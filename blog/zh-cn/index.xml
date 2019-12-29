@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2019 16:05:15 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 17:44:38 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2019年Web开发中值得关注的新特性(4/4)</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/</link>
+      <pubDate>Sun, 29 Dec 2019 17:44:38 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/</guid>
+      <description>&lt;p&gt;上期分享了4个2019值得关注的新特性，今天继续分享4个：Prefers styles, Native lazy loading, Form elements, fromEntries。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>2019年Web开发中值得关注的新特性(3/4)</title>
