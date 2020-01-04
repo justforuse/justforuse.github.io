@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, network status, online, offline">
-<meta name="description" content="如何检测当前设备网络情况？浏览器提供了navigator.onLine的属性来检测。
+<meta name="keywords" content="js, ResizeObserver, 检测元素大小变化">
+<meta name="description" content="如何检测元素大小发生变化？
 
 ">
 
 
-<meta property="og:description" content="如何检测当前设备网络情况？浏览器提供了navigator.onLine的属性来检测。
+<meta property="og:description" content="如何检测元素大小发生变化？
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js检测当前网络状态">
-<meta name="twitter:title" content="js检测当前网络状态">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/">
+<meta property="og:title" content="ResizeObserver使用方法">
+<meta name="twitter:title" content="ResizeObserver使用方法">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="如何检测当前设备网络情况？浏览器提供了navigator.onLine的属性来检测。
+<meta property="og:description" content="如何检测元素大小发生变化？
 
 ">
-<meta name="twitter:description" content="如何检测当前设备网络情况？浏览器提供了navigator.onLine的属性来检测。
+<meta name="twitter:description" content="如何检测元素大小发生变化？
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-01-04T16:19:49">
+    <meta property="article:published_time" content="2020-01-04T20:20:55">
   
   
-    <meta property="article:modified_time" content="2020-01-04T16:19:49">
+    <meta property="article:modified_time" content="2020-01-04T20:20:55">
   
   
   
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>js检测当前网络状态</title>
+    <title>ResizeObserver使用方法</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,13 +274,13 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      js检测当前网络状态
+      ResizeObserver使用方法
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-01-04T16:19:49&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-01-04T20:20:55&#43;08:00">
         
   一月 4, 2020
 
@@ -305,18 +305,11 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>如何检测当前设备网络情况？浏览器提供了<code>navigator.onLine</code>的属性来检测。</p>
+              <p>如何检测元素大小发生变化？</p>
 
 <p></p>
 
-<p>这里说的网络情况指的是是否联网，而不关心使用的是移动网络还是wifi，如果想检测这个类型的话可以关注<code>navigator.connection</code>方法的进展。</p>
-
-<p>我们也可以监听联网状态改变的时间：</p>
-
-<pre><code class="language-js">window.addEventListener(&quot;offline&quot;, function(e) {alert(&quot;offline&quot;);})
-
-window.addEventListener(&quot;online&quot;, function(e) {alert(&quot;online&quot;);})
-</code></pre>
+<p>没有元素会无缘无故的发生变化，可能是窗口大小发生变化，我们可以监听window的resize事件；但很多情况是由于页面元素的变化（添加，删除）引起的，这种情况处理起来就比较麻烦了，大多数情况也是通过自定义事件来处理。</p>
 
 <script
   async
@@ -337,95 +330,63 @@ window.addEventListener(&quot;online&quot;, function(e) {alert(&quot;online&quot
 </script>
 
 
-<p>示例：（你可以打开或关闭网络查看变化）👇</p>
+<p>ResizeObserver提供了更直接的方法，直接监听元素的尺寸变化。</p>
 
-<script src="https://justforuse.github.io/blog/js/react,react-dom.js"></script>
-<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-<div id="network-container"></div>
-<style>
-.network-status-container {
-  display: flex;
-  border: 1px solid #ddd;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  box-shadow: 0 0 2px 0px #8b8b8b;
-  padding: 1.5rem 0;
-  background-color: #7eff79;;
-}
-.network-status-container.offline {
-  background: #ffe755;
-}
+<p>使用方式：</p>
 
-.network-status-container p {
-  margin: 0 !important;
-}
-</style>
-<script type="text/babel">
-function NetworkStatus() {
-  const [status, setStatus] = React.useState(navigator.onLine);
+<pre><code class="language-js">// 定义ResizeObserver对象，并设置监听方法
+const myObserver = new ResizeObserver(entries =&gt; {
+  // handleResize(entries)
+})
 
-  React.useEffect(() => {
-    function setOnline() {
-      setStatus(true)
-    }
+const contentEle = document.querySelector('.content')
+const staticEle = document.querySelector('p')
 
-    function setOffline() {
-      setStatus(false)
-    }
-    window.addEventListener("online", setOnline);
-    window.addEventListener("offline", setOffline);
-    return () => {
-      window.removeEventListener("online", setOnline);
-      window.removeEventListener("offline", setOffline);
-    }
-  });
-  const containerClass = `network-status-container ${!status ? 'offline' : ''}`
-  return (
-    <div className={containerClass}>
-      {
-        status ? (
-          <p>已联网，可正常访问网络</p>
-        ) : <p>网络似乎有点问题，请检查</p>
-      }
-    </div>
-  )
-}
+// 添加要监听的元素
+myObserver.observe(staticEle)
+myObserver.observe(contentEle)
+</code></pre>
 
-ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
+<p>监听方法参数是一个数组，每个数组对象为大小发生变化的元素：</p>
 
-</script>
+<p><img src="https://user-images.githubusercontent.com/11868477/71765986-bc786380-2f35-11ea-8573-bde4e3b56a74.png" alt="image" /></p>
+
+<p>由上图可以看到，每个对象都有<code>target</code>和<code>contentRect</code>属性，其中<code>contentRect</code>属性又包括<code>width</code>, <code>height</code>, <code>x</code>, <code>y</code>, <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>。这和<code>getBoundingClientRect</code>非常类似。</p>
+
+<p>在线示例：</p>
 
 
-<p>兼容性可以说非常好了：</p>
+
+
+
+
+
+
+
+
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="MWYEdae" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/justforuse/pen/MWYEdae/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+
+<p>由于是比较新的方法，所以兼容性很差：</p>
 
 <p><p
   class="ciu_embed"
-  data-feature="online-status"
+  data-feature="resizeobserver"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=online-status"
-    >Can I Use online-status?</a
+  <a href="http://caniuse.com/#feat=resizeobserver"
+    >Can I Use resizeobserver?</a
   >
-  Data on support for the online-status feature across the major browsers
+  Data on support for the resizeobserver feature across the major browsers
   from caniuse.com.
 </p>
-</p>
-
-<!-- <p
-  class="ciu_embed"
-  data-feature="css-placeholder-shown"
-  data-periods="future_1,current,past_1,past_2"
-  data-accessible-colours="false"
->
-  <a href="http://caniuse.com/#feat=css-placeholder-shown"
-    >Can I Use css-placeholder-shown?</a
-  >
-  Data on support for the css-placeholder-shown feature across the major browsers
-  from caniuse.com.
-</p>
- -->
 
 <!-- 
 
@@ -444,11 +405,9 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
  -->
-
 <!-- <div class="alert warning ">
   <p>xxx</p>
 </div> -->
-
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -473,6 +432,8 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
       </p>
     </div>
   </div>
+
+</p>
               
             </div>
           </div>
@@ -497,7 +458,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/" data-tooltip="ResizeObserver使用方法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -505,7 +466,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/" data-tooltip="2019年Web开发中值得关注的新特性(4/4)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/" data-tooltip="js检测当前网络状态">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -523,7 +484,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -571,7 +532,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/" data-tooltip="ResizeObserver使用方法">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -579,7 +540,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2019/12/best-web-features-of-2019-part-four/" data-tooltip="2019年Web开发中值得关注的新特性(4/4)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/" data-tooltip="js检测当前网络状态">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -597,7 +558,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -627,7 +588,7 @@ ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F01%2Fcheck-network-status%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F01%2Fresize-observer-tutorial%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -718,9 +679,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/01\/check-network-status\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/01\/resize-observer-tutorial\/';
           
-            this.page.identifier = '1578125989';
+            this.page.identifier = '1578140455';
           
         };
         (function() {
