@@ -22,7 +22,7 @@
 </style>
 <script type="text/babel">
 function NetworkStatus() {
-  const [status, setStatus] = React.useState(true);
+  const [status, setStatus] = React.useState(navigator.onLine);
 
   React.useEffect(() => {
     function setOnline() {
