@@ -1,0 +1,56 @@
+<script src="/js/react,react-dom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<div id="network-container"></div>
+<style>
+.network-status-container {
+  display: flex;
+  border: 1px solid #ddd;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0px #8b8b8b;
+  padding: 1.5rem 0;
+  background-color: #7eff79;;
+}
+.network-status-container.offline {
+  background: #ffe755;
+}
+
+.network-status-container p {
+  margin: 0 !important;
+}
+</style>
+<script type="text/babel">
+function NetworkStatus() {
+  const [status, setStatus] = React.useState(true);
+
+  React.useEffect(() => {
+    function setOnline() {
+      setStatus(true)
+    }
+
+    function setOffline() {
+      setStatus(false)
+    }
+    window.addEventListener("online", setOnline);
+    window.addEventListener("offline", setOffline);
+    return () => {
+      window.removeEventListener("online", setOnline);
+      window.removeEventListener("offline", setOffline);
+    }
+  });
+  const containerClass = `network-status-container ${!status ? 'offline' : ''}`
+  return (
+    <div className={containerClass}>
+      {
+        status ? (
+          <p>已联网，可正常访问网络</p>
+        ) : <p>网络似乎有点问题，请检查</p>
+      }
+    </div>
+  )
+}
+
+ReactDOM.render(<NetworkStatus />, document.querySelector('#network-container'))
+
+</script>
