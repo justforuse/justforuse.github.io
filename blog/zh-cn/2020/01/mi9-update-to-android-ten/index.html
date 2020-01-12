@@ -7,44 +7,44 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="js, ResizeObserver, 检测元素大小变化">
-<meta name="description" content="如何检测元素大小发生变化？
+<meta name="keywords" content="小米9, 升级, 安卓10, mi9, Android 10">
+<meta name="description" content="也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。
 
 ">
 
 
-<meta property="og:description" content="如何检测元素大小发生变化？
+<meta property="og:description" content="也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ResizeObserver使用方法">
-<meta name="twitter:title" content="ResizeObserver使用方法">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
+<meta property="og:title" content="小米9升级安卓10体验">
+<meta name="twitter:title" content="小米9升级安卓10体验">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="如何检测元素大小发生变化？
+<meta property="og:description" content="也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。
 
 ">
-<meta name="twitter:description" content="如何检测元素大小发生变化？
+<meta name="twitter:description" content="也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-01-04T20:20:55">
+    <meta property="article:published_time" content="2020-01-12T22:51:20">
   
   
-    <meta property="article:modified_time" content="2020-01-04T20:20:55">
+    <meta property="article:modified_time" content="2020-01-12T22:51:20">
   
-  
-  
-    
-      <meta property="article:section" content="Front-End">
-    
   
   
     
-      <meta property="article:tag" content="js">
+      <meta property="article:section" content="others">
+    
+  
+  
+    
+      <meta property="article:tag" content="mi9">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>ResizeObserver使用方法</title>
+    <title>小米9升级安卓10体验</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      ResizeObserver使用方法
+      小米9升级安卓10体验
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-01-04T20:20:55&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-01-12T22:51:20&#43;08:00">
         
-  一月 4, 2020
+  一月 12, 2020
 
       </time>
     
@@ -295,7 +295,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/others">others</a>
     
   
 
@@ -305,11 +305,15 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>如何检测元素大小发生变化？</p>
+              <p>也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。</p>
 
 <p></p>
 
-<p>没有元素会无缘无故的发生变化，可能是窗口大小发生变化，我们可以监听window的resize事件；但很多情况是由于页面元素的变化（添加，删除）引起的，这种情况处理起来就比较麻烦了，大多数情况也是通过自定义事件来处理。</p>
+<p>第一，个人感觉界面变化还是挺大的，看图：</p>
+
+<p><img src="https://user-images.githubusercontent.com/11868477/72220794-6471da80-358f-11ea-9c52-d0cc356c765a.png" alt="drawing" height="400"/></p>
+
+<p>图标比以前面积大了，而且多了白色背景色，所有图标都呈现出圆角方形，异形图标则会多一个白色背景。</p>
 
 <script
   async
@@ -330,63 +334,25 @@ if (!doNotTrack) {
 </script>
 
 
-<p>ResizeObserver提供了更直接的方法，直接监听元素的尺寸变化。</p>
+<p>第二，支持深色模式(Dark Mode)，需要注意的是这个是Android 10系统才开始支持的功能，之前的深色模式并没有从系统层面做出支持，只是UI界面做了修改；而到了Android 10，比如浏览器的<code>prefers-color-scheme</code>就完美支持了，<strong>因此如果想与深色模式控的用户习惯保持一直，作为开发者要更加注意手机端网页的适配。</strong></p>
 
-<p>使用方式：</p>
+<p>关于<code>prefers-color-scheme</code>，之前有介绍: <a href="https://justforuse.github.io/blog/zh-cn/2019/08/prefers-color-scheme-tutorial/">prefers-color-scheme介绍</a></p>
 
-<pre><code class="language-js">// 定义ResizeObserver对象，并设置监听方法
-const myObserver = new ResizeObserver(entries =&gt; {
-  // handleResize(entries)
-})
+<p>关于更多Android 10的信息请自行查阅吧。。毕竟如果想体验原生安卓体验国内手机做了很多修改，普通用户可能看不到也用不到。。</p>
 
-const contentEle = document.querySelector('.content')
-const staticEle = document.querySelector('p')
-
-// 添加要监听的元素
-myObserver.observe(staticEle)
-myObserver.observe(contentEle)
-</code></pre>
-
-<p>监听方法参数是一个数组，每个数组对象为大小发生变化的元素：</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/71765986-bc786380-2f35-11ea-8573-bde4e3b56a74.png" alt="image" /></p>
-
-<p>由上图可以看到，每个对象都有<code>target</code>和<code>contentRect</code>属性，其中<code>contentRect</code>属性又包括<code>width</code>, <code>height</code>, <code>x</code>, <code>y</code>, <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>。这和<code>getBoundingClientRect</code>非常类似。</p>
-
-<p>在线示例：</p>
-
-
-
-
-
-
-
-
-
-
-
-  <p data-height="265" data-theme-id="dark" data-slug-hash="MWYEdae" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
-  class="codepen">
-    See the Pen <a href="https://codepen.io/justforuse/pen/MWYEdae/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
-  </p>
-  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
-
-
-<p>由于是比较新的方法，所以兼容性很差：</p>
-
-<p><p
+<!-- <p
   class="ciu_embed"
-  data-feature="resizeobserver"
+  data-feature="css-placeholder-shown"
   data-periods="future_1,current,past_1,past_2"
   data-accessible-colours="false"
 >
-  <a href="http://caniuse.com/#feat=resizeobserver"
-    >Can I Use resizeobserver?</a
+  <a href="http://caniuse.com/#feat=css-placeholder-shown"
+    >Can I Use css-placeholder-shown?</a
   >
-  Data on support for the resizeobserver feature across the major browsers
+  Data on support for the css-placeholder-shown feature across the major browsers
   from caniuse.com.
 </p>
+ -->
 
 <!-- 
 
@@ -405,9 +371,11 @@ myObserver.observe(contentEle)
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
  -->
+
 <!-- <div class="alert warning ">
   <p>xxx</p>
 </div> -->
+
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -432,8 +400,6 @@ myObserver.observe(contentEle)
       </p>
     </div>
   </div>
-
-</p>
               
             </div>
           </div>
@@ -445,7 +411,7 @@ myObserver.observe(contentEle)
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/mi9/">mi9</a>
 
                   </div>
                 
@@ -458,7 +424,7 @@ myObserver.observe(contentEle)
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/" data-tooltip="小米9升级安卓10体验">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -466,7 +432,7 @@ myObserver.observe(contentEle)
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/" data-tooltip="js检测当前网络状态">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/" data-tooltip="ResizeObserver使用方法">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -484,7 +450,7 @@ myObserver.observe(contentEle)
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -532,7 +498,7 @@ myObserver.observe(contentEle)
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/" data-tooltip="小米9升级安卓10体验">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -540,7 +506,7 @@ myObserver.observe(contentEle)
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/check-network-status/" data-tooltip="js检测当前网络状态">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/" data-tooltip="ResizeObserver使用方法">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -558,7 +524,7 @@ myObserver.observe(contentEle)
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/resize-observer-tutorial/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -588,7 +554,7 @@ myObserver.observe(contentEle)
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F01%2Fresize-observer-tutorial%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F01%2Fmi9-update-to-android-ten%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -679,9 +645,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/01\/resize-observer-tutorial\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/01\/mi9-update-to-android-ten\/';
           
-            this.page.identifier = '1578140455';
+            this.page.identifier = '1578840680';
           
         };
         (function() {
