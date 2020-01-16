@@ -37,6 +37,10 @@ disqusIdentifier: 1578840680
 
 关于更多Android 10的信息请自行查阅吧。。毕竟如果想体验原生安卓体验国内手机做了很多修改，普通用户可能看不到也用不到。。
 
+## 最后
+
+关于跨版本升级一定要**谨慎对待**，部分APP还不支持Android 10，小米倒是会有提示，但我升级后发现Play Store不见了，还要再重新安装一次，另外一些原有的用户习惯或者适配也不见了，比如网易云音乐和滴滴的锁屏提示。
+
 <!-- {{< embed-caniuse css-placeholder-shown >}} -->
 <!-- {{< codepen pen="PKdOpB" user="justforuse" theme="dark">}} -->
 <!-- {{< alert warning >}}
