@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
     
     
-    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-ekwoxhjnfam8gciuujsfom5ofhradhfjdms8iv9cjkibudczw65mawlvatoi.min.css" />
+    <link rel="stylesheet" href="https://justforuse.github.io/blog/css/style-mhrnwg9pe7iemgfs5rasrckpbpqrrga2tlofbcgv0c2l9ccqylipxngvzqmz.min.css" />
     
     
       
@@ -636,7 +636,7 @@ if (!doNotTrack) {
 <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
 
 
-<script src="https://justforuse.github.io/blog/js/script-xjhpv6yi5aflls7obwi3czkeoscfvzkpbir4txyubxjpdqlzwinzfz6ue38c.min.js"></script>
+<script src="https://justforuse.github.io/blog/js/script-vtcfdsfczkbxf645cd3c5tqolpjytwcf8jclqczfikustul074zs7wg1aqtz.min.js"></script>
 
 
 <script lang="javascript">
@@ -663,6 +663,20 @@ $(document).ready(function() {
     }
     hljs.highlightBlock(block);
   });
+
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.body.classList.add('dark-theme')
+  }
+
+  const toggleTheme = (e) => {    
+    const darkModeOn = e.detail.colorScheme === 'dark';
+    if(darkModeOn) {
+      document.body.classList.add('dark-theme')
+    } else {
+      document.body.classList.remove('dark-theme')
+    }
+  };
+  document.addEventListener('colorschemechange', toggleTheme);
 });
 </script>
 
