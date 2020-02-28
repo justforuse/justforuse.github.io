@@ -7,34 +7,42 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="chrome extensions">
-<meta name="description" content="推荐完VSCode的插件，再推荐15款常用的Chrome插件吧，包括工作和生活的。
+<meta name="keywords" content="onload, DomContentLoaded, beforeunload, unload, readyState">
+<meta name="description" content="组件有生命周期，网页本身也有“生命周期”。
+
+比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
 
 ">
 
 
-<meta property="og:description" content="推荐完VSCode的插件，再推荐15款常用的Chrome插件吧，包括工作和生活的。
+<meta property="og:description" content="组件有生命周期，网页本身也有“生命周期”。
+
+比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="15款实用的Chrome插件">
-<meta name="twitter:title" content="15款实用的Chrome插件">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-chrome-extensions/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-chrome-extensions/">
+<meta property="og:title" content="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
+<meta name="twitter:title" content="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="推荐完VSCode的插件，再推荐15款常用的Chrome插件吧，包括工作和生活的。
+<meta property="og:description" content="组件有生命周期，网页本身也有“生命周期”。
+
+比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
 
 ">
-<meta name="twitter:description" content="推荐完VSCode的插件，再推荐15款常用的Chrome插件吧，包括工作和生活的。
+<meta name="twitter:description" content="组件有生命周期，网页本身也有“生命周期”。
+
+比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-01-16T23:58:56">
+    <meta property="article:published_time" content="2020-02-28T11:10:57">
   
   
-    <meta property="article:modified_time" content="2020-01-16T23:58:56">
+    <meta property="article:modified_time" content="2020-02-28T11:10:57">
   
   
   
@@ -44,7 +52,7 @@
   
   
     
-      <meta property="article:tag" content="extensions">
+      <meta property="article:tag" content="js">
     
   
 
@@ -65,13 +73,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>15款实用的Chrome插件</title>
+    <title>网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-chrome-extensions/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +282,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      15款实用的Chrome插件
+      网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-01-16T23:58:56&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-02-28T11:10:57&#43;08:00">
         
-  一月 16, 2020
+  二月 28, 2020
 
       </time>
     
@@ -305,37 +313,38 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>推荐完VSCode的插件，再推荐15款常用的Chrome插件吧，包括工作和生活的。</p>
+              <p>组件有生命周期，网页本身也有“生命周期”。</p>
+
+<p>比较重要的3个：<code>window.onload</code>,<code>DomContentLoaded</code>,<code>beforeunload/unload</code>。</p>
 
 <p></p>
 
-<h2 id="1-达达划词翻译">1. 达达划词翻译</h2>
+<h2 id="domcontentloaded">DomContentLoaded</h2>
 
-<p><img src="https://user-images.githubusercontent.com/11868477/72503127-f1f64880-3875-11ea-82ca-a74cf0313a04.png" height="400" /></p>
+<p>html作为载体，当浏览器加载完html内容，DOM构建完成后触发，但此时外部资源（比如图片）可能还未加载完成。</p>
 
-<h2 id="2-购物党自动比价工具">2. 购物党自动比价工具</h2>
+<pre><code class="language-html">&lt;script&gt;
+  function ready() {
+    alert('DOM is ready');
+    // image is not yet loaded (unless was cached), so the size is 0x0
+    alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+  }
 
-<p>逛淘宝的时候用来在各平台间比价，也可以查看历史价格变化。</p>
+  document.addEventListener(&quot;DOMContentLoaded&quot;, ready);
+&lt;/script&gt;
 
-<h2 id="3-二维码生成器-quick-qr">3. 二维码生成器 (Quick QR)</h2>
+&lt;img id=&quot;img&quot; src=&quot;https://en.js.cx/clipart/train.gif?speed=1&amp;cache=0&quot;&gt;
+</code></pre>
 
-<p>为当前网页生成二维码，便于在手机上浏览。</p>
+<h2 id="window-onload">window.onload</h2>
 
-<h2 id="4-dark-reader">4. Dark Reader</h2>
+<p>在<code>DomContentLoaded</code>之后，等待外部资源加载完成。</p>
 
-<p>为网页增加暗色模式，功能很强大，深色主题控的福音，而且暗色主题配色也很舒服。</p>
+<h2 id="beforeunload-unload">beforeunload/unload</h2>
 
-<h2 id="5-open-link-in-new-tab">5. Open link in new tab</h2>
+<p>beforeunload： 关闭网页之前的事件，比如有的网页会有提示未提交的表单，或未保存的内容的对话框，这样就可以阻止网页关闭了</p>
 
-<p>在新标签页中打开点击的链接。</p>
-
-<h2 id="6-whatruns">6. WhatRuns</h2>
-
-<p>查看当前网页使用的技术，前后端框架，广告系统都有涉及。</p>
-
-<h2 id="7-whatfont">7. WhatFont</h2>
-
-<p>查看当前元素使用的字体。</p>
+<p>unload: 网页“真正”被关闭之前的事件，此时无法阻止网页关闭，但仍可以做一些其他操作，比如发送一些分析数据：<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/sendBeacon">Navigator.sendBeacon()</a></p>
 
 <script
   async
@@ -356,38 +365,22 @@ if (!doNotTrack) {
 </script>
 
 
-<h2 id="8-the-great-suspender">8. The Great Suspender</h2>
+<h2 id="readystate">readyState</h2>
 
-<p>暂时冻结不常用的标签页，适用于打开很多标签又不想关闭，可以减少内存占用。</p>
+<p><code>document</code>还提供了<code>readyState</code>属性来表示当前网页的状态：</p>
 
-<h2 id="9-scroll-to-top-button">9. Scroll To Top Button</h2>
+<ul>
+<li>loading: 加载中</li>
+<li>interactive: document加载完成</li>
+<li>complete: document加载完成并且外部资源也加载完成</li>
+</ul>
 
-<p>快速回到网页顶部和底部，阅读时很有用。</p>
+<p>readyState与上述周期执行顺序基本类似：</p>
 
-<h2 id="10-json-formatter">10. JSON Formatter</h2>
+<iframe src="http://embed.plnkr.co/9PpFSQLGLJL3BP0fePPP/?show=preview&deferRun" class="plnkr" frameorder="0">
+</iframe>
 
-<p>JSON文件格式化显示，在查看接口返回时很有用。</p>
-
-<h2 id="11-proxy-switchyomega">11. Proxy SwitchyOmega</h2>
-
-<p>浏览器代理插件。</p>
-
-<h2 id="12-refined-github">12. Refined GitHub</h2>
-
-<p>为Github新增了很多功能。</p>
-
-<h2 id="13-github-code-folding">13. GitHub Code Folding</h2>
-
-<p>在GitHub上看代码不方便？这个插件可以折叠代码块，便于浏览。</p>
-
-<h2 id="14-octotree">14. Octotree</h2>
-
-<p>为GitHub项目增加文件树，快速切换文件。</p>
-
-<h2 id="15-octolinker">15. OctoLinker</h2>
-
-<p>快速跳转至代码引用的库</p>
-
+<p>参考链接：<a href="https://javascript.info/onload-ondomcontentloaded">https://javascript.info/onload-ondomcontentloaded</a>
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -401,7 +394,6 @@ if (!doNotTrack) {
   from caniuse.com.
 </p>
  -->
-
 <!-- 
 
 
@@ -419,11 +411,9 @@ if (!doNotTrack) {
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
  -->
-
 <!-- <div class="alert warning ">
   <p>xxx</p>
 </div> -->
-
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -448,6 +438,8 @@ if (!doNotTrack) {
       </p>
     </div>
   </div>
+
+</p>
               
             </div>
           </div>
@@ -459,7 +451,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/extensions/">extensions</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
                   </div>
                 
@@ -472,7 +464,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -480,7 +472,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-vs-code-extensions/" data-tooltip="15款实用的VSCode插件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -498,7 +490,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-chrome-extensions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -546,7 +538,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -554,7 +546,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-vs-code-extensions/" data-tooltip="15款实用的VSCode插件">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -572,7 +564,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/01/15-useful-chrome-extensions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -602,7 +594,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F01%2F15-useful-chrome-extensions%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F02%2Fwebpage-lifecycle-onload-domcontentloaded-beforeunload-unload%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -707,9 +699,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/01\/15-useful-chrome-extensions\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/02\/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload\/';
           
-            this.page.identifier = '1579190336';
+            this.page.identifier = '1582087173';
           
         };
         (function() {

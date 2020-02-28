@@ -6,10 +6,34 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jan 2020 23:58:56 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 11:10:57 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/</link>
+      <pubDate>Fri, 28 Feb 2020 11:10:57 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/</guid>
+      <description>&lt;p&gt;组件有生命周期，网页本身也有“生命周期”。&lt;/p&gt;
+
+&lt;p&gt;比较重要的3个：&lt;code&gt;window.onload&lt;/code&gt;,&lt;code&gt;DomContentLoaded&lt;/code&gt;,&lt;code&gt;beforeunload/unload&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CDN和HTTP2简介</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/</link>
+      <pubDate>Fri, 28 Feb 2020 11:09:44 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/</guid>
+      <description>&lt;p&gt;CDN和http2是平时工作中经常听到的名词，关于它们，我们需要知道什么呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>15款实用的Chrome插件</title>
