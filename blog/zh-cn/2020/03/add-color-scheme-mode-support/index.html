@@ -7,42 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="onload, DomContentLoaded, beforeunload, unload, readyState">
-<meta name="description" content="组件有生命周期，网页本身也有“生命周期”。
-
-比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
+<meta name="keywords" content="css, dark mode, 深色主题">
+<meta name="description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
 
 ">
 
 
-<meta property="og:description" content="组件有生命周期，网页本身也有“生命周期”。
-
-比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
+<meta property="og:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
-<meta name="twitter:title" content="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
+<meta property="og:title" content="为网页增加深色模式支持">
+<meta name="twitter:title" content="为网页增加深色模式支持">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="组件有生命周期，网页本身也有“生命周期”。
-
-比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
+<meta property="og:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
 
 ">
-<meta name="twitter:description" content="组件有生命周期，网页本身也有“生命周期”。
-
-比较重要的3个：window.onload,DomContentLoaded,beforeunload/unload。
+<meta name="twitter:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-02-28T11:10:57">
+    <meta property="article:published_time" content="2020-03-08T22:16:42">
   
   
-    <meta property="article:modified_time" content="2020-02-28T11:10:57">
+    <meta property="article:modified_time" content="2020-03-08T22:16:42">
   
   
   
@@ -53,6 +45,8 @@
   
     
       <meta property="article:tag" content="js">
+    
+      <meta property="article:tag" content="css">
     
   
 
@@ -73,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload</title>
+    <title>为网页增加深色模式支持</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -282,15 +276,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload
+      为网页增加深色模式支持
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-02-28T11:10:57&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-03-08T22:16:42&#43;08:00">
         
-  二月 28, 2020
+  三月 8, 2020
 
       </time>
     
@@ -313,38 +307,32 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>组件有生命周期，网页本身也有“生命周期”。</p>
-
-<p>比较重要的3个：<code>window.onload</code>,<code>DomContentLoaded</code>,<code>beforeunload/unload</code>。</p>
+              <p>之前提过很多次<code>prefers-color-scheme</code>特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。</p>
 
 <p></p>
 
-<h2 id="domcontentloaded">DomContentLoaded</h2>
+<p>我们要做什么？获取当前系统主题偏好、响应主题变化。</p>
 
-<p>html作为载体，当浏览器加载完html内容，DOM构建完成后触发，但此时外部资源（比如图片）可能还未加载完成。</p>
+<p>如何获取当前偏好主题？</p>
 
-<pre><code class="language-html">&lt;script&gt;
-  function ready() {
-    alert('DOM is ready');
-    // image is not yet loaded (unless was cached), so the size is 0x0
-    alert(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
-  }
-
-  document.addEventListener(&quot;DOMContentLoaded&quot;, ready);
-&lt;/script&gt;
-
-&lt;img id=&quot;img&quot; src=&quot;https://en.js.cx/clipart/train.gif?speed=1&amp;cache=0&quot;&gt;
+<pre><code class="language-js">if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  document.body.classList.add('dark-theme')
+}
 </code></pre>
 
-<h2 id="window-onload">window.onload</h2>
+<p>如何检测变化？</p>
 
-<p>在<code>DomContentLoaded</code>之后，等待外部资源加载完成。</p>
+<pre><code class="language-js">const toggleTheme = (e) =&gt; {    
+  const darkModeOn = e.detail.colorScheme === 'dark';
+  if(darkModeOn) {
+    document.body.classList.add('dark-theme')
+  } else {
+    document.body.classList.remove('dark-theme')
+  }
+};
 
-<h2 id="beforeunload-unload">beforeunload/unload</h2>
-
-<p>beforeunload： 关闭网页之前的事件，比如有的网页会有提示未提交的表单，或未保存的内容的对话框，这样就可以阻止网页关闭了</p>
-
-<p>unload: 网页“真正”被关闭之前的事件，此时无法阻止网页关闭，但仍可以做一些其他操作，比如发送一些分析数据：<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Navigator/sendBeacon">Navigator.sendBeacon()</a></p>
+document.addEventListener('colorschemechange', toggleTheme);
+</code></pre>
 
 <script
   async
@@ -365,22 +353,46 @@ if (!doNotTrack) {
 </script>
 
 
-<h2 id="readystate">readyState</h2>
+<p>如果没有专业的UI知识，如何设计一款美观的暗色主题？</p>
 
-<p><code>document</code>还提供了<code>readyState</code>属性来表示当前网页的状态：</p>
+<p>使用chrome插件：<a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh">Dark Reader</a>，它可以自动将当前网页转为暗色模式，通过查看CSS样式可以将它应用到我们的主题中。</p>
 
-<ul>
-<li>loading: 加载中</li>
-<li>interactive: document加载完成</li>
-<li>complete: document加载完成并且外部资源也加载完成</li>
-</ul>
+<p>接下来就是编写我们的CSS样式了：</p>
 
-<p>readyState与上述周期执行顺序基本类似：</p>
+<p>比如：</p>
 
-<iframe src="http://embed.plnkr.co/9PpFSQLGLJL3BP0fePPP/?show=preview&deferRun" class="plnkr" frameorder="0">
-</iframe>
+<pre><code class="language-scss">@media (prefers-color-scheme: dark) {
+  body.dark-theme {
+    border-color: #686662;
+    color: #fff8ec;
+    #bottom-bar, #header, #main {
+      background-color: rgb(53, 54, 53);
+    }
+  }
+  // ....
+}
+</code></pre>
 
-<p>参考链接：<a href="https://javascript.info/onload-ondomcontentloaded">https://javascript.info/onload-ondomcontentloaded</a>
+<p>关于这里也可以通过控制全局CSS变量来实现。</p>
+
+<pre><code class="language-css">:root {
+  --color: blue;
+  --bg-color: #eee;
+}
+body {
+  background: var(--bg-color);
+  color: var(--color);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: white;
+    --bg-color: #333;
+  }
+}
+</code></pre>
+
+<p>参考链接：<a href="https://web.dev/prefers-color-scheme/">https://web.dev/prefers-color-scheme/</a></p>
+
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -394,6 +406,7 @@ if (!doNotTrack) {
   from caniuse.com.
 </p>
  -->
+
 <!-- 
 
 
@@ -411,9 +424,11 @@ if (!doNotTrack) {
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
  -->
+
 <!-- <div class="alert warning ">
   <p>xxx</p>
 </div> -->
+
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -438,8 +453,6 @@ if (!doNotTrack) {
       </p>
     </div>
   </div>
-
-</p>
               
             </div>
           </div>
@@ -453,6 +466,8 @@ if (!doNotTrack) {
                     
   <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
+
                   </div>
                 
               
@@ -464,7 +479,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/" data-tooltip="为网页增加深色模式支持">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -472,7 +487,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/" data-tooltip="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -490,7 +505,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -538,7 +553,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/" data-tooltip="为网页增加深色模式支持">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -546,7 +561,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/should-know-about-cdn-and-http2/" data-tooltip="CDN和HTTP2简介">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/" data-tooltip="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -564,7 +579,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -594,7 +609,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F02%2Fwebpage-lifecycle-onload-domcontentloaded-beforeunload-unload%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F03%2Fadd-color-scheme-mode-support%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -699,9 +714,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/02\/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/03\/add-color-scheme-mode-support\/';
           
-            this.page.identifier = '1582087173';
+            this.page.identifier = '1583677002';
           
         };
         (function() {

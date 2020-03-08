@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 11:10:57 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 22:16:42 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>为网页增加深色模式支持</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/</link>
+      <pubDate>Sun, 08 Mar 2020 22:16:42 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/</guid>
+      <description>&lt;p&gt;之前提过很多次&lt;code&gt;prefers-color-scheme&lt;/code&gt;特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload</title>

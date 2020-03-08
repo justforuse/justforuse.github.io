@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/</loc>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/</loc>
     <lastmod>2020-02-28T11:10:57+08:00</lastmod>
   </url>
@@ -714,7 +719,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/css/</loc>
-    <lastmod>2019-11-05T22:40:33+08:00</lastmod>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -768,7 +773,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2020-02-28T11:10:57+08:00</lastmod>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -779,22 +784,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/categories/front-end/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
-    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
   </url>
   
@@ -815,18 +804,18 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
+    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/categories/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
   </url>
   
@@ -843,6 +832,22 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
                 />
   </url>
   
@@ -896,7 +901,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2020-02-28T11:10:57+08:00</lastmod>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -968,7 +973,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2020-02-28T11:10:57+08:00</lastmod>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1204,7 +1209,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2020-02-28T11:10:57+08:00</lastmod>
+    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
