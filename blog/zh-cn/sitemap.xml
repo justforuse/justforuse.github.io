@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/</loc>
+    <lastmod>2020-03-29T18:15:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/</loc>
+    <lastmod>2020-03-29T18:04:15+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/</loc>
     <lastmod>2020-03-08T22:16:42+08:00</lastmod>
   </url>
@@ -719,7 +729,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/css/</loc>
-    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+    <lastmod>2020-03-29T18:15:05+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -773,7 +783,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/front-end/</loc>
-    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+    <lastmod>2020-03-29T18:15:05+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -901,7 +911,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/js/</loc>
-    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+    <lastmod>2020-03-29T18:04:15+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -973,7 +983,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+    <lastmod>2020-03-29T18:15:05+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1209,7 +1219,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2020-03-08T22:16:42+08:00</lastmod>
+    <lastmod>2020-03-29T18:15:05+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"

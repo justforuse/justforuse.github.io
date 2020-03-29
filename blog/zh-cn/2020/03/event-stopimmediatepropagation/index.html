@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="css, dark mode, 深色主题">
-<meta name="description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
+<meta name="keywords" content="stopImmediatePropagation, stopPropagation">
+<meta name="description" content="Event对象的stopImmediatePropagation方法相对stopPropagation来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。
 
 ">
 
 
-<meta property="og:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
+<meta property="og:description" content="Event对象的stopImmediatePropagation方法相对stopPropagation来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为网页增加深色模式支持">
-<meta name="twitter:title" content="为网页增加深色模式支持">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
+<meta property="og:title" content="Event对象的stopImmediatePropagation方法">
+<meta name="twitter:title" content="Event对象的stopImmediatePropagation方法">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
+<meta property="og:description" content="Event对象的stopImmediatePropagation方法相对stopPropagation来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。
 
 ">
-<meta name="twitter:description" content="之前提过很多次prefers-color-scheme特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。
+<meta name="twitter:description" content="Event对象的stopImmediatePropagation方法相对stopPropagation来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-03-08T22:16:42">
+    <meta property="article:published_time" content="2020-03-29T18:04:15">
   
   
-    <meta property="article:modified_time" content="2020-03-08T22:16:42">
+    <meta property="article:modified_time" content="2020-03-29T18:04:15">
   
   
   
@@ -45,8 +45,6 @@
   
     
       <meta property="article:tag" content="js">
-    
-      <meta property="article:tag" content="css">
     
   
 
@@ -67,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>为网页增加深色模式支持</title>
+    <title>Event对象的stopImmediatePropagation方法</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -276,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      为网页增加深色模式支持
+      Event对象的stopImmediatePropagation方法
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-03-08T22:16:42&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-03-29T18:04:15&#43;08:00">
         
-  三月 8, 2020
+  三月 29, 2020
 
       </time>
     
@@ -307,32 +305,32 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>之前提过很多次<code>prefers-color-scheme</code>特性了，它为浏览者提供了更好的使用体验。网站增加深色主题将成为越来越普遍的需求。</p>
+              <p>Event对象的<code>stopImmediatePropagation</code>方法相对<code>stopPropagation</code>来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。</p>
 
 <p></p>
 
-<p>我们要做什么？获取当前系统主题偏好、响应主题变化。</p>
+<p>示例：
 
-<p>如何获取当前偏好主题？</p>
 
-<pre><code class="language-js">if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.body.classList.add('dark-theme')
-}
-</code></pre>
 
-<p>如何检测变化？</p>
 
-<pre><code class="language-js">const toggleTheme = (e) =&gt; {    
-  const darkModeOn = e.detail.colorScheme === 'dark';
-  if(darkModeOn) {
-    document.body.classList.add('dark-theme')
-  } else {
-    document.body.classList.remove('dark-theme')
-  }
-};
 
-document.addEventListener('colorschemechange', toggleTheme);
-</code></pre>
+
+
+
+
+
+  <p data-height="265" data-theme-id="dark" data-slug-hash="BaNvXjG" data-default-tab="result" data-user="justforuse" data-embed-version="2" data-pen-title="" data-preview="true"
+  class="codepen">
+    See the Pen <a href="https://codepen.io/justforuse/pen/BaNvXjG/"></a> by  (<a href="https://codepen.io/justforuse">@justforuse</a>) on <a href="https://codepen.io">CodePen</a>.
+  </p>
+  <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+</p>
+
+<p>可以发现当第二个弹窗出现后，第三个不再出现了；可以尝试将<code>stopImmediatePropagation</code>改为<code>stopPropagation</code>看看区别。</p>
+
+<p>当然，它们都可以阻止事件向上级传递。</p>
 
 <script
   async
@@ -352,46 +350,6 @@ document.addEventListener('colorschemechange', toggleTheme);
   ;(adsbygoogle = window.adsbygoogle || []).push({})
 </script>
 
-
-<p>如果没有专业的UI知识，如何设计一款美观的暗色主题？</p>
-
-<p>使用chrome插件：<a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh">Dark Reader</a>，它可以自动将当前网页转为暗色模式，通过查看CSS样式可以将它应用到我们的主题中。</p>
-
-<p>接下来就是编写我们的CSS样式了：</p>
-
-<p>比如：</p>
-
-<pre><code class="language-scss">@media (prefers-color-scheme: dark) {
-  body.dark-theme {
-    border-color: #686662;
-    color: #fff8ec;
-    #bottom-bar, #header, #main {
-      background-color: rgb(53, 54, 53);
-    }
-  }
-  // ....
-}
-</code></pre>
-
-<p>关于这里也可以通过控制全局CSS变量来实现。</p>
-
-<pre><code class="language-css">:root {
-  --color: blue;
-  --bg-color: #eee;
-}
-body {
-  background: var(--bg-color);
-  color: var(--color);
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color: white;
-    --bg-color: #333;
-  }
-}
-</code></pre>
-
-<p>参考链接：<a href="https://web.dev/prefers-color-scheme/">https://web.dev/prefers-color-scheme/</a></p>
 
 <!-- <p
   class="ciu_embed"
@@ -466,8 +424,6 @@ body {
                     
   <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/css/">css</a>
-
                   </div>
                 
               
@@ -479,7 +435,7 @@ body {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/" data-tooltip="Event对象的stopImmediatePropagation方法">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/" data-tooltip="first-of-type、last-of-type选择器">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -487,7 +443,7 @@ body {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/" data-tooltip="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/" data-tooltip="为网页增加深色模式支持">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -505,7 +461,7 @@ body {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -553,7 +509,7 @@ body {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/" data-tooltip="Event对象的stopImmediatePropagation方法">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/" data-tooltip="first-of-type、last-of-type选择器">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -561,7 +517,7 @@ body {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/02/webpage-lifecycle-onload-domcontentloaded-beforeunload-unload/" data-tooltip="网页的生命周期：window.onload，DOMContentLoaded，beforeunload/unload">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/" data-tooltip="为网页增加深色模式支持">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -579,7 +535,7 @@ body {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/add-color-scheme-mode-support/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -609,7 +565,7 @@ body {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F03%2Fadd-color-scheme-mode-support%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F03%2Fevent-stopimmediatepropagation%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -714,9 +670,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/03\/add-color-scheme-mode-support\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/03\/event-stopimmediatepropagation\/';
           
-            this.page.identifier = '1583677002';
+            this.page.identifier = '1585476255';
           
         };
         (function() {

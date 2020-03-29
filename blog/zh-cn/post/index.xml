@@ -6,10 +6,32 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2020 22:16:42 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 18:15:05 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>first-of-type、last-of-type选择器</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/</link>
+      <pubDate>Sun, 29 Mar 2020 18:15:05 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/</guid>
+      <description>&lt;p&gt;平时我们使用&lt;code&gt;first-child&lt;/code&gt;和&lt;code&gt;last-child&lt;/code&gt;比较多，用于对同级元素第一个或最后一个元素设置CSS样式。&lt;code&gt;first-of-type&lt;/code&gt;和&lt;code&gt;last-of-type&lt;/code&gt;有时也会非常有用。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Event对象的stopImmediatePropagation方法</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/</link>
+      <pubDate>Sun, 29 Mar 2020 18:04:15 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/03/event-stopimmediatepropagation/</guid>
+      <description>&lt;p&gt;Event对象的&lt;code&gt;stopImmediatePropagation&lt;/code&gt;方法相对&lt;code&gt;stopPropagation&lt;/code&gt;来说使用场景较少。它主要处理的场景是同一个元素绑定多个事件处理函数时，阻止事件在此元素上同级的冒泡。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>为网页增加深色模式支持</title>
