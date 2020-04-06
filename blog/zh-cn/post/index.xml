@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2020 18:15:05 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 17:12:41 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何保养头发</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/</link>
+      <pubDate>Mon, 06 Apr 2020 17:12:41 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/</guid>
+      <description>&lt;p&gt;今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>first-of-type、last-of-type选择器</title>
