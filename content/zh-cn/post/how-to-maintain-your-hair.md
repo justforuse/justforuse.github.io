@@ -36,7 +36,7 @@ disqusIdentifier: 1586164361
 
 按摩视频：
 
-<video src="https://vdn1.vzuu.com/SD/da31c662-60e8-11e9-af9a-0a580a45ee2d.mp4?disable_local_cache=1&bu=http-com&expiration=1586179325&auth_key=1586179325-0-0-f555d3af0f4d707b2462022c56b38ece&f=mp4&v=hw" controls />
+<video src="https://vdn1.vzuu.com/SD/da31c662-60e8-11e9-af9a-0a580a45ee2d.mp4?disable_local_cache=1&bu=http-com&expiration=1586179325&auth_key=1586179325-0-0-f555d3af0f4d707b2462022c56b38ece&f=mp4&v=hw" controls width="100% />
 
 
 <!-- {{< embed-caniuse css-placeholder-shown >}} -->
