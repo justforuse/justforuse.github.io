@@ -6,10 +6,21 @@
     <description>Recent content in Posts on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2020 17:12:41 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 23:55:11 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>排序算法——快速排序(二)</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/</link>
+      <pubDate>Sat, 11 Apr 2020 23:55:11 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/</guid>
+      <description>&lt;p&gt;大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>如何保养头发</title>

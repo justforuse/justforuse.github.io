@@ -7,34 +7,34 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="护发, 生发, 白发">
-<meta name="description" content="今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂
+<meta name="keywords" content="快速排序, quick sort, 原地快排">
+<meta name="description" content="大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。
 
 ">
 
 
-<meta property="og:description" content="今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂
+<meta property="og:description" content="大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何保养头发">
-<meta name="twitter:title" content="如何保养头发">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/">
+<meta property="og:title" content="排序算法——快速排序(二)">
+<meta name="twitter:title" content="排序算法——快速排序(二)">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂
+<meta property="og:description" content="大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。
 
 ">
-<meta name="twitter:description" content="今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂
+<meta name="twitter:description" content="大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-04-06T17:12:41">
+    <meta property="article:published_time" content="2020-04-11T23:55:11">
   
   
-    <meta property="article:modified_time" content="2020-04-06T17:12:41">
+    <meta property="article:modified_time" content="2020-04-11T23:55:11">
   
   
   
@@ -44,7 +44,7 @@
   
   
     
-      <meta property="article:tag" content="other">
+      <meta property="article:tag" content="js">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>如何保养头发</title>
+    <title>排序算法——快速排序(二)</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      如何保养头发
+      排序算法——快速排序(二)
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-04-06T17:12:41&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-04-11T23:55:11&#43;08:00">
         
-  四月 6, 2020
+  四月 11, 2020
 
       </time>
     
@@ -305,13 +305,68 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>今年以来，发现白头发多了好多，而且洗头的时候都掉10根左右的，偶尔会有20根的情况。。感觉需要关注下头发的健康了😂</p>
+              <p>大多数情况所说的快排指的是递归解法，但这样存在的问题是占用大量内存空间，如何减少空间复杂度？第一想法就是对数组本身进行操作，而不需要另开辟空间。</p>
 
 <p></p>
 
-<p>比起药物，个人更偏向食补。</p>
+<p>回想下普通快排写法：<a href="https://justforuse.github.io/blog/zh-cn/2019/10/quick-sort-algorithm/">快速排序算法介绍</a></p>
 
-<p>在知乎上看了几个答案，总结下来可以多吃这些食物：菠菜、牡蛎、坚果类（比如核桃）、豆类、鸡蛋、牛奶、黑芝麻、黑米，还要多吃水果补充维生素，如果觉得三餐种类有限的话，可以买些营养品补充下。</p>
+<pre><code class="language-js">// ...
+return [...arguments.callee(leftArr), flag, ...arguments.callee(rightArr)];
+</code></pre>
+
+<p>每一次递归的最后异步，我们其实可以知道用作比较的值在排序后应处于的位置了（此时leftArr已确定）</p>
+
+<p>知道了这点我们就可以对左边的数组和右边的数组进行递归排序了。</p>
+
+<p>如何找到元素应该处于的位置？</p>
+
+<pre><code class="language-js">
+function swap(arr, i, j) {
+  const t = arr[i];
+  arr[i] = arr[j];
+  arr[j] = t;
+}
+
+function getPos(arr, start, end) {
+  // 作为参照值最后应处于的位置
+  let pos = start - 1;
+  // 去最后一个值作为参照值
+  let pivot = arr[end];
+  let i = start;
+  while (i &lt; end) {
+    // 每有一个小于参照值，pos加1，并将其与交换到左端
+    // i与pos之间的值均大于参照值
+    if (arr[i] &lt; pivot) {
+      pos++;
+      swap(arr, i, pos);
+    }
+    i++;
+  }
+  // 将参照值放到它应在的位置
+  swap(arr, pos + 1, end);
+  return pos + 1;
+}
+
+</code></pre>
+
+<p>然后在对左右数组分别进行此操作就可以了，注意递归边界，当起点索引大于等于终点索引时结束</p>
+
+<pre><code class="language-js">function sort(arr, start, e) {
+  let end = typeof e === 'undefined' ? arr.length - 1 : e
+
+  if (start &gt;= end) {
+    return;
+  }
+  let pos = getPos(arr, start, end);
+  sort(arr, start, pos - 1);
+  sort(arr, pos + 1, end);
+  return arr
+}
+
+const res = sort([15, 12, 1, 2, 7, 9, 3, 8, 20], 0);
+console.log(res)
+</code></pre>
 
 <script
   async
@@ -331,20 +386,6 @@ if (!doNotTrack) {
   ;(adsbygoogle = window.adsbygoogle || []).push({})
 </script>
 
-
-<p>除了食物、还有些习惯有助于护发。</p>
-
-<p>比如热水泡脚、泡到出汗的那种，促进血液循环；不要熬夜，保持良好作息（感觉我最近一年就是睡得较晚，建议11点，尽量不要超过12点，尽量吧，最近睡眠也不太好🙃），精神方面，保持愉悦；做些有氧运动，也是促进血液循环。</p>
-
-<p>另外，不要太频繁的洗头，之前都是一天一洗，现在改为两天一洗，洗头的时候可以做些头部按摩。</p>
-
-<p>按摩视频：</p>
-
-<p><video src="https://cube.elemecdn.com/1/21/a10ae9018575d930710f34d30b8a5mp4.mp4" controls width="100%" /></p>
-
-<p>收集到的一些完整回答</p>
-
-<script src="//gist.github.com/justforuse/dc5407b1698285f9ee639fcfd61ab2c2.js"></script>
 
 <!-- <p
   class="ciu_embed"
@@ -417,7 +458,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/other/">other</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
 
                   </div>
                 
@@ -430,7 +471,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -438,7 +479,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/" data-tooltip="first-of-type、last-of-type选择器">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/" data-tooltip="如何保养头发">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -456,7 +497,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -504,7 +545,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -512,7 +553,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/03/last-of-type-tutorial/" data-tooltip="first-of-type、last-of-type选择器">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/" data-tooltip="如何保养头发">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -530,7 +571,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-maintain-your-hair/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -560,7 +601,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fhow-to-maintain-your-hair%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fquick-sort-ii%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -665,9 +706,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/how-to-maintain-your-hair\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/quick-sort-ii\/';
           
-            this.page.identifier = '1586164361';
+            this.page.identifier = '1586620511';
           
         };
         (function() {
