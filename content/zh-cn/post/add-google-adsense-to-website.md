@@ -26,7 +26,7 @@ Google Adsense就是一个不错的选择，这几天折腾了下终于把Google
 {{< gad-in-article >}}
 # 在Google Adsense注册你的网站
 
-第一步就是注册你的网站，官网地址是：https://www.google.com/adsense/start/#/?modal_active=none，点击右上角的Sign up就可以了，
+第一步就是注册你的网站，官网地址是：https://www.google.com/adsense/start/#/?modal_active=none ，点击右上角的Sign up就可以了，
 
 注册需要填写你的网站地址、邮箱、以及一些选项。
 
