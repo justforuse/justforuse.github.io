@@ -6,10 +6,21 @@
     <description>Recent content in Front End on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2020 23:55:11 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 22:50:40 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/front-end/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何检测数据类型</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/</link>
+      <pubDate>Thu, 16 Apr 2020 22:50:40 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/</guid>
+      <description>&lt;p&gt;检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>排序算法——快速排序(二)</title>
