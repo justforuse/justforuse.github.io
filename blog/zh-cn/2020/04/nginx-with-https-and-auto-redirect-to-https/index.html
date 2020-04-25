@@ -7,44 +7,44 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="typeof, 数据类型, data type">
-<meta name="description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta name="keywords" content="nginx, https, ssl, redirect">
+<meta name="description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
 
 ">
 
 
-<meta property="og:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta property="og:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何检测数据类型">
-<meta name="twitter:title" content="如何检测数据类型">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+<meta property="og:title" content="Nginx配置支持HTTPS并自动跳转HTTPS协议">
+<meta name="twitter:title" content="Nginx配置支持HTTPS并自动跳转HTTPS协议">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta property="og:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
 
 ">
-<meta name="twitter:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta name="twitter:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-04-16T22:50:40">
+    <meta property="article:published_time" content="2020-04-25T22:20:12">
   
   
-    <meta property="article:modified_time" content="2020-04-16T22:50:40">
+    <meta property="article:modified_time" content="2020-04-25T22:20:12">
   
-  
-  
-    
-      <meta property="article:section" content="Front-End">
-    
   
   
     
-      <meta property="article:tag" content="js">
+      <meta property="article:section" content="Nginx">
+    
+  
+  
+    
+      <meta property="article:tag" content="nginx">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>如何检测数据类型</title>
+    <title>Nginx配置支持HTTPS并自动跳转HTTPS协议</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      如何检测数据类型
+      Nginx配置支持HTTPS并自动跳转HTTPS协议
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-04-16T22:50:40&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-04-25T22:20:12&#43;08:00">
         
-  四月 16, 2020
+  四月 25, 2020
 
       </time>
     
@@ -295,7 +295,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/nginx">Nginx</a>
     
   
 
@@ -305,88 +305,47 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下</p>
+              <p>相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~</p>
 
 <p></p>
 
-<p>首先，要知道总共有几种数据类型，截至今日，共分7中基本数据类型：string, number, bigint, boolean, null, undefined, symbol和object类型，总共8种。</p>
+<p>上文提到准备部署自己的网站，那么只买了阿里云服务器和域名，该如何访问呢？这就需要服务器上安装。。服务器，nginx近几年使用的较多，安装方式就不细说了。</p>
 
-<p>常见的方式是使用<code>typeof</code>方法，基本数据类型都可以返回，还可以判断方法，其余统一返回&rdquo;object&rdquo;，<strong>注意，其中typeof null === &lsquo;object&rsquo;</strong></p>
+<p>众所周知，要支持HTTPS访问的话首先需要网站证书，可以购买付费的，阿里云也提供了免费证书。申请通过后下载证书到服务器上。</p>
 
-<table>
-<thead>
-<tr>
-<th>数据</th>
-<th>输出值</th>
-</tr>
-</thead>
+<p><img src="https://user-images.githubusercontent.com/11868477/80282802-0932b500-8746-11ea-955b-496a702c5291.png" alt="image" /></p>
 
-<tbody>
-<tr>
-<td>Undefined</td>
-<td>&ldquo;undefined&rdquo;</td>
-</tr>
+<p>找到你的nginx.conf文件并添加如下代码：</p>
 
-<tr>
-<td>Null</td>
-<td>&ldquo;object&rdquo;</td>
-</tr>
+<pre><code>server {
+    listen       443 ssl;
+    server_name  www.codog.com.cn;
 
-<tr>
-<td>Boolean</td>
-<td>&ldquo;boolean&rdquo;</td>
-</tr>
+    ssl_certificate      [下载证书中.pem文件路径];
+    ssl_certificate_key  [下载证书中.key文件路径];
+    ssl_session_cache    shared:SSL:1m;
+    ssl_session_timeout  5m;
 
-<tr>
-<td>Number</td>
-<td>&ldquo;number&rdquo;</td>
-</tr>
+    ssl_ciphers  HIGH:!aNULL:!MD5;
+    ssl_prefer_server_ciphers  on;
 
-<tr>
-<td>BigInt</td>
-<td>&ldquo;bigint&rdquo;</td>
-</tr>
+    location / {
+        root [资源文件地址];
+        index  index.html index.htm;
+    }
+}
+</code></pre>
 
-<tr>
-<td>String</td>
-<td>&ldquo;string&rdquo;</td>
-</tr>
+<p>这样就基本完成HTTPS访问了？如果遇到什么报错就google好了😒，遇到挺多奇怪的问题~</p>
 
-<tr>
-<td>Symbol</td>
-<td>&ldquo;symbol&rdquo;</td>
-</tr>
+<p>几个nginx常用命令：</p>
 
-<tr>
-<td>宿主对象</td>
-<td>取决于具体实现</td>
-</tr>
+<pre><code class="language-shell"># 重启nginx
+nginx -s reload
 
-<tr>
-<td>Function 对象</td>
-<td>&ldquo;function&rdquo;</td>
-</tr>
-
-<tr>
-<td>其他任何对象</td>
-<td>&ldquo;object&rdquo;</td>
-</tr>
-</tbody>
-</table>
-
-<p>这种方式很便捷，但不能检测出数组类型。</p>
-
-<blockquote>
-<p>ES6中数组新增isArray方法也可以用来检测</p>
-</blockquote>
-
-<p>那有没有更普适的方法呢？答案是有的，使用<code>Object.prototype.toString()</code>方法:</p>
-
-<p>示例：</p>
-
-<p><img src="https://user-images.githubusercontent.com/11868477/79476317-69857080-803b-11ea-9cb3-3a962fe5a2f8.png" alt="image" /></p>
-
-<p>此方法会返回形如<code>[object XXX]</code>格式的字符串，其中XXX可以用来判断我们的数据类型</p>
+# 查看.conf文件是否正确
+nginx -t
+</code></pre>
 
 <script
   async
@@ -406,6 +365,21 @@ if (!doNotTrack) {
   ;(adsbygoogle = window.adsbygoogle || []).push({})
 </script>
 
+
+<p>然后HTTP强制转为HTTPS访问：</p>
+
+<pre><code>server {
+    listen       80;
+    server_name  codog.com.cn;
+    return 301 https://www.codog.com.cn;
+}
+</code></pre>
+
+<p>注意这种方式会将所有http请求都重定向到https域名，例如：</p>
+
+<p><a href="http://www.codog.com.cn/2020/04/25/hello-world/">http://www.codog.com.cn/2020/04/25/hello-world/</a>  ==》 <a href="https://www.codog.com.cn">https://www.codog.com.cn</a></p>
+
+<p>可以发现后面的路径丢失了，这个可以按实际需要配置，除非你知道所有路径都支持https访问。</p>
 
 <!-- <p
   class="ciu_embed"
@@ -478,7 +452,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/nginx/">nginx</a>
 
                   </div>
                 
@@ -491,7 +465,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -499,7 +473,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -517,7 +491,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -565,7 +539,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -573,7 +547,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -591,7 +565,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -621,7 +595,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fhow-to-detect-data-type%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fnginx-with-https-and-auto-redirect-to-https%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -726,9 +700,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/how-to-detect-data-type\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/nginx-with-https-and-auto-redirect-to-https\/';
           
-            this.page.identifier = '1587048640';
+            this.page.identifier = '1587824412';
           
         };
         (function() {

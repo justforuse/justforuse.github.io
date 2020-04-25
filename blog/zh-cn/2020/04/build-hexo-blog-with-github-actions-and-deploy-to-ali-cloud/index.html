@@ -7,44 +7,46 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="typeof, 数据类型, data type">
-<meta name="description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta name="keywords" content="hexo, github actions, 阿里云, hugo, gatsby">
+<meta name="description" content="有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂
 
 ">
 
 
-<meta property="og:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta property="og:description" content="有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何检测数据类型">
-<meta name="twitter:title" content="如何检测数据类型">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+<meta property="og:title" content="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+<meta name="twitter:title" content="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta property="og:description" content="有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂
 
 ">
-<meta name="twitter:description" content="检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下
+<meta name="twitter:description" content="有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-04-16T22:50:40">
+    <meta property="article:published_time" content="2020-04-25T21:26:23">
   
   
-    <meta property="article:modified_time" content="2020-04-16T22:50:40">
+    <meta property="article:modified_time" content="2020-04-25T21:26:23">
   
-  
-  
-    
-      <meta property="article:section" content="Front-End">
-    
   
   
     
-      <meta property="article:tag" content="js">
+      <meta property="article:section" content="others">
+    
+  
+  
+    
+      <meta property="article:tag" content="hexo">
+    
+      <meta property="article:tag" content="github actions">
     
   
 
@@ -65,13 +67,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>如何检测数据类型</title>
+    <title>使用Github Actions构建Hexo博客系统并发布到阿里云ECS上</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +276,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      如何检测数据类型
+      使用Github Actions构建Hexo博客系统并发布到阿里云ECS上
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-04-16T22:50:40&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-04-25T21:26:23&#43;08:00">
         
-  四月 16, 2020
+  四月 25, 2020
 
       </time>
     
@@ -295,7 +297,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/front-end">Front-End</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/others">others</a>
     
   
 
@@ -305,88 +307,85 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>检测数据类型不仅在面试中，日常业务代码也是高频出现的场景。在这里总结一下</p>
+              <p>有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂</p>
 
 <p></p>
 
-<p>首先，要知道总共有几种数据类型，截至今日，共分7中基本数据类型：string, number, bigint, boolean, null, undefined, symbol和object类型，总共8种。</p>
+<p>折腾了一下，最终效果：<a href="https://codog.com.cn/">https://codog.com.cn/</a></p>
 
-<p>常见的方式是使用<code>typeof</code>方法，基本数据类型都可以返回，还可以判断方法，其余统一返回&rdquo;object&rdquo;，<strong>注意，其中typeof null === &lsquo;object&rsquo;</strong></p>
+<p>为何选择Hexo，最开始在HexoG, GatsbHy, Hugo中犹豫，Hugo已经在使用了，想体验下别的使用体验；本想使用Gatsby的，但是安装依赖实在难受，下载速度让人崩溃，服务一直报错，而且如果在macOS上开发还需要安装XCode。。尝试几次无果后，转向Hexo的怀抱；最初觉得Hexo可扩展性不高（可能是我了解太少）并没有放在第一位。</p>
 
-<table>
-<thead>
-<tr>
-<th>数据</th>
-<th>输出值</th>
-</tr>
-</thead>
+<p>不管怎样，先尝试一下。</p>
 
-<tbody>
-<tr>
-<td>Undefined</td>
-<td>&ldquo;undefined&rdquo;</td>
-</tr>
+<h2 id="使用hexo">使用Hexo</h2>
 
-<tr>
-<td>Null</td>
-<td>&ldquo;object&rdquo;</td>
-</tr>
+<p><a href="https://hexo.io/">Hexo官方地址</a></p>
 
-<tr>
-<td>Boolean</td>
-<td>&ldquo;boolean&rdquo;</td>
-</tr>
+<p>本地安装：</p>
 
-<tr>
-<td>Number</td>
-<td>&ldquo;number&rdquo;</td>
-</tr>
+<pre><code class="language-shell">npm i hexo -g
 
-<tr>
-<td>BigInt</td>
-<td>&ldquo;bigint&rdquo;</td>
-</tr>
+# 在空文件夹下
+hexo init
+</code></pre>
 
-<tr>
-<td>String</td>
-<td>&ldquo;string&rdquo;</td>
-</tr>
+<p>修改主题：（使用用户量较多的<a href="https://github.com/theme-next/hexo-theme-next">next主题</a>)</p>
 
-<tr>
-<td>Symbol</td>
-<td>&ldquo;symbol&rdquo;</td>
-</tr>
+<pre><code class="language-shell">git clone https://github.com/theme-next/hexo-theme-next themes/next
+</code></pre>
 
-<tr>
-<td>宿主对象</td>
-<td>取决于具体实现</td>
-</tr>
+<p>再修改<code>_config.yml</code>中的theme字段为next就可以了，运行<code>hexo s</code>查看效果吧~</p>
 
-<tr>
-<td>Function 对象</td>
-<td>&ldquo;function&rdquo;</td>
-</tr>
+<h2 id="使用github-actions">使用Github actions</h2>
 
-<tr>
-<td>其他任何对象</td>
-<td>&ldquo;object&rdquo;</td>
-</tr>
-</tbody>
-</table>
+<p>Github Actions有点类似于TravisCI，但它提供了很多构建、测试方案，相比Travis更加容易上手。推荐阅读<a href="http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html">阮一峰老师的文章</a>，了解相关概念及用法。</p>
 
-<p>这种方式很便捷，但不能检测出数组类型。</p>
+<p>这里就不细说了，直接贴上我的workflow吧：</p>
 
-<blockquote>
-<p>ES6中数组新增isArray方法也可以用来检测</p>
-</blockquote>
+<pre><code class="language-yml">name: Hexo build and deploy
 
-<p>那有没有更普适的方法呢？答案是有的，使用<code>Object.prototype.toString()</code>方法:</p>
+on:
+  push:
+    branches: [ dev ]
 
-<p>示例：</p>
+jobs:
+  build:
 
-<p><img src="https://user-images.githubusercontent.com/11868477/79476317-69857080-803b-11ea-9cb3-3a962fe5a2f8.png" alt="image" /></p>
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      with:
+        persist-credentials: false
+        # checkout到你的hexo代码分支
+        ref: dev
+        # hexo需要加载内部子模块
+        submodules: true
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+    - name: Deploy to aliyun server
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.ALIYUN_SERVER_ACCESS_TOKEN }}
+        ARGS: &quot;-avz --delete&quot;
+        SOURCE: &quot;public&quot;
+        REMOTE_HOST: ${{ secrets.ALIYUN_SERVER_HOST }}
+        REMOTE_USER: &quot;root&quot;
+        TARGET: &quot;/root/dist/&quot;
+</code></pre>
 
-<p>此方法会返回形如<code>[object XXX]</code>格式的字符串，其中XXX可以用来判断我们的数据类型</p>
+<p>关于workflow的配置我踩过的坑，我的hexo源文件放在dev分支而非master，所以即使我在master分支执行dev也无法触发actions，且在Actions标签下无有效action。个人认为workflow指向的分支应与文件所在分支保持一致。</p>
+
+<p>关于部署阿里云的参数说明：</p>
+
+<p>ALIYUN_SERVER_ACCESS_TOKEN：指的是阿里云.ssh下的私钥，还要记得把公钥复制一份到authorized_keys中。如果未生成过，可以执行如下命令：</p>
+
+<pre><code>ssh-keygen -m PEM -t rsa -b 4096
+</code></pre>
+
+<p>具体可以参考<a href="https://github.com/easingthemes/ssh-deploy">action说明</a></p>
 
 <script
   async
@@ -407,6 +406,13 @@ if (!doNotTrack) {
 </script>
 
 
+<p>大功告成，大家可以访问<a href="https://codog.com.cn/">https://codog.com.cn/</a> 查看部署效果</p>
+
+<h2 id="最后">最后</h2>
+
+<p>继github package之后，又推出了actions，github已经不满足单单代码托管及同性交友的平台了。加上微软的支持，github可以做的事情越来越多了。</p>
+
+<p>啥时候可以畅游Github呢🙄
 <!-- <p
   class="ciu_embed"
   data-feature="css-placeholder-shown"
@@ -420,7 +426,6 @@ if (!doNotTrack) {
   from caniuse.com.
 </p>
  -->
-
 <!-- 
 
 
@@ -438,11 +443,9 @@ if (!doNotTrack) {
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
  -->
-
 <!-- <div class="alert warning ">
   <p>xxx</p>
 </div> -->
-
 
   <div class="text-center" id="reward">
     <p class="text-medium">觉得作者写得不错？不妨轻击下方按钮~</p>
@@ -467,6 +470,8 @@ if (!doNotTrack) {
       </p>
     </div>
   </div>
+
+</p>
               
             </div>
           </div>
@@ -478,7 +483,9 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/js/">js</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/hexo/">hexo</a>
+
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/github-actions/">github actions</a>
 
                   </div>
                 
@@ -491,7 +498,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/" data-tooltip="Nginx配置支持HTTPS并自动跳转HTTPS协议">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -499,7 +506,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/" data-tooltip="如何检测数据类型">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -517,7 +524,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -565,7 +572,7 @@ if (!doNotTrack) {
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/" data-tooltip="Nginx配置支持HTTPS并自动跳转HTTPS协议">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -573,7 +580,7 @@ if (!doNotTrack) {
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/quick-sort-ii/" data-tooltip="排序算法——快速排序(二)">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/" data-tooltip="如何检测数据类型">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -591,7 +598,7 @@ if (!doNotTrack) {
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/how-to-detect-data-type/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -621,7 +628,7 @@ if (!doNotTrack) {
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fhow-to-detect-data-type%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fbuild-hexo-blog-with-github-actions-and-deploy-to-ali-cloud%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -726,9 +733,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/how-to-detect-data-type\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud\/';
           
-            this.page.identifier = '1587048640';
+            this.page.identifier = '1587821183';
           
         };
         (function() {

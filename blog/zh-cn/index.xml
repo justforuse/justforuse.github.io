@@ -6,10 +6,32 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Apr 2020 22:50:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 22:20:12 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nginx配置支持HTTPS并自动跳转HTTPS协议</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/</link>
+      <pubDate>Sat, 25 Apr 2020 22:20:12 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/</guid>
+      <description>&lt;p&gt;相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Github Actions构建Hexo博客系统并发布到阿里云ECS上</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/</link>
+      <pubDate>Sat, 25 Apr 2020 21:26:23 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/</guid>
+      <description>&lt;p&gt;有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>如何检测数据类型</title>

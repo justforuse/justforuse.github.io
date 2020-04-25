@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/tags/nginx/</link>
+    <description>Recent content in Nginx on 博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Apr 2020 22:20:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nginx配置支持HTTPS并自动跳转HTTPS协议</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/</link>
+      <pubDate>Sat, 25 Apr 2020 22:20:12 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/</guid>
+      <description>&lt;p&gt;相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

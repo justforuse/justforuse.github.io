@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Others on 博客</title>
-    <link>https://justforuse.github.io/blog/zh-cn/categories/others/</link>
-    <description>Recent content in Others on 博客</description>
+    <title>Github Actions on 博客</title>
+    <link>https://justforuse.github.io/blog/zh-cn/tags/github-actions/</link>
+    <description>Recent content in Github Actions on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Apr 2020 21:26:23 +0800</lastBuildDate>
     
-	<atom:link href="https://justforuse.github.io/blog/zh-cn/categories/others/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://justforuse.github.io/blog/zh-cn/tags/github-actions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/</guid>
       <description>&lt;p&gt;有了Github Pages为什么还要自己再搞个服务器呢？一是访问速度不(zhong)知(suo)为(zhou)何(zhi)不够快速，再一个也是不想这个服务器就白白地做个接口工具人😂&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>小米9升级安卓10体验</title>
-      <link>https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/</link>
-      <pubDate>Sun, 12 Jan 2020 22:51:20 +0800</pubDate>
-      
-      <guid>https://justforuse.github.io/blog/zh-cn/2020/01/mi9-update-to-android-ten/</guid>
-      <description>&lt;p&gt;也是赶着小米9推送更新，把手里这个米9更新到了Android 10，写一些体验吧。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
