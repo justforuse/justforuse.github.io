@@ -7,44 +7,44 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.42.2 with theme Tranquilpeak 0.4.3-SNAPSHOT">
 <meta name="author" content="Allen Yuan">
-<meta name="keywords" content="nginx, https, ssl, redirect">
-<meta name="description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
+<meta name="keywords" content="减肥">
+<meta name="description" content="作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。
 
 ">
 
 
-<meta property="og:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
+<meta property="og:description" content="作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。
 
 ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx配置支持HTTPS并自动跳转HTTPS协议">
-<meta name="twitter:title" content="Nginx配置支持HTTPS并自动跳转HTTPS协议">
-<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
-<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
+<meta property="og:title" content="我是如何减肥的">
+<meta name="twitter:title" content="我是如何减肥的">
+<meta property="og:url" content="https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/">
+<meta property="twitter:url" content="https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
+<meta property="og:description" content="作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。
 
 ">
-<meta name="twitter:description" content="相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~
+<meta name="twitter:description" content="作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。
 
 ">
 <meta property="og:locale" content="zh-cn">
 
   
-    <meta property="article:published_time" content="2020-04-25T22:20:12">
+    <meta property="article:published_time" content="2020-05-08T23:45:27">
   
   
-    <meta property="article:modified_time" content="2020-04-25T22:20:12">
+    <meta property="article:modified_time" content="2020-05-08T23:45:27">
   
-  
-  
-    
-      <meta property="article:section" content="Nginx">
-    
   
   
     
-      <meta property="article:tag" content="nginx">
+      <meta property="article:section" content="others">
+    
+  
+  
+    
+      <meta property="article:tag" content="减肥">
     
   
 
@@ -65,13 +65,13 @@
   <meta property="twitter:image" content="https://www.gravatar.com/avatar/798ce6a09f7b6c4066a8274ddfefdedc?s=640">
 
 
-    <title>Nginx配置支持HTTPS并自动跳转HTTPS协议</title>
+    <title>我是如何减肥的</title>
 
     <link rel="icon" href="https://justforuse.github.io/blog/favicon.png">
     
 
     
-    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
+    <link rel="canonical" href="https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/">
     <meta name="theme-color" content="#010411">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
@@ -274,15 +274,15 @@ if (!doNotTrack) {
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title" itemprop="headline">
-      Nginx配置支持HTTPS并自动跳转HTTPS协议
+      我是如何减肥的
     </h1>
   
   
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2020-04-25T22:20:12&#43;08:00">
+      <time itemprop="datePublished" datetime="2020-05-08T23:45:27&#43;08:00">
         
-  四月 25, 2020
+  五月 8, 2020
 
       </time>
     
@@ -295,7 +295,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/nginx">Nginx</a>
+      <a class="category-link" href="https://justforuse.github.io/blog/zh-cn/categories/others">others</a>
     
   
 
@@ -305,47 +305,21 @@ if (!doNotTrack) {
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <p>相信大家对nginx和https都很熟悉，但是nginx配置https是怎么一回事呢？接下来，就让小Y带着大着一起看看吧~</p>
+              <p>作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。</p>
 
 <p></p>
 
-<p>上文提到准备部署自己的网站，那么只买了阿里云服务器和域名，该如何访问呢？这就需要服务器上安装。。服务器，nginx近几年使用的较多，安装方式就不细说了。</p>
+<p>首先要区分减肥和锻炼的区别，通常来说锻炼是针对某个部位的训练更多一点，比如练胸，练手臂，包含大量的重量训练；而减肥更多的是让全身“活动”起来，也就是说没有“局部减脂”这个概念，常见动作开合跳、原地跑步，跳跃类都有助于减脂。</p>
 
-<p>众所周知，要支持HTTPS访问的话首先需要网站证书，可以购买付费的，阿里云也提供了免费证书。申请通过后下载证书到服务器上。</p>
+<p>我是跟随Keep上的课程在练习的（弹幕：Keep打钱！）：李现燃脂训练，第一周体重基本没变化，我也是有点小沮丧，然后加大力度，一天一次不够就来两次，几天下来体重虽有减少，但造成了我的脚踝酸痛，不敢用力。。运动不要用力过猛。</p>
 
-<p><img src="https://user-images.githubusercontent.com/11868477/80282802-0932b500-8746-11ea-955b-496a702c5291.png" alt="image" /></p>
+<p>于是又转为骑自行车（两年前买来晾衣服用的），骑上半小时。</p>
 
-<p>找到你的nginx.conf文件并添加如下代码：</p>
+<p>以上是运动部分，相比而言，更重要的是饮食方面。</p>
 
-<pre><code>server {
-    listen       443 ssl;
-    server_name  www.codog.com.cn;
+<p>首先要减少碳水的摄入，就是常见的米面之类的，本人又是一个一口菜可以吃两口饭的人，起初是不太适应的，吃完没有满足感，晚上会饿；</p>
 
-    ssl_certificate      [下载证书中.pem文件路径];
-    ssl_certificate_key  [下载证书中.key文件路径];
-    ssl_session_cache    shared:SSL:1m;
-    ssl_session_timeout  5m;
-
-    ssl_ciphers  HIGH:!aNULL:!MD5;
-    ssl_prefer_server_ciphers  on;
-
-    location / {
-        root [资源文件地址];
-        index  index.html index.htm;
-    }
-}
-</code></pre>
-
-<p>这样就基本完成HTTPS访问了？如果遇到什么报错就google好了😒，遇到挺多奇怪的问题~</p>
-
-<p>几个nginx常用命令：</p>
-
-<pre><code class="language-shell"># 重启nginx
-nginx -s reload
-
-# 查看.conf文件是否正确
-nginx -t
-</code></pre>
+<p>第二：注重早餐，早餐我选择煎蛋，配上牛肉片、水果、黑豆粉或牛奶。我之前早餐就是一碗芝麻糊或者不吃，这样上午就很饿，中午就会吃很多，长时间坐着也会堆积脂肪；现在吃完早餐已经接近10点了，午饭一般在接近下午1点再吃，可能会选择去便利店买个饭团之类的垫一下，这样既控制碳水摄入没有吃得很饱，整个下午也都不会饿（关键是便宜啊，食堂午餐20+又不好吃，两个饭团10元）。</p>
 
 <script
   async
@@ -366,20 +340,9 @@ nginx -t
 </script>
 
 
-<p>然后HTTP强制转为HTTPS访问：</p>
+<p>那目标是什么呢？我就是想把肚子减掉，男的胖肚子，女的胖腿，和人体激素有关，目前坐下仍然会有肥肉搭在裤带上。。所以这是一项长期坚持的任务，后期会加入力量训练。</p>
 
-<pre><code>server {
-    listen       80;
-    server_name  codog.com.cn;
-    return 301 https://www.codog.com.cn;
-}
-</code></pre>
-
-<p>注意这种方式会将所有http请求都重定向到https域名，例如：</p>
-
-<p><a href="http://www.codog.com.cn/2020/04/25/hello-world/">http://www.codog.com.cn/2020/04/25/hello-world/</a>  ==》 <a href="https://www.codog.com.cn">https://www.codog.com.cn</a></p>
-
-<p>可以发现后面的路径丢失了，这个可以按实际需要配置，除非你知道所有路径都支持https访问。</p>
+<p>夏天快到了，如果你也不想和我一样天天收着肚子走路的话，一起行动起来吧！！</p>
 
 <!-- <p
   class="ciu_embed"
@@ -452,7 +415,7 @@ nginx -t
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/nginx/">nginx</a>
+  <a class="tag tag--primary tag--small" href="https://justforuse.github.io/blog/zh-cn/tags/%E5%87%8F%E8%82%A5/">减肥</a>
 
                   </div>
                 
@@ -465,7 +428,7 @@ nginx -t
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/" data-tooltip="我是如何减肥的">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -473,7 +436,7 @@ nginx -t
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/" data-tooltip="Nginx配置支持HTTPS并自动跳转HTTPS协议">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -491,7 +454,7 @@ nginx -t
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -539,7 +502,7 @@ nginx -t
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/" data-tooltip="我是如何减肥的">
+                <a class="post-action-btn btn btn--disabled">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -547,7 +510,7 @@ nginx -t
             </li>
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/build-hexo-blog-with-github-actions-and-deploy-to-ali-cloud/" data-tooltip="使用Github Actions构建Hexo博客系统并发布到阿里云ECS上">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/" data-tooltip="Nginx配置支持HTTPS并自动跳转HTTPS协议">
               
                   <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
                   <i class="fa fa-angle-right"></i>
@@ -565,7 +528,7 @@ nginx -t
         </li>
         
           <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
@@ -595,7 +558,7 @@ nginx -t
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F04%2Fnginx-with-https-and-auto-redirect-to-https%2F">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjustforuse.github.io%2Fblog%2Fzh-cn%2F2020%2F05%2Fhow-i-loose-weight%2F">
           <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
         </a>
       </li>
@@ -700,9 +663,9 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/04\/nginx-with-https-and-auto-redirect-to-https\/';
+          this.page.url = 'https:\/\/justforuse.github.io\/blog\/zh-cn\/2020\/05\/how-i-loose-weight\/';
           
-            this.page.identifier = '1587824412';
+            this.page.identifier = '1588952727';
           
         };
         (function() {

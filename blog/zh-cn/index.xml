@@ -6,10 +6,21 @@
     <description>Recent content on 博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Apr 2020 22:20:12 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 23:45:27 +0800</lastBuildDate>
     
 	<atom:link href="https://justforuse.github.io/blog/zh-cn/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>我是如何减肥的</title>
+      <link>https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/</link>
+      <pubDate>Fri, 08 May 2020 23:45:27 +0800</pubDate>
+      
+      <guid>https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/</guid>
+      <description>&lt;p&gt;作为资深云减重爱好者，减重一直都在我的计划表中，年后疫情期间，工作不是很多，也有了更多在家的时间，于是头脑一热，立下了一个月减重一公斤的flag，从3月19号的63.9kg到4月19号的61.9kg，也是超额完成目标，可能相比减肥达人来说不算什么，这里记录下一个小白是如何减重的。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Nginx配置支持HTTPS并自动跳转HTTPS协议</title>

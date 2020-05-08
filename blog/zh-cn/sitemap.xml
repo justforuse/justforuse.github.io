@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/2020/05/how-i-loose-weight/</loc>
+    <lastmod>2020-05-08T23:45:27+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/2020/04/nginx-with-https-and-auto-redirect-to-https/</loc>
     <lastmod>2020-04-25T22:20:12+08:00</lastmod>
   </url>
@@ -823,22 +828,6 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
-    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/git/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
-                />
-  </url>
-  
-  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/tags/git/</loc>
     <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
@@ -855,25 +844,25 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/tags/github-actions/</loc>
-    <lastmod>2020-04-25T21:26:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
-    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/git/</loc>
+    <lastmod>2018-07-10T00:37:33+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/en-us/categories/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
+                href="https://justforuse.github.io/blog/zh-cn/categories/git/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/github-actions/</loc>
+    <lastmod>2020-04-25T21:26:23+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -889,6 +878,22 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://justforuse.github.io/blog/zh-cn/tags/google-adsense/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/google-adsense/</loc>
+    <lastmod>2019-04-20T13:46:44+08:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://justforuse.github.io/blog/en-us/categories/google-adsense/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://justforuse.github.io/blog/zh-cn/categories/google-adsense/"
                 />
   </url>
   
@@ -969,13 +974,13 @@
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/categories/nginx/</loc>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/nginx/</loc>
     <lastmod>2020-04-25T22:20:12+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://justforuse.github.io/blog/zh-cn/tags/nginx/</loc>
+    <loc>https://justforuse.github.io/blog/zh-cn/categories/nginx/</loc>
     <lastmod>2020-04-25T22:20:12+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1020,7 +1025,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/categories/others/</loc>
-    <lastmod>2020-04-25T21:26:23+08:00</lastmod>
+    <lastmod>2020-05-08T23:45:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -1032,7 +1037,7 @@
   
   <url>
     <loc>https://justforuse.github.io/blog/zh-cn/post/</loc>
-    <lastmod>2020-04-25T22:20:12+08:00</lastmod>
+    <lastmod>2020-05-08T23:45:27+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1267,8 +1272,14 @@
   </url>
   
   <url>
+    <loc>https://justforuse.github.io/blog/zh-cn/tags/%E5%87%8F%E8%82%A5/</loc>
+    <lastmod>2020-05-08T23:45:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://justforuse.github.io/blog/zh-cn/</loc>
-    <lastmod>2020-04-25T22:20:12+08:00</lastmod>
+    <lastmod>2020-05-08T23:45:27+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
