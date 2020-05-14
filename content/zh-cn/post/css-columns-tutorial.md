@@ -42,7 +42,7 @@ disqusIdentifier: 1569771711
 ![image](https://user-images.githubusercontent.com/11868477/65894911-26381d00-e3dd-11e9-962c-eadc10e11de4.png)
 
 
-{{< embed-caniuse mdn-css_properties_columns >}}
+{{< embed-caniuse mdn-css__properties__columns >}}
 
 
 <!-- {{< codepen pen="PKdOpB" user="justforuse" theme="dark">}} -->
